@@ -4,7 +4,7 @@ Install, configure and run Location Scout locally. Back to the [README](../../RE
 
 ## Prerequisites
 
-- Node.js **26** or later and pnpm **12** or later. Both minimums are set in `package.json` (`engines` / `devEngines`), and pnpm refuses to run on anything older. CI and the Sandcastle image use Node 26.10.0 and pnpm 12.10.0.
+- Node.js **26** or later and pnpm **12** or later. Both minimums are set in `package.json` (`engines` / `devEngines`), and pnpm refuses to run on anything older. CI and the Sandcastle image use Node 26.12.0 and pnpm 12.11.2.
 
 ## Install
 

@@ -1,0 +1,62 @@
+# Creates a GitHub release for every merge into main that has releasable
+# Conventional Commits (`feat:`, `fix:`, `perf:`, or a breaking change), with
+# semantic-release (`.releaserc.json`). It tags the merge `vX.Y.Z` and writes
+# the release notes from the commits since the last tag. Every package is
+# private, so nothing is published to npm, and nothing is committed back to
+# main.
+#
+# semantic-release 25's commit analyzer and release notes generator use
+# conventional-changelog-writer 8, so conventional-changelog-conventionalcommits
+# stays on 9.x: 10.x needs writer 9 and fails with "Missing helper".
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+# Releases run one at a time, in order, so two merges never claim the same
+# version.
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Create a release
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      # Pushes the tag and creates the release.
+      contents: write
+      # Comments on the issues and pull requests a release includes.
+      issues: write
+      pull-requests: write
+    steps:
+      # The full history and tags, so semantic-release finds the last release.
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+        with:
+          version: 12.11.2
+
+      - name: Set up Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 26.12.0
+          cache: pnpm
+
+      # Only the root's dev dependencies, where semantic-release is.
+      - name: Install
+        run: pnpm install --frozen-lockfile --filter location-scout
+
+      - name: Release
+        run: pnpm exec semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

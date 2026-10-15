@@ -33,7 +33,7 @@ Every issue listed under "Blocked by" must already be closed. If one is still op
 - **Degrade, don't fail.** A failed Data Source, a missing key or missing prepared data disables only its own Layer or feature.
 - **Respect the public services.** Nominatim at most 1 request/second with an identifying User-Agent; PlanIt and Overpass rate limits respected; no test makes live network calls.
 - **England only.**
-- Node >= 26 (26.10.0 here), pnpm >= 12 (12.10.0 here), ESM, strict TypeScript, React + Vite + MapLibre GL, Hono, Vitest, Playwright.
+- Node >= 26 (26.12.0 here), pnpm >= 12 (12.11.2 here), ESM, strict TypeScript, React + Vite + MapLibre GL, Hono, Vitest, Playwright.
 
 # Task
 

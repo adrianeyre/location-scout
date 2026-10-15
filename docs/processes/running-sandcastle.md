@@ -16,7 +16,7 @@ the hooks; this is the part that is ours.
 
 | Path           | What it is                                                                         |
 | -------------- | ---------------------------------------------------------------------------------- |
-| `Dockerfile`   | The sandbox image: Node 26.10.0, pnpm 12.10.0, Chromium, `git`, `gh`, `claude`     |
+| `Dockerfile`   | The sandbox image: Node 26.12.0, pnpm 12.11.2, Chromium, `git`, `gh`, `claude`     |
 | `main.ts`      | The orchestration entrypoint: prompt selection, branch guard, hooks, sandbox       |
 | `prompt.md`    | The committed prompt template, with the parts every brief here must have           |
 | `prompt-*.md`  | Your working briefs. Ignored, so they stay out of the branch's diff                |
@@ -92,7 +92,7 @@ rather than `npx`: the root `devEngines` requires pnpm, so npm refuses with
 ## The image has to match the project
 
 The root `package.json` allows Node 26 or later and pnpm 12 or later (`engines`
-and `devEngines`), and the image pins Node 26.10.0 and pnpm 12.10.0, the
+and `devEngines`), and the image pins Node 26.12.0 and pnpm 12.11.2, the
 versions CI uses. If either range changes so those versions fall outside it,
 change the Dockerfile in the same pull request: a sandbox on the wrong Node or
 pnpm usually installs fine and only fails later, which is much harder to

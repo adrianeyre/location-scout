@@ -8,7 +8,7 @@
 # Node and pnpm are pinned to fixed versions within the ranges the root
 # package.json allows (`engines` / `devEngines`: Node >= 26, pnpm >= 12), the
 # same versions CI uses. If those ranges move, keep these inside them.
-FROM node:26.10.0-bookworm
+FROM node:26.12.0-bookworm
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
   git \
@@ -28,7 +28,7 @@ RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg \
 # pnpm, at the version CI uses. Node no longer ships corepack from
 # version 25, so pnpm is installed directly. `devEngines.packageManager` in
 # package.json remains the source of truth.
-RUN npm install -g pnpm@12.10.0
+RUN npm install -g pnpm@12.11.2
 
 # UID/GID alignment. `sandcastle docker build-image` defaults these to the host
 # user's, so files the image writes and files the bind mount writes have the same
@@ -42,7 +42,7 @@ ARG AGENT_GID=1000
 # apps/web/package.json moves on, the `onSandboxReady` hook in main.ts fetches
 # the matching browser into it. Keep this version in step to skip that download.
 ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
-RUN npx --yes playwright@1.63.0 install --with-deps chromium \
+RUN npx --yes playwright@1.64.1 install --with-deps chromium \
   && rm -rf /var/lib/apt/lists/* \
   && chown -R $AGENT_UID:$AGENT_GID /ms-playwright
 
