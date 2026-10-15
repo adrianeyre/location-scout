@@ -1,0 +1,18 @@
+{
+  "name": "@location-scout/shared",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Response types shared by the Location Scout web app and API.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "vitest": "^5.0.3"
+  }
+}

@@ -1,0 +1,2089 @@
+<!doctype html>
+<!--
+  The Location Scout website. Its double-brace placeholders are filled in by
+  site/build.ts, which holds the repository's address; the screenshots and
+  icons it names are copied in from docs/screenshots/ and apps/web/public at
+  build time, and the fonts from site/fonts/. Everything works without
+  JavaScript: script.mts (built into script.js) only adds the menu button,
+  the system tabs, copy buttons, the screenshot viewer, the setup guide's
+  progress and the policies' dialogs.
+-->
+<html lang="en-GB" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+    </script>
+    <title>
+      Location Scout: pick any location in England and see everything around it
+    </title>
+    <meta
+      name="description"
+      content="Location Scout is an open-source app you run yourself: pick a postcode, an address or a point on the map in England and see its crime, planning, amenities, schools, transport, green space, property, land and demographics on one screen, with transparent, rule-based scores."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0d1117"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="canonical" href="{{SITE_URL}}/" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="Location Scout" />
+    <meta property="og:title" content="Location Scout" />
+    <meta
+      property="og:description"
+      content="Pick any location in England and see everything around it on one screen, from open data, with scores you can check."
+    />
+    <meta property="og:url" content="{{SITE_URL}}/" />
+    <meta property="og:image" content="{{SITE_URL}}/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Location Scout's map pin and name on a blue tile."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Location Scout" />
+    <meta
+      name="twitter:description"
+      content="Pick any location in England and see everything around it on one screen, from open data, with scores you can check."
+    />
+    <meta name="twitter:image" content="{{SITE_URL}}/og-image.png" />
+    <link
+      rel="preload"
+      href="fonts/inter-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <!-- Icons: Lucide (ISC licence, lucide.dev), and the GitHub mark. -->
+    <svg
+      class="sprite"
+      aria-hidden="true"
+      focusable="false"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <symbol id="i-map-pin" viewBox="0 0 24 24">
+        <path
+          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+        />
+        <circle cx="12" cy="10" r="3" />
+      </symbol>
+      <symbol id="i-search" viewBox="0 0 24 24">
+        <path d="m21 21-4.34-4.34" />
+        <circle cx="11" cy="11" r="8" />
+      </symbol>
+      <symbol id="i-shield-check" viewBox="0 0 24 24">
+        <path
+          d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+        />
+        <path d="m9 12 2 2 4-4" />
+      </symbol>
+      <symbol id="i-gauge" viewBox="0 0 24 24">
+        <path d="m12 14 4-4" />
+        <path d="M3.34 19a10 10 0 1 1 17.32 0" />
+      </symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24">
+        <path
+          d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"
+        />
+        <path
+          d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"
+        />
+        <path
+          d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"
+        />
+      </symbol>
+      <symbol id="i-list-checks" viewBox="0 0 24 24">
+        <path d="m3 17 2 2 4-4" />
+        <path d="m3 7 2 2 4-4" />
+        <path d="M13 6h8" />
+        <path d="M13 12h8" />
+        <path d="M13 18h8" />
+      </symbol>
+      <symbol id="i-layout-dashboard" viewBox="0 0 24 24">
+        <rect width="7" height="9" x="3" y="3" rx="1" />
+        <rect width="7" height="5" x="14" y="3" rx="1" />
+        <rect width="7" height="9" x="14" y="12" rx="1" />
+        <rect width="7" height="5" x="3" y="16" rx="1" />
+      </symbol>
+      <symbol id="i-land-plot" viewBox="0 0 24 24">
+        <path d="m12 8 6-3-6-3v10" />
+        <path
+          d="m8 11.99-5.5 3.14a1 1 0 0 0 0 1.74l8.5 4.86a2 2 0 0 0 2 0l8.5-4.86a1 1 0 0 0 0-1.74L16 12"
+        />
+        <path d="m6.49 12.85 11.02 6.3" />
+        <path d="M17.51 12.85 6.5 19.15" />
+      </symbol>
+      <symbol id="i-bookmark" viewBox="0 0 24 24">
+        <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+      </symbol>
+      <symbol id="i-printer" viewBox="0 0 24 24">
+        <path
+          d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+        />
+        <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
+        <rect x="6" y="14" width="12" height="8" rx="1" />
+      </symbol>
+      <symbol id="i-sparkles" viewBox="0 0 24 24">
+        <path
+          d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"
+        />
+        <path d="M20 2v4" />
+        <path d="M22 4h-4" />
+        <circle cx="4" cy="20" r="2" />
+      </symbol>
+      <symbol id="i-camera" viewBox="0 0 24 24">
+        <path
+          d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+        />
+        <circle cx="12" cy="13" r="3" />
+      </symbol>
+      <symbol id="i-accessibility" viewBox="0 0 24 24">
+        <circle cx="16" cy="4" r="1" />
+        <path d="m18 19 1-7-6 1" />
+        <path d="m5 8 3-3 5.5 3-2.36 3.5" />
+        <path d="M4.24 14.5a5 5 0 0 0 6.88 6" />
+        <path d="M13.76 17.5a5 5 0 0 0-6.88-6" />
+      </symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24">
+        <path
+          d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+        />
+        <circle cx="12" cy="12" r="3" />
+      </symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24">
+        <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+      </symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+        <path d="M2 12h20" />
+      </symbol>
+      <symbol id="i-circle-dot" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <circle cx="12" cy="12" r="1" />
+      </symbol>
+      <symbol id="i-server" viewBox="0 0 24 24">
+        <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+        <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+        <line x1="6" x2="6.01" y1="6" y2="6" />
+        <line x1="6" x2="6.01" y1="18" y2="18" />
+      </symbol>
+      <symbol id="i-monitor" viewBox="0 0 24 24">
+        <rect width="20" height="14" x="2" y="3" rx="2" />
+        <line x1="8" x2="16" y1="21" y2="21" />
+        <line x1="12" x2="12" y1="17" y2="21" />
+      </symbol>
+      <symbol id="i-terminal" viewBox="0 0 24 24">
+        <path d="M12 19h8" />
+        <path d="m4 17 6-6-6-6" />
+      </symbol>
+      <symbol id="i-git-branch" viewBox="0 0 24 24">
+        <path d="M15 6a9 9 0 0 0-9 9V3" />
+        <circle cx="18" cy="6" r="3" />
+        <circle cx="6" cy="18" r="3" />
+      </symbol>
+      <symbol id="i-key-round" viewBox="0 0 24 24">
+        <path
+          d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+        />
+        <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect width="20" height="16" x="2" y="4" rx="2" />
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+      </symbol>
+      <symbol id="i-laptop" viewBox="0 0 24 24">
+        <path
+          d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"
+        />
+        <path d="M20.054 15.987H3.946" />
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <path d="M12 15V3" />
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+        <path d="m7 10 5 5 5-5" />
+      </symbol>
+      <symbol id="i-scale" viewBox="0 0 24 24">
+        <path d="M12 3v18" />
+        <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" />
+        <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" />
+        <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" />
+        <path d="M7 21h10" />
+      </symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24">
+        <path d="M4 5h16" />
+        <path d="M4 12h16" />
+        <path d="M4 19h16" />
+      </symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24">
+        <path d="M5 12h14" />
+        <path d="m12 5 7 7-7 7" />
+      </symbol>
+      <symbol id="i-arrow-up-right" viewBox="0 0 24 24">
+        <path d="M7 7h10v10" />
+        <path d="M7 17 17 7" />
+      </symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24">
+        <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+        <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="M20 6 9 17l-5-5" />
+      </symbol>
+      <symbol id="i-chevron-left" viewBox="0 0 24 24">
+        <path d="m15 18-6-6 6-6" />
+      </symbol>
+      <symbol id="i-chevron-right" viewBox="0 0 24 24">
+        <path d="m9 18 6-6-6-6" />
+      </symbol>
+      <symbol id="i-x" viewBox="0 0 24 24">
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
+      </symbol>
+      <symbol id="i-github-mark" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          stroke="none"
+          d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.82 0c2.22-1.5 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.41-5.26 5.69.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"
+        />
+      </symbol>
+    </svg>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top">
+          <img src="favicon.svg" alt="" width="32" height="32" />
+          <span class="brand-name">Location Scout</span>
+        </a>
+        <button
+          class="menu-toggle icon-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open the menu"
+          hidden
+        >
+          <svg class="icon" aria-hidden="true"><use href="#i-menu" /></svg>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Sections">
+          <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#quick-start">Quick start</a></li>
+            <li><a href="#setup">Full setup</a></li>
+            <li><a href="#docs">Docs</a></li>
+            <li class="nav-cta">
+              <a class="button button-small" href="{{REPO_URL}}">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-github-mark" />
+                </svg>
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow">
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-map-pin" />
+              </svg>
+              England · Open data · Runs on your machine
+            </p>
+            <h1 id="hero-title">
+              Pick any location in England.
+              <span class="gradient-text">See everything around it.</span>
+            </h1>
+            <p class="lead">
+              Type a postcode or an address, or click the map, and Location
+              Scout puts its crime, planning, amenities, schools, transport,
+              green space, property, land and demographics on one screen, with
+              scores whose every point you can check.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-large" href="{{REPO_URL}}">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-github-mark" />
+                </svg>
+                View on GitHub
+              </a>
+              <a
+                class="button button-secondary button-large"
+                href="#quick-start"
+              >
+                Quick start
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow-right" />
+                </svg>
+              </a>
+            </div>
+            <div class="terminal terminal-mini">
+              <pre
+                tabindex="0"
+                aria-label="Get Location Scout and run it"
+              ><code><span class="prompt" aria-hidden="true">$ </span>git clone {{REPO_URL}}.git && cd {{REPO_NAME}}
+<span class="prompt" aria-hidden="true">$ </span>pnpm install && cp .env.example .env
+<span class="prompt" aria-hidden="true">$ </span>pnpm dev</code></pre>
+            </div>
+          </div>
+          <figure class="hero-shot">
+            <div class="window">
+              <div class="window-bar" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <p class="window-address">localhost:5173</p>
+              </div>
+              <a href="images/overview-light.png" data-lightbox>
+                <img
+                  src="images/overview-light.png"
+                  width="1440"
+                  height="900"
+                  fetchpriority="high"
+                  alt="Location Scout showing NG17 1AA: the map with clustered markers for each Layer, the Layers panel with each Layer's count, and the Location Overview's Highlights: one Concern, two Watch and four Good."
+                />
+              </a>
+            </div>
+            <figcaption>
+              <strong>The Location Overview.</strong> The map and its Layers
+              beside what you need to know.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="container">
+          <ul class="facts" aria-label="At a glance">
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-map-pin" />
+              </svg>
+              <span
+                ><strong>Anywhere in England</strong> by postcode, address or
+                click</span
+              >
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-circle-dot" />
+              </svg>
+              <span
+                ><strong>A Search Area</strong> of ¼, ½ or 1 mile around
+                it</span
+              >
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-gauge" />
+              </svg>
+              <span
+                ><strong>Rule-based scores</strong> 0 to 100, never from
+                AI</span
+              >
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-lock" />
+              </svg>
+              <span><strong>No accounts</strong> and no database server</span>
+            </li>
+          </ul>
+          <div class="sources">
+            <p class="sources-title">From open data</p>
+            <ul class="source-list">
+              <li>OpenStreetMap</li>
+              <li>data.police.uk</li>
+              <li>planning.data.gov.uk</li>
+              <li>PlanIt</li>
+              <li>HM Land Registry</li>
+              <li>Ordnance Survey</li>
+              <li>ONS and Census 2021</li>
+              <li>Get Information about Schools</li>
+              <li>Ofsted</li>
+              <li>EPC register</li>
+              <li>postcodes.io</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Why Location Scout</p>
+            <h2 id="about-title">What Location Scout is</h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-text">
+              <p class="about-lead">
+                Whether you are buying a home, letting one, investing, building
+                or opening a café, the first question about a place is the same:
+                what is it like around here? The answers are public, but spread
+                across a dozen services.
+              </p>
+              <p>
+                Location Scout gathers them for one Search Area, draws them on a
+                map, and sums them up in Highlights and scores that use fixed,
+                published rules. It is a web app you run yourself: a React
+                frontend and a small backend that asks each public Data Source
+                on your behalf, keeps answers in memory for a while, and stores
+                nothing about you.
+              </p>
+            </div>
+            <ul class="pillars">
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-globe" />
+                </svg>
+                <h3>Open data</h3>
+                <p>Public sources, each credited beside what it supplies.</p>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-eye" />
+                </svg>
+                <h3>Transparent</h3>
+                <p>Every score shows its inputs, rule and points.</p>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-lock" />
+                </svg>
+                <h3>Private</h3>
+                <p>No accounts; Saved Locations stay in your browser.</p>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-accessibility" />
+                </svg>
+                <h3>Accessible</h3>
+                <p>Built to WCAG 2.2 AA, in six themes, light and dark.</p>
+              </li>
+            </ul>
+          </div>
+
+          <h3 class="pipeline-title">How a search works</h3>
+          <ol class="pipeline">
+            <li>
+              <span class="pipeline-number" aria-hidden="true">1</span>
+              <h4>You choose a Location</h4>
+              <p>
+                A postcode, an address found with Nominatim, or a click on the
+                map, and a Search Radius around it.
+              </p>
+            </li>
+            <li>
+              <span class="pipeline-number" aria-hidden="true">2</span>
+              <h4>It is checked to be in England</h4>
+              <p>
+                From its postcode's country on postcodes.io, before any Layer
+                loads. Wales and Scotland say so and load nothing.
+              </p>
+            </li>
+            <li>
+              <span class="pipeline-number" aria-hidden="true">3</span>
+              <h4>Each Layer loads on its own</h4>
+              <p>
+                The backend asks each Data Source, politely rate-limited and
+                cached. One that fails or takes over 8 seconds says
+                “Unavailable”; the rest still show.
+              </p>
+            </li>
+            <li>
+              <span class="pipeline-number" aria-hidden="true">4</span>
+              <h4>Fixed rules score it</h4>
+              <p>
+                Category Scores from 0 to 100, weighed by the Scout Mode into
+                the Location Score, and Highlights, each from one Layer's
+                figures.
+              </p>
+            </li>
+            <li>
+              <span class="pipeline-number" aria-hidden="true">5</span>
+              <h4>You read, save and compare</h4>
+              <p>
+                In the Overview or the Dashboard; save it, compare it with
+                others, print a report, or ask for an AI Explanation.
+              </p>
+            </li>
+          </ol>
+          <div class="stage-track">
+            <p class="stage-track-title">Scout Modes, one question each</p>
+            <ul class="stage-chips">
+              <li><span class="chip">General</span></li>
+              <li><span class="chip">Homebuyer</span></li>
+              <li><span class="chip">Buy-to-let</span></li>
+              <li><span class="chip">Investment</span></li>
+              <li><span class="chip">Development</span></li>
+              <li><span class="chip">Retail</span></li>
+              <li><span class="chip">Business</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="features"
+        class="section section-alt"
+        aria-labelledby="features-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Features</p>
+            <h2 id="features-title">Everything about a place, on one screen</h2>
+            <p class="section-intro">
+              Nine Layers on an interactive map, the figures behind them, and
+              scores you can take apart.
+            </p>
+          </div>
+          <ul class="bento">
+            <li class="card card-feature card-wide">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-layers" />
+                </svg>
+              </span>
+              <h3>Nine Layers on the map</h3>
+              <p>
+                Crime with its year-on-year trend; planning constraints and
+                applications with the new homes they would bring; amenities;
+                schools with their Ofsted judgements; transport; green space;
+                property sales with price change and EPC ratings; land; and
+                demographics from Census 2021. Dense markers cluster, and every
+                figure is also given as text.
+              </p>
+              <ul class="tag-list" aria-label="The Layers">
+                <li>Crime</li>
+                <li>Planning</li>
+                <li>Amenities</li>
+                <li>Schools</li>
+                <li>Transport</li>
+                <li>Green space</li>
+                <li>Property</li>
+                <li>Land</li>
+                <li>Demographics</li>
+              </ul>
+            </li>
+            <li class="card card-feature card-wide">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-gauge" />
+                </svg>
+              </span>
+              <h3>Scores you can check, and Scout Modes</h3>
+              <p>
+                Category Scores such as Safety, Schools and Planning freedom,
+                each from 0 to 100 by a fixed, published rule, and a Location
+                Score that weighs them. Open any score to see each input, the
+                figure measured, the thresholds and the points given. A Scout
+                Mode reweighs them for one question, “Should I buy a home here
+                to let?” or “Could I open a café here?”, or set weights of your
+                own.
+              </p>
+            </li>
+            <li class="card card-feature">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-list-checks" />
+                </svg>
+              </span>
+              <h3>Highlights</h3>
+              <p>
+                What you need to know, first: short Concern, Watch and Good
+                statements, each from a fixed rule over one Layer's figures and
+                never from AI. Choose one to see its Layer on the map.
+              </p>
+            </li>
+            <li class="card card-feature">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-layout-dashboard" />
+                </svg>
+              </span>
+              <h3>A Dashboard of Widgets</h3>
+              <p>
+                Every figure at full width: the Location Score in an arc,
+                Category Scores as bars, and a card of charts for each Layer.
+                Drag, resize and hide the Widgets on a 12-column Grid.
+              </p>
+            </li>
+            <li class="card card-feature">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-land-plot" />
+                </svg>
+              </span>
+              <h3>Land Opportunity Finder</h3>
+              <p>
+                Open land worth investigating, with its area, road distance,
+                flood zone and indicative ownership: company, council, other
+                registered or possibly unregistered, and land sales nearby.
+              </p>
+            </li>
+            <li class="card card-feature">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-bookmark" />
+                </svg>
+              </span>
+              <h3>Save, compare and print</h3>
+              <p>
+                Keep Search Areas in your browser, export and import them as
+                JSON, compare 2 to 4 side by side, and print a report or save it
+                as a PDF.
+              </p>
+            </li>
+            <li class="card card-feature">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-sparkles" />
+                </svg>
+              </span>
+              <h3>AI Explanations, if you want them</h3>
+              <p>
+                With your own Anthropic API key, an Explain button answers
+                questions about the figures on screen, and only those: any
+                number not among them is flagged. Off without a key.
+              </p>
+            </li>
+            <li class="card card-feature">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-camera" />
+                </svg>
+              </span>
+              <h3>Street View, if you want it</h3>
+              <p>
+                With your own Google Maps key, look around the Location, or any
+                Feature from its popup. Without one, nothing loads from Google.
+              </p>
+            </li>
+            <li class="card card-feature card-full">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-accessibility" />
+                </svg>
+              </span>
+              <h3>Accessible, in six themes</h3>
+              <p>
+                Built to meet WCAG 2.2 AA: a skip link, every map marker a
+                button and “Skip past the map”, labelled landmarks, Highlights
+                shaped as well as coloured, reflow at 400% zoom, and reduced
+                motion respected. Light, dark or your system's mode, in Scout,
+                Ocean, Forest, Heather, Sunset or High contrast, each with its
+                contrast ratios listed in Settings.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="screenshots"
+        class="section"
+        aria-labelledby="screenshots-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Screenshots</p>
+            <h2 id="screenshots-title">See it at work</h2>
+            <p class="section-intro">
+              Taken from the app by its own end-to-end tests, with recorded
+              data. Select a picture to see it full size.
+            </p>
+          </div>
+          <div class="gallery">
+            <figure>
+              <a href="images/dashboard.png" data-lightbox>
+                <img
+                  src="images/dashboard.png"
+                  width="1440"
+                  height="900"
+                  loading="lazy"
+                  alt="The Dashboard for NG17 1AA: a Location Score of 62 out of 100 in an arc, the Category Scores as bars, the Highlights counted as 1 Concern, 2 Watch and 4 Good, then Widgets for the Crime, Planning and Amenities Layers."
+                />
+              </a>
+              <figcaption>
+                <strong>Dashboard.</strong> Every figure at full width, in
+                Widgets.
+              </figcaption>
+            </figure>
+            <figure>
+              <a href="images/dashboard-dragging.png" data-lightbox>
+                <img
+                  src="images/dashboard-dragging.png"
+                  width="1440"
+                  height="900"
+                  loading="lazy"
+                  alt="The Amenities Widget being dragged by its header, tilted slightly, over a dashed placeholder where it will land."
+                />
+              </a>
+              <figcaption>
+                <strong>Moving a Widget.</strong> Drag it by its header; the
+                Grid makes room.
+              </figcaption>
+            </figure>
+            <figure>
+              <a href="images/scores-dark.png" data-lightbox>
+                <img
+                  src="images/scores-dark.png"
+                  width="1440"
+                  height="900"
+                  loading="lazy"
+                  alt="The Scores in dark mode: a Location Score of 62 out of 100 for the General Scout Mode, then each Category Score, from Safety at 0 to Amenities and Green space at 100, each marked beta."
+                />
+              </a>
+              <figcaption>
+                <strong>Scores.</strong> Each one opens to show how it is
+                reached; here in dark mode.
+              </figcaption>
+            </figure>
+            <figure>
+              <a href="images/land-panel.png" data-lightbox>
+                <img
+                  src="images/land-panel.png"
+                  width="1440"
+                  height="900"
+                  loading="lazy"
+                  alt="The Land panel in the Forest theme: a notice that a parcel only warrants further investigation, where to look, the order, and filters for area, distance from a road, flood zone and indicative ownership."
+                />
+              </a>
+              <figcaption>
+                <strong>Land Opportunity Finder.</strong> Filters for area,
+                road, flood zone and ownership.
+              </figcaption>
+            </figure>
+            <figure>
+              <a href="images/settings.png" data-lightbox>
+                <img
+                  src="images/settings.png"
+                  width="1440"
+                  height="900"
+                  loading="lazy"
+                  alt="Settings in dark mode and the Heather theme: Light, Dark or System mode, and theme cards for Scout, Ocean, Forest and Heather, each listing its contrast ratios."
+                />
+              </a>
+              <figcaption>
+                <strong>Settings.</strong> Light, dark or system mode, and six
+                themes with their contrast ratios.
+              </figcaption>
+            </figure>
+            <figure>
+              <a href="images/accessibility-statement.png" data-lightbox>
+                <img
+                  src="images/accessibility-statement.png"
+                  width="1440"
+                  height="900"
+                  loading="lazy"
+                  alt="The Accessibility statement open in a dialog over the app, in the Ocean theme, with its conformance status, what has been done and known limitations."
+                />
+              </a>
+              <figcaption>
+                <strong>Policies.</strong> Opened in dialogs from the footer.
+              </figcaption>
+            </figure>
+            <figure class="shot-portrait">
+              <a href="images/phone.png" data-lightbox>
+                <img
+                  src="images/phone.png"
+                  width="390"
+                  height="844"
+                  loading="lazy"
+                  alt="Location Scout on a phone: the search, Search Radius and Scout Mode above the map, with the Location Overview's panel below it."
+                />
+              </a>
+              <figcaption>
+                <strong>On a phone.</strong> The panel stacks under the map;
+                nothing scrolls sideways.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="requirements"
+        class="section section-alt"
+        aria-labelledby="requirements-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Before you start</p>
+            <h2 id="requirements-title">Requirements</h2>
+          </div>
+          <ul class="requirements">
+            <li class="card">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-laptop" />
+                </svg>
+              </span>
+              <p>
+                <strong>Windows, macOS or Linux</strong>, with Git. Location
+                Scout runs locally: there is nothing to host.
+              </p>
+            </li>
+            <li class="card">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-terminal" />
+                </svg>
+              </span>
+              <p>
+                <strong>Node 26 or later and pnpm 12 or later</strong>, as the
+                repository's <code>package.json</code> requires; older versions
+                are refused.
+              </p>
+            </li>
+            <li class="card">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-globe" />
+                </svg>
+              </span>
+              <p>
+                <strong>An internet connection.</strong> Most data is fetched
+                live from its Data Source for each Search Area.
+              </p>
+            </li>
+            <li class="card">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-mail" />
+                </svg>
+              </span>
+              <p>
+                <strong>A contact email address</strong>, for
+                <code>NOMINATIM_USER_AGENT</code>: Nominatim's usage policy asks
+                every app to say who it is.
+              </p>
+            </li>
+            <li class="card">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-key-round" />
+                </svg>
+              </span>
+              <p>
+                <strong>Optional keys</strong> for EPC ratings, AI Explanations,
+                Street View, PlanWire and HM Land Registry's ownership data.
+                Each feature stays off without its key.
+              </p>
+            </li>
+            <li class="card">
+              <span class="card-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-download" />
+                </svg>
+              </span>
+              <p>
+                <strong>Optional disk space</strong> for
+                <code>pnpm data:prepare</code>'s land, schools and demographics
+                data: one council by default, about 6.8 GB to download for all
+                of England.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="quick-start"
+        class="section"
+        aria-labelledby="quick-start-title"
+      >
+        <div class="container narrow">
+          <div class="section-head">
+            <p class="kicker">A few minutes</p>
+            <h2 id="quick-start-title">Quick start</h2>
+            <p class="section-intro">
+              From nothing to Location Scout running on
+              <a href="http://localhost:5173">http://localhost:5173</a>. Pick
+              your system. For the optional data and keys, carry on with the
+              <a href="#setup">full setup</a>.
+            </p>
+          </div>
+
+          <div class="os-tabs terminal" data-os-tabs>
+            <section
+              class="os-panel"
+              id="quick-windows"
+              data-os="windows"
+              aria-labelledby="quick-windows-title"
+            >
+              <h3 id="quick-windows-title">Windows</h3>
+              <p>
+                In PowerShell. Follow fnm's instructions to add it to your
+                PowerShell profile, then open a new terminal.
+              </p>
+              <pre
+                tabindex="0"
+              ><code><span class="comment"># Git and fnm (a Node version manager)</span>
+winget install Git.Git
+winget install Schniz.fnm
+fnm install 26
+fnm default 26
+
+<span class="comment"># pnpm 12 or later</span>
+iwr https://get.pnpm.io/install.ps1 -useb | iex
+
+<span class="comment"># In a new terminal: get Location Scout and run it</span>
+git clone {{REPO_URL}}.git
+cd {{REPO_NAME}}
+pnpm install
+Copy-Item .env.example .env
+<span class="comment"># Set NOMINATIM_USER_AGENT in .env to your app name and email, then</span>
+pnpm dev</code></pre>
+            </section>
+
+            <section
+              class="os-panel"
+              id="quick-macos"
+              data-os="macos"
+              aria-labelledby="quick-macos-title"
+            >
+              <h3 id="quick-macos-title">macOS</h3>
+              <p>
+                Install <a href="https://brew.sh/">Homebrew</a> first. Then, in
+                Terminal, and follow fnm's instructions to add it to your shell
+                profile:
+              </p>
+              <pre
+                tabindex="0"
+              ><code><span class="comment"># Git and fnm (a Node version manager)</span>
+xcode-select --install
+brew install fnm
+fnm install 26
+fnm default 26
+
+<span class="comment"># pnpm 12 or later</span>
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+
+<span class="comment"># In a new terminal: get Location Scout and run it</span>
+git clone {{REPO_URL}}.git
+cd {{REPO_NAME}}
+pnpm install
+cp .env.example .env
+<span class="comment"># Set NOMINATIM_USER_AGENT in .env to your app name and email, then</span>
+pnpm dev</code></pre>
+            </section>
+
+            <section
+              class="os-panel"
+              id="quick-linux"
+              data-os="linux"
+              aria-labelledby="quick-linux-title"
+            >
+              <h3 id="quick-linux-title">Linux</h3>
+              <p>
+                In a terminal. Follow fnm's instructions to add it to your shell
+                profile, then open a new terminal.
+              </p>
+              <pre
+                tabindex="0"
+              ><code><span class="comment"># Git and fnm (a Node version manager)</span>
+sudo apt install git   <span class="comment"># or your package manager's equivalent</span>
+curl -fsSL https://fnm.vercel.app/install | bash
+fnm install 26
+fnm default 26
+
+<span class="comment"># pnpm 12 or later</span>
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+
+<span class="comment"># In a new terminal: get Location Scout and run it</span>
+git clone {{REPO_URL}}.git
+cd {{REPO_NAME}}
+pnpm install
+cp .env.example .env
+<span class="comment"># Set NOMINATIM_USER_AGENT in .env to your app name and email, then</span>
+pnpm dev</code></pre>
+            </section>
+          </div>
+
+          <div class="callout-grid">
+            <div class="callout">
+              <h3>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-monitor" />
+                </svg>
+                Open the app
+              </h3>
+              <p>
+                <code>pnpm dev</code> starts the backend on
+                <a href="http://localhost:8787">http://localhost:8787</a> and
+                the frontend on
+                <a href="http://localhost:5173">http://localhost:5173</a>, which
+                sends <code>/api</code> requests to it. The backend refuses to
+                start without <code>NOMINATIM_USER_AGENT</code>.
+              </p>
+            </div>
+            <div class="callout">
+              <h3>
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-search" />
+                </svg>
+                Try a search
+              </h3>
+              <p>
+                Search for <code>NG17 1AA</code>, an address, or click the map.
+                The page's address keeps the Location, Search Radius and Scout
+                Mode, so you can bookmark or share it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="setup"
+        class="section section-alt"
+        aria-labelledby="setup-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Step by step</p>
+            <h2 id="setup-title">Full setup guide</h2>
+            <p class="section-intro">
+              Everything from a fresh machine to every Layer loaded and the
+              tests passing. Each step links to the detailed guide in the
+              repository.
+            </p>
+          </div>
+
+          <div class="setup-layout">
+            <nav class="toc" aria-label="Setup steps">
+              <p class="toc-title" aria-hidden="true">On this guide</p>
+              <ol>
+                <li>
+                  <a href="#setup-prerequisites">Install the prerequisites</a>
+                </li>
+                <li><a href="#setup-clone">Clone and install</a></li>
+                <li>
+                  <a href="#setup-env">Create <code>.env</code></a>
+                </li>
+                <li><a href="#setup-keys">Add optional keys</a></li>
+                <li><a href="#setup-run">Run Location Scout</a></li>
+                <li><a href="#setup-data">Prepare land data</a></li>
+                <li><a href="#setup-tests">Run the tests</a></li>
+              </ol>
+            </nav>
+
+            <div class="setup-steps">
+              <article class="setup-step" id="setup-prerequisites">
+                <h3>
+                  <span class="step-number">1</span> Install the prerequisites
+                </h3>
+                <p>You need Git, Node 26 or later and pnpm 12 or later.</p>
+                <div
+                  class="table-wrap"
+                  tabindex="0"
+                  role="region"
+                  aria-label="Prerequisites by system, scrollable"
+                >
+                  <table class="wide-table">
+                    <caption class="visually-hidden">
+                      How to install each prerequisite on each system
+                    </caption>
+                    <thead>
+                      <tr>
+                        <td></td>
+                        <th scope="col">Windows</th>
+                        <th scope="col">macOS</th>
+                        <th scope="col">Linux</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Git</th>
+                        <td><code>winget install Git.Git</code></td>
+                        <td><code>xcode-select --install</code></td>
+                        <td>
+                          Your package manager, e.g.
+                          <code>sudo apt install git</code>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          Node, via
+                          <a href="https://github.com/Schniz/fnm">fnm</a>
+                        </th>
+                        <td><code>winget install Schniz.fnm</code></td>
+                        <td><code>brew install fnm</code></td>
+                        <td>
+                          <code class="wrap"
+                            >curl -fsSL https://fnm.vercel.app/install |
+                            bash</code
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">pnpm</th>
+                        <td>
+                          <code class="wrap"
+                            >iwr https://get.pnpm.io/install.ps1 -useb |
+                            iex</code
+                          >
+                        </td>
+                        <td colspan="2">
+                          <code class="wrap"
+                            >curl -fsSL https://get.pnpm.io/install.sh | sh
+                            -</code
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>Then install Node 26 with fnm, and check both versions:</p>
+                <pre tabindex="0"><code>fnm install 26
+fnm default 26
+node --version   <span class="comment"># v26 or later</span>
+pnpm --version   <span class="comment"># 12 or later</span></code></pre>
+                <p class="note">
+                  Both minimums are set in <code>package.json</code> (<code
+                    >engines</code
+                  >
+                  and <code>devEngines</code>), and pnpm refuses to run on
+                  anything older. CI uses Node 26.10.0 and pnpm 12.10.0. More in
+                  <a
+                    href="{{REPO_URL}}/blob/main/docs/guides/getting-started.md#prerequisites"
+                    >Getting started</a
+                  >.
+                </p>
+              </article>
+
+              <article class="setup-step" id="setup-clone">
+                <h3><span class="step-number">2</span> Clone and install</h3>
+                <pre tabindex="0"><code>git clone {{REPO_URL}}.git
+cd {{REPO_NAME}}
+pnpm install</code></pre>
+                <p>
+                  One install sets up the whole pnpm workspace: the React
+                  frontend in <code>apps/web</code>, the Hono backend in
+                  <code>apps/api</code>, the shared types and the land data
+                  scripts.
+                </p>
+              </article>
+
+              <article class="setup-step" id="setup-env">
+                <h3>
+                  <span class="step-number">3</span> Create <code>.env</code>
+                </h3>
+                <p>
+                  Copy the example file to <code>.env</code> in the repository
+                  root. The one file configures the backend, the frontend and
+                  the scripts:
+                </p>
+                <pre
+                  tabindex="0"
+                ><code><span class="comment"># Windows (PowerShell)</span>
+Copy-Item .env.example .env
+
+<span class="comment"># macOS, Linux and Git Bash</span>
+cp .env.example .env</code></pre>
+                <p>
+                  Only <code>NOMINATIM_USER_AGENT</code> is required: the API
+                  refuses to start without it. Nominatim's usage policy asks for
+                  your app's name and a contact address, and it is sent to the
+                  Overpass API too:
+                </p>
+                <pre
+                  tabindex="0"
+                ><code>NOMINATIM_USER_AGENT="my-location-scout (you@example.com)"</code></pre>
+                <p class="note">
+                  Never commit <code>.env</code>. Everything else is optional,
+                  and its feature stays off when unset. Every setting is
+                  explained in
+                  <a href="{{REPO_URL}}/blob/main/.env.example"
+                    ><code>.env.example</code></a
+                  >.
+                </p>
+              </article>
+
+              <article class="setup-step" id="setup-keys">
+                <h3><span class="step-number">4</span> Add optional keys</h3>
+                <p>
+                  Set any of these in <code>.env</code> to switch on what they
+                  are for, then restart <code>pnpm dev</code>:
+                </p>
+                <div
+                  class="table-wrap"
+                  tabindex="0"
+                  role="region"
+                  aria-label="Optional settings, scrollable"
+                >
+                  <table class="settings-table">
+                    <caption class="visually-hidden">
+                      The optional settings in .env and what each switches on
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Setting</th>
+                        <th scope="col">What it switches on</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><code>EPC_API_KEY</code></th>
+                        <td>
+                          EPC ratings and price per m² in the Property Layer:
+                          the bearer token from your account on the
+                          <a
+                            href="https://get-energy-performance-data.communities.gov.uk/"
+                            >Energy Performance of Buildings Data</a
+                          >
+                          service, signed in with GOV.UK One Login
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><code>ANTHROPIC_API_KEY</code></th>
+                        <td>
+                          AI Explanations, with your own key from the Claude
+                          Console; <code>ANTHROPIC_MODEL</code> picks the model,
+                          <code>claude-sonnet-5-5</code> unless set
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><code>GOOGLE_MAPS_API_KEY</code></th>
+                        <td>
+                          Street View: a browser key for Google's Maps
+                          JavaScript API, restricted to
+                          <code>http://localhost:5173/*</code> and that API
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <code>PLANNING_APPLICATIONS_PROVIDER</code>,
+                          <code>PLANWIRE_API_KEY</code>
+                        </th>
+                        <td>
+                          Planning Applications come from PlanIt, with no key,
+                          unless you choose <code>planwire</code> and give its
+                          key
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><code>PLANIT_USER_AGENT</code></th>
+                        <td>
+                          The User-Agent sent to PlanIt, which asks for a
+                          contact email; <code>NOMINATIM_USER_AGENT</code> is
+                          sent when it is unset
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <code>LAND_REGISTRY_DATA_API_KEY</code>
+                        </th>
+                        <td>
+                          HM Land Registry's CCOD and OCOD downloads in
+                          <code>pnpm data:prepare</code>, for the indicative
+                          Ownership Categories (skipped when unset)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <code>PORT</code>, <code>API_ORIGIN</code>,
+                          <code>SITE_URL</code>
+                        </th>
+                        <td>
+                          Where the backend listens (8787), where the frontend
+                          sends <code>/api</code>, and the address link
+                          previews, <code>robots.txt</code> and
+                          <code>sitemap.xml</code> give; all default to
+                          localhost
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>
+                  More in
+                  <a
+                    href="{{REPO_URL}}/blob/main/docs/guides/data-sources-and-attribution.md"
+                    >Data sources and attribution</a
+                  >,
+                  <a
+                    href="{{REPO_URL}}/blob/main/docs/guides/ai-explanations.md"
+                    >AI Explanations</a
+                  >
+                  and
+                  <a
+                    href="{{REPO_URL}}/blob/main/docs/guides/layers-and-street-view.md#street-view"
+                    >Street View</a
+                  >.
+                </p>
+              </article>
+
+              <article class="setup-step" id="setup-run">
+                <h3><span class="step-number">5</span> Run Location Scout</h3>
+                <pre tabindex="0"><code>pnpm dev</code></pre>
+                <p>
+                  This starts the backend on
+                  <a href="http://localhost:8787">http://localhost:8787</a> and
+                  the frontend on
+                  <a href="http://localhost:5173">http://localhost:5173</a>,
+                  which sends <code>/api</code> requests to the backend through
+                  a proxy. Both read <code>.env</code>.
+                </p>
+                <ul>
+                  <li>
+                    <strong>Search</strong> for a postcode, which goes straight
+                    to its Location, or an address, looked up with Nominatim;
+                    pick one if several match. Or click anywhere on the map.
+                  </li>
+                  <li>
+                    <strong>Choose a Search Radius</strong> of 0.25, 0.5 (the
+                    default) or 1 mile, and a <strong>Scout Mode</strong>.
+                  </li>
+                  <li>
+                    <strong>Bookmark or share</strong> the page's address: it
+                    keeps the Location, Search Radius, Scout Mode, your own
+                    weights and the Layers you switched off.
+                  </li>
+                </ul>
+                <p class="note">
+                  Location Scout covers England only: a Location in Wales or
+                  Scotland says so, and nothing loads. See
+                  <a
+                    href="{{REPO_URL}}/blob/main/docs/guides/getting-started.md#run"
+                    >Run</a
+                  >
+                  in Getting started.
+                </p>
+              </article>
+
+              <article class="setup-step" id="setup-data">
+                <h3>
+                  <span class="step-number">6</span> Prepare land data
+                  (optional)
+                </h3>
+                <p>
+                  The app works without this step. Only the Land, Schools and
+                  Demographics Layers, and the scores that use them, wait for
+                  it, each saying to run <code>pnpm data:prepare</code>:
+                </p>
+                <pre
+                  tabindex="0"
+                ><code>pnpm data:prepare                      <span class="comment"># England-wide datasets + Ashfield land (default)</span>
+pnpm data:prepare --area "Mansfield"   <span class="comment"># add more councils</span>
+pnpm data:prepare --all                <span class="comment"># every English council: about 6.8 GB, hours</span></code></pre>
+                <p>
+                  It downloads council and output area boundaries, Census 2021
+                  and household income, schools and their Ofsted outcomes, and
+                  each Land Coverage Area's INSPIRE Index Polygons and
+                  OpenStreetMap extracts, and converts them with DuckDB into
+                  GeoParquet in the git-ignored <code>data/</code>. Re-run it
+                  monthly for new INSPIRE data.
+                </p>
+                <p class="note">
+                  Details in
+                  <a
+                    href="{{REPO_URL}}/blob/main/docs/guides/preparing-land-data.md"
+                    >Preparing land data</a
+                  >.
+                </p>
+              </article>
+
+              <article class="setup-step" id="setup-tests">
+                <h3><span class="step-number">7</span> Run the tests</h3>
+                <pre
+                  tabindex="0"
+                ><code>pnpm test       <span class="comment"># unit tests, no network calls</span>
+pnpm test:e2e   <span class="comment"># Playwright, against a stubbed backend</span>
+pnpm smoke      <span class="comment"># opt-in: calls each live Data Source once</span>
+pnpm bench      <span class="comment"># opt-in: times a Search Area against the targets</span></code></pre>
+                <p>
+                  The end-to-end tests drive Chromium, which Playwright
+                  downloads once:
+                </p>
+                <pre
+                  tabindex="0"
+                ><code>pnpm --filter @location-scout/web exec playwright install --with-deps chromium</code></pre>
+                <p class="note">
+                  <code>pnpm test:ai</code> is the opt-in check of AI
+                  Explanations against recorded inputs. More in
+                  <a href="{{REPO_URL}}/blob/main/docs/guides/testing.md"
+                    >Testing</a
+                  >.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="docs" class="section" aria-labelledby="docs-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Go deeper</p>
+            <h2 id="docs-title">Documentation</h2>
+            <p class="section-intro">
+              How Location Scout works, part by part, is in the guides in the
+              repository.
+            </p>
+          </div>
+          <ul class="doc-links">
+            <li>
+              <a
+                class="doc-card"
+                href="{{REPO_URL}}/blob/main/docs/guides/getting-started.md"
+              >
+                <span class="doc-title">Getting started</span>
+                <span class="doc-text"
+                  >Prerequisites, install, configure and run; searching and the
+                  URL.</span
+                >
+                <svg class="icon doc-arrow" aria-hidden="true">
+                  <use href="#i-arrow-up-right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc-card"
+                href="{{REPO_URL}}/blob/main/docs/guides/layers-and-street-view.md"
+              >
+                <span class="doc-title">Layers and Street View</span>
+                <span class="doc-text"
+                  >Every Layer, its Data Source and statistics, and the optional
+                  Street View panel.</span
+                >
+                <svg class="icon doc-arrow" aria-hidden="true">
+                  <use href="#i-arrow-up-right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc-card"
+                href="{{REPO_URL}}/blob/main/docs/guides/scores-highlights-and-scout-modes.md"
+              >
+                <span class="doc-title"
+                  >Scores, Highlights and Scout Modes</span
+                >
+                <span class="doc-text"
+                  >Every rule, the Location Score, and weights of your
+                  own.</span
+                >
+                <svg class="icon doc-arrow" aria-hidden="true">
+                  <use href="#i-arrow-up-right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc-card"
+                href="{{REPO_URL}}/blob/main/docs/guides/dashboard.md"
+              >
+                <span class="doc-title">The Dashboard</span>
+                <span class="doc-text"
+                  >What each Widget shows, and moving, resizing and hiding
+                  them.</span
+                >
+                <svg class="icon doc-arrow" aria-hidden="true">
+                  <use href="#i-arrow-up-right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc-card"
+                href="{{REPO_URL}}/blob/main/docs/guides/saved-locations-compare-and-report.md"
+              >
+                <span class="doc-title"
+                  >Saved Locations, comparing and the printable report</span
+                >
+                <span class="doc-text"
+                  >Saving in the browser, import and export, comparing 2 to 4,
+                  and the report.</span
+                >
+                <svg class="icon doc-arrow" aria-hidden="true">
+                  <use href="#i-arrow-up-right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc-card"
+                href="{{REPO_URL}}/blob/main/docs/guides/preparing-land-data.md"
+              >
+                <span class="doc-title">Preparing land data</span>
+                <span class="doc-text"
+                  ><code>pnpm data:prepare</code>: what it downloads and where
+                  it puts it.</span
+                >
+                <svg class="icon doc-arrow" aria-hidden="true">
+                  <use href="#i-arrow-up-right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc-card"
+                href="{{REPO_URL}}/blob/main/docs/guides/ai-explanations.md"
+              >
+                <span class="doc-title">AI Explanations</span>
+                <span class="doc-text"
+                  >The optional Explain buttons, and how they are kept to the
+                  figures.</span
+                >
+                <svg class="icon doc-arrow" aria-hidden="true">
+                  <use href="#i-arrow-up-right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc-card"
+                href="{{REPO_URL}}/blob/main/docs/guides/data-sources-and-attribution.md"
+              >
+                <span class="doc-title">Data sources and attribution</span>
+                <span class="doc-text"
+                  >Every Data Source, using the public APIs responsibly, and
+                  their credits.</span
+                >
+                <svg class="icon doc-arrow" aria-hidden="true">
+                  <use href="#i-arrow-up-right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc-card"
+                href="{{REPO_URL}}/blob/main/docs/guides/appearance-accessibility-and-seo.md"
+              >
+                <span class="doc-title">Appearance, accessibility and SEO</span>
+                <span class="doc-text"
+                  >Themes, the footer and its policies, WCAG 2.2 AA and link
+                  previews.</span
+                >
+                <svg class="icon doc-arrow" aria-hidden="true">
+                  <use href="#i-arrow-up-right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc-card"
+                href="{{REPO_URL}}/blob/main/docs/guides/testing.md"
+              >
+                <span class="doc-title">Testing</span>
+                <span class="doc-text"
+                  >Unit, AI and end-to-end tests, the smoke script and the
+                  benchmark.</span
+                >
+                <svg class="icon doc-arrow" aria-hidden="true">
+                  <use href="#i-arrow-up-right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc-card"
+                href="{{REPO_URL}}/blob/main/docs/guides/developing.md"
+              >
+                <span class="doc-title">Developing Location Scout</span>
+                <span class="doc-text"
+                  >Adding a Scout Mode, endpoint, Data Source, Layer or
+                  dataset.</span
+                >
+                <svg class="icon doc-arrow" aria-hidden="true">
+                  <use href="#i-arrow-up-right" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="doc-card"
+                href="{{REPO_URL}}/blob/main/docs/product-requirements-document/location-scout-prd.md"
+              >
+                <span class="doc-title">Product Requirements Document</span>
+                <span class="doc-text"
+                  >The full product spec, Phase 1 in detail and the phases after
+                  it.</span
+                >
+                <svg class="icon doc-arrow" aria-hidden="true">
+                  <use href="#i-arrow-up-right" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="doc-more">
+            The <a href="{{REPO_URL}}#readme">README</a>, the
+            <a href="{{REPO_URL}}/blob/main/GLOSSARY.md">glossary</a> and the
+            <a href="{{REPO_URL}}/tree/main/docs/architectural-decision-record"
+              >architectural decision records</a
+            >.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="licence"
+        class="section section-alt section-compact"
+        aria-labelledby="licence-title"
+      >
+        <div class="container narrow licence">
+          <span class="card-icon">
+            <svg class="icon" aria-hidden="true"><use href="#i-scale" /></svg>
+          </span>
+          <div>
+            <h2 id="licence-title">Licence</h2>
+            <p>
+              Location Scout has not chosen its licence yet, so for now no
+              licence is granted for its code.
+            </p>
+            <p>
+              The data it shows stays under each Data Source's own licence,
+              which the app credits beside it: © OpenStreetMap contributors
+              under the
+              <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>;
+              police.uk, HM Land Registry and planning.data.gov.uk data under
+              the
+              <a
+                href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                >Open Government Licence v3.0</a
+              >; and Ordnance Survey data © Crown copyright and database right.
+              This website's fonts, Inter and JetBrains Mono, are under the SIL
+              Open Font License 1.1, and its icons are Lucide's, under the ISC
+              licence.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta-inner">
+            <h2 id="cta-title">Get Location Scout</h2>
+            <p>The code, the issues and every guide are on GitHub.</p>
+            <div class="cta-actions">
+              <a class="button button-inverse button-large" href="{{REPO_URL}}">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-github-mark" />
+                </svg>
+                View on GitHub
+              </a>
+              <a
+                class="button button-ghost-inverse button-large"
+                href="#quick-start"
+                >Quick start</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The policies. Without JavaScript they are read here, at the
+           footer's links; script.js moves each into a dialog the footer's
+           buttons open, as the app's footer does. -->
+      <div class="policies" id="policies">
+        <section
+          class="policy container narrow"
+          id="privacy-policy"
+          aria-labelledby="privacy-policy-title"
+          data-close-label="Close privacy policy"
+        >
+          <h2 id="privacy-policy-title">Privacy Policy</h2>
+          <div class="policy-body">
+            <p class="policy-updated">Last reviewed: October 2026</p>
+
+            <h3>Who looks after your data</h3>
+            <p>
+              This website, {{SITE_URL}}, is a single static page about Location
+              Scout, published from its repository and hosted by GitHub Pages.
+              It has no accounts, no forms and no comments, and asks you for
+              nothing.
+            </p>
+
+            <h3>What this website collects</h3>
+            <p>
+              Nothing. There is no analytics, no tracking and no advertising.
+              The page sets no cookies, and everything it shows (its text,
+              fonts, icons and screenshots) comes from this site itself, so
+              viewing it sends nothing to anyone else. If you tick a step of the
+              setup guide as done, that tick is kept in your own browser, as the
+              Cookie Policy describes, and never sent anywhere.
+            </p>
+
+            <h3>Who else sees it</h3>
+            <ul>
+              <li>
+                <strong>GitHub</strong> hosts this website. Like any web host,
+                it receives each visitor's IP address and the request their
+                browser makes, and may keep them in its server logs for security
+                and to keep the service running, as set out in the
+                <a
+                  href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                  >GitHub General Privacy Statement</a
+                >.
+              </li>
+              <li>
+                <strong>Links</strong> to GitHub and to other sites, such as
+                Homebrew or the Data Sources, leave this website: what those
+                sites collect is set out in their own privacy policies.
+              </li>
+            </ul>
+
+            <h3>The Location Scout app</h3>
+            <p>
+              The app runs on your own machine and has no accounts. Its backend
+              asks public Data Sources about the places you look up, not about
+              you, and keeps their answers in memory for a while, never in a
+              database. Its own privacy policy, in its footer, sets out what it
+              sends and where.
+            </p>
+
+            <h3>Your rights</h3>
+            <p>
+              This website holds nothing about you. For what GitHub holds, see
+              its privacy statement; for a question about this page,
+              <a href="{{REPO_URL}}/issues">raise an issue on GitHub</a>.
+            </p>
+          </div>
+        </section>
+
+        <section
+          class="policy container narrow"
+          id="terms-and-conditions"
+          aria-labelledby="terms-and-conditions-title"
+          data-close-label="Close terms and conditions"
+        >
+          <h2 id="terms-and-conditions-title">Terms and Conditions</h2>
+          <div class="policy-body">
+            <p class="policy-updated">Last reviewed: October 2026</p>
+
+            <h3>Using this website</h3>
+            <p>
+              This website gives information about Location Scout: what it is,
+              what it needs and how to set it up. By using it, you agree to
+              these terms, and to GitHub's own terms for the GitHub Pages it is
+              hosted on.
+            </p>
+
+            <h3>The software</h3>
+            <p>
+              Location Scout has not chosen its licence yet, so for now no
+              licence is granted for its code, as the Licence section above
+              says.
+            </p>
+
+            <h3>Not advice</h3>
+            <p>
+              The app's scores, Highlights, Land Opportunities and AI
+              Explanations are indications drawn from public data by fixed
+              rules. They are not financial, legal, planning, surveying or
+              property advice. A Land Opportunity only ever warrants
+              investigation: always check ownership, planning and condition with
+              the proper authority or a qualified professional before you act.
+            </p>
+
+            <h3>Data licences and your keys</h3>
+            <p>
+              Each Data Source's data stays under its own licence, such as the
+              Open Government Licence or the Open Database Licence, and its
+              credit is shown beside the data it supplies. Reuse it only as
+              those licences allow, and respect each public service's usage
+              policy. Optional keys you add, for Anthropic, Google, the EPC
+              register, PlanWire or HM Land Registry, are used under those
+              providers' own terms.
+            </p>
+
+            <h3>Names and trademarks</h3>
+            <p>
+              GitHub, Google, Anthropic, Claude and the other products and
+              services named here belong to their owners, and are named only to
+              say what Location Scout works with.
+            </p>
+
+            <h3>No warranty</h3>
+            <p>
+              This website and its instructions are provided as they are,
+              without warranty of any kind. Its authors are not liable for any
+              loss arising from their use, so far as the law allows.
+            </p>
+
+            <h3>Changes</h3>
+            <p>
+              These terms may change with the website; the date above says when
+              they were last reviewed.
+            </p>
+          </div>
+        </section>
+
+        <section
+          class="policy container narrow"
+          id="cookie-policy"
+          aria-labelledby="cookie-policy-title"
+          data-close-label="Close cookie policy"
+        >
+          <h2 id="cookie-policy-title">Cookie Policy</h2>
+          <div class="policy-body">
+            <p class="policy-updated">Last reviewed: October 2026</p>
+
+            <h3>No cookies</h3>
+            <p>
+              This website sets <strong>no cookies</strong>, and uses no
+              analytics, advertising or tracking of any kind. So there is no
+              cookie banner to accept or dismiss.
+            </p>
+
+            <h3>What is kept in your browser</h3>
+            <p>
+              Only if you tick a step of the setup guide as done is anything
+              kept, in your browser's local storage, so the guide remembers
+              where you got to. It never leaves your device.
+            </p>
+            <div
+              class="table-wrap"
+              tabindex="0"
+              role="region"
+              aria-label="Browser storage, scrollable"
+            >
+              <table>
+                <caption class="visually-hidden">
+                  What this website keeps in your browser
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Purpose</th>
+                    <th scope="col">Kept for</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>location-scout-site:setup-done</code></td>
+                    <td>Local storage</td>
+                    <td>The setup guide's steps you ticked as done</td>
+                    <td>Until you clear your browser's site data</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>The Location Scout app</h3>
+            <p>
+              The app you run yourself sets no cookies either. It keeps your
+              appearance settings, Dashboard layout and Saved Locations in your
+              browser's local storage; its own cookie policy, in its footer,
+              lists them.
+            </p>
+
+            <h3>Other sites</h3>
+            <p>
+              Links to GitHub and to other sites leave this website, and those
+              sites may set cookies of their own under their own policies.
+            </p>
+          </div>
+        </section>
+
+        <section
+          class="policy container narrow"
+          id="accessibility"
+          aria-labelledby="accessibility-title"
+          data-close-label="Close accessibility statement"
+        >
+          <h2 id="accessibility-title">Accessibility</h2>
+          <div class="policy-body">
+            <p class="policy-updated">Last reviewed: October 2026</p>
+
+            <div class="status-box">
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-shield-check" />
+              </svg>
+              <p>
+                <strong>Conformance status:</strong> this website is built to
+                meet the Web Content Accessibility Guidelines (WCAG) 2.2 at
+                <strong>Level AA</strong>, as the app is.
+              </p>
+            </div>
+
+            <h3>What we have done</h3>
+            <ul>
+              <li>
+                <strong>Keyboard access</strong> — every link, button, tab and
+                dialog works with a keyboard alone, with a clear focus outline
+                that the sticky header never hides. A “Skip to content” link
+                leads the page.
+              </li>
+              <li>
+                <strong>Screen readers</strong> — one main heading, headings in
+                order and labelled landmarks; every control has a name, every
+                screenshot a description, and copying a command is announced.
+              </li>
+              <li>
+                <strong>Colour and contrast</strong> — text has at least 4.5:1
+                contrast with its background, and controls, icons and focus
+                outlines at least 3:1, in both light and dark mode, which follow
+                your device. Windows Contrast Themes are respected.
+              </li>
+              <li>
+                <strong>Motion</strong> — transitions are short, and smooth
+                scrolling and animation are switched off when your device asks
+                for reduced motion.
+              </li>
+              <li>
+                <strong>Zoom and reflow</strong> — the page reflows down to 320
+                pixels wide and when zoomed to 400%, without scrolling sideways.
+              </li>
+              <li>
+                <strong>Target sizes</strong> — every control is at least 24 by
+                24 pixels, and buttons at least 44 pixels tall on touch screens.
+              </li>
+              <li>
+                <strong>Dialogs</strong> — the screenshot viewer and these
+                policies move focus in, keep it there, close on Escape and hand
+                focus back to whatever opened them.
+              </li>
+              <li>
+                <strong>Without JavaScript</strong> — every part of the page,
+                these policies included, can still be read and reached.
+              </li>
+            </ul>
+
+            <h3>Known limitations</h3>
+            <ul>
+              <li>
+                The widest tables, such as the prerequisites by system, scroll
+                sideways inside their own frame on narrow screens; the frame
+                takes focus, so the arrow keys scroll it.
+              </li>
+              <li>
+                The screenshots show the app's map, whose tiles are not themed;
+                each has a description of what it shows.
+              </li>
+            </ul>
+
+            <h3>Feedback</h3>
+            <p>
+              If something is hard to use, please
+              <a href="{{REPO_URL}}/issues">raise an issue on GitHub</a>
+              saying what you were trying to do, and with which browser and
+              assistive technology.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="favicon.svg" alt="" width="40" height="40" loading="lazy" />
+          <p>
+            <strong>Location Scout</strong><br />
+            Pick any location in England and see everything around it.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-label="This page">
+          <h2 class="footer-heading">On this page</h2>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#quick-start">Quick start</a></li>
+            <li><a href="#setup">Full setup</a></li>
+            <li><a href="#docs">Documentation</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-label="The project">
+          <h2 class="footer-heading">The project</h2>
+          <ul>
+            <li><a href="{{REPO_URL}}">GitHub</a></li>
+            <li><a href="{{REPO_URL}}/issues">Issues</a></li>
+            <li>
+              <a href="{{REPO_URL}}/tree/main/docs/guides">Guides</a>
+            </li>
+            <li><a href="{{REPO_URL}}/blob/main/GLOSSARY.md">Glossary</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-credit-line">
+        <p class="container">
+          The app shows data © OpenStreetMap contributors (ODbL); police.uk, HM
+          Land Registry and planning.data.gov.uk data under the Open Government
+          Licence v3.0; and OS data © Crown copyright and database right. Each
+          source is credited in the app beside its data.
+        </p>
+      </div>
+      <div class="footer-bar">
+        <nav class="container" aria-label="About this website">
+          <ul class="footer-legal">
+            <li>
+              <a
+                class="footer-link footer-credit"
+                href="{{REPO_URL}}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-github-mark" />
+                </svg>
+                Website design<span class="visually-hidden"
+                  >, source on GitHub, opens in a new tab</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="#privacy-policy"
+                data-policy="privacy-policy"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="#terms-and-conditions"
+                data-policy="terms-and-conditions"
+                >Terms and Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="#cookie-policy"
+                data-policy="cookie-policy"
+                >Cookie Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="#accessibility"
+                data-policy="accessibility"
+                >Accessibility</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <p class="visually-hidden" role="status" id="announcer"></p>
+  </body>
+</html>

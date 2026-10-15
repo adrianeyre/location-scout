@@ -1,0 +1,1803 @@
+{
+  "head": {
+    "vars": [
+      "transaction",
+      "postcode",
+      "amount",
+      "date",
+      "propertyType",
+      "estateType",
+      "newBuild",
+      "paon",
+      "saon",
+      "street",
+      "town"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-3321-8922-E063-4804A8C094D0/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "130000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-09-22"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "63" },
+        "street": { "type": "literal", "value": "SILK STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5834E4E9-B9EB-29C7-E063-4804A8C015BC/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5FD" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "120000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-09-16"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/otherPropertyType"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "12" },
+        "street": { "type": "literal", "value": "CURSHAM STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/42C129E4-EC9A-60A9-E063-4804A8C0C25D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1EJ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "185000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-09-15"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "14" },
+        "street": { "type": "literal", "value": "KENSINGTON CLOSE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5834E4E9-BB6C-29C7-E063-4804A8C015BC/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AD" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "116000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-09-11"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "40" },
+        "street": { "type": "literal", "value": "SILK STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4C1B673F-75E7-D8EA-E063-4704A8C0BF7D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1GA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "177000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-09-01"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "15" },
+        "street": { "type": "literal", "value": "LUTHER AVENUE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/402A3A66-D1C1-A7DF-E063-4804A8C0B80D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1BU" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "148000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-08-28"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/otherPropertyType"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "RAILWAY INN" },
+        "street": { "type": "literal", "value": "HIGH PAVEMENT" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/402A3A66-337E-A7DF-E063-4804A8C0B80D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1GA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "115000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-08-21"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "10" },
+        "street": { "type": "literal", "value": "LUTHER AVENUE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/50D10B84-4980-B8D0-E063-4704A8C08D98/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5EQ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "220000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-08-04"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "7" },
+        "street": { "type": "literal", "value": "WINDMILL CLOSE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3DCCB7CA-C838-5B9D-E063-4704A8C0331E/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "102500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-08-01"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "79" },
+        "street": { "type": "literal", "value": "SILK STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3DCCB7CA-4259-5B9D-E063-4704A8C0331E/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AE" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "131500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-07-31"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "11" },
+        "street": { "type": "literal", "value": "CORONATION STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3DCCB7CA-404B-5B9D-E063-4704A8C0331E/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "205000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-07-21"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "6" },
+        "street": { "type": "literal", "value": "CRASTER STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3B5CE842-1001-EE3A-E063-4804A8C0D6F1/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1GA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "155000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-07-18"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "17" },
+        "street": { "type": "literal", "value": "LUTHER AVENUE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/50D10B84-CC2B-B8D0-E063-4704A8C08D98/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1HD" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "122000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-07-14"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "10" },
+        "street": { "type": "literal", "value": "KIRKBY ROAD" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3B5CE842-1228-EE3A-E063-4804A8C0D6F1/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5DA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "215000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-06-26"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "30A" },
+        "street": { "type": "literal", "value": "THE TWITCHELL" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3B5CE842-0F07-EE3A-E063-4804A8C0D6F1/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1DQ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "175000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-06-18"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "10" },
+        "street": { "type": "literal", "value": "SPRING ROAD" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/50D10B84-CC7A-B8D0-E063-4704A8C08D98/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 2AB" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "74000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-06-16"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "36" },
+        "street": { "type": "literal", "value": "LANGFORD STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/42C129E4-EF53-60A9-E063-4804A8C0C25D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AF" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "193000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-05-23"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "21" },
+        "street": { "type": "literal", "value": "COWPASTURE LANE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/36A61A94-D7FF-DEF2-E063-4704A8C046AE/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1GA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "112500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-05-16"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "14" },
+        "street": { "type": "literal", "value": "LUTHER AVENUE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/38EDC0C3-B1FE-0F63-E063-4704A8C00424/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AE" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "92000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-05-16"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "11" },
+        "street": { "type": "literal", "value": "CORONATION STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/38EDC0C3-B155-0F63-E063-4704A8C00424/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4AW" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "76000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-05-15"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "6" },
+        "street": { "type": "literal", "value": "PORTLAND STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-4586-591C-E063-4704A8C00C31/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AB" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "160000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-05-02"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "5" },
+        "street": { "type": "literal", "value": "MILL CROFT" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-3287-8922-E063-4804A8C094D0/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1AQ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "110000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-04-11"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/otherPropertyType"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "THE COTTAGE" },
+        "street": { "type": "literal", "value": "MARKET PLACE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3B5CE842-1216-EE3A-E063-4804A8C0D6F1/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5DA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "208001"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-04-07"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "34B" },
+        "street": { "type": "literal", "value": "THE TWITCHELL" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/402A3A66-337A-A7DF-E063-4804A8C0B80D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1AF" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "160000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-03-28"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "5" },
+        "street": { "type": "literal", "value": "FIREMANS ROW" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-32E5-8922-E063-4804A8C094D0/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4AX" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "485000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-03-28"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/otherPropertyType"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "8" },
+        "street": { "type": "literal", "value": "OUTRAM STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/31C68072-69D4-FEE3-E063-4804A8C04F37/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1GE" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "173000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-03-17"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "46" },
+        "street": { "type": "literal", "value": "STEVENSON CRESCENT" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/31C68072-69DC-FEE3-E063-4804A8C04F37/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1EJ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "155000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-03-14"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "12" },
+        "street": { "type": "literal", "value": "KENSINGTON CLOSE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/36A61A94-D8E7-DEF2-E063-4704A8C046AE/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1EJ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "160000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-03-14"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "6" },
+        "street": { "type": "literal", "value": "KENSINGTON CLOSE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/31C68072-6BB1-FEE3-E063-4804A8C04F37/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5EQ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "225000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-03-06"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "26" },
+        "street": { "type": "literal", "value": "WINDMILL CLOSE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/34222872-A01B-4D2B-E063-4704A8C07853/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 2AB" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "72000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-03-06"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "51" },
+        "street": { "type": "literal", "value": "LANGFORD STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/34222872-9E38-4D2B-E063-4704A8C07853/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1HD" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "127000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-03-04"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "20" },
+        "street": { "type": "literal", "value": "KIRKBY ROAD" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/31C68072-6A0A-FEE3-E063-4804A8C04F37/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1GA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "165000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-02-28"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "19" },
+        "street": { "type": "literal", "value": "LUTHER AVENUE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-E891-591C-E063-4704A8C00C31/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1BU" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "214000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-02-17"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/otherPropertyType"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "SHAKESPEARE INN" },
+        "street": { "type": "literal", "value": "HIGH PAVEMENT" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2F7F2B43-51D5-E08F-E063-4804A8C05A49/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AH" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "153000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-02-14"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "9" },
+        "street": { "type": "literal", "value": "BANK AVENUE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2F7F2B43-523E-E08F-E063-4804A8C05A49/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4AW" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "130000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-02-14"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "18" },
+        "street": { "type": "literal", "value": "PORTLAND STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4C1B6740-0B11-D8EA-E063-4704A8C0BF7D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4BA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "1380000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-02-13"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/otherPropertyType"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "1 - 5" },
+        "street": { "type": "literal", "value": "OUTRAM STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2F7F2B43-5271-E08F-E063-4804A8C05A49/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "99950"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-02-07"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "37" },
+        "street": { "type": "literal", "value": "SILK STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4777E0AF-9DC7-5D59-E063-4804A8C09F8E/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1DG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "295000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-02-04"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/otherPropertyType"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "18A" },
+        "street": { "type": "literal", "value": "LOW STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2F7F2B43-512D-E08F-E063-4804A8C05A49/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1AR" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "252950"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-01-31"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "6" },
+        "street": { "type": "literal", "value": "CHURCH MEWS" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/31C68072-69A3-FEE3-E063-4804A8C04F37/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 2AF" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "195000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-01-31"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "14" },
+        "street": { "type": "literal", "value": "CAVENDISH AVENUE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/31C68072-6BBC-FEE3-E063-4804A8C04F37/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5EQ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "210000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-01-31"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "9" },
+        "street": { "type": "literal", "value": "WINDMILL CLOSE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/31C68072-FFE8-FEE3-E063-4804A8C04F37/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "110000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-01-31"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "11" },
+        "street": { "type": "literal", "value": "SILK STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2F7F2B43-DE1E-E08F-E063-4804A8C05A49/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4AX" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "470000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-01-30"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/otherPropertyType"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "8" },
+        "street": { "type": "literal", "value": "OUTRAM STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-E944-591C-E063-4704A8C00C31/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1BU" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "275000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-01-29"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/otherPropertyType"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "UNITED REFORMED CHURCH" },
+        "street": { "type": "literal", "value": "HIGH PAVEMENT" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2F7F2B43-DE41-E08F-E063-4804A8C05A49/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 2AB" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "67500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-01-27"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "51" },
+        "street": { "type": "literal", "value": "LANGFORD STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2F7F2B43-5133-E08F-E063-4804A8C05A49/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1AR" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "225000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-01-20"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "10" },
+        "street": { "type": "literal", "value": "CHURCH MEWS" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2F7F2B43-5377-E08F-E063-4804A8C05A49/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1EJ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "125000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-01-15"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "9" },
+        "street": { "type": "literal", "value": "KENSINGTON CLOSE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B6-B8F0-1095-E063-4704A8C048D4/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AE" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "170000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-12-13"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "19" },
+        "street": { "type": "literal", "value": "CORONATION STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/34222872-9E30-4D2B-E063-4704A8C07853/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1HB" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "220000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-11-21"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "5" },
+        "street": { "type": "literal", "value": "KIRKBY ROAD" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3DCCB7CA-3F32-5B9D-E063-4704A8C0331E/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AB" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "192000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-11-21"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/semi-detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "8" },
+        "street": { "type": "literal", "value": "MILL CROFT" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2859C1AD-005D-52B4-E063-4804A8C05948/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1AN" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "120000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-10-28"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/otherPropertyType"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "THE MORVEN ROOMS" },
+        "street": { "type": "literal", "value": "MORVEN AVENUE" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/402A3A66-D18B-A7DF-E063-4804A8C0B80D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1FE" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "160000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-10-18"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/otherPropertyType"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "69A" },
+        "street": { "type": "literal", "value": "CHURCH STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/25E9DA81-3851-555E-E063-4704A8C066F2/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "232000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-10-11"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "5" },
+        "street": { "type": "literal", "value": "CRASTER STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/25E9DA81-E88D-555E-E063-4704A8C066F2/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 2AB" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "90000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-10-10"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/terraced"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "45" },
+        "street": { "type": "literal", "value": "LANGFORD STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      }
+    ]
+  }
+}

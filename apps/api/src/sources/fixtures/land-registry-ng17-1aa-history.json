@@ -1,0 +1,927 @@
+{
+  "head": { "vars": ["sold", "transaction", "amount", "date"] },
+  "results": {
+    "bindings": [
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/42C129E4-F0CB-60A9-E063-4804A8C0C25D/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/42C129E4-F0CB-60A9-E063-4804A8C0C25D/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "195000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-10-10"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/42C129E4-F0CB-60A9-E063-4804A8C0C25D/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3372675A-F9BA-49E4-BA6E-A1FDB628A25F/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "129950"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2014-02-28"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/42C129E4-F0E6-60A9-E063-4804A8C0C25D/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/42C129E4-F0E6-60A9-E063-4804A8C0C25D/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "190000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-10-15"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/42C129E4-F0E6-60A9-E063-4804A8C0C25D/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2AC10E4F-E0CD-1AF6-E050-A8C063052BA1/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "134950"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2015-09-22"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B6-B94E-1095-E063-4704A8C048D4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B6-B94E-1095-E063-4704A8C048D4/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "184000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-10-14"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B6-B94E-1095-E063-4704A8C048D4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/D707E535-BC4F-0AD9-E053-6B04A8C067CC/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "116500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-07-06"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B6-BB6F-1095-E063-4704A8C048D4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B6-BB6F-1095-E063-4704A8C048D4/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "215000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-10-22"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B6-BB6F-1095-E063-4704A8C048D4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/A96E4ACC-6D2A-9205-E053-6C04A8C0DA09/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "159000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2019-09-06"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B6-BB6F-1095-E063-4704A8C048D4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/23B6165E-B2F4-FCF4-E050-A8C0620577FA/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "142950"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2015-09-18"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B7-4771-1095-E063-4704A8C048D4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B7-4771-1095-E063-4704A8C048D4/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "150000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-10-31"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B7-4771-1095-E063-4704A8C048D4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/E90BE469-820C-44F1-91F6-47C66BEC8F91/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "80000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2015-04-20"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B7-4771-1095-E063-4704A8C048D4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/335A14C6-5256-4262-85FC-3C0D33E8DC5D/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "62000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2012-09-24"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B7-4860-1095-E063-4704A8C048D4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B7-4860-1095-E063-4704A8C048D4/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "145000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-10-30"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B7-4860-1095-E063-4704A8C048D4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/6C55225D-1B71-4809-ACC6-F96A48952611/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "100000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2010-04-20"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4777E0AF-02A2-5D59-E063-4804A8C09F8E/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4777E0AF-02A2-5D59-E063-4804A8C09F8E/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "102500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-11-21"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4777E0AF-04A5-5D59-E063-4804A8C09F8E/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4777E0AF-04A5-5D59-E063-4804A8C09F8E/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "280000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-12-12"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4777E0AF-04A5-5D59-E063-4804A8C09F8E/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/FD226036-1853-4CB7-E053-4804A8C00430/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "252500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-03-31"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-4151-591C-E063-4704A8C00C31/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-4151-591C-E063-4704A8C00C31/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "186500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-12-19"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-4151-591C-E063-4704A8C00C31/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/12A8BAB6-7B64-2125-E063-4804A8C08CC1/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "151500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-11-24"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-4302-591C-E063-4704A8C00C31/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-4302-591C-E063-4704A8C00C31/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "350000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-01-09"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-4302-591C-E063-4704A8C00C31/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3E6F9FCF-A3F1-4BD7-9B33-6594CF9315F0/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "229950"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2013-10-15"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-4302-591C-E063-4704A8C00C31/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/14239EA6-5D1B-494E-B4D5-109E340EE51D/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "200000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2009-08-14"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-4302-591C-E063-4704A8C00C31/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3556EECC-7B0B-4DC9-897A-F7BACB3ED20F/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "92300"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2000-11-30"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-4312-591C-E063-4704A8C00C31/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-4312-591C-E063-4704A8C00C31/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "225000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-01-14"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-4312-591C-E063-4704A8C00C31/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3914047A-0380-3206-E050-A8C063057647/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "170000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2016-07-28"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-E834-591C-E063-4704A8C00C31/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-E834-591C-E063-4704A8C00C31/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "142000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-11-27"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-E834-591C-E063-4704A8C00C31/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/64342BFF-5E28-422C-E053-6C04A8C0FB8A/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "67000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2017-12-19"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-E8DA-591C-E063-4704A8C00C31/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-E8DA-591C-E063-4704A8C00C31/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "180000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-01-06"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-328E-8922-E063-4804A8C094D0/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-328E-8922-E063-4804A8C094D0/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "141000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-02-16"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-32AD-8922-E063-4804A8C094D0/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-32AD-8922-E063-4804A8C094D0/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "74000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-10-17"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-336C-8922-E063-4804A8C094D0/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-336C-8922-E063-4804A8C094D0/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "130000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-02-20"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-336C-8922-E063-4804A8C094D0/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/8B19E789-198E-43B0-91C3-C727EDEC8BE7/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "67000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2013-03-20"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-33AA-8922-E063-4804A8C094D0/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-33AA-8922-E063-4804A8C094D0/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "160000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-02-06"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-33AA-8922-E063-4804A8C094D0/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2F7F2B43-5377-E08F-E063-4804A8C05A49/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "125000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-01-15"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/50D10B84-47BD-B8D0-E063-4704A8C08D98/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/50D10B84-47BD-B8D0-E063-4704A8C08D98/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "190000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-01-28"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/50D10B84-4909-B8D0-E063-4704A8C08D98/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/50D10B84-4909-B8D0-E063-4704A8C08D98/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "290000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-04-09"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/50D10B84-4909-B8D0-E063-4704A8C08D98/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/23B6165E-B150-FCF4-E050-A8C0620577FA/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "135000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2015-09-22"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5340B1C5-AB53-8052-E063-4804A8C06EE4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5340B1C5-AB53-8052-E063-4804A8C06EE4/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "105000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-05-01"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5340B1C5-AB53-8052-E063-4804A8C06EE4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/EA3278AA-5067-2676-E053-6B04A8C015F8/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "100000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-05-26"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5340B1C5-AB53-8052-E063-4804A8C06EE4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/471BD537-B54A-4E85-8FB3-1C488AEDAFFD/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "55000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2011-09-26"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5340B1C5-AC36-8052-E063-4804A8C06EE4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5340B1C5-AC36-8052-E063-4804A8C06EE4/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "260000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-04-30"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5340B1C5-AC36-8052-E063-4804A8C06EE4/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/0B853950-4633-69A5-E063-4704A8C07DAC/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "245000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-05-13"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5834E4E9-B9F3-29C7-E063-4804A8C015BC/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5834E4E9-B9F3-29C7-E063-4804A8C015BC/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "250000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-04-28"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5A7B802C-F4F3-1886-E063-4704A8C021AE/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5A7B802C-F4F3-1886-E063-4704A8C021AE/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "170000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-10-24"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5A7B802C-F597-1886-E063-4704A8C021AE/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5A7B802C-F597-1886-E063-4704A8C021AE/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "173000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-05-29"
+        }
+      },
+      {
+        "sold": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5A7B802C-F597-1886-E063-4704A8C021AE/current"
+        },
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B6-B93C-1095-E063-4704A8C048D4/current"
+        },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "183500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-10-06"
+        }
+      }
+    ]
+  }
+}

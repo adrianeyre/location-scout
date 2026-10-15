@@ -1,0 +1,1557 @@
+{
+  "head": {
+    "vars": [
+      "transaction",
+      "postcode",
+      "amount",
+      "date",
+      "paon",
+      "saon",
+      "street",
+      "town"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5A7B802D-835A-1886-E063-4704A8C021AE/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 8DD" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "100000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-07-14"
+        },
+        "paon": { "type": "literal", "value": "44" },
+        "street": { "type": "literal", "value": "HARCOURT STREET" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/559C5AD5-F565-AFE3-E063-4804A8C004A4/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5ES" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "380000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-05-28"
+        },
+        "paon": { "type": "literal", "value": "DRAKEHOUSE COURT" },
+        "saon": { "type": "literal", "value": "UNIT 3" },
+        "street": { "type": "literal", "value": "HAMILTON ROAD" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5834E4E9-B9F3-29C7-E063-4804A8C015BC/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4AX" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "250000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-04-28"
+        },
+        "paon": { "type": "literal", "value": "2B" },
+        "street": { "type": "literal", "value": "OUTRAM STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5340B1C6-2B42-8052-E063-4804A8C06EE4/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4PN" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "152000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-03-27"
+        },
+        "paon": { "type": "literal", "value": "45" },
+        "street": { "type": "literal", "value": "TOM STIMPSON WAY" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5340B1C6-2B43-8052-E063-4804A8C06EE4/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4PN" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "152000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-03-27"
+        },
+        "paon": { "type": "literal", "value": "45" },
+        "street": { "type": "literal", "value": "TOM STIMPSON WAY" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-E8DA-591C-E063-4704A8C00C31/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4AX" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "180000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2026-01-06"
+        },
+        "paon": { "type": "literal", "value": "2" },
+        "street": { "type": "literal", "value": "OUTRAM STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5834E4E9-BB72-29C7-E063-4804A8C015BC/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4GG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "214000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-12-22"
+        },
+        "paon": { "type": "literal", "value": "8" },
+        "street": { "type": "literal", "value": "CHATSWORTH STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-E81C-591C-E063-4704A8C00C31/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7LA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "160000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-12-19"
+        },
+        "paon": { "type": "literal", "value": "A S D FABRICATIONS" },
+        "street": { "type": "literal", "value": "BYRON AVENUE" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4777E0AF-9E42-5D59-E063-4804A8C09F8E/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7BJ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "193500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-11-19"
+        },
+        "paon": { "type": "literal", "value": "92" },
+        "street": { "type": "literal", "value": "LOWMOOR ROAD" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-32AD-8922-E063-4804A8C094D0/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1DA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "74000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-10-17"
+        },
+        "paon": { "type": "literal", "value": "39" },
+        "street": { "type": "literal", "value": "FOREST STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5834E4E9-B9EB-29C7-E063-4804A8C015BC/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5FD" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "120000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-09-16"
+        },
+        "paon": { "type": "literal", "value": "12" },
+        "street": { "type": "literal", "value": "CURSHAM STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5834E4E9-BB36-29C7-E063-4804A8C015BC/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4GG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "85000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-09-09"
+        },
+        "paon": { "type": "literal", "value": "81" },
+        "street": { "type": "literal", "value": "CHATSWORTH STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/402A3A66-D1C1-A7DF-E063-4804A8C0B80D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1BU" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "148000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-08-28"
+        },
+        "paon": { "type": "literal", "value": "RAILWAY INN" },
+        "street": { "type": "literal", "value": "HIGH PAVEMENT" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/50D10B84-CBE1-B8D0-E063-4704A8C08D98/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7LE" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "465000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-07-18"
+        },
+        "paon": {
+          "type": "literal",
+          "value": "PLASMET PRECISION ENGINEERS LTD"
+        },
+        "street": { "type": "literal", "value": "UNITY ROAD" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/50D10B84-CD34-B8D0-E063-4704A8C08D98/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 8GJ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "1000000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-05-20"
+        },
+        "paon": { "type": "literal", "value": "UNIT 3" },
+        "street": {
+          "type": "literal",
+          "value": "SOUTHWELL LANE INDUSTRIAL ESTATE"
+        },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4C1B6740-0B2D-D8EA-E063-4704A8C0BF7D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7DG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "141000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-05-09"
+        },
+        "paon": { "type": "literal", "value": "UNIT 5" },
+        "street": { "type": "literal", "value": "LOWMOOR COURT" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/42C129E5-9477-60A9-E063-4804A8C0C25D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7ET" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "1614416"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-04-06"
+        },
+        "paon": { "type": "literal", "value": "SANGLIER LTD" },
+        "street": { "type": "literal", "value": "SHELLEY CLOSE" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-32E5-8922-E063-4804A8C094D0/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4AX" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "485000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-03-28"
+        },
+        "paon": { "type": "literal", "value": "8" },
+        "street": { "type": "literal", "value": "OUTRAM STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/44F406B7-47B6-1095-E063-4704A8C048D4/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7AB" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "235000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-03-21"
+        },
+        "paon": { "type": "literal", "value": "2A" },
+        "street": { "type": "literal", "value": "PORTLAND STREET" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-E891-591C-E063-4704A8C00C31/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1BU" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "214000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-02-17"
+        },
+        "paon": { "type": "literal", "value": "SHAKESPEARE INN" },
+        "street": { "type": "literal", "value": "HIGH PAVEMENT" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4E75C29E-33B5-8922-E063-4804A8C094D0/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7AQ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "190000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-02-17"
+        },
+        "paon": { "type": "literal", "value": "29 - 31" },
+        "street": { "type": "literal", "value": "STATION STREET" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4C1B6740-0B11-D8EA-E063-4704A8C0BF7D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4BA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "1380000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-02-13"
+        },
+        "paon": { "type": "literal", "value": "1 - 5" },
+        "street": { "type": "literal", "value": "OUTRAM STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4777E0AF-9DC7-5D59-E063-4804A8C09F8E/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1DG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "295000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-02-04"
+        },
+        "paon": { "type": "literal", "value": "18A" },
+        "street": { "type": "literal", "value": "LOW STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2F7F2B43-DE1E-E08F-E063-4804A8C05A49/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4AX" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "470000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-01-30"
+        },
+        "paon": { "type": "literal", "value": "8" },
+        "street": { "type": "literal", "value": "OUTRAM STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/49E87C32-E944-591C-E063-4704A8C00C31/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1BU" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "275000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-01-29"
+        },
+        "paon": { "type": "literal", "value": "UNITED REFORMED CHURCH" },
+        "street": { "type": "literal", "value": "HIGH PAVEMENT" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/402A3A66-D1B6-A7DF-E063-4804A8C0B80D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7JZ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "260000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-11-13"
+        },
+        "paon": { "type": "literal", "value": "PEACH INTERIORS" },
+        "street": { "type": "literal", "value": "SIDINGS ROAD" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3DCCB7CA-C7B9-5B9D-E063-4704A8C0331E/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7LA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "2718831"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-10-04"
+        },
+        "paon": { "type": "literal", "value": "UNIT 3" },
+        "saon": { "type": "literal", "value": "ICON HOUSE" },
+        "street": { "type": "literal", "value": "BYRON AVENUE" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2D4D7609-E845-BDF9-E063-4804A8C0672F/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4AX" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "440000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-09-25"
+        },
+        "paon": { "type": "literal", "value": "8" },
+        "street": { "type": "literal", "value": "OUTRAM STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2D4D7609-E923-BDF9-E063-4804A8C0672F/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4HN" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "131000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-07-22"
+        },
+        "paon": { "type": "literal", "value": "4" },
+        "street": { "type": "literal", "value": "UNWIN ROAD" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2859C1AD-0040-52B4-E063-4804A8C05948/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7GR" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "325000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-06-28"
+        },
+        "paon": { "type": "literal", "value": "REGENT BUILDINGS, 2" },
+        "street": { "type": "literal", "value": "DIAMOND AVENUE" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/1C3E72FF-12C3-F410-E063-4804A8C0DFA6/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AY" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "80000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-06-12"
+        },
+        "paon": { "type": "literal", "value": "11" },
+        "street": { "type": "literal", "value": "LEAMINGTON BUILDINGS" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/1EAE3DF7-6E08-9EB1-E063-4704A8C09D02/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AY" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "35000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-06-12"
+        },
+        "paon": { "type": "literal", "value": "3" },
+        "street": { "type": "literal", "value": "LEAMINGTON BUILDINGS" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3B5CE842-A1FE-EE3A-E063-4804A8C0D6F1/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5EL" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "200000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-06-11"
+        },
+        "paon": { "type": "literal", "value": "UNIT 1" },
+        "street": { "type": "literal", "value": "UNION STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/1C3E72FF-1200-F410-E063-4804A8C0DFA6/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7BT" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "950000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-05-30"
+        },
+        "paon": { "type": "literal", "value": "LOXLEY LODGE NURSING HOME" },
+        "street": { "type": "literal", "value": "SCHOOL STREET" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/1C3E72FF-126D-F410-E063-4804A8C0DFA6/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7DG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "135000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-05-24"
+        },
+        "paon": { "type": "literal", "value": "UNIT 3" },
+        "street": { "type": "literal", "value": "LOWMOOR COURT" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/3B5CE842-A0D8-EE3A-E063-4804A8C0D6F1/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7AQ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "240000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-04-30"
+        },
+        "paon": { "type": "literal", "value": "29 - 31" },
+        "street": { "type": "literal", "value": "STATION STREET" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/36A61A95-58F2-DEF2-E063-4704A8C046AE/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7BB" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "2292290"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-04-04"
+        },
+        "paon": { "type": "literal", "value": "KINGSWAY GARAGE" },
+        "street": { "type": "literal", "value": "KINGSWAY" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/1A0C5C64-0369-7CBE-E063-4804A8C06C96/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7BQ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "16440000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-03-19"
+        },
+        "paon": { "type": "literal", "value": "WM MORRISON SUPERMARKETS" },
+        "street": { "type": "literal", "value": "ASHFIELD PRECINCT" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/25E9DA81-E866-555E-E063-4704A8C066F2/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5FF" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "425000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-02-21"
+        },
+        "paon": { "type": "literal", "value": "1" },
+        "street": { "type": "literal", "value": "STATION ROAD" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/1EAE3DF7-6E92-9EB1-E063-4704A8C09D02/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5HN" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "550000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-01-19"
+        },
+        "paon": { "type": "literal", "value": "JUNCTION MILLS" },
+        "saon": { "type": "literal", "value": "UNIT B" },
+        "street": { "type": "literal", "value": "KIRKBY FOLLY ROAD" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/237B17FE-E422-22AC-E063-4804A8C0EA3A/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5LA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "2750000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-01-10"
+        },
+        "paon": { "type": "literal", "value": "FOREST ENTERPRISE CENTRE" },
+        "saon": { "type": "literal", "value": "UNIT 2" },
+        "street": { "type": "literal", "value": "COXMOOR ROAD" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/25E9DA81-E8C9-555E-E063-4704A8C066F2/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7GQ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "150000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-12-20"
+        },
+        "paon": { "type": "literal", "value": "39" },
+        "street": { "type": "literal", "value": "DIAMOND AVENUE" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2D4D7609-E8D3-BDF9-E063-4804A8C0672F/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5LB" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "350000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-12-20"
+        },
+        "paon": { "type": "literal", "value": "CAULDWELL LIVERY" },
+        "street": { "type": "literal", "value": "CAULDWELL ROAD" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/1A0C5C64-0425-7CBE-E063-4804A8C06C96/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7LE" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "440000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-12-04"
+        },
+        "paon": { "type": "literal", "value": "UNIT 17A" },
+        "street": { "type": "literal", "value": "UNITY ROAD" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/152AB734-89DE-E651-E063-4704A8C061D9/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7LJ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "350000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-11-15"
+        },
+        "paon": { "type": "literal", "value": "UNIT F3" },
+        "street": { "type": "literal", "value": "FIELD INDUSTRIAL ESTATE" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/1061746E-DE48-3C34-E063-4804A8C0F9E7/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7AG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "89500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-09-11"
+        },
+        "paon": { "type": "literal", "value": "75" },
+        "street": { "type": "literal", "value": "PORTLAND STREET" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/0B853950-DB76-69A5-E063-4704A8C07DAC/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1BU" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "75000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-08-18"
+        },
+        "paon": { "type": "literal", "value": "SHAKESPEARE INN" },
+        "street": { "type": "literal", "value": "HIGH PAVEMENT" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/045A1899-62A8-9A24-E063-4804A8C048EA/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1DG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "280000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-08-01"
+        },
+        "paon": { "type": "literal", "value": "38" },
+        "street": { "type": "literal", "value": "LOW STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/045A1899-62B5-9A24-E063-4804A8C048EA/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7JB" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "300000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-07-28"
+        },
+        "paon": { "type": "literal", "value": "70A" },
+        "street": { "type": "literal", "value": "MILTON STREET" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/06C9F488-151C-9388-E063-4804A8C0BD98/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 8DQ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "280000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-06-26"
+        },
+        "paon": { "type": "literal", "value": "19A" },
+        "street": { "type": "literal", "value": "HAMPDEN STREET" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/045A1899-62EA-9A24-E063-4804A8C048EA/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4GD" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "120000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-05-31"
+        },
+        "paon": { "type": "literal", "value": "86" },
+        "street": { "type": "literal", "value": "SHORT STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/5834E4E9-BAEF-29C7-E063-4804A8C015BC/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 8SF" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "330000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-03-03"
+        },
+        "paon": { "type": "literal", "value": "4A" },
+        "street": { "type": "literal", "value": "TWICKENHAM ROAD" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/25E9DA81-E902-555E-E063-4704A8C066F2/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 8DB" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "228000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-01-31"
+        },
+        "paon": { "type": "literal", "value": "1" },
+        "street": { "type": "literal", "value": "LANE END" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/F5E8B082-47F8-3A13-E053-6C04A8C060B7/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7AS" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "80000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2023-01-10"
+        },
+        "paon": { "type": "literal", "value": "54" },
+        "street": { "type": "literal", "value": "STATION STREET" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/FD226036-9A24-4CB7-E053-4804A8C00430/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7LA" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "2700000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-12-22"
+        },
+        "paon": { "type": "literal", "value": "UNIT 3" },
+        "saon": { "type": "literal", "value": "ICON HOUSE" },
+        "street": { "type": "literal", "value": "BYRON AVENUE" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/F87E72F9-EBCE-176C-E053-6B04A8C0D2BE/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7AQ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "110000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-11-22"
+        },
+        "paon": { "type": "literal", "value": "3" },
+        "saon": { "type": "literal", "value": "FLAT" },
+        "street": { "type": "literal", "value": "STATION STREET" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/12A8BAB7-0594-2125-E063-4804A8C08CC1/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7DG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "138000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-11-18"
+        },
+        "paon": { "type": "literal", "value": "UNIT 8" },
+        "street": { "type": "literal", "value": "LOWMOOR COURT" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/EED73E76-AC81-6AF3-E053-6C04A8C08ABA/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7HS" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "72000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-19"
+        },
+        "paon": { "type": "literal", "value": "1A" },
+        "street": { "type": "literal", "value": "GLADSTONE STREET" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/EC7AD09A-AD84-9200-E053-6C04A8C0E306/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7DG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "112500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-09-28"
+        },
+        "paon": { "type": "literal", "value": "UNIT 6-7" },
+        "street": { "type": "literal", "value": "LOWMOOR COURT" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/EC7AD09A-AD85-9200-E053-6C04A8C0E306/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7DG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "112500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-09-28"
+        },
+        "paon": { "type": "literal", "value": "UNIT 6-7" },
+        "street": { "type": "literal", "value": "LOWMOOR COURT" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/F87E72F9-EC20-176C-E053-6B04A8C0D2BE/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 1DG" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "18500"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-08-03"
+        },
+        "paon": { "type": "literal", "value": "CRIERSYARD" },
+        "street": { "type": "literal", "value": "LOW STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/EED73E76-AC74-6AF3-E053-6C04A8C08ABA/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7BH" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "60000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-07-14"
+        },
+        "paon": { "type": "literal", "value": "103" },
+        "street": { "type": "literal", "value": "LOWMOOR ROAD" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/EED73E76-AC8C-6AF3-E053-6C04A8C08ABA/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7BH" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "60000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-07-14"
+        },
+        "paon": { "type": "literal", "value": "105A" },
+        "street": { "type": "literal", "value": "LOWMOOR ROAD" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/EED73E76-AC2D-6AF3-E053-6C04A8C08ABA/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4PN" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "168750"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-06-13"
+        },
+        "paon": { "type": "literal", "value": "49" },
+        "street": { "type": "literal", "value": "TOM STIMPSON WAY" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/09266DDC-6A65-AF90-E063-4704A8C02087/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5AE" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "200000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-05-19"
+        },
+        "paon": { "type": "literal", "value": "THE ROYAL FORESTERS" },
+        "street": { "type": "literal", "value": "CORONATION STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/FD226036-9B09-4CB7-E053-4804A8C00430/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 8GJ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "610000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-05-12"
+        },
+        "paon": { "type": "literal", "value": "UNIT 4B" },
+        "street": {
+          "type": "literal",
+          "value": "SOUTHWELL LANE INDUSTRIAL ESTATE"
+        },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/E7B085FD-4206-7E31-E053-6C04A8C0E67F/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5HB" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "285000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-04-14"
+        },
+        "paon": { "type": "literal", "value": "88A" },
+        "street": { "type": "literal", "value": "STATION ROAD" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/DE2D0CE0-91D0-51EE-E053-6C04A8C00671/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7AR" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "1500000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-03-29"
+        },
+        "paon": { "type": "literal", "value": "2" },
+        "street": { "type": "literal", "value": "STATION STREET" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/E073986C-2D52-2134-E053-6C04A8C0233B/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7JZ" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "110000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-02-11"
+        },
+        "paon": { "type": "literal", "value": "PLOT D" },
+        "street": { "type": "literal", "value": "SIDINGS ROAD" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/DBA933FA-8360-669D-E053-6B04A8C0AD56/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7LF" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "170000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-01-31"
+        },
+        "paon": { "type": "literal", "value": "GLOBAL E M C UK LTD" },
+        "street": { "type": "literal", "value": "PROSPECT CLOSE" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/E53EDD2E-B388-83EC-E053-6B04A8C03A59/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5FD" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "115000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-01-21"
+        },
+        "paon": { "type": "literal", "value": "6" },
+        "street": { "type": "literal", "value": "CURSHAM STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/D93B27B1-E035-3100-E053-6C04A8C08887/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 8AH" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "200000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-01-14"
+        },
+        "paon": { "type": "literal", "value": "9 - 11" },
+        "street": { "type": "literal", "value": "URBAN ROAD" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/E53EDD2E-B479-83EC-E053-6B04A8C03A59/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7LE" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "620000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-01-14"
+        },
+        "paon": { "type": "literal", "value": "UNIT 17A" },
+        "street": { "type": "literal", "value": "UNITY ROAD" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/D707E536-8A7F-0AD9-E053-6B04A8C067CC/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7NY" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "3720000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-11-30"
+        },
+        "paon": { "type": "literal", "value": "WEST NOTTS COLLEGE" },
+        "saon": {
+          "type": "literal",
+          "value": "TEXTILE & CLOTHING TRAINING CENTRE"
+        },
+        "street": { "type": "literal", "value": "LOWMOOR ROAD" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/D4D42646-D0AE-27F6-E053-6C04A8C0A572/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 7GR" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "185000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-11-26"
+        },
+        "paon": { "type": "literal", "value": "12" },
+        "street": { "type": "literal", "value": "DIAMOND AVENUE" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/DBA933FA-82D3-669D-E053-6B04A8C0AD56/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 4GN" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "103000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-10-15"
+        },
+        "paon": { "type": "literal", "value": "69" },
+        "street": { "type": "literal", "value": "ST MICHAELS STREET" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      }
+    ]
+  }
+}

@@ -1,0 +1,3566 @@
+[
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122965",
+      "street": { "id": 2240164, "name": "On or near Hardwick Street" },
+      "longitude": "-1.258727"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455688,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125164",
+      "street": { "id": 2240035, "name": "On or near Shopping Area" },
+      "longitude": "-1.261633"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455594,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123441",
+      "street": { "id": 2240343, "name": "On or near Lawn Avenue" },
+      "longitude": "-1.254296"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456871,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122006",
+      "street": { "id": 2239760, "name": "On or near Spring Road" },
+      "longitude": "-1.267859"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455562,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.119122",
+      "street": { "id": 2240128, "name": "On or near Nesbitt Street" },
+      "longitude": "-1.259421"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455543,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.121492",
+      "street": { "id": 2239938, "name": "On or near Windrush Close" },
+      "longitude": "-1.264640"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455542,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125048",
+      "street": { "id": 2239982, "name": "On or near Shopping Area" },
+      "longitude": "-1.262711"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455477,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126713",
+      "street": { "id": 2240017, "name": "On or near Supermarket" },
+      "longitude": "-1.261879"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136457104,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125164",
+      "street": { "id": 2240035, "name": "On or near Shopping Area" },
+      "longitude": "-1.261633"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455420,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.124019",
+      "street": { "id": 2239712, "name": "On or near Hack Lane" },
+      "longitude": "-1.269229"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455525,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.129816",
+      "street": { "id": 2239910, "name": "On or near Paling Crescent" },
+      "longitude": "-1.264677"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136457038,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136457026,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.124932",
+      "street": { "id": 2240194, "name": "On or near Portland Close" },
+      "longitude": "-1.258425"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456304,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125414",
+      "street": { "id": 2240213, "name": "On or near Welbeck Street" },
+      "longitude": "-1.257953"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456281,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.121346",
+      "street": { "id": 2240032, "name": "On or near Windmill Close" },
+      "longitude": "-1.261475"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456896,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125164",
+      "street": { "id": 2240035, "name": "On or near Shopping Area" },
+      "longitude": "-1.261633"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456142,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123441",
+      "street": { "id": 2240343, "name": "On or near Lawn Avenue" },
+      "longitude": "-1.254296"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456904,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.124646",
+      "street": { "id": 2239560, "name": "On or near Lindley Avenue" },
+      "longitude": "-1.273224"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456112,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125164",
+      "street": { "id": 2240035, "name": "On or near Shopping Area" },
+      "longitude": "-1.261633"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456056,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.119136",
+      "street": { "id": 2239873, "name": "On or near Tudor Street" },
+      "longitude": "-1.266025"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456806,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125414",
+      "street": { "id": 2240213, "name": "On or near Welbeck Street" },
+      "longitude": "-1.257953"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456025,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.117501",
+      "street": { "id": 2240170, "name": "On or near Thompson Crescent" },
+      "longitude": "-1.258956"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456411,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.129816",
+      "street": { "id": 2239910, "name": "On or near Paling Crescent" },
+      "longitude": "-1.264677"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456772,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125414",
+      "street": { "id": 2240213, "name": "On or near Welbeck Street" },
+      "longitude": "-1.257953"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455966,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123543",
+      "street": { "id": 2239941, "name": "On or near King Street" },
+      "longitude": "-1.263425"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455800,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125164",
+      "street": { "id": 2240035, "name": "On or near Shopping Area" },
+      "longitude": "-1.261633"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455810,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455989,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127124",
+      "street": { "id": 2240278, "name": "On or near Scarcliffe Court" },
+      "longitude": "-1.256713"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456968,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125164",
+      "street": { "id": 2240035, "name": "On or near Shopping Area" },
+      "longitude": "-1.261633"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455961,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123441",
+      "street": { "id": 2240343, "name": "On or near Lawn Avenue" },
+      "longitude": "-1.254296"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455954,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.116849",
+      "street": { "id": 2240003, "name": "On or near Barnes Crescent" },
+      "longitude": "-1.262553"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455912,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125164",
+      "street": { "id": 2240035, "name": "On or near Shopping Area" },
+      "longitude": "-1.261633"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456578,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123441",
+      "street": { "id": 2240343, "name": "On or near Lawn Avenue" },
+      "longitude": "-1.254296"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456543,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127222",
+      "street": { "id": 2240295, "name": "On or near Penn Street" },
+      "longitude": "-1.256711"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455659,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125164",
+      "street": { "id": 2240035, "name": "On or near Shopping Area" },
+      "longitude": "-1.261633"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455892,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.124932",
+      "street": { "id": 2240194, "name": "On or near Portland Close" },
+      "longitude": "-1.258425"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456510,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455881,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455868,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126507",
+      "street": { "id": 2239929, "name": "On or near Langford Street" },
+      "longitude": "-1.264569"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455309,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125164",
+      "street": { "id": 2240035, "name": "On or near Shopping Area" },
+      "longitude": "-1.261633"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455855,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122032",
+      "street": { "id": 2240326, "name": "On or near Supermarket" },
+      "longitude": "-1.254649"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456464,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122932",
+      "street": { "id": 2240284, "name": "On or near Supermarket" },
+      "longitude": "-1.256247"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136456938,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125414",
+      "street": { "id": 2240213, "name": "On or near Welbeck Street" },
+      "longitude": "-1.257953"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "",
+    "id": 136455839,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "burglary",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125280",
+      "street": { "id": 2239912, "name": "On or near Church Mews" },
+      "longitude": "-1.265293"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "edf89898c7d9c11c8e81fdd2a3ae0a717d0a70ccf8d16f745dc22f39de22c07d",
+    "id": 136451395,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125164",
+      "street": { "id": 2240035, "name": "On or near Shopping Area" },
+      "longitude": "-1.261633"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "d9884aa3bb78da907886d7cf09637ec02b6fe1e4d4d5444d5079eed432d483da",
+    "id": 136450886,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "12d2e9529ab363d3bdd3e06cd0b52a01898de3cc3609272c6ee193f5ca4f66c1",
+    "id": 136452351,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125851",
+      "street": { "id": 2240231, "name": "On or near Bentinck Street" },
+      "longitude": "-1.257363"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "ddc87b1fbb797a58e0834a34a08a45cfe0ce5b37d84f80f315a6a9b66cd55c4d",
+    "id": 136449384,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.120593",
+      "street": { "id": 2240055, "name": "On or near Coburn Street" },
+      "longitude": "-1.260397"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "e90c1b9414d0813e822bd92fb4e307e8a0344a05784389da4e824e4d05b59872",
+    "id": 136449359,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.124027",
+      "street": { "id": 2239984, "name": "On or near Parking Area" },
+      "longitude": "-1.263297"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "b12db4c175467e0b2a094ad2332fd25f7219da3c9381abadb28f32303647eb69",
+    "id": 136448078,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.118115",
+      "street": { "id": 2240074, "name": "On or near Limb Crescent" },
+      "longitude": "-1.259393"
+    },
+    "context": "",
+    "outcome_status": { "category": "Local resolution", "date": "2026-08" },
+    "persistent_id": "9b648b49f0675608f14d239b3d3337ddaa837ca8a1ad2d2eb04d037a392278f4",
+    "id": 136447547,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126507",
+      "street": { "id": 2239929, "name": "On or near Langford Street" },
+      "longitude": "-1.264569"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "566c951d90467f781c189a3d11ed1003131048f78655f997ac39efc036131597",
+    "id": 136449678,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.118115",
+      "street": { "id": 2240074, "name": "On or near Limb Crescent" },
+      "longitude": "-1.259393"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "76c0f7a1bf823fba09ed4cd43ba889aa147d98298855104a403e96c864f543f9",
+    "id": 136451619,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.124298",
+      "street": { "id": 2239909, "name": "On or near Morven Avenue" },
+      "longitude": "-1.264921"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "474cd9aa2d39446399ddcb4831c83627e6d3254e02e86a0e6d93587122eeb5fe",
+    "id": 136452360,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123543",
+      "street": { "id": 2239941, "name": "On or near King Street" },
+      "longitude": "-1.263425"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "e004e9cac98220257645cd04e08519351f578146ed5f5b91456412cbeefc9209",
+    "id": 136448916,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126507",
+      "street": { "id": 2239929, "name": "On or near Langford Street" },
+      "longitude": "-1.264569"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Awaiting court outcome",
+      "date": "2026-07"
+    },
+    "persistent_id": "2ba137173233bd7685bf4d0674c5b9b317d93cd34c856555c2c01c5ac5b0c0a1",
+    "id": 136448969,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.130223",
+      "street": { "id": 2239854, "name": "On or near Percival Close" },
+      "longitude": "-1.266479"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "fbe1769e9e031b2ad725d7e1e1ffed83950209f22ff95de59b8b6400e04a8d24",
+    "id": 136448562,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.124019",
+      "street": { "id": 2239712, "name": "On or near Hack Lane" },
+      "longitude": "-1.269229"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "c0edfc740d010916a29577b8a44498ffe6e3c4441e58ec0de0a9f91f8d9276cb",
+    "id": 136453486,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "criminal-damage-arson",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125164",
+      "street": { "id": 2240035, "name": "On or near Shopping Area" },
+      "longitude": "-1.261633"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "9e82cea58e30b2a74c4f9164d6adec3a76d979478dbc924b7217c2f8eb62fbdf",
+    "id": 136448551,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "drugs",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122652",
+      "street": { "id": 2239615, "name": "On or near Grosvenor Avenue" },
+      "longitude": "-1.270672"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Offender given a caution",
+      "date": "2026-08"
+    },
+    "persistent_id": "57c9c68938c860068127ec479e4e66c81fa1780283fbf8514374fb1e24dd937d",
+    "id": 136449695,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "drugs",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.118115",
+      "street": { "id": 2240074, "name": "On or near Limb Crescent" },
+      "longitude": "-1.259393"
+    },
+    "context": "",
+    "outcome_status": { "category": "Local resolution", "date": "2026-07" },
+    "persistent_id": "5ce3469a98f6f14c162bf2ba57c0b3287e0d0806f1b5d70dd409dbc45516c274",
+    "id": 136447122,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127880",
+      "street": { "id": 2240085, "name": "On or near Petrol Station" },
+      "longitude": "-1.259808"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "a9d3aacfc4ae7da0e414046e774eaf5adffacaa5c44d90efcc5a4732994d0fe8",
+    "id": 136452597,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125414",
+      "street": { "id": 2240213, "name": "On or near Welbeck Street" },
+      "longitude": "-1.257953"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "fe958c27177c8f528d499a5909265133aae5814e137624e7e23bb39fe2e02149",
+    "id": 136453350,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.119836",
+      "street": { "id": 2239987, "name": "On or near Coronation Street" },
+      "longitude": "-1.262920"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "016a3a4f019dbe92e885900e525e0675f6da3c3087b151a5212397b41e82ce6a",
+    "id": 136450799,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122965",
+      "street": { "id": 2240164, "name": "On or near Hardwick Street" },
+      "longitude": "-1.258727"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "3918af494186dff21aa7c38868e67b927dec2de8c56c3a2e2bf4c9957b98f565",
+    "id": 136452671,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127880",
+      "street": { "id": 2240085, "name": "On or near Petrol Station" },
+      "longitude": "-1.259808"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "5465239db06156493aec41e165bd9a2e3588c53af0b173fd9bb0b1a6faaaa4e6",
+    "id": 136446560,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125164",
+      "street": { "id": 2240035, "name": "On or near Shopping Area" },
+      "longitude": "-1.261633"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "fc60555706e487fba9637b032a9b84935fb815bfca004c11b8e3565b577c533b",
+    "id": 136454049,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127880",
+      "street": { "id": 2240085, "name": "On or near Petrol Station" },
+      "longitude": "-1.259808"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "d24e58705ad94a00bdac6f8282539181b29e5298b3830a621d9590c00d3834f2",
+    "id": 136452284,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Further action is not in the public interest",
+      "date": "2026-08"
+    },
+    "persistent_id": "734f6cf5b00bb49b157ece82e889d31e39d2d559b42a70c2be502834cbbd27ca",
+    "id": 136452704,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "c322a0e09c8c29b4aa532a279e78fd3df11fe7369a4e6b4f9adaae4e3b9121d4",
+    "id": 136452550,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "dffc8c1959c6f49b1ca89ea889f494784e54237019d5ca12f00bf557e8309047",
+    "id": 136445956,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.121781",
+      "street": { "id": 2240404, "name": "On or near Heathcote Place" },
+      "longitude": "-1.253428"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "538851badb19d48c2b20943c8a70f09f464ab9832f6e95324f52345d5e53d50d",
+    "id": 136448416,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "c8c6e0b1a03f8fdb085cd12ad2cce80c833cb0841a3c806f18273222b3d03e95",
+    "id": 136453709,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Awaiting court outcome",
+      "date": "2026-08"
+    },
+    "persistent_id": "573ed1ea198ca18f1e971dd97a34d3f2528aeff1099dee72c0c0863bfebde2c2",
+    "id": 136453713,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127880",
+      "street": { "id": 2240085, "name": "On or near Petrol Station" },
+      "longitude": "-1.259808"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "ea7235ff6d5bc2f6b04456815ace241635306f93d9a0b919649932c7c5d3f3b5",
+    "id": 136447821,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-theft",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122965",
+      "street": { "id": 2240164, "name": "On or near Hardwick Street" },
+      "longitude": "-1.258727"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "a8cfea5f1858b7a02ebab1077976b9c4a28ca75673a70cbc7080c75c194cd89c",
+    "id": 136449583,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "possession-of-weapons",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.116849",
+      "street": { "id": 2240003, "name": "On or near Barnes Crescent" },
+      "longitude": "-1.262553"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "b2aecc5436be243317579330eddf2a4e2cea2d2437e474f60124e206414116da",
+    "id": 136448349,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "possession-of-weapons",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "763c3660a63fb27e88f0f64772972e05dbbef508383c4363771d70e21971f4d6",
+    "id": 136450379,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "possession-of-weapons",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.116963",
+      "street": { "id": 2239777, "name": "On or near Collins Avenue" },
+      "longitude": "-1.266331"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "f11ca2bfa0d0d2658046e8c9b645154d945e40b89140e9b05399ca78a7c4ff85",
+    "id": 136451250,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "possession-of-weapons",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123543",
+      "street": { "id": 2239941, "name": "On or near King Street" },
+      "longitude": "-1.263425"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Awaiting court outcome",
+      "date": "2026-07"
+    },
+    "persistent_id": "02efc63b93cfe7a55f241bf29fb6910d0f44cb5afe247302495cf4ee0a75a54e",
+    "id": 136452158,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "public-order",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.119728",
+      "street": { "id": 2240073, "name": "On or near Henry Street" },
+      "longitude": "-1.259978"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Action to be taken by another organisation",
+      "date": "2026-07"
+    },
+    "persistent_id": "328b1f87516c8b26cdbb17ec9f80b895878cf49b73b34b624c8dd961a0e4db21",
+    "id": 136446597,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "public-order",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122340",
+      "street": { "id": 2239992, "name": "On or near High Pavement" },
+      "longitude": "-1.262250"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "a76be628014d15dee9d63a49f15e49c43139acd0f199323329c531de0852cac6",
+    "id": 136448090,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "public-order",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.117319",
+      "street": { "id": 2239755, "name": "On or near Rosings Court" },
+      "longitude": "-1.268775"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "167c8dabc67c7c0e2f212396df20c43cb0ed601032c1bdff52a984ef99ff2265",
+    "id": 136447141,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "public-order",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125414",
+      "street": { "id": 2240213, "name": "On or near Welbeck Street" },
+      "longitude": "-1.257953"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "443efe10e034f1a2686357ff6cbd675c23d528cf26d392728a9affb88bc9fd53",
+    "id": 136450016,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "public-order",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125414",
+      "street": { "id": 2240213, "name": "On or near Welbeck Street" },
+      "longitude": "-1.257953"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "effb38914981984d7ef87a06f945bb84d8ec3e192a7680b360251cf32b2d3984",
+    "id": 136451639,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "public-order",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123229",
+      "street": { "id": 2239903, "name": "On or near Woods Hill" },
+      "longitude": "-1.264999"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "cca75892a26f9e196e38cb206b445b0ab45eb840b5dbbbb494c030345f425851",
+    "id": 136447067,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "public-order",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122032",
+      "street": { "id": 2240326, "name": "On or near Supermarket" },
+      "longitude": "-1.254649"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "c0da43c8bfadaaae392bfe115b49c297208650921789a4eb2740b0dfbe176653",
+    "id": 136445307,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "public-order",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.119136",
+      "street": { "id": 2239873, "name": "On or near Tudor Street" },
+      "longitude": "-1.266025"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "806b4fcdb529471060d31260a6f43741c02b9c274b672af5820598c1f941652e",
+    "id": 136447365,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "robbery",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122965",
+      "street": { "id": 2240164, "name": "On or near Hardwick Street" },
+      "longitude": "-1.258727"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "1bb6a04e802b6e3796286486c47a6832975f29d951e6f99a2873b237bf0adad3",
+    "id": 136449788,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "robbery",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Awaiting court outcome",
+      "date": "2026-07"
+    },
+    "persistent_id": "3136fe514776a1d27a65c0c12009dc9ab8f290b6a966016fb4617c4c77704747",
+    "id": 136449117,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "robbery",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.124794",
+      "street": { "id": 2239960, "name": "On or near Market Street" },
+      "longitude": "-1.263687"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "c660172b878a0a168e4a558572fcaee55f35c6bd6ebd88c7100c7e85def8b906",
+    "id": 136451791,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "robbery",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126507",
+      "street": { "id": 2239929, "name": "On or near Langford Street" },
+      "longitude": "-1.264569"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "67b45c317c03d563f504770ef82503098b5fa6469c52e64dbc2d58ba20421522",
+    "id": 136446472,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "robbery",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "ef42695dbdb2b63e6e529ac958fd16e9095a12d9b5a8175d15a8b41744c457e3",
+    "id": 136446059,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "robbery",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Offender given a caution",
+      "date": "2026-07"
+    },
+    "persistent_id": "197ff5a98d3d4781835cb53c3f998275f46c9b67423da6d52c6f878906d82841",
+    "id": 136448315,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "f0bc575bdaebce578bc950bad16071c166a4543b3f9414fedc69dc91d0cafe3b",
+    "id": 136449847,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "e70324791ba8c1ea951b1e4ea202db190eb77d9c043066a06a899c42282d5611",
+    "id": 136448526,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "f630e7c0c301af00cefa9324e4ada8a5dad650423e24813c7a6cb65fd2cc6e66",
+    "id": 136448906,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "19e36d1959b1b48a9ada806147c862569d4ef8f3b5508b1155a2090caf1151c0",
+    "id": 136449079,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "fc57db653cf87a49dd06a24df2a7af2744bcc0f960b7d61a910fc508d9bd7b18",
+    "id": 136448825,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123776",
+      "street": { "id": 2240228, "name": "On or near Albion Road" },
+      "longitude": "-1.256068"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "dbcfa84d4c795900c24b78761dc2ecd36f6d042cd59972caf21af1a773bb30bf",
+    "id": 136454137,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "f15f869128a1740475e9c576d4a20ea7504517a067c353817b5eb3de546a5505",
+    "id": 136451891,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122032",
+      "street": { "id": 2240326, "name": "On or near Supermarket" },
+      "longitude": "-1.254649"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "7f49a42388330cef2abb14cbd683c23be1068961f00751a2a16bba8b308ca549",
+    "id": 136452228,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "18597d3bc0d5a80ffeb8afeb63ee9d4bc34ea2d13df5533d959200509d96df9e",
+    "id": 136449238,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "83fcfe505b3cfbdd66cc78e0fdb75713da107db84d6baf669189d9ed9591b679",
+    "id": 136455117,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "406b60032e5ce643dcf844cf774d32788ef617753e3162419fcaa7333aebf276",
+    "id": 136446156,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Awaiting court outcome",
+      "date": "2026-07"
+    },
+    "persistent_id": "83e4e76ca224983ab074d45e5a48d7121859d517c71622dc1f4bce69d5c99044",
+    "id": 136446250,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122032",
+      "street": { "id": 2240326, "name": "On or near Supermarket" },
+      "longitude": "-1.254649"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "025b26a1d49f5507ca08197044d56f6fe5432c2e1e8ccf5b390a875b5b80326c",
+    "id": 136446760,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "53b03011a0a833238a96db2d6794c9346e02896a27f1e0ec4a488361312b8d8f",
+    "id": 136447615,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Awaiting court outcome",
+      "date": "2026-07"
+    },
+    "persistent_id": "9e46ce4f58a23c7c646c5d27d00d362061be08e3861eb8cb4e74ced50131371f",
+    "id": 136448088,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122965",
+      "street": { "id": 2240164, "name": "On or near Hardwick Street" },
+      "longitude": "-1.258727"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "e0fb49e884531453891e485ad287cc57be88a0375c5433bb6e51e9443d000606",
+    "id": 136445900,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127880",
+      "street": { "id": 2240085, "name": "On or near Petrol Station" },
+      "longitude": "-1.259808"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "4b3bd6377d6632695934195f6af1dee2d53ac8510a5056d0dba4f75478a652b2",
+    "id": 136448776,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "3685b7876f206ef6d5fc50ba5f2ebee6f650a31710c4fd534d224e0ddd4781a2",
+    "id": 136446915,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125048",
+      "street": { "id": 2239982, "name": "On or near Shopping Area" },
+      "longitude": "-1.262711"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Awaiting court outcome",
+      "date": "2026-07"
+    },
+    "persistent_id": "1f6c625f41af3fbb157e41d94509a37c2f138180fd96b006f943ab75f4cbeed6",
+    "id": 136447189,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122965",
+      "street": { "id": 2240164, "name": "On or near Hardwick Street" },
+      "longitude": "-1.258727"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "1c1a463bf3ff8d1b1cefa73add2394d37f8f63eaa89b97aa56f2a36ea01979fe",
+    "id": 136447208,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "9ee0796d3c9d43218f30a3f9d1d75541824cf2470989157d70c778319108e1cb",
+    "id": 136447491,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "a589f0a8e5b09e26c5a191f6766b5a5442e0b4583f6c60dd3fe1b8b183a08fa8",
+    "id": 136451839,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "e9aea9a6554202052326faf50afe49f638994b0b27c02d1deee7a2462860154a",
+    "id": 136451906,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "128d1e7436e52e68d7be1ac35052ee8ad196158ed28b3498b8a8d15c0cd37b5b",
+    "id": 136452532,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123776",
+      "street": { "id": 2240228, "name": "On or near Albion Road" },
+      "longitude": "-1.256068"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "9603a5f22cfdaa0b9ed881f7083cc5e3d7b46c267fc90b4caa7bb86b0f66590b",
+    "id": 136453020,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122032",
+      "street": { "id": 2240326, "name": "On or near Supermarket" },
+      "longitude": "-1.254649"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "ebc1fcb49dbc18b3b087515c01a46fa7e1668c28f8d17bae9ad344329387f3d5",
+    "id": 136449478,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122032",
+      "street": { "id": 2240326, "name": "On or near Supermarket" },
+      "longitude": "-1.254649"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "8ed06b25764b3e4a6c24f5e39d506540501bbe3104b8ac3098a2e63d6b9cc2c5",
+    "id": 136449490,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "6586f253dcf096ad23511c9f71de7912743c99fc33d2d4762b0cd88285da30e4",
+    "id": 136449626,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "ebfbb9a0b250a5a395697220ef1891615a1af1b0943a4e17e6d4787d11c99533",
+    "id": 136449841,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122965",
+      "street": { "id": 2240164, "name": "On or near Hardwick Street" },
+      "longitude": "-1.258727"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Awaiting court outcome",
+      "date": "2026-07"
+    },
+    "persistent_id": "d19424820ddbd70de7e62e3da647e1f6e0be74178dc87051ab101dcbbda965a7",
+    "id": 136450197,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.124932",
+      "street": { "id": 2240194, "name": "On or near Portland Close" },
+      "longitude": "-1.258425"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "9626f0b26f84f35c67ea1592d88cb6a5e4277899b5bde9b52606a7c045fe86e7",
+    "id": 136451184,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "88a91ff1c5918231e9d5f2438237299896ac9e559c45525761a0d08d8fc4d4ea",
+    "id": 136455137,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Awaiting court outcome",
+      "date": "2026-07"
+    },
+    "persistent_id": "d3cb26b8dc670b74931fa2c89e262e2b52de1959ab7edbb7a68f6ce7c8764f5d",
+    "id": 136447944,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125164",
+      "street": { "id": 2240035, "name": "On or near Shopping Area" },
+      "longitude": "-1.261633"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "8badabf0464802727f202c79adf91c1c6aa853bb3b39198b5c9bef6daec6ec43",
+    "id": 136449944,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122032",
+      "street": { "id": 2240326, "name": "On or near Supermarket" },
+      "longitude": "-1.254649"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Awaiting court outcome",
+      "date": "2026-07"
+    },
+    "persistent_id": "5cb1b7b6013fefd489388fc1aa55bc2718d119d0379d71e2cfceaec4f5ffb375",
+    "id": 136445639,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.118158",
+      "street": { "id": 2239757, "name": "On or near Kirkby Road" },
+      "longitude": "-1.267700"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "3bc8b146a8735cf067565c4ac5680027dcfc680a4650ba87f7b9cdd33fc6305b",
+    "id": 136449967,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.118158",
+      "street": { "id": 2239757, "name": "On or near Kirkby Road" },
+      "longitude": "-1.267700"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "9e148b99a50d6eaf9b6937e72f78331d3c04edf20170bea716c892d82e7f9ab8",
+    "id": 136450895,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123398",
+      "street": { "id": 2239579, "name": "On or near Petrol Station" },
+      "longitude": "-1.273124"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Awaiting court outcome",
+      "date": "2026-08"
+    },
+    "persistent_id": "89ae5b73c24303d52dec90de39c0ab79aa26e66cd3a7e2a4d3acebaba41ad0eb",
+    "id": 136451396,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "shoplifting",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123923",
+      "street": { "id": 2239555, "name": "On or near Oxford Street" },
+      "longitude": "-1.274207"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "a9aa077a80e47346c8fdbdacb9531cedcb1c6b0eae883a1c0c12b568beca89e8",
+    "id": 136452005,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "theft-from-the-person",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "3294aa9cee2c887c7144b98e0f9a4873c0637ea5d306e7ff4c22d94b4cb29331",
+    "id": 136445783,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "theft-from-the-person",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "17bb756982971ffa02ebac4cfc0cf12e3aa364ac8c5b621fc45d8efad4bd6aff",
+    "id": 136446416,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "vehicle-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.124019",
+      "street": { "id": 2239712, "name": "On or near Hack Lane" },
+      "longitude": "-1.269229"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "d36845310fd5b5ba4051c5a82366f66afba16ac11a1eb2bbd68f5a6b5f5275b9",
+    "id": 136450953,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "vehicle-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.129783",
+      "street": { "id": 2239706, "name": "On or near Carrfield Close" },
+      "longitude": "-1.269640"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "e1f442078a613ad703c1a3a4e71112516bc704f2b0ec0d1c0bcab9bab5374f04",
+    "id": 136446814,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "vehicle-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125414",
+      "street": { "id": 2240213, "name": "On or near Welbeck Street" },
+      "longitude": "-1.257953"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "38fdfc866c7448e70cac8eaeadbeec28527157891a5c9916ca38f547a64fd151",
+    "id": 136452371,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "vehicle-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "f1855f9ddddfdaf2db80f3f4a70cb51f4daeb88ebea3336f179ad5325cb85d96",
+    "id": 136447464,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "vehicle-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122032",
+      "street": { "id": 2240326, "name": "On or near Supermarket" },
+      "longitude": "-1.254649"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "8773bedd61e77ce4f74e69fa084758e62bae1f588b8a64a9baeb776666ca862f",
+    "id": 136451720,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "vehicle-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122965",
+      "street": { "id": 2240164, "name": "On or near Hardwick Street" },
+      "longitude": "-1.258727"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "ad3134e90ee86a0b655549ef7928d5f9ba9673771ee72c3d3c8f4ace9ac38baf",
+    "id": 136450204,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Awaiting court outcome",
+      "date": "2026-08"
+    },
+    "persistent_id": "4c077d156ea52ab573e083be77d7416d66500689bc4acb47a70b08e0fbd5ea49",
+    "id": 136449675,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "07965eb1bfd242945647529919d1ee3bae0f1a159cbd847b459be6cc230dd2c5",
+    "id": 136452774,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "2e60bed60a970e5659319e8fe1e0ec2d71b876064658c58998cfa8842fc2fd5d",
+    "id": 136453019,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.119950",
+      "street": { "id": 2240007, "name": "On or near The Twitchell" },
+      "longitude": "-1.261006"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "9c5f34a4986173aab6b86b2a19d50652a58b94b61ebe8d3f05726ad7f373a802",
+    "id": 136453122,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.128105",
+      "street": { "id": 2240136, "name": "On or near Park Street" },
+      "longitude": "-1.258325"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "dcadef27e5698477c5ef13f44d1636bca27bbaab4cec8f6fb4cfa4ce3e982a1c",
+    "id": 136451714,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "09815ad42d9d15c8a3962ac3363d50e5b7d81f6a63f90d8c25bd1396eb0d2917",
+    "id": 136451558,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "552ba8f3e5900cd9b0d23efeac1b2114b5b0ed1c7c7cc2729fc6abddaa20e2fc",
+    "id": 136449568,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.124932",
+      "street": { "id": 2240194, "name": "On or near Portland Close" },
+      "longitude": "-1.258425"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "2925d2dd823c5abc0d77b8a3db1151ad4aad43453dd15842f3f3759eeed16dd4",
+    "id": 136448393,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.128034",
+      "street": { "id": 2239950, "name": "On or near York Street" },
+      "longitude": "-1.264409"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "46dc607524561fc6eb5eb9d9fe8d27a1e80facc813427aa0909feac43f551ee0",
+    "id": 136451371,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.116849",
+      "street": { "id": 2240003, "name": "On or near Barnes Crescent" },
+      "longitude": "-1.262553"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "172facfd8c0b5a23d448f4ace2ea9adfc1f3babe5808519a68d5c32da950675a",
+    "id": 136448584,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126713",
+      "street": { "id": 2240017, "name": "On or near Supermarket" },
+      "longitude": "-1.261879"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "c78e8e05aa7a2d3c3c5a55dc7442ec380f593075c903ab1e75eddebd3e83bcaa",
+    "id": 136447159,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.120736",
+      "street": { "id": 2239979, "name": "On or near Mill Croft" },
+      "longitude": "-1.263174"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "73e98570f5ff6c9bfe0e1fd04c4707df212c79c8556fa2f04b79ff487fb971e6",
+    "id": 136449948,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125851",
+      "street": { "id": 2240231, "name": "On or near Bentinck Street" },
+      "longitude": "-1.257363"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "422c8f884e44ee02b1132f42d26528a95c8961e14a1edd2a05b8039b336569dc",
+    "id": 136446972,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122965",
+      "street": { "id": 2240164, "name": "On or near Hardwick Street" },
+      "longitude": "-1.258727"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "c775a42442a5f689d35da105a67284a64e1eeab1f2ddbee532b9d453397ae145",
+    "id": 136450159,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125166",
+      "street": { "id": 2240187, "name": "On or near Parking Area" },
+      "longitude": "-1.258555"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "d7cc6c77a40223473f2b96f52d3754ca0ed04337e4e17ff2b912c362230c02dd",
+    "id": 136450550,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.128488",
+      "street": { "id": 2239958, "name": "On or near Northfields Close" },
+      "longitude": "-1.263684"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "b971a48e1421c03baa9a4561775082c2baab60647e3f6f5c0e3f8de7142ba738",
+    "id": 136450710,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.120610",
+      "street": { "id": 2239715, "name": "On or near Beeley Avenue" },
+      "longitude": "-1.268944"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "7bb05f50f4fb60e90211302638f1035c80738e3bfc74561290273fe68b45bace",
+    "id": 136450872,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.130444",
+      "street": { "id": 2240082, "name": "On or near Lime Avenue" },
+      "longitude": "-1.260198"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "4ac8a88d79ea3359f9046a45bb5ac9e7c4e1dc7350b3cd6a91baee88f9f15cd1",
+    "id": 136451000,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "5f39fd7373e8df15d8c91d1b9b9f9c8b978e55738b20c4b73ee423f036181d0c",
+    "id": 136451789,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127675",
+      "street": { "id": 2240308, "name": "On or near Gresham Close" },
+      "longitude": "-1.255792"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "d43fdb95bdb1752b98b0c19022b4157e3a17918831097d2485b4d86fc110595b",
+    "id": 136451238,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "e287bab7d2d5b3be79eb759147287e90427760a38a91ea06d27844bd2166bd2e",
+    "id": 136454486,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.116963",
+      "street": { "id": 2239777, "name": "On or near Collins Avenue" },
+      "longitude": "-1.266331"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "7ce25cc04250560ba07ed33c716770bba8db1659bbb48ac4c577bf61ade4a68b",
+    "id": 136453292,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "765ed25c67a06e5c52c59b6aa8c8a0bba4eb3f0fb4dd7eaf6767300db4e6e85c",
+    "id": 136447151,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126507",
+      "street": { "id": 2239929, "name": "On or near Langford Street" },
+      "longitude": "-1.264569"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "051aa7643da86209c0d4f1df5cd07801108aeeb26b4d5ea18b90e6214d7e8a0c",
+    "id": 136453479,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126507",
+      "street": { "id": 2239929, "name": "On or near Langford Street" },
+      "longitude": "-1.264569"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "8ea0e727be19f1d90ae92d158abc98733c50296acc28047e607e0f6d7a9e7b85",
+    "id": 136445265,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.128034",
+      "street": { "id": 2239950, "name": "On or near York Street" },
+      "longitude": "-1.264409"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "16df2719d0291e456d2d923ebbcbd1391e1222279d926d33a11bf03d4201b927",
+    "id": 136454649,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126507",
+      "street": { "id": 2239929, "name": "On or near Langford Street" },
+      "longitude": "-1.264569"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "50b27b302c219be445f86832b8a3e24d9e492e939bca98d4b9e6ad61aa8e7634",
+    "id": 136448077,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126713",
+      "street": { "id": 2240017, "name": "On or near Supermarket" },
+      "longitude": "-1.261879"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "6a699d71c9e807d9fac3a31f99383c98fd25f0e6e0a5af11396d2a10c8dcd7fb",
+    "id": 136450805,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.124027",
+      "street": { "id": 2239984, "name": "On or near Parking Area" },
+      "longitude": "-1.263297"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "560afe432cb0c47f2c31b02fb363a6be2aacbacd691648049a063a120d3805dd",
+    "id": 136452222,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127997",
+      "street": { "id": 2240257, "name": "On or near Outram Street" },
+      "longitude": "-1.256982"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-08"
+    },
+    "persistent_id": "9c12a3967f760436a55e696ca6520c81fc068756ae3fc3a2fa737249fcca1831",
+    "id": 136449159,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125414",
+      "street": { "id": 2240213, "name": "On or near Welbeck Street" },
+      "longitude": "-1.257953"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "caa3066ef103e091dc5c1f8f5e42078a189b690f50a71658f9a28529da1fd9a4",
+    "id": 136453579,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.116849",
+      "street": { "id": 2240003, "name": "On or near Barnes Crescent" },
+      "longitude": "-1.262553"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "553a2f3623ca25c32c207a732e6a7aa095f70113e1a177f65ef3372f22e837d0",
+    "id": 136453315,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123004",
+      "street": { "id": 2239971, "name": "On or near Langton Road" },
+      "longitude": "-1.263583"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "912a47122ec2ffed7f324eaa4afdd0bc64c7c9227589836c594603bbb8faa6ad",
+    "id": 136448646,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126507",
+      "street": { "id": 2239929, "name": "On or near Langford Street" },
+      "longitude": "-1.264569"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "7091883eb461c4f56b6b7f1ae917cca279018fe43c13a6fe01e583ed6c05d37c",
+    "id": 136708826,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "80a1d2fad68c9a19ed2fe11ec37a4b8ba0717a005db867369cd569270462a1b8",
+    "id": 136448937,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126507",
+      "street": { "id": 2239929, "name": "On or near Langford Street" },
+      "longitude": "-1.264569"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "f9d25efb1efa8b33d6f9695119c5e6b7c674b480bb83e430fd3756c8931b289f",
+    "id": 136448982,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127865",
+      "street": { "id": 2239680, "name": "On or near Jubilee Road" },
+      "longitude": "-1.270569"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "01528935d08cdc7d0ba56be92e3d24d1508c056b633c868ee718ea0712cbc3a8",
+    "id": 136708925,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.118115",
+      "street": { "id": 2240074, "name": "On or near Limb Crescent" },
+      "longitude": "-1.259393"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "d3900f8106085c6bd1941b4d913b6c8e0b828bcdf16e3d9b610ca2e22370cc8d",
+    "id": 136447113,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "bce98b24f66e3ede27ccca2c9eec9205dc3eab664eac8fd04007b6a4be7d521d",
+    "id": 136454203,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127306",
+      "street": { "id": 2239661, "name": "On or near Ridge Close" },
+      "longitude": "-1.270280"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "beea5f1a159ab6d491f91f1b221e439fef89e63144a81df4b5aebd90364f6ab4",
+    "id": 136447186,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126441",
+      "street": { "id": 2239872, "name": "On or near Parking Area" },
+      "longitude": "-1.265527"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "541edeaf9def003a9c6c9df39a7f26950fdddcc019872c137c43b999e40f1182",
+    "id": 136446532,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.128677",
+      "street": { "id": 2239823, "name": "On or near Percival Crescent" },
+      "longitude": "-1.266625"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "a42d66e1a0d3d3b009e4fce2594d1877b54f4399baf476e3d09551971aba374b",
+    "id": 136450258,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.116849",
+      "street": { "id": 2240003, "name": "On or near Barnes Crescent" },
+      "longitude": "-1.262553"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "bd51904225f6212625d32d35277437444809186d102c7642225a6c55df632b36",
+    "id": 136453241,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125414",
+      "street": { "id": 2240213, "name": "On or near Welbeck Street" },
+      "longitude": "-1.257953"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "a28544ede90b00481b82bacbbaa472823f8c3fb4522305a7e5157e9289766434",
+    "id": 136453513,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.129816",
+      "street": { "id": 2239910, "name": "On or near Paling Crescent" },
+      "longitude": "-1.264677"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "51c322cab6fcca1c88b2f6db7f184a943d8cfd4b7dac7f7ee00f5dfb1298a8f7",
+    "id": 136452030,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.126404",
+      "street": { "id": 2240304, "name": "On or near Bramley Court" },
+      "longitude": "-1.256621"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "648e48abf0e3b0bff10f2d64424064fc493a862c24c1dfb72fab949c4cf9c63e",
+    "id": 136452047,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "9400970093e5d560e09a6f9a6040eb3a5a1235e12af2b5558586dd2b39175ac9",
+    "id": 136445575,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.128880",
+      "street": { "id": 2240009, "name": "On or near Edwin Street" },
+      "longitude": "-1.261674"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "68759b63a93ce079b8adca921285734bd8d698fc2944c221384a79e7fd58d955",
+    "id": 136445541,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.122465",
+      "street": { "id": 2240045, "name": "On or near Reform Street" },
+      "longitude": "-1.259259"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "a80c4a264dec1f2c31b73eea65ba1fb7b0993844a39162172ffe1f3f2e860e2b",
+    "id": 136445632,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.117501",
+      "street": { "id": 2240170, "name": "On or near Thompson Crescent" },
+      "longitude": "-1.258956"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "71f1e83b6bd5e8808fbd8cdfbca0edda3b2a1c8135da89daed6e39348650deae",
+    "id": 136447559,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.118115",
+      "street": { "id": 2240074, "name": "On or near Limb Crescent" },
+      "longitude": "-1.259393"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "eba35c5810e35057660b879c51feb6dc1b95e4bb10f3aea7c28bfc9b44b570ad",
+    "id": 136450715,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.130223",
+      "street": { "id": 2239854, "name": "On or near Percival Close" },
+      "longitude": "-1.266479"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "1df4efb4a377493d3d38e9b37871d33d692a103423037085aae17cd5f168f8ea",
+    "id": 136446653,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.128677",
+      "street": { "id": 2239823, "name": "On or near Percival Crescent" },
+      "longitude": "-1.266625"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "7c798f9989f8973487cdffd724e6ff669eb3dac07e8bb02bfc7c7e0f2d5e618c",
+    "id": 136446332,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125414",
+      "street": { "id": 2240213, "name": "On or near Welbeck Street" },
+      "longitude": "-1.257953"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "a26b2f687fce8fb7c30f527d3e27bbeb325d1008a1455803e7ca4917f2b76d04",
+    "id": 136448159,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.121085",
+      "street": { "id": 2239886, "name": "On or near Craster Street" },
+      "longitude": "-1.265783"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "e62f5c334a923c2b114a716d841684e048b40fb0a40c446a4a68a50ff82b8e4a",
+    "id": 136448172,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "49244baf7245e088727b258baca480ec0a4b45a6cbe5d1561c356583c6261130",
+    "id": 136448290,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "9d0d6a919c5adabd3c41ac1988f8a219af494bf13434f121bb2e5e077f491cfa",
+    "id": 136448306,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.121679",
+      "street": { "id": 2239729, "name": "On or near Stevenson Crescent" },
+      "longitude": "-1.268791"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "8ce398246c28e26ffb2630a036c0d210adf3634e3ebecdce9ebafc7b26084984",
+    "id": 136453634,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "violent-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.128034",
+      "street": { "id": 2239950, "name": "On or near York Street" },
+      "longitude": "-1.264409"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "2fd832496a24a99aaaec08c367971f04b38bc7b13dc001de7c050cf7e05700bb",
+    "id": 136445895,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127265",
+      "street": { "id": 2239962, "name": "On or near Parking Area" },
+      "longitude": "-1.262061"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "fc4b5e5e79dec11a95e5cd06fae620575b035d8d88dda0c0a387a9496e55435d",
+    "id": 136451560,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.117501",
+      "street": { "id": 2240170, "name": "On or near Thompson Crescent" },
+      "longitude": "-1.258956"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Investigation complete; no suspect identified",
+      "date": "2026-07"
+    },
+    "persistent_id": "83821dee322d32cf969c9b31af1762229bd9ee5403d883166427216bd509b001",
+    "id": 136446243,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.123229",
+      "street": { "id": 2239903, "name": "On or near Woods Hill" },
+      "longitude": "-1.264999"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Action to be taken by another organisation",
+      "date": "2026-07"
+    },
+    "persistent_id": "9e6fc5f4761217d8a9189875a7c063240e5d5ce5bd300f2ee5767590d1cb5c32",
+    "id": 136454599,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.128488",
+      "street": { "id": 2239958, "name": "On or near Northfields Close" },
+      "longitude": "-1.263684"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "6b8aad7d5602a9f74298a66eb75a3c4aedb89ad9cd7f24befd91ab07dd79667e",
+    "id": 136445510,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.125564",
+      "street": { "id": 2240083, "name": "On or near Shopping Area" },
+      "longitude": "-1.260267"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-07"
+    },
+    "persistent_id": "173871b7e49d06a08b5ec18ee41f445c81248340b70f222b5baa0c7792a39549",
+    "id": 136446013,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.127813",
+      "street": { "id": 2240298, "name": "On or near Bowne Street" },
+      "longitude": "-1.256208"
+    },
+    "context": "",
+    "outcome_status": {
+      "category": "Unable to prosecute suspect",
+      "date": "2026-08"
+    },
+    "persistent_id": "80a39b55714458aed2724cb9da60872019811535649ce7876da9b4b193096cfc",
+    "id": 136451127,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.119122",
+      "street": { "id": 2240128, "name": "On or near Nesbitt Street" },
+      "longitude": "-1.259421"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "fe7d502a22bdaafda481691992a3dd8ac4a1d7f0231dc4152acca74226bec578",
+    "id": 136446709,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.119122",
+      "street": { "id": 2240128, "name": "On or near Nesbitt Street" },
+      "longitude": "-1.259421"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "38cd0d8cc002b5412de62ed90b725a43830d97b4749cbad4bdfc6f8c24c192ad",
+    "id": 136454928,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.128677",
+      "street": { "id": 2239823, "name": "On or near Percival Crescent" },
+      "longitude": "-1.266625"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "8421dc9aead9722a0da278c7c85ab18a8a9ff2a4192311b123f5f6b2eb664b26",
+    "id": 136452425,
+    "location_subtype": "",
+    "month": "2026-07"
+  },
+  {
+    "category": "other-crime",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.120913",
+      "street": { "id": 2239990, "name": "On or near Silk Street" },
+      "longitude": "-1.262692"
+    },
+    "context": "",
+    "outcome_status": { "category": "Under investigation", "date": "2026-07" },
+    "persistent_id": "3e8bb6fdc152c2970776134c1d0edce252cce76476a2b622b4f89fb217243c4b",
+    "id": 136447360,
+    "location_subtype": "",
+    "month": "2026-07"
+  }
+]

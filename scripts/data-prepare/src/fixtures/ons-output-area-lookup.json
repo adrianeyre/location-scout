@@ -1,0 +1,1017 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142407",
+        "LSOA21CD": "E01027954",
+        "LSOA21NM": "Ashfield 007D",
+        "MSOA21CD": "E02005825",
+        "MSOA21NM": "Ashfield 007"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142418",
+        "LSOA21CD": "E01027954",
+        "LSOA21NM": "Ashfield 007D",
+        "MSOA21CD": "E02005825",
+        "MSOA21NM": "Ashfield 007"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142422",
+        "LSOA21CD": "E01027951",
+        "LSOA21NM": "Ashfield 007B",
+        "MSOA21CD": "E02005825",
+        "MSOA21NM": "Ashfield 007"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142429",
+        "LSOA21CD": "E01027959",
+        "LSOA21NM": "Ashfield 009E",
+        "MSOA21CD": "E02005827",
+        "MSOA21NM": "Ashfield 009"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142430",
+        "LSOA21CD": "E01027959",
+        "LSOA21NM": "Ashfield 009E",
+        "MSOA21CD": "E02005827",
+        "MSOA21NM": "Ashfield 009"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142431",
+        "LSOA21CD": "E01027959",
+        "LSOA21NM": "Ashfield 009E",
+        "MSOA21CD": "E02005827",
+        "MSOA21NM": "Ashfield 009"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142435",
+        "LSOA21CD": "E01027957",
+        "LSOA21NM": "Ashfield 009D",
+        "MSOA21CD": "E02005827",
+        "MSOA21NM": "Ashfield 009"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142438",
+        "LSOA21CD": "E01027957",
+        "LSOA21NM": "Ashfield 009D",
+        "MSOA21CD": "E02005827",
+        "MSOA21NM": "Ashfield 009"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142474",
+        "LSOA21CD": "E01027967",
+        "LSOA21NM": "Ashfield 004A",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142475",
+        "LSOA21CD": "E01027964",
+        "LSOA21NM": "Ashfield 005A",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142476",
+        "LSOA21CD": "E01027966",
+        "LSOA21NM": "Ashfield 003A",
+        "MSOA21CD": "E02005821",
+        "MSOA21NM": "Ashfield 003"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142477",
+        "LSOA21CD": "E01027965",
+        "LSOA21NM": "Ashfield 005B",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142478",
+        "LSOA21CD": "E01027965",
+        "LSOA21NM": "Ashfield 005B",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142479",
+        "LSOA21CD": "E01027968",
+        "LSOA21NM": "Ashfield 005C",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142480",
+        "LSOA21CD": "E01027968",
+        "LSOA21NM": "Ashfield 005C",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142481",
+        "LSOA21CD": "E01027969",
+        "LSOA21NM": "Ashfield 006A",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142482",
+        "LSOA21CD": "E01027968",
+        "LSOA21NM": "Ashfield 005C",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142483",
+        "LSOA21CD": "E01027968",
+        "LSOA21NM": "Ashfield 005C",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142484",
+        "LSOA21CD": "E01027969",
+        "LSOA21NM": "Ashfield 006A",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142485",
+        "LSOA21CD": "E01027969",
+        "LSOA21NM": "Ashfield 006A",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142486",
+        "LSOA21CD": "E01027969",
+        "LSOA21NM": "Ashfield 006A",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142487",
+        "LSOA21CD": "E01027969",
+        "LSOA21NM": "Ashfield 006A",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142494",
+        "LSOA21CD": "E01027966",
+        "LSOA21NM": "Ashfield 003A",
+        "MSOA21CD": "E02005821",
+        "MSOA21NM": "Ashfield 003"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142496",
+        "LSOA21CD": "E01027964",
+        "LSOA21NM": "Ashfield 005A",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142497",
+        "LSOA21CD": "E01027967",
+        "LSOA21NM": "Ashfield 004A",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142498",
+        "LSOA21CD": "E01027970",
+        "LSOA21NM": "Ashfield 002A",
+        "MSOA21CD": "E02005820",
+        "MSOA21NM": "Ashfield 002"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142499",
+        "LSOA21CD": "E01027970",
+        "LSOA21NM": "Ashfield 002A",
+        "MSOA21CD": "E02005820",
+        "MSOA21NM": "Ashfield 002"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142500",
+        "LSOA21CD": "E01027970",
+        "LSOA21NM": "Ashfield 002A",
+        "MSOA21CD": "E02005820",
+        "MSOA21NM": "Ashfield 002"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142501",
+        "LSOA21CD": "E01027966",
+        "LSOA21NM": "Ashfield 003A",
+        "MSOA21CD": "E02005821",
+        "MSOA21NM": "Ashfield 003"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142502",
+        "LSOA21CD": "E01027970",
+        "LSOA21NM": "Ashfield 002A",
+        "MSOA21CD": "E02005820",
+        "MSOA21NM": "Ashfield 002"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142503",
+        "LSOA21CD": "E01027967",
+        "LSOA21NM": "Ashfield 004A",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142504",
+        "LSOA21CD": "E01027966",
+        "LSOA21NM": "Ashfield 003A",
+        "MSOA21CD": "E02005821",
+        "MSOA21NM": "Ashfield 003"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142505",
+        "LSOA21CD": "E01027965",
+        "LSOA21NM": "Ashfield 005B",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142506",
+        "LSOA21CD": "E01027967",
+        "LSOA21NM": "Ashfield 004A",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142507",
+        "LSOA21CD": "E01027966",
+        "LSOA21NM": "Ashfield 003A",
+        "MSOA21CD": "E02005821",
+        "MSOA21NM": "Ashfield 003"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142508",
+        "LSOA21CD": "E01027967",
+        "LSOA21NM": "Ashfield 004A",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142509",
+        "LSOA21CD": "E01027968",
+        "LSOA21NM": "Ashfield 005C",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142510",
+        "LSOA21CD": "E01027965",
+        "LSOA21NM": "Ashfield 005B",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142511",
+        "LSOA21CD": "E01027972",
+        "LSOA21NM": "Ashfield 004B",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142513",
+        "LSOA21CD": "E01027976",
+        "LSOA21NM": "Ashfield 005E",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142514",
+        "LSOA21CD": "E01027973",
+        "LSOA21NM": "Ashfield 007E",
+        "MSOA21CD": "E02005825",
+        "MSOA21NM": "Ashfield 007"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142515",
+        "LSOA21CD": "E01027976",
+        "LSOA21NM": "Ashfield 005E",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142516",
+        "LSOA21CD": "E01027975",
+        "LSOA21NM": "Ashfield 006B",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142517",
+        "LSOA21CD": "E01027974",
+        "LSOA21NM": "Ashfield 005D",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142518",
+        "LSOA21CD": "E01027973",
+        "LSOA21NM": "Ashfield 007E",
+        "MSOA21CD": "E02005825",
+        "MSOA21NM": "Ashfield 007"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142519",
+        "LSOA21CD": "E01027975",
+        "LSOA21NM": "Ashfield 006B",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142520",
+        "LSOA21CD": "E01027974",
+        "LSOA21NM": "Ashfield 005D",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142521",
+        "LSOA21CD": "E01027977",
+        "LSOA21NM": "Ashfield 004C",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142522",
+        "LSOA21CD": "E01027978",
+        "LSOA21NM": "Ashfield 004D",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142523",
+        "LSOA21CD": "E01027977",
+        "LSOA21NM": "Ashfield 004C",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142524",
+        "LSOA21CD": "E01027976",
+        "LSOA21NM": "Ashfield 005E",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142525",
+        "LSOA21CD": "E01027972",
+        "LSOA21NM": "Ashfield 004B",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142527",
+        "LSOA21CD": "E01027976",
+        "LSOA21NM": "Ashfield 005E",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142528",
+        "LSOA21CD": "E01027972",
+        "LSOA21NM": "Ashfield 004B",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142529",
+        "LSOA21CD": "E01027975",
+        "LSOA21NM": "Ashfield 006B",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142530",
+        "LSOA21CD": "E01027975",
+        "LSOA21NM": "Ashfield 006B",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142531",
+        "LSOA21CD": "E01027976",
+        "LSOA21NM": "Ashfield 005E",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142533",
+        "LSOA21CD": "E01027975",
+        "LSOA21NM": "Ashfield 006B",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142534",
+        "LSOA21CD": "E01027974",
+        "LSOA21NM": "Ashfield 005D",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142536",
+        "LSOA21CD": "E01027974",
+        "LSOA21NM": "Ashfield 005D",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142537",
+        "LSOA21CD": "E01027974",
+        "LSOA21NM": "Ashfield 005D",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142538",
+        "LSOA21CD": "E01027977",
+        "LSOA21NM": "Ashfield 004C",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142539",
+        "LSOA21CD": "E01027978",
+        "LSOA21NM": "Ashfield 004D",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142540",
+        "LSOA21CD": "E01027978",
+        "LSOA21NM": "Ashfield 004D",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142541",
+        "LSOA21CD": "E01027978",
+        "LSOA21NM": "Ashfield 004D",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142542",
+        "LSOA21CD": "E01027977",
+        "LSOA21NM": "Ashfield 004C",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142543",
+        "LSOA21CD": "E01027977",
+        "LSOA21NM": "Ashfield 004C",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142544",
+        "LSOA21CD": "E01027977",
+        "LSOA21NM": "Ashfield 004C",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142545",
+        "LSOA21CD": "E01027978",
+        "LSOA21NM": "Ashfield 004D",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142546",
+        "LSOA21CD": "E01027978",
+        "LSOA21NM": "Ashfield 004D",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142547",
+        "LSOA21CD": "E01027976",
+        "LSOA21NM": "Ashfield 005E",
+        "MSOA21CD": "E02005823",
+        "MSOA21NM": "Ashfield 005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142555",
+        "LSOA21CD": "E01027985",
+        "LSOA21NM": "Ashfield 004E",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142578",
+        "LSOA21CD": "E01027985",
+        "LSOA21NM": "Ashfield 004E",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142587",
+        "LSOA21CD": "E01027992",
+        "LSOA21NM": "Ashfield 006F",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142589",
+        "LSOA21CD": "E01027989",
+        "LSOA21NM": "Ashfield 006D",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142590",
+        "LSOA21CD": "E01027989",
+        "LSOA21NM": "Ashfield 006D",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142594",
+        "LSOA21CD": "E01027989",
+        "LSOA21NM": "Ashfield 006D",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142600",
+        "LSOA21CD": "E01027991",
+        "LSOA21NM": "Ashfield 006E",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00142604",
+        "LSOA21CD": "E01027992",
+        "LSOA21NM": "Ashfield 006F",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00173367",
+        "LSOA21CD": "E01027972",
+        "LSOA21NM": "Ashfield 004B",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00173368",
+        "LSOA21CD": "E01027972",
+        "LSOA21NM": "Ashfield 004B",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00173370",
+        "LSOA21CD": "E01027992",
+        "LSOA21NM": "Ashfield 006F",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00173380",
+        "LSOA21CD": "E01027992",
+        "LSOA21NM": "Ashfield 006F",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00176792",
+        "LSOA21CD": "E01027992",
+        "LSOA21NM": "Ashfield 006F",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00176799",
+        "LSOA21CD": "E01027985",
+        "LSOA21NM": "Ashfield 004E",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00176803",
+        "LSOA21CD": "E01027992",
+        "LSOA21NM": "Ashfield 006F",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00176822",
+        "LSOA21CD": "E01027972",
+        "LSOA21NM": "Ashfield 004B",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00176833",
+        "LSOA21CD": "E01027959",
+        "LSOA21NM": "Ashfield 009E",
+        "MSOA21CD": "E02005827",
+        "MSOA21NM": "Ashfield 009"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00176845",
+        "LSOA21CD": "E01027972",
+        "LSOA21NM": "Ashfield 004B",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00176853",
+        "LSOA21CD": "E01027985",
+        "LSOA21NM": "Ashfield 004E",
+        "MSOA21CD": "E02005822",
+        "MSOA21NM": "Ashfield 004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00176855",
+        "LSOA21CD": "E01027992",
+        "LSOA21NM": "Ashfield 006F",
+        "MSOA21CD": "E02005824",
+        "MSOA21NM": "Ashfield 006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "OA21CD": "E00176861",
+        "LSOA21CD": "E01027959",
+        "LSOA21NM": "Ashfield 009E",
+        "MSOA21CD": "E02005827",
+        "MSOA21NM": "Ashfield 009"
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# AI only explains calculated scores, and is opt-in with the user's own key
+
+All statistics, Category Scores and Land Opportunity tags are calculated by deterministic code. AI Explanations receive only that structured output and are told not to introduce any figure that isn't in it. The feature is off by default and turns on only when an Anthropic API key is set in local config, so the app runs in full without it. We rejected letting a model judge locations directly. Its answers would vary between runs, couldn't be audited, and could invent numbers. Transparent, reproducible scores are core to the product.

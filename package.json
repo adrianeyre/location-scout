@@ -1,0 +1,51 @@
+{
+  "name": "location-scout",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Location Scout: pick any location in England and understand everything around it.",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @location-scout/web --filter @location-scout/api dev",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "typecheck": "pnpm --recursive typecheck",
+    "test": "pnpm --recursive test",
+    "test:e2e": "pnpm --filter @location-scout/web test:e2e",
+    "test:ai": "pnpm --filter @location-scout/api test:ai",
+    "smoke": "pnpm --filter @location-scout/api smoke",
+    "bench": "pnpm --filter @location-scout/api bench",
+    "survey": "pnpm --filter @location-scout/api survey",
+    "data:prepare": "pnpm --filter @location-scout/data-prepare data:prepare",
+    "sandcastle": "tsx .sandcastle/main.ts",
+    "site:build": "node site/build.ts"
+  },
+  "engines": {
+    "node": ">=26",
+    "pnpm": ">=12"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": ">=26",
+      "onFail": "error"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": ">=12",
+      "onFail": "error"
+    }
+  },
+  "devDependencies": {
+    "@ai-hero/sandcastle": "^0.12.0",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.9",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.1"
+  }
+}

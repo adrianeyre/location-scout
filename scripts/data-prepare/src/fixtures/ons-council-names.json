@@ -1,0 +1,516 @@
+{
+  "objectIdFieldName": "FID",
+  "uniqueIdField": { "name": "FID", "isSystemMaintained": true },
+  "globalIdFieldName": "GlobalID",
+  "serverGens": { "minServerGen": 23407826, "serverGen": 23559121 },
+  "geometryType": "esriGeometryPolygon",
+  "spatialReference": { "wkid": 27700, "latestWkid": 27700 },
+  "fields": [
+    {
+      "name": "LAD26CD",
+      "type": "esriFieldTypeString",
+      "alias": "LAD26CD",
+      "sqlType": "sqlTypeOther",
+      "length": 9,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "LAD26NM",
+      "type": "esriFieldTypeString",
+      "alias": "LAD26NM",
+      "sqlType": "sqlTypeOther",
+      "length": 36,
+      "domain": null,
+      "defaultValue": null
+    }
+  ],
+  "features": [
+    { "attributes": { "LAD26CD": "E06000001", "LAD26NM": "Hartlepool" } },
+    { "attributes": { "LAD26CD": "E06000002", "LAD26NM": "Middlesbrough" } },
+    {
+      "attributes": {
+        "LAD26CD": "E06000003",
+        "LAD26NM": "Redcar and Cleveland"
+      }
+    },
+    { "attributes": { "LAD26CD": "E06000004", "LAD26NM": "Stockton-on-Tees" } },
+    { "attributes": { "LAD26CD": "E06000005", "LAD26NM": "Darlington" } },
+    { "attributes": { "LAD26CD": "E06000006", "LAD26NM": "Halton" } },
+    { "attributes": { "LAD26CD": "E06000007", "LAD26NM": "Warrington" } },
+    {
+      "attributes": {
+        "LAD26CD": "E06000008",
+        "LAD26NM": "Blackburn with Darwen"
+      }
+    },
+    { "attributes": { "LAD26CD": "E06000009", "LAD26NM": "Blackpool" } },
+    {
+      "attributes": {
+        "LAD26CD": "E06000010",
+        "LAD26NM": "Kingston upon Hull, City of"
+      }
+    },
+    {
+      "attributes": {
+        "LAD26CD": "E06000011",
+        "LAD26NM": "East Riding of Yorkshire"
+      }
+    },
+    {
+      "attributes": {
+        "LAD26CD": "E06000012",
+        "LAD26NM": "North East Lincolnshire"
+      }
+    },
+    {
+      "attributes": { "LAD26CD": "E06000013", "LAD26NM": "North Lincolnshire" }
+    },
+    { "attributes": { "LAD26CD": "E06000014", "LAD26NM": "York" } },
+    { "attributes": { "LAD26CD": "E06000015", "LAD26NM": "Derby" } },
+    { "attributes": { "LAD26CD": "E06000016", "LAD26NM": "Leicester" } },
+    { "attributes": { "LAD26CD": "E06000017", "LAD26NM": "Rutland" } },
+    { "attributes": { "LAD26CD": "E06000018", "LAD26NM": "Nottingham" } },
+    {
+      "attributes": {
+        "LAD26CD": "E06000019",
+        "LAD26NM": "Herefordshire, County of"
+      }
+    },
+    {
+      "attributes": { "LAD26CD": "E06000020", "LAD26NM": "Telford and Wrekin" }
+    },
+    { "attributes": { "LAD26CD": "E06000021", "LAD26NM": "Stoke-on-Trent" } },
+    {
+      "attributes": {
+        "LAD26CD": "E06000022",
+        "LAD26NM": "Bath and North East Somerset"
+      }
+    },
+    { "attributes": { "LAD26CD": "E06000023", "LAD26NM": "Bristol, City of" } },
+    { "attributes": { "LAD26CD": "E06000024", "LAD26NM": "North Somerset" } },
+    {
+      "attributes": {
+        "LAD26CD": "E06000025",
+        "LAD26NM": "South Gloucestershire"
+      }
+    },
+    { "attributes": { "LAD26CD": "E06000026", "LAD26NM": "Plymouth" } },
+    { "attributes": { "LAD26CD": "E06000027", "LAD26NM": "Torbay" } },
+    { "attributes": { "LAD26CD": "E06000030", "LAD26NM": "Swindon" } },
+    { "attributes": { "LAD26CD": "E06000031", "LAD26NM": "Peterborough" } },
+    { "attributes": { "LAD26CD": "E06000032", "LAD26NM": "Luton" } },
+    { "attributes": { "LAD26CD": "E06000033", "LAD26NM": "Southend-on-Sea" } },
+    { "attributes": { "LAD26CD": "E06000034", "LAD26NM": "Thurrock" } },
+    { "attributes": { "LAD26CD": "E06000035", "LAD26NM": "Medway" } },
+    { "attributes": { "LAD26CD": "E06000036", "LAD26NM": "Bracknell Forest" } },
+    { "attributes": { "LAD26CD": "E06000037", "LAD26NM": "West Berkshire" } },
+    { "attributes": { "LAD26CD": "E06000038", "LAD26NM": "Reading" } },
+    { "attributes": { "LAD26CD": "E06000039", "LAD26NM": "Slough" } },
+    {
+      "attributes": {
+        "LAD26CD": "E06000040",
+        "LAD26NM": "Windsor and Maidenhead"
+      }
+    },
+    { "attributes": { "LAD26CD": "E06000041", "LAD26NM": "Wokingham" } },
+    { "attributes": { "LAD26CD": "E06000042", "LAD26NM": "Milton Keynes" } },
+    {
+      "attributes": { "LAD26CD": "E06000043", "LAD26NM": "Brighton and Hove" }
+    },
+    { "attributes": { "LAD26CD": "E06000044", "LAD26NM": "Portsmouth" } },
+    { "attributes": { "LAD26CD": "E06000045", "LAD26NM": "Southampton" } },
+    { "attributes": { "LAD26CD": "E06000046", "LAD26NM": "Isle of Wight" } },
+    { "attributes": { "LAD26CD": "E06000047", "LAD26NM": "County Durham" } },
+    { "attributes": { "LAD26CD": "E06000049", "LAD26NM": "Cheshire East" } },
+    {
+      "attributes": {
+        "LAD26CD": "E06000050",
+        "LAD26NM": "Cheshire West and Chester"
+      }
+    },
+    { "attributes": { "LAD26CD": "E06000051", "LAD26NM": "Shropshire" } },
+    { "attributes": { "LAD26CD": "E06000052", "LAD26NM": "Cornwall" } },
+    { "attributes": { "LAD26CD": "E06000053", "LAD26NM": "Isles of Scilly" } },
+    { "attributes": { "LAD26CD": "E06000054", "LAD26NM": "Wiltshire" } },
+    { "attributes": { "LAD26CD": "E06000055", "LAD26NM": "Bedford" } },
+    {
+      "attributes": {
+        "LAD26CD": "E06000056",
+        "LAD26NM": "Central Bedfordshire"
+      }
+    },
+    { "attributes": { "LAD26CD": "E06000057", "LAD26NM": "Northumberland" } },
+    {
+      "attributes": {
+        "LAD26CD": "E06000058",
+        "LAD26NM": "Bournemouth, Christchurch and Poole"
+      }
+    },
+    { "attributes": { "LAD26CD": "E06000059", "LAD26NM": "Dorset" } },
+    { "attributes": { "LAD26CD": "E06000060", "LAD26NM": "Buckinghamshire" } },
+    {
+      "attributes": {
+        "LAD26CD": "E06000061",
+        "LAD26NM": "North Northamptonshire"
+      }
+    },
+    {
+      "attributes": {
+        "LAD26CD": "E06000062",
+        "LAD26NM": "West Northamptonshire"
+      }
+    },
+    { "attributes": { "LAD26CD": "E06000063", "LAD26NM": "Cumberland" } },
+    {
+      "attributes": {
+        "LAD26CD": "E06000064",
+        "LAD26NM": "Westmorland and Furness"
+      }
+    },
+    { "attributes": { "LAD26CD": "E06000065", "LAD26NM": "North Yorkshire" } },
+    { "attributes": { "LAD26CD": "E06000066", "LAD26NM": "Somerset" } },
+    { "attributes": { "LAD26CD": "E07000008", "LAD26NM": "Cambridge" } },
+    {
+      "attributes": { "LAD26CD": "E07000009", "LAD26NM": "East Cambridgeshire" }
+    },
+    { "attributes": { "LAD26CD": "E07000010", "LAD26NM": "Fenland" } },
+    { "attributes": { "LAD26CD": "E07000011", "LAD26NM": "Huntingdonshire" } },
+    {
+      "attributes": {
+        "LAD26CD": "E07000012",
+        "LAD26NM": "South Cambridgeshire"
+      }
+    },
+    { "attributes": { "LAD26CD": "E07000032", "LAD26NM": "Amber Valley" } },
+    { "attributes": { "LAD26CD": "E07000033", "LAD26NM": "Bolsover" } },
+    { "attributes": { "LAD26CD": "E07000034", "LAD26NM": "Chesterfield" } },
+    { "attributes": { "LAD26CD": "E07000035", "LAD26NM": "Derbyshire Dales" } },
+    { "attributes": { "LAD26CD": "E07000036", "LAD26NM": "Erewash" } },
+    { "attributes": { "LAD26CD": "E07000037", "LAD26NM": "High Peak" } },
+    {
+      "attributes": {
+        "LAD26CD": "E07000038",
+        "LAD26NM": "North East Derbyshire"
+      }
+    },
+    { "attributes": { "LAD26CD": "E07000039", "LAD26NM": "South Derbyshire" } },
+    { "attributes": { "LAD26CD": "E07000040", "LAD26NM": "East Devon" } },
+    { "attributes": { "LAD26CD": "E07000041", "LAD26NM": "Exeter" } },
+    { "attributes": { "LAD26CD": "E07000042", "LAD26NM": "Mid Devon" } },
+    { "attributes": { "LAD26CD": "E07000043", "LAD26NM": "North Devon" } },
+    { "attributes": { "LAD26CD": "E07000044", "LAD26NM": "South Hams" } },
+    { "attributes": { "LAD26CD": "E07000045", "LAD26NM": "Teignbridge" } },
+    { "attributes": { "LAD26CD": "E07000046", "LAD26NM": "Torridge" } },
+    { "attributes": { "LAD26CD": "E07000047", "LAD26NM": "West Devon" } },
+    { "attributes": { "LAD26CD": "E07000061", "LAD26NM": "Eastbourne" } },
+    { "attributes": { "LAD26CD": "E07000062", "LAD26NM": "Hastings" } },
+    { "attributes": { "LAD26CD": "E07000063", "LAD26NM": "Lewes" } },
+    { "attributes": { "LAD26CD": "E07000064", "LAD26NM": "Rother" } },
+    { "attributes": { "LAD26CD": "E07000065", "LAD26NM": "Wealden" } },
+    { "attributes": { "LAD26CD": "E07000066", "LAD26NM": "Basildon" } },
+    { "attributes": { "LAD26CD": "E07000067", "LAD26NM": "Braintree" } },
+    { "attributes": { "LAD26CD": "E07000068", "LAD26NM": "Brentwood" } },
+    { "attributes": { "LAD26CD": "E07000069", "LAD26NM": "Castle Point" } },
+    { "attributes": { "LAD26CD": "E07000070", "LAD26NM": "Chelmsford" } },
+    { "attributes": { "LAD26CD": "E07000071", "LAD26NM": "Colchester" } },
+    { "attributes": { "LAD26CD": "E07000072", "LAD26NM": "Epping Forest" } },
+    { "attributes": { "LAD26CD": "E07000073", "LAD26NM": "Harlow" } },
+    { "attributes": { "LAD26CD": "E07000074", "LAD26NM": "Maldon" } },
+    { "attributes": { "LAD26CD": "E07000075", "LAD26NM": "Rochford" } },
+    { "attributes": { "LAD26CD": "E07000076", "LAD26NM": "Tendring" } },
+    { "attributes": { "LAD26CD": "E07000077", "LAD26NM": "Uttlesford" } },
+    { "attributes": { "LAD26CD": "E07000078", "LAD26NM": "Cheltenham" } },
+    { "attributes": { "LAD26CD": "E07000079", "LAD26NM": "Cotswold" } },
+    { "attributes": { "LAD26CD": "E07000080", "LAD26NM": "Forest of Dean" } },
+    { "attributes": { "LAD26CD": "E07000081", "LAD26NM": "Gloucester" } },
+    { "attributes": { "LAD26CD": "E07000082", "LAD26NM": "Stroud" } },
+    { "attributes": { "LAD26CD": "E07000083", "LAD26NM": "Tewkesbury" } },
+    {
+      "attributes": {
+        "LAD26CD": "E07000084",
+        "LAD26NM": "Basingstoke and Deane"
+      }
+    },
+    { "attributes": { "LAD26CD": "E07000085", "LAD26NM": "East Hampshire" } },
+    { "attributes": { "LAD26CD": "E07000086", "LAD26NM": "Eastleigh" } },
+    { "attributes": { "LAD26CD": "E07000087", "LAD26NM": "Fareham" } },
+    { "attributes": { "LAD26CD": "E07000088", "LAD26NM": "Gosport" } },
+    { "attributes": { "LAD26CD": "E07000089", "LAD26NM": "Hart" } },
+    { "attributes": { "LAD26CD": "E07000090", "LAD26NM": "Havant" } },
+    { "attributes": { "LAD26CD": "E07000091", "LAD26NM": "New Forest" } },
+    { "attributes": { "LAD26CD": "E07000092", "LAD26NM": "Rushmoor" } },
+    { "attributes": { "LAD26CD": "E07000093", "LAD26NM": "Test Valley" } },
+    { "attributes": { "LAD26CD": "E07000094", "LAD26NM": "Winchester" } },
+    { "attributes": { "LAD26CD": "E07000095", "LAD26NM": "Broxbourne" } },
+    { "attributes": { "LAD26CD": "E07000096", "LAD26NM": "Dacorum" } },
+    { "attributes": { "LAD26CD": "E07000098", "LAD26NM": "Hertsmere" } },
+    {
+      "attributes": { "LAD26CD": "E07000099", "LAD26NM": "North Hertfordshire" }
+    },
+    { "attributes": { "LAD26CD": "E07000102", "LAD26NM": "Three Rivers" } },
+    { "attributes": { "LAD26CD": "E07000103", "LAD26NM": "Watford" } },
+    { "attributes": { "LAD26CD": "E07000105", "LAD26NM": "Ashford" } },
+    { "attributes": { "LAD26CD": "E07000106", "LAD26NM": "Canterbury" } },
+    { "attributes": { "LAD26CD": "E07000107", "LAD26NM": "Dartford" } },
+    { "attributes": { "LAD26CD": "E07000108", "LAD26NM": "Dover" } },
+    { "attributes": { "LAD26CD": "E07000109", "LAD26NM": "Gravesham" } },
+    { "attributes": { "LAD26CD": "E07000110", "LAD26NM": "Maidstone" } },
+    { "attributes": { "LAD26CD": "E07000111", "LAD26NM": "Sevenoaks" } },
+    {
+      "attributes": {
+        "LAD26CD": "E07000112",
+        "LAD26NM": "Folkestone and Hythe"
+      }
+    },
+    { "attributes": { "LAD26CD": "E07000113", "LAD26NM": "Swale" } },
+    { "attributes": { "LAD26CD": "E07000114", "LAD26NM": "Thanet" } },
+    {
+      "attributes": {
+        "LAD26CD": "E07000115",
+        "LAD26NM": "Tonbridge and Malling"
+      }
+    },
+    { "attributes": { "LAD26CD": "E07000116", "LAD26NM": "Tunbridge Wells" } },
+    { "attributes": { "LAD26CD": "E07000117", "LAD26NM": "Burnley" } },
+    { "attributes": { "LAD26CD": "E07000118", "LAD26NM": "Chorley" } },
+    { "attributes": { "LAD26CD": "E07000119", "LAD26NM": "Fylde" } },
+    { "attributes": { "LAD26CD": "E07000120", "LAD26NM": "Hyndburn" } },
+    { "attributes": { "LAD26CD": "E07000121", "LAD26NM": "Lancaster" } },
+    { "attributes": { "LAD26CD": "E07000122", "LAD26NM": "Pendle" } },
+    { "attributes": { "LAD26CD": "E07000123", "LAD26NM": "Preston" } },
+    { "attributes": { "LAD26CD": "E07000124", "LAD26NM": "Ribble Valley" } },
+    { "attributes": { "LAD26CD": "E07000125", "LAD26NM": "Rossendale" } },
+    { "attributes": { "LAD26CD": "E07000126", "LAD26NM": "South Ribble" } },
+    { "attributes": { "LAD26CD": "E07000127", "LAD26NM": "West Lancashire" } },
+    { "attributes": { "LAD26CD": "E07000128", "LAD26NM": "Wyre" } },
+    { "attributes": { "LAD26CD": "E07000129", "LAD26NM": "Blaby" } },
+    { "attributes": { "LAD26CD": "E07000130", "LAD26NM": "Charnwood" } },
+    { "attributes": { "LAD26CD": "E07000131", "LAD26NM": "Harborough" } },
+    {
+      "attributes": {
+        "LAD26CD": "E07000132",
+        "LAD26NM": "Hinckley and Bosworth"
+      }
+    },
+    { "attributes": { "LAD26CD": "E07000133", "LAD26NM": "Melton" } },
+    {
+      "attributes": {
+        "LAD26CD": "E07000134",
+        "LAD26NM": "North West Leicestershire"
+      }
+    },
+    {
+      "attributes": { "LAD26CD": "E07000135", "LAD26NM": "Oadby and Wigston" }
+    },
+    { "attributes": { "LAD26CD": "E07000136", "LAD26NM": "Boston" } },
+    { "attributes": { "LAD26CD": "E07000137", "LAD26NM": "East Lindsey" } },
+    { "attributes": { "LAD26CD": "E07000138", "LAD26NM": "Lincoln" } },
+    { "attributes": { "LAD26CD": "E07000139", "LAD26NM": "North Kesteven" } },
+    { "attributes": { "LAD26CD": "E07000140", "LAD26NM": "South Holland" } },
+    { "attributes": { "LAD26CD": "E07000141", "LAD26NM": "South Kesteven" } },
+    { "attributes": { "LAD26CD": "E07000142", "LAD26NM": "West Lindsey" } },
+    { "attributes": { "LAD26CD": "E07000143", "LAD26NM": "Breckland" } },
+    { "attributes": { "LAD26CD": "E07000144", "LAD26NM": "Broadland" } },
+    { "attributes": { "LAD26CD": "E07000145", "LAD26NM": "Great Yarmouth" } },
+    {
+      "attributes": {
+        "LAD26CD": "E07000146",
+        "LAD26NM": "King's Lynn and West Norfolk"
+      }
+    },
+    { "attributes": { "LAD26CD": "E07000147", "LAD26NM": "North Norfolk" } },
+    { "attributes": { "LAD26CD": "E07000148", "LAD26NM": "Norwich" } },
+    { "attributes": { "LAD26CD": "E07000149", "LAD26NM": "South Norfolk" } },
+    { "attributes": { "LAD26CD": "E07000170", "LAD26NM": "Ashfield" } },
+    { "attributes": { "LAD26CD": "E07000171", "LAD26NM": "Bassetlaw" } },
+    { "attributes": { "LAD26CD": "E07000172", "LAD26NM": "Broxtowe" } },
+    { "attributes": { "LAD26CD": "E07000173", "LAD26NM": "Gedling" } },
+    { "attributes": { "LAD26CD": "E07000174", "LAD26NM": "Mansfield" } },
+    {
+      "attributes": { "LAD26CD": "E07000175", "LAD26NM": "Newark and Sherwood" }
+    },
+    { "attributes": { "LAD26CD": "E07000176", "LAD26NM": "Rushcliffe" } },
+    { "attributes": { "LAD26CD": "E07000177", "LAD26NM": "Cherwell" } },
+    { "attributes": { "LAD26CD": "E07000178", "LAD26NM": "Oxford" } },
+    {
+      "attributes": { "LAD26CD": "E07000179", "LAD26NM": "South Oxfordshire" }
+    },
+    {
+      "attributes": { "LAD26CD": "E07000180", "LAD26NM": "Vale of White Horse" }
+    },
+    { "attributes": { "LAD26CD": "E07000181", "LAD26NM": "West Oxfordshire" } },
+    { "attributes": { "LAD26CD": "E07000192", "LAD26NM": "Cannock Chase" } },
+    {
+      "attributes": { "LAD26CD": "E07000193", "LAD26NM": "East Staffordshire" }
+    },
+    { "attributes": { "LAD26CD": "E07000194", "LAD26NM": "Lichfield" } },
+    {
+      "attributes": {
+        "LAD26CD": "E07000195",
+        "LAD26NM": "Newcastle-under-Lyme"
+      }
+    },
+    {
+      "attributes": { "LAD26CD": "E07000196", "LAD26NM": "South Staffordshire" }
+    },
+    { "attributes": { "LAD26CD": "E07000197", "LAD26NM": "Stafford" } },
+    {
+      "attributes": {
+        "LAD26CD": "E07000198",
+        "LAD26NM": "Staffordshire Moorlands"
+      }
+    },
+    { "attributes": { "LAD26CD": "E07000199", "LAD26NM": "Tamworth" } },
+    { "attributes": { "LAD26CD": "E07000200", "LAD26NM": "Babergh" } },
+    { "attributes": { "LAD26CD": "E07000202", "LAD26NM": "Ipswich" } },
+    { "attributes": { "LAD26CD": "E07000203", "LAD26NM": "Mid Suffolk" } },
+    { "attributes": { "LAD26CD": "E07000207", "LAD26NM": "Elmbridge" } },
+    { "attributes": { "LAD26CD": "E07000208", "LAD26NM": "Epsom and Ewell" } },
+    { "attributes": { "LAD26CD": "E07000209", "LAD26NM": "Guildford" } },
+    { "attributes": { "LAD26CD": "E07000210", "LAD26NM": "Mole Valley" } },
+    {
+      "attributes": {
+        "LAD26CD": "E07000211",
+        "LAD26NM": "Reigate and Banstead"
+      }
+    },
+    { "attributes": { "LAD26CD": "E07000212", "LAD26NM": "Runnymede" } },
+    { "attributes": { "LAD26CD": "E07000213", "LAD26NM": "Spelthorne" } },
+    { "attributes": { "LAD26CD": "E07000214", "LAD26NM": "Surrey Heath" } },
+    { "attributes": { "LAD26CD": "E07000215", "LAD26NM": "Tandridge" } },
+    { "attributes": { "LAD26CD": "E07000216", "LAD26NM": "Waverley" } },
+    { "attributes": { "LAD26CD": "E07000217", "LAD26NM": "Woking" } },
+    {
+      "attributes": { "LAD26CD": "E07000218", "LAD26NM": "North Warwickshire" }
+    },
+    {
+      "attributes": {
+        "LAD26CD": "E07000219",
+        "LAD26NM": "Nuneaton and Bedworth"
+      }
+    },
+    { "attributes": { "LAD26CD": "E07000220", "LAD26NM": "Rugby" } },
+    {
+      "attributes": { "LAD26CD": "E07000221", "LAD26NM": "Stratford-on-Avon" }
+    },
+    { "attributes": { "LAD26CD": "E07000222", "LAD26NM": "Warwick" } },
+    { "attributes": { "LAD26CD": "E07000223", "LAD26NM": "Adur" } },
+    { "attributes": { "LAD26CD": "E07000224", "LAD26NM": "Arun" } },
+    { "attributes": { "LAD26CD": "E07000225", "LAD26NM": "Chichester" } },
+    { "attributes": { "LAD26CD": "E07000226", "LAD26NM": "Crawley" } },
+    { "attributes": { "LAD26CD": "E07000227", "LAD26NM": "Horsham" } },
+    { "attributes": { "LAD26CD": "E07000228", "LAD26NM": "Mid Sussex" } },
+    { "attributes": { "LAD26CD": "E07000229", "LAD26NM": "Worthing" } },
+    { "attributes": { "LAD26CD": "E07000234", "LAD26NM": "Bromsgrove" } },
+    { "attributes": { "LAD26CD": "E07000235", "LAD26NM": "Malvern Hills" } },
+    { "attributes": { "LAD26CD": "E07000236", "LAD26NM": "Redditch" } },
+    { "attributes": { "LAD26CD": "E07000237", "LAD26NM": "Worcester" } },
+    { "attributes": { "LAD26CD": "E07000238", "LAD26NM": "Wychavon" } },
+    { "attributes": { "LAD26CD": "E07000239", "LAD26NM": "Wyre Forest" } },
+    { "attributes": { "LAD26CD": "E07000240", "LAD26NM": "St Albans" } },
+    { "attributes": { "LAD26CD": "E07000241", "LAD26NM": "Welwyn Hatfield" } },
+    {
+      "attributes": { "LAD26CD": "E07000242", "LAD26NM": "East Hertfordshire" }
+    },
+    { "attributes": { "LAD26CD": "E07000243", "LAD26NM": "Stevenage" } },
+    { "attributes": { "LAD26CD": "E07000244", "LAD26NM": "East Suffolk" } },
+    { "attributes": { "LAD26CD": "E07000245", "LAD26NM": "West Suffolk" } },
+    { "attributes": { "LAD26CD": "E08000001", "LAD26NM": "Bolton" } },
+    { "attributes": { "LAD26CD": "E08000002", "LAD26NM": "Bury" } },
+    { "attributes": { "LAD26CD": "E08000003", "LAD26NM": "Manchester" } },
+    { "attributes": { "LAD26CD": "E08000004", "LAD26NM": "Oldham" } },
+    { "attributes": { "LAD26CD": "E08000005", "LAD26NM": "Rochdale" } },
+    { "attributes": { "LAD26CD": "E08000006", "LAD26NM": "Salford" } },
+    { "attributes": { "LAD26CD": "E08000007", "LAD26NM": "Stockport" } },
+    { "attributes": { "LAD26CD": "E08000008", "LAD26NM": "Tameside" } },
+    { "attributes": { "LAD26CD": "E08000009", "LAD26NM": "Trafford" } },
+    { "attributes": { "LAD26CD": "E08000010", "LAD26NM": "Wigan" } },
+    { "attributes": { "LAD26CD": "E08000011", "LAD26NM": "Knowsley" } },
+    { "attributes": { "LAD26CD": "E08000012", "LAD26NM": "Liverpool" } },
+    { "attributes": { "LAD26CD": "E08000013", "LAD26NM": "St. Helens" } },
+    { "attributes": { "LAD26CD": "E08000014", "LAD26NM": "Sefton" } },
+    { "attributes": { "LAD26CD": "E08000015", "LAD26NM": "Wirral" } },
+    { "attributes": { "LAD26CD": "E08000017", "LAD26NM": "Doncaster" } },
+    { "attributes": { "LAD26CD": "E08000018", "LAD26NM": "Rotherham" } },
+    {
+      "attributes": { "LAD26CD": "E08000021", "LAD26NM": "Newcastle upon Tyne" }
+    },
+    { "attributes": { "LAD26CD": "E08000022", "LAD26NM": "North Tyneside" } },
+    { "attributes": { "LAD26CD": "E08000023", "LAD26NM": "South Tyneside" } },
+    { "attributes": { "LAD26CD": "E08000024", "LAD26NM": "Sunderland" } },
+    { "attributes": { "LAD26CD": "E08000025", "LAD26NM": "Birmingham" } },
+    { "attributes": { "LAD26CD": "E08000026", "LAD26NM": "Coventry" } },
+    { "attributes": { "LAD26CD": "E08000027", "LAD26NM": "Dudley" } },
+    { "attributes": { "LAD26CD": "E08000028", "LAD26NM": "Sandwell" } },
+    { "attributes": { "LAD26CD": "E08000029", "LAD26NM": "Solihull" } },
+    { "attributes": { "LAD26CD": "E08000030", "LAD26NM": "Walsall" } },
+    { "attributes": { "LAD26CD": "E08000031", "LAD26NM": "Wolverhampton" } },
+    { "attributes": { "LAD26CD": "E08000032", "LAD26NM": "Bradford" } },
+    { "attributes": { "LAD26CD": "E08000033", "LAD26NM": "Calderdale" } },
+    { "attributes": { "LAD26CD": "E08000034", "LAD26NM": "Kirklees" } },
+    { "attributes": { "LAD26CD": "E08000035", "LAD26NM": "Leeds" } },
+    { "attributes": { "LAD26CD": "E08000036", "LAD26NM": "Wakefield" } },
+    { "attributes": { "LAD26CD": "E08000037", "LAD26NM": "Gateshead" } },
+    { "attributes": { "LAD26CD": "E08000038", "LAD26NM": "Barnsley" } },
+    { "attributes": { "LAD26CD": "E08000039", "LAD26NM": "Sheffield" } },
+    { "attributes": { "LAD26CD": "E09000001", "LAD26NM": "City of London" } },
+    {
+      "attributes": {
+        "LAD26CD": "E09000002",
+        "LAD26NM": "Barking and Dagenham"
+      }
+    },
+    { "attributes": { "LAD26CD": "E09000003", "LAD26NM": "Barnet" } },
+    { "attributes": { "LAD26CD": "E09000004", "LAD26NM": "Bexley" } },
+    { "attributes": { "LAD26CD": "E09000005", "LAD26NM": "Brent" } },
+    { "attributes": { "LAD26CD": "E09000006", "LAD26NM": "Bromley" } },
+    { "attributes": { "LAD26CD": "E09000007", "LAD26NM": "Camden" } },
+    { "attributes": { "LAD26CD": "E09000008", "LAD26NM": "Croydon" } },
+    { "attributes": { "LAD26CD": "E09000009", "LAD26NM": "Ealing" } },
+    { "attributes": { "LAD26CD": "E09000010", "LAD26NM": "Enfield" } },
+    { "attributes": { "LAD26CD": "E09000011", "LAD26NM": "Greenwich" } },
+    { "attributes": { "LAD26CD": "E09000012", "LAD26NM": "Hackney" } },
+    {
+      "attributes": {
+        "LAD26CD": "E09000013",
+        "LAD26NM": "Hammersmith and Fulham"
+      }
+    },
+    { "attributes": { "LAD26CD": "E09000014", "LAD26NM": "Haringey" } },
+    { "attributes": { "LAD26CD": "E09000015", "LAD26NM": "Harrow" } },
+    { "attributes": { "LAD26CD": "E09000016", "LAD26NM": "Havering" } },
+    { "attributes": { "LAD26CD": "E09000017", "LAD26NM": "Hillingdon" } },
+    { "attributes": { "LAD26CD": "E09000018", "LAD26NM": "Hounslow" } },
+    { "attributes": { "LAD26CD": "E09000019", "LAD26NM": "Islington" } },
+    {
+      "attributes": {
+        "LAD26CD": "E09000020",
+        "LAD26NM": "Kensington and Chelsea"
+      }
+    },
+    {
+      "attributes": {
+        "LAD26CD": "E09000021",
+        "LAD26NM": "Kingston upon Thames"
+      }
+    },
+    { "attributes": { "LAD26CD": "E09000022", "LAD26NM": "Lambeth" } },
+    { "attributes": { "LAD26CD": "E09000023", "LAD26NM": "Lewisham" } },
+    { "attributes": { "LAD26CD": "E09000024", "LAD26NM": "Merton" } },
+    { "attributes": { "LAD26CD": "E09000025", "LAD26NM": "Newham" } },
+    { "attributes": { "LAD26CD": "E09000026", "LAD26NM": "Redbridge" } },
+    {
+      "attributes": {
+        "LAD26CD": "E09000027",
+        "LAD26NM": "Richmond upon Thames"
+      }
+    },
+    { "attributes": { "LAD26CD": "E09000028", "LAD26NM": "Southwark" } },
+    { "attributes": { "LAD26CD": "E09000029", "LAD26NM": "Sutton" } },
+    { "attributes": { "LAD26CD": "E09000030", "LAD26NM": "Tower Hamlets" } },
+    { "attributes": { "LAD26CD": "E09000031", "LAD26NM": "Waltham Forest" } },
+    { "attributes": { "LAD26CD": "E09000032", "LAD26NM": "Wandsworth" } },
+    { "attributes": { "LAD26CD": "E09000033", "LAD26NM": "Westminster" } }
+  ]
+}

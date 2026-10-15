@@ -1,0 +1,8 @@
+packages:
+  - apps/*
+  - packages/*
+  - scripts/*
+
+# tsx depends on esbuild, whose postinstall fetches its platform binary.
+allowBuilds:
+  esbuild: true

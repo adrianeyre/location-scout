@@ -1,0 +1,249 @@
+{
+  "preparedAt": "2026-10-08T12:00:00.000Z",
+  "datasets": [
+    {
+      "id": "council-boundaries",
+      "name": "Council boundaries",
+      "source": "ONS Open Geography",
+      "sourceUrl": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2026_Boundaries_UK_BGC/FeatureServer/0",
+      "sourceDate": "2026-05",
+      "preparedAt": "2026-10-08T12:00:00.000Z",
+      "file": "england/council-boundaries.parquet"
+    },
+    {
+      "id": "output-area-boundaries",
+      "name": "Output area boundaries",
+      "source": "ONS Open Geography",
+      "sourceUrl": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Output_Areas_2021_EW_BGC_V2/FeatureServer/0",
+      "sourceDate": "2021-12",
+      "preparedAt": "2026-10-08T12:00:00.000Z",
+      "file": "england/output-area-boundaries.parquet"
+    },
+    {
+      "id": "census-2021",
+      "name": "Census 2021 by output area",
+      "source": "ONS Census 2021",
+      "sourceUrl": "https://www.nomisweb.co.uk/sources/census_2021_bulk",
+      "sourceDate": "2021-03-21",
+      "preparedAt": "2026-10-08T12:00:00.000Z",
+      "file": "england/census-2021.parquet"
+    },
+    {
+      "id": "income-estimates",
+      "name": "Household income estimates by MSOA",
+      "source": "ONS small area income estimates",
+      "sourceUrl": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/earningsandworkinghours/datasets/smallareaincomeestimatesformiddlelayersuperoutputareasenglandandwales/financialyearending2023/datasetfinal.xlsx",
+      "sourceDate": "2023-03",
+      "preparedAt": "2026-10-08T12:00:00.000Z",
+      "file": "england/income-estimates.parquet"
+    },
+    {
+      "id": "indices-of-deprivation",
+      "name": "English Indices of Deprivation 2025",
+      "source": "English Indices of Deprivation",
+      "sourceUrl": "https://assets.publishing.service.gov.uk/media/691ded56d140bbbaa59a2a7d/File_7_IoD2025_All_Ranks_Scores_Deciles_Population_Denominators.csv",
+      "sourceDate": "2025-10-30",
+      "preparedAt": "2026-10-08T12:00:00.000Z",
+      "file": "england/indices-of-deprivation.parquet"
+    },
+    {
+      "id": "schools",
+      "name": "Schools register",
+      "source": "Get Information about Schools",
+      "sourceUrl": "https://get-information-schools.service.gov.uk/Downloads",
+      "sourceDate": "2026-10-09",
+      "preparedAt": "2026-10-08T12:00:00.000Z",
+      "file": "england/schools.parquet"
+    },
+    {
+      "id": "ofsted-inspections",
+      "name": "Ofsted inspections of state-funded schools",
+      "source": "Ofsted",
+      "sourceUrl": "https://assets.publishing.service.gov.uk/media/6aa0175392e72b8ac437ef37/Management_information_-_state-funded_schools_-_latest_inspections_as_at_31_August_2026.csv",
+      "sourceDate": "2026-08-31",
+      "preparedAt": "2026-10-08T12:00:00.000Z",
+      "file": "england/ofsted-inspections.parquet"
+    },
+    {
+      "id": "ccod",
+      "name": "UK companies that own property in England and Wales",
+      "source": "HM Land Registry",
+      "sourceUrl": "https://use-land-property-data.service.gov.uk/api/v1/datasets/ccod/CCOD_FULL_2026_10.zip",
+      "sourceDate": "2026-10-02",
+      "preparedAt": "2026-10-08T12:00:00.000Z",
+      "file": "england/ccod.parquet",
+      "attribution": {
+        "statements": [
+          "Information produced by HM Land Registry. © Crown copyright 2026."
+        ],
+        "conditionsUrl": "https://use-land-property-data.service.gov.uk/datasets/ccod/licence/view"
+      }
+    },
+    {
+      "id": "ocod",
+      "name": "Overseas companies that own property in England and Wales",
+      "source": "HM Land Registry",
+      "sourceUrl": "https://use-land-property-data.service.gov.uk/api/v1/datasets/ocod/OCOD_FULL_2026_10.zip",
+      "sourceDate": "2026-10-02",
+      "preparedAt": "2026-10-08T12:00:00.000Z",
+      "file": "england/ocod.parquet",
+      "attribution": {
+        "statements": [
+          "Information produced by HM Land Registry. © Crown copyright 2026."
+        ],
+        "conditionsUrl": "https://use-land-property-data.service.gov.uk/datasets/ocod/licence/view"
+      }
+    }
+  ],
+  "landCoverageAreas": [
+    {
+      "council": {
+        "code": "E07000170",
+        "name": "Ashfield"
+      },
+      "datasets": [
+        {
+          "id": "council-boundary",
+          "name": "Council boundary",
+          "source": "ONS Open Geography",
+          "sourceUrl": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2026_Boundaries_UK_BGC/FeatureServer/0",
+          "sourceDate": "2026-05",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/council-boundary.parquet"
+        },
+        {
+          "id": "inspire-index-polygons",
+          "name": "INSPIRE Index Polygons",
+          "source": "HM Land Registry",
+          "sourceUrl": "https://use-land-property-data.service.gov.uk/datasets/inspire/download/Ashfield_District_Council.zip",
+          "sourceDate": "2026-10-04",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/inspire-index-polygons.parquet",
+          "attribution": {
+            "statements": [
+              "This information is subject to Crown copyright and database rights 2026 and is reproduced with the permission of HM Land Registry.",
+              "The polygons (including the associated geometry, namely x, y co-ordinates) are subject to Crown copyright and database rights 2026 Ordnance Survey AC0000851063."
+            ],
+            "conditionsUrl": "https://use-land-property-data.service.gov.uk/datasets/inspire/#conditions"
+          }
+        },
+        {
+          "id": "osm-land-use",
+          "name": "Land use",
+          "source": "OpenStreetMap via Geofabrik",
+          "sourceUrl": "https://download.geofabrik.de/europe/united-kingdom/england/nottinghamshire-261008.osm.pbf https://download.geofabrik.de/europe/united-kingdom/england/derbyshire-261008.osm.pbf",
+          "sourceDate": "2026-10-08",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/osm-land-use.parquet"
+        },
+        {
+          "id": "osm-buildings",
+          "name": "Buildings",
+          "source": "OpenStreetMap via Geofabrik",
+          "sourceUrl": "https://download.geofabrik.de/europe/united-kingdom/england/nottinghamshire-261008.osm.pbf https://download.geofabrik.de/europe/united-kingdom/england/derbyshire-261008.osm.pbf",
+          "sourceDate": "2026-10-08",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/osm-buildings.parquet"
+        },
+        {
+          "id": "osm-roads",
+          "name": "Roads",
+          "source": "OpenStreetMap via Geofabrik",
+          "sourceUrl": "https://download.geofabrik.de/europe/united-kingdom/england/nottinghamshire-261008.osm.pbf https://download.geofabrik.de/europe/united-kingdom/england/derbyshire-261008.osm.pbf",
+          "sourceDate": "2026-10-08",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/osm-roads.parquet"
+        },
+        {
+          "id": "osm-water",
+          "name": "Water",
+          "source": "OpenStreetMap via Geofabrik",
+          "sourceUrl": "https://download.geofabrik.de/europe/united-kingdom/england/nottinghamshire-261008.osm.pbf https://download.geofabrik.de/europe/united-kingdom/england/derbyshire-261008.osm.pbf",
+          "sourceDate": "2026-10-08",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/osm-water.parquet"
+        },
+        {
+          "id": "conservation-area",
+          "name": "Conservation areas",
+          "source": "planning.data.gov.uk",
+          "sourceUrl": "https://files.planning.data.gov.uk/dataset/conservation-area.parquet",
+          "sourceDate": "2026-10-08",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/conservation-area.parquet"
+        },
+        {
+          "id": "listed-building",
+          "name": "Listed buildings",
+          "source": "planning.data.gov.uk",
+          "sourceUrl": "https://files.planning.data.gov.uk/dataset/listed-building.parquet",
+          "sourceDate": "2026-10-08",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/listed-building.parquet"
+        },
+        {
+          "id": "listed-building-outline",
+          "name": "Listed building outlines",
+          "source": "planning.data.gov.uk",
+          "sourceUrl": "https://files.planning.data.gov.uk/dataset/listed-building-outline.parquet",
+          "sourceDate": "2026-10-08",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/listed-building-outline.parquet"
+        },
+        {
+          "id": "article-4-direction-area",
+          "name": "Article 4 direction areas",
+          "source": "planning.data.gov.uk",
+          "sourceUrl": "https://files.planning.data.gov.uk/dataset/article-4-direction-area.parquet",
+          "sourceDate": "2026-10-08",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/article-4-direction-area.parquet"
+        },
+        {
+          "id": "tree-preservation-zone",
+          "name": "Tree preservation zones",
+          "source": "planning.data.gov.uk",
+          "sourceUrl": "https://files.planning.data.gov.uk/dataset/tree-preservation-zone.parquet",
+          "sourceDate": "2026-10-08",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/tree-preservation-zone.parquet"
+        },
+        {
+          "id": "flood-risk-zone",
+          "name": "Flood risk zones",
+          "source": "planning.data.gov.uk",
+          "sourceUrl": "https://files.planning.data.gov.uk/dataset/flood-risk-zone.parquet",
+          "sourceDate": "2026-10-08",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/flood-risk-zone.parquet"
+        },
+        {
+          "id": "land-parcels",
+          "name": "Land Parcels",
+          "source": "OpenStreetMap via Geofabrik",
+          "sourceUrl": "https://download.geofabrik.de/europe/united-kingdom/england/nottinghamshire-261008.osm.pbf https://download.geofabrik.de/europe/united-kingdom/england/derbyshire-261008.osm.pbf",
+          "sourceDate": "2026-10-08",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/land-parcels.parquet"
+        },
+        {
+          "id": "postcodes",
+          "name": "Postcodes",
+          "source": "Ordnance Survey's Code-Point Open",
+          "sourceUrl": "https://api.os.uk/downloads/v1/products/CodePointOpen/downloads?area=GB&format=CSV&redirect",
+          "sourceDate": "2026-08",
+          "preparedAt": "2026-10-08T12:00:00.000Z",
+          "file": "ashfield/postcodes.parquet",
+          "attribution": {
+            "statements": [
+              "Contains OS data © Crown copyright and database right 2026.",
+              "Contains Royal Mail data © Royal Mail copyright and database right 2026.",
+              "Contains National Statistics data © Crown copyright and database right 2026."
+            ],
+            "conditionsUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          }
+        }
+      ]
+    }
+  ]
+}

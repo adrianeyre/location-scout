@@ -1,0 +1,16 @@
+node_modules
+
+# Prepared land data (PRD §6.7), rebuilt by `pnpm data:prepare`.
+/data/
+
+# Local secrets.
+.env
+
+# Build output, the website's (site/dist/) included.
+dist/
+site/dist/
+*.tsbuildinfo
+
+# Playwright's output from `pnpm test:e2e`.
+test-results/
+playwright-report/

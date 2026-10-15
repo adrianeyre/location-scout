@@ -1,0 +1,88 @@
+{
+  "head": {
+    "vars": [
+      "transaction",
+      "postcode",
+      "amount",
+      "date",
+      "propertyType",
+      "estateType",
+      "newBuild",
+      "paon",
+      "saon",
+      "street",
+      "town"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/BEF7EBBF-2AB9-7A76-E053-6B04A8C092F7/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5HL" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "225000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-01-08"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "24" },
+        "street": { "type": "literal", "value": "MAUN VIEW GARDENS" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/BA558B33-82C9-76EF-E053-6B04A8C0B4B7/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5LX" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "65000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2020-11-18"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/flat-maisonette"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/leasehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "THE LODGE" },
+        "saon": { "type": "literal", "value": "APARTMENT 9" },
+        "street": { "type": "literal", "value": "LOWMOOR ROAD" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      }
+    ]
+  }
+}

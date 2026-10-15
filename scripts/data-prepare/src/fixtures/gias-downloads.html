@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <form action="/Downloads/Collate" method="post">
+      <input
+        name="__RequestVerificationToken"
+        type="hidden"
+        value="gJPRfsCii3SxcfCqnrwASQ96wcQdq0zPTEqDhfvdcxpHylzFzDDpY-E0MrxEvuB0iwcAFW6Eo8l1dztcZ6kjdntxW2aH_VgUDtGsydrFwgY1"
+      /><input id="Skip" name="Skip" type="hidden" value="" /><input
+        id="SearchType"
+        name="SearchType"
+        type="hidden"
+        value="Latest"
+      /><input
+        id="FilterDate_Day"
+        name="FilterDate.Day"
+        type="hidden"
+        value="9"
+      /><input
+        id="FilterDate_Month"
+        name="FilterDate.Month"
+        type="hidden"
+        value="10"
+      /><input
+        id="FilterDate_Year"
+        name="FilterDate.Year"
+        type="hidden"
+        value="2026"
+      />
+      <h2 id="establishment-downloads-heading" class="govuk-heading-m">
+        Establishment downloads
+      </h2>
+      <p>
+        You can download the complete record for the specified establishment
+        types. There&#39;s a separate file with links to any predecessor or
+        successor establishments.
+      </p>
+      <div class="govuk-form-group">
+        <h3 id="all-establishment-data-heading" class="govuk-heading-s">
+          All establishment data
+        </h3>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_0__Tag"
+              name="Downloads[0].Tag"
+              type="hidden"
+              value="all.edubase.data"
+            />
+            <input
+              id="Downloads_0__FileGeneratedDate"
+              name="Downloads[0].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="establishment-fields-csv-checkbox"
+              type="checkbox"
+              name="Downloads[0].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.edubase.data|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="establishment-fields-csv-checkbox-label"
+              for="Downloads[0].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >Establishment fields CSV, 61.7 MB</label
+            >
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_1__Tag"
+              name="Downloads[1].Tag"
+              type="hidden"
+              value="all.edubase.data.links"
+            />
+            <input
+              id="Downloads_1__FileGeneratedDate"
+              name="Downloads[1].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="establishment-links-csv-checkbox"
+              type="checkbox"
+              name="Downloads[1].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.edubase.data.links|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="establishment-links-csv-checkbox-label"
+              for="Downloads[1].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >Establishment links CSV, 2.4 MB</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="govuk-form-group">
+        <h3
+          id="open-academies-and-free-schools-data-heading"
+          class="govuk-heading-s"
+        >
+          Open academies and free schools data
+        </h3>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_2__Tag"
+              name="Downloads[2].Tag"
+              type="hidden"
+              value="all.open.academies.and.free.schools"
+            />
+            <input
+              id="Downloads_2__FileGeneratedDate"
+              name="Downloads[2].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="academies-and-free-school--elds-csv-checkbox"
+              type="checkbox"
+              name="Downloads[2].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.open.academies.and.free.schools|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="academies-and-free-school--elds-csv-checkbox-label"
+              for="Downloads[2].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >Academies and free school ﬁelds CSV, 4.98 MB</label
+            >
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_3__Tag"
+              name="Downloads[3].Tag"
+              type="hidden"
+              value="all.open.academies.and.free.school.links"
+            />
+            <input
+              id="Downloads_3__FileGeneratedDate"
+              name="Downloads[3].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="academies-and-free-school-links-csv-checkbox"
+              type="checkbox"
+              name="Downloads[3].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.open.academies.and.free.school.links|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="academies-and-free-school-links-csv-checkbox-label"
+              for="Downloads[3].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >Academies and free school links CSV, 0.83 MB</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="govuk-form-group">
+        <h3 id="open-state-funded-schools-data-heading" class="govuk-heading-s">
+          Open state-funded schools data
+        </h3>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_4__Tag"
+              name="Downloads[4].Tag"
+              type="hidden"
+              value="all.open.state-funded.schools"
+            />
+            <input
+              id="Downloads_4__FileGeneratedDate"
+              name="Downloads[4].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="state-funded-school--elds-csv-checkbox"
+              type="checkbox"
+              name="Downloads[4].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.open.state-funded.schools|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="state-funded-school--elds-csv-checkbox-label"
+              for="Downloads[4].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >State-funded school ﬁelds CSV, 8.87 MB</label
+            >
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_5__Tag"
+              name="Downloads[5].Tag"
+              type="hidden"
+              value="all.open.state-funded.school.links"
+            />
+            <input
+              id="Downloads_5__FileGeneratedDate"
+              name="Downloads[5].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="state-funded-school-links-csv-checkbox"
+              type="checkbox"
+              name="Downloads[5].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.open.state-funded.school.links|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="state-funded-school-links-csv-checkbox-label"
+              for="Downloads[5].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >State-funded school links CSV, 0.97 MB</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="govuk-form-group">
+        <h3 id="open-childrens-centres-data--heading" class="govuk-heading-s">
+          Open children&#39;s centres data
+        </h3>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_6__Tag"
+              name="Downloads[6].Tag"
+              type="hidden"
+              value="all.open.childrens.centres"
+            />
+            <input
+              id="Downloads_6__FileGeneratedDate"
+              name="Downloads[6].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="childrens-centre--elds-csv-checkbox"
+              type="checkbox"
+              name="Downloads[6].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.open.childrens.centres|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="childrens-centre--elds-csv-checkbox-label"
+              for="Downloads[6].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >Children&#39;s centre ﬁelds CSV, 0.74 MB</label
+            >
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_7__Tag"
+              name="Downloads[7].Tag"
+              type="hidden"
+              value="all.open.childrens.centres.links"
+            />
+            <input
+              id="Downloads_7__FileGeneratedDate"
+              name="Downloads[7].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="all-open-childrens-centres-linkscsv-checkbox"
+              type="checkbox"
+              name="Downloads[7].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.open.childrens.centres.links|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="all-open-childrens-centres-linkscsv-checkbox-label"
+              for="Downloads[7].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >All open children&#39;s centres links.csv, 0.11 MB</label
+            >
+          </div>
+        </div>
+      </div>
+      <h2 id="establishment-groups-heading" class="govuk-heading-m">
+        Establishment groups
+      </h2>
+      <p>
+        You can download the complete record for the specified establishment
+        group. There&#39;s a separate file with links to any establishments
+        associated with the groups.
+      </p>
+      <div class="govuk-form-group">
+        <h3 id="all-group-data-heading" class="govuk-heading-s">
+          All group data
+        </h3>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_8__Tag"
+              name="Downloads[8].Tag"
+              type="hidden"
+              value="academies.mat.membership"
+            />
+            <input
+              id="Downloads_8__FileGeneratedDate"
+              name="Downloads[8].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="sat-and-mat-membership-history-csv-checkbox"
+              type="checkbox"
+              name="Downloads[8].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="academies.mat.membership|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="sat-and-mat-membership-history-csv-checkbox-label"
+              for="Downloads[8].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >SAT and MAT membership history CSV, 8.47 MB</label
+            >
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_9__Tag"
+              name="Downloads[9].Tag"
+              type="hidden"
+              value="all.group.records"
+            />
+            <input
+              id="Downloads_9__FileGeneratedDate"
+              name="Downloads[9].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="all-group-recordscsv-checkbox"
+              type="checkbox"
+              name="Downloads[9].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.group.records|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="all-group-recordscsv-checkbox-label"
+              for="Downloads[9].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >All group records.csv, 1.38 MB</label
+            >
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_10__Tag"
+              name="Downloads[10].Tag"
+              type="hidden"
+              value="all.group.links.records"
+            />
+            <input
+              id="Downloads_10__FileGeneratedDate"
+              name="Downloads[10].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="all-group-links-recordscsv-checkbox"
+              type="checkbox"
+              name="Downloads[10].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.group.links.records|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="all-group-links-recordscsv-checkbox-label"
+              for="Downloads[10].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >All group links records.csv, 5.34 MB</label
+            >
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_11__Tag"
+              name="Downloads[11].Tag"
+              type="hidden"
+              value="all.group.with.links.records"
+            />
+            <input
+              id="Downloads_11__FileGeneratedDate"
+              name="Downloads[11].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="all-group-records-with-linkszip-checkbox"
+              type="checkbox"
+              name="Downloads[11].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.group.with.links.records|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="all-group-records-with-linkszip-checkbox-label"
+              for="Downloads[11].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >All group records with links.zip, 1.02 MB</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="govuk-form-group">
+        <h3 id="open-group-data-heading" class="govuk-heading-s">
+          Open group data
+        </h3>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_12__Tag"
+              name="Downloads[12].Tag"
+              type="hidden"
+              value="academy.sponsor.and.trust.links"
+            />
+            <input
+              id="Downloads_12__FileGeneratedDate"
+              name="Downloads[12].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="academy-sponsor-and-trust-linkscsv-checkbox"
+              type="checkbox"
+              name="Downloads[12].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="academy.sponsor.and.trust.links|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="academy-sponsor-and-trust-linkscsv-checkbox-label"
+              for="Downloads[12].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >Academy sponsor and trust links.csv, 4.49 MB</label
+            >
+          </div>
+        </div>
+      </div>
+      <h2 id="governors-heading" class="govuk-heading-m">Governors</h2>
+      <p>
+        You can download the complete record for all governors listed within
+        GIAS.
+      </p>
+      <div class="govuk-form-group">
+        <h3 id="all-governor-data-heading" class="govuk-heading-s">
+          All governor data
+        </h3>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_13__Tag"
+              name="Downloads[13].Tag"
+              type="hidden"
+              value="all.governance.records"
+            />
+            <input
+              id="Downloads_13__FileGeneratedDate"
+              name="Downloads[13].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="governor--elds-csv-checkbox"
+              type="checkbox"
+              name="Downloads[13].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.governance.records|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="governor--elds-csv-checkbox-label"
+              for="Downloads[13].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >Governor ﬁelds CSV, 32.07 MB</label
+            >
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_14__Tag"
+              name="Downloads[14].Tag"
+              type="hidden"
+              value="all.mat.governance.records"
+            />
+            <input
+              id="Downloads_14__FileGeneratedDate"
+              name="Downloads[14].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="all-multi-academy-trust-mat-governance-recordscsv-checkbox"
+              type="checkbox"
+              name="Downloads[14].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.mat.governance.records|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="all-multi-academy-trust-mat-governance-recordscsv-checkbox-label"
+              for="Downloads[14].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >All multi academy trust (MAT) governance records.csv, 3.51
+              MB</label
+            >
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_15__Tag"
+              name="Downloads[15].Tag"
+              type="hidden"
+              value="all.academy.governance.records"
+            />
+            <input
+              id="Downloads_15__FileGeneratedDate"
+              name="Downloads[15].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="all-academy-governance-recordscsv-checkbox"
+              type="checkbox"
+              name="Downloads[15].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.academy.governance.records|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="all-academy-governance-recordscsv-checkbox-label"
+              for="Downloads[15].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >All academy governance records.csv, 15.05 MB</label
+            >
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input
+              id="Downloads_16__Tag"
+              name="Downloads[16].Tag"
+              type="hidden"
+              value="all.la.maintained.governance.records"
+            />
+            <input
+              id="Downloads_16__FileGeneratedDate"
+              name="Downloads[16].FileGeneratedDate"
+              type="hidden"
+              value="10/9/2026 12:00:00 AM"
+            />
+            <input
+              id="all-local-authority-la-maintained-governance-recordscsv-checkbox"
+              type="checkbox"
+              name="Downloads[16].Selected"
+              class="govuk-checkboxes__input"
+              value="true"
+              data-trackinglabel="all.la.maintained.governance.records|10/9/2026 12:00:00 AM|False"
+            />
+            <label
+              id="all-local-authority-la-maintained-governance-recordscsv-checkbox-label"
+              for="Downloads[16].Selected"
+              class="govuk-checkboxes__label govuk-body"
+              >All local authority (LA) maintained governance records.csv, 13.5
+              MB</label
+            >
+          </div>
+        </div>
+      </div>
+      <p>
+        <input
+          type="submit"
+          id="download-selected-files-button"
+          class="govuk-button"
+          value="Download selected files"
+        /><br />
+      </p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+# The frontend talks only to our own backend, never to Data Sources
+
+The React frontend calls one backend endpoint per Search Area. Only the backend calls the external Data Sources (postcodes.io, Nominatim, Police API, planning.data.gov.uk, Overpass, Land Registry), and it returns one normalised response. Calling the sources straight from the browser would remove a moving part in Phase 1, but we rejected that. Some sources block cross-origin requests or have strict rate limits. Scoring rules belong in one place. Keeping the frontend unaware of the sources lets us add caching and a database later without changing the UI. The backend uses Hono, so the same code runs locally in Phase 1 and on Cloudflare Workers when hosted.

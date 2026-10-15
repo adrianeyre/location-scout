@@ -1,0 +1,50 @@
+[
+  {
+    "place_id": 277367505,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 45750817,
+    "lat": "53.1287698",
+    "lon": "-1.2933840",
+    "category": "highway",
+    "type": "residential",
+    "place_rank": 26,
+    "importance": 0.053385092698557984,
+    "addresstype": "road",
+    "name": "High Street",
+    "display_name": "High Street, Sutton in Ashfield, Kirkby in Ashfield Urban District;Sutton in Ashfield Urban District, Huthwaite, Ashfield, Nottinghamshire, East Midlands, England, NG17 2PG, United Kingdom",
+    "boundingbox": ["53.1286722", "53.1288673", "-1.2944768", "-1.2922913"]
+  },
+  {
+    "place_id": 277265289,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 55202381,
+    "lat": "53.1241078",
+    "lon": "-1.2621582",
+    "category": "highway",
+    "type": "unclassified",
+    "place_rank": 26,
+    "importance": 0.053385092698557984,
+    "addresstype": "road",
+    "name": "High Street",
+    "display_name": "High Street, Sutton in Ashfield, Kirkby in Ashfield Urban District;Sutton in Ashfield Urban District, Sutton-in-Ashfield, Ashfield, Nottinghamshire, East Midlands, England, NG17 1DH, United Kingdom",
+    "boundingbox": ["53.1239964", "53.1242058", "-1.2624789", "-1.2618304"]
+  },
+  {
+    "place_id": 277296704,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 28755192,
+    "lat": "53.1408244",
+    "lon": "-1.2773692",
+    "category": "highway",
+    "type": "secondary",
+    "place_rank": 26,
+    "importance": 0.053385092698557984,
+    "addresstype": "road",
+    "name": "High Street",
+    "display_name": "High Street, Sutton in Ashfield, Kirkby in Ashfield Urban District;Sutton in Ashfield Urban District, Stanton Hill, Ashfield, Nottinghamshire, East Midlands, England, NG17 3FY, United Kingdom",
+    "boundingbox": ["53.1400970", "53.1415970", "-1.2790230", "-1.2756939"]
+  }
+]

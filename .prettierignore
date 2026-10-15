@@ -1,0 +1,13 @@
+# The agreed documents are prose, edited by hand; Prettier would only reflow
+# their tables.
+*.md
+
+# The Sandcastle harness is configuration, not part of the app (see
+# docs/processes/running-sandcastle.md).
+.sandcastle/
+
+pnpm-lock.yaml
+/data/
+dist/
+test-results/
+playwright-report/

@@ -1,0 +1,1517 @@
+{
+  "searches": {
+    "NG17 0AZ": null,
+    "NG17 0DX": null,
+    "NG17 7QX": null,
+    "NG17 7QU": null,
+    "NG17 0DR": null,
+    "NG17 0EF": null,
+    "NG17 0EH": null,
+    "NG17 0EG": null,
+    "NG17 1AA": null,
+    "NG17 0EX": null,
+    "NG17 0ET": null,
+    "NG17 7XA": null,
+    "NG17 7WZ": null,
+    "NG17 1BF": null,
+    "NG17 1AL": null,
+    "NG17 1AQ": null,
+    "NG17 1AT": null,
+    "NG17 1EP": null,
+    "NG17 1BW": null,
+    "NG17 1EQ": null,
+    "NG17 1AN": null,
+    "NG17 1AG": null,
+    "NG17 1EJ": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0001",
+          "addressLine1": "7 Kensington Close",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 1EJ",
+          "uprn": 999000000601,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "C",
+          "registrationDate": "2020-10-01",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0002",
+          "addressLine1": "11 Kensington Close",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 1EJ",
+          "uprn": 999000000602,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "B",
+          "registrationDate": "2024-04-12",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 2,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 1EU": null,
+    "NG17 1ER": null,
+    "NG17 1AE": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0003",
+          "addressLine1": "Holden House",
+          "addressLine2": "Church Street",
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 1AE",
+          "uprn": 999000000301,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "E",
+          "registrationDate": "2013-04-25",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0004",
+          "addressLine1": "The Old Vicarage",
+          "addressLine2": "Church Street",
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 1AE",
+          "uprn": 999000000302,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "F",
+          "registrationDate": "2014-10-30",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 2,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 1BT": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0005",
+          "addressLine1": "88 High Pavement",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 1BT",
+          "uprn": 999000000101,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "D",
+          "registrationDate": "2019-03-14",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0006",
+          "addressLine1": "90 High Pavement",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 1BT",
+          "uprn": 999000000102,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "C",
+          "registrationDate": "2021-07-02",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0007",
+          "addressLine1": "86a High Pavement",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 1BT",
+          "uprn": 999000000103,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "E",
+          "registrationDate": "2015-05-19",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 3,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 1AB": null,
+    "NG17 1DH": null,
+    "NG17 1BP": null,
+    "NG17 1EE": null,
+    "NG17 1HB": null,
+    "NG17 1PB": null,
+    "NG17 1NZ": null,
+    "NG17 1BN": null,
+    "NG17 1DG": null,
+    "NG17 1BU": null,
+    "NG17 1EA": null,
+    "NG17 1AR": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0008",
+          "addressLine1": "11 Church Mews",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 1AR",
+          "uprn": 999000001101,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "B",
+          "registrationDate": "2021-05-06",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0009",
+          "addressLine1": "9 Church Mews",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 1AR",
+          "uprn": 999000001102,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "B",
+          "registrationDate": "2021-05-06",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 2,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 1EL": null,
+    "NG17 5EP": null,
+    "NG17 1BS": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0010",
+          "addressLine1": "99 High Pavement",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 1BS",
+          "uprn": 999000000801,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "D",
+          "registrationDate": "2018-05-10",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0011",
+          "addressLine1": "101 High Pavement",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 1BS",
+          "uprn": 999000000802,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "E",
+          "registrationDate": "2013-02-27",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 2,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 1AF": null,
+    "NG17 1BG": null,
+    "NG17 1BJ": null,
+    "NG17 1HD": null,
+    "NG17 1AJ": null,
+    "NG17 1ES": null,
+    "NG17 1GA": null,
+    "NG17 1BL": null,
+    "NG17 1EX": null,
+    "NG17 1AX": null,
+    "NG17 1AZ": null,
+    "NG17 1AD": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0012",
+          "addressLine1": "30 Prospect Pl",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 1AD",
+          "uprn": 999000001301,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "E",
+          "registrationDate": "2016-06-27",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 1,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 5FD": null,
+    "NG17 1EW": null,
+    "NG17 1EY": null,
+    "NG17 5EQ": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0013",
+          "addressLine1": "15 Windmill Close",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 5EQ",
+          "uprn": 999000001601,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "C",
+          "registrationDate": "2018-02-20",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0014",
+          "addressLine1": "24 Windmill Close",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 5EQ",
+          "uprn": 999000001602,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "C",
+          "registrationDate": "2020-06-03",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0015",
+          "addressLine1": "3 Windmill Close",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 5EQ",
+          "uprn": 999000001603,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "B",
+          "registrationDate": "2023-09-12",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0016",
+          "addressLine1": "5 Windmill Close",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 5EQ",
+          "uprn": 999000001604,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "C",
+          "registrationDate": "2019-04-26",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 4,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 5DA": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0017",
+          "addressLine1": "10, The Twitchell",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 5DA",
+          "uprn": 999000000201,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "D",
+          "registrationDate": "2016-09-08",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0018",
+          "addressLine1": "12 The Twitchell",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 5DA",
+          "uprn": 999000000202,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "D",
+          "registrationDate": "2020-02-11",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 2,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 1DB": null,
+    "NG17 1FB": null,
+    "NG17 1GB": null,
+    "NG17 1BA": null,
+    "NG17 1BE": null,
+    "NG17 1DA": null,
+    "NG17 5AA": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0019",
+          "addressLine1": "97 Silk Street",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 5AA",
+          "uprn": 999000001401,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "D",
+          "registrationDate": "2017-10-09",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 1,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 5AG": null,
+    "NG17 2FA": null,
+    "NG17 1EN": null,
+    "NG17 2AD": null,
+    "NG17 5DB": null,
+    "NG17 1DQ": null,
+    "NG17 2EA": null,
+    "NG17 1EB": null,
+    "NG17 1DE": null,
+    "NG17 1EZ": null,
+    "NG17 5AD": null,
+    "NG17 2AE": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0020",
+          "addressLine1": "21 Priestsic Rd",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 2AE",
+          "uprn": 999000000401,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "C",
+          "registrationDate": "2022-06-17",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0021",
+          "addressLine1": "19 Priestsic Road",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 2AE",
+          "uprn": 999000000402,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "D",
+          "registrationDate": "2018-01-23",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0022",
+          "addressLine1": "23 Priestsic Road",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 2AE",
+          "uprn": 999000000403,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "C",
+          "registrationDate": "2023-08-04",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 3,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 5AB": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0023",
+          "addressLine1": "2 Mill Croft",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 5AB",
+          "uprn": 999000000701,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "C",
+          "registrationDate": "2017-07-21",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0024",
+          "addressLine1": "4 Mill Croft",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 5AB",
+          "uprn": 999000000702,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "C",
+          "registrationDate": "2019-09-30",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 2,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 1BQ": null,
+    "NG17 5AF": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0025",
+          "addressLine1": "Wayside",
+          "addressLine2": "Cowpasture Lane",
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 5AF",
+          "uprn": 999000000901,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "E",
+          "registrationDate": "2015-11-03",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0026",
+          "addressLine1": "Wayside Cottage",
+          "addressLine2": "Cowpasture Lane",
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 5AF",
+          "uprn": 999000000902,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "F",
+          "registrationDate": "2021-03-19",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 2,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 5DF": null,
+    "NG17 1FD": null,
+    "NG17 2AB": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0027",
+          "addressLine1": "43 Langford Street",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 2AB",
+          "uprn": 999000001201,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "D",
+          "registrationDate": "2019-12-02",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0028",
+          "addressLine1": "45 Langford Street",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 2AB",
+          "uprn": 999000001202,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "D",
+          "registrationDate": "2016-01-18",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 2,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 5EL": null,
+    "NG17 5BX": null,
+    "NG17 5DE": null,
+    "NG17 5AH": null,
+    "NG17 1FF": null,
+    "NG17 1GE": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0029",
+          "addressLine1": "4 Stevenson Cres",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 1GE",
+          "uprn": 999000001701,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "C",
+          "registrationDate": "2024-03-08",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 1,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 1FE": null,
+    "NG17 4AW": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0030",
+          "addressLine1": "35 Portland Street",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 4AW",
+          "uprn": 999000000501,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "E",
+          "registrationDate": "2014-06-02",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0031",
+          "addressLine1": "35 Portland Street",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 4AW",
+          "uprn": 999000000501,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "D",
+          "registrationDate": "2022-11-20",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0032",
+          "addressLine1": "33 Portland Street",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 4AW",
+          "uprn": 999000000502,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "E",
+          "registrationDate": "2017-03-15",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0033",
+          "addressLine1": "37 Portland Street",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 4AW",
+          "uprn": 999000000503,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "G",
+          "registrationDate": "2012-12-05",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 4,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 2AS": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0034",
+          "addressLine1": "9 Carsic Lane",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 2AS",
+          "uprn": 999000001001,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "D",
+          "registrationDate": "2020-08-14",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 1,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 5EN": null,
+    "NG17 5DD": null,
+    "NG17 5AE": {
+      "data": [
+        {
+          "certificateNumber": "9901-0000-0000-0000-0035",
+          "addressLine1": "Rosedene",
+          "addressLine2": "Coronation Street",
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 5AE",
+          "uprn": null,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "D",
+          "registrationDate": "2014-08-22",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        },
+        {
+          "certificateNumber": "9901-0000-0000-0000-0036",
+          "addressLine1": "23 Coronation Street",
+          "addressLine2": null,
+          "addressLine3": null,
+          "addressLine4": null,
+          "postTown": "Sutton-in-Ashfield",
+          "postcode": "NG17 5AE",
+          "uprn": 999000001502,
+          "council": "Ashfield",
+          "constituency": "Ashfield",
+          "currentEnergyEfficiencyBand": "D",
+          "registrationDate": "2021-01-29",
+          "schemaType": "RdSAP-Schema-21.0.1"
+        }
+      ],
+      "pagination": {
+        "totalRecords": 2,
+        "currentPage": 1,
+        "totalPages": 1,
+        "nextPage": null,
+        "prevPage": null,
+        "pageSize": 5000
+      }
+    },
+    "NG17 4BA": null,
+    "NG17 1GF": null,
+    "NG17 4AX": null,
+    "NG17 2AF": null
+  },
+  "certificates": {
+    "9901-0000-0000-0000-0001": {
+      "data": {
+        "address_line_1": "7 Kensington Close",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 1EJ",
+        "uprn": 999000000601,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2020-10-01",
+        "inspection_date": "2020-10-01",
+        "current_energy_efficiency_band": "C",
+        "potential_energy_efficiency_band": "B",
+        "energy_rating_current": 71,
+        "energy_rating_potential": 83,
+        "total_floor_area": 84,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0002": {
+      "data": {
+        "address_line_1": "11 Kensington Close",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 1EJ",
+        "uprn": 999000000602,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2024-04-12",
+        "inspection_date": "2024-04-12",
+        "current_energy_efficiency_band": "B",
+        "potential_energy_efficiency_band": "A",
+        "energy_rating_current": 83,
+        "energy_rating_potential": 93,
+        "total_floor_area": 86,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0003": {
+      "data": {
+        "address_line_1": "Holden House",
+        "address_line_2": "Church Street",
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 1AE",
+        "uprn": 999000000301,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2013-04-25",
+        "inspection_date": "2013-04-25",
+        "current_energy_efficiency_band": "E",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 45,
+        "energy_rating_potential": 72,
+        "total_floor_area": 160,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0004": {
+      "data": {
+        "address_line_1": "The Old Vicarage",
+        "address_line_2": "Church Street",
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 1AE",
+        "uprn": 999000000302,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2014-10-30",
+        "inspection_date": "2014-10-30",
+        "current_energy_efficiency_band": "F",
+        "potential_energy_efficiency_band": "D",
+        "energy_rating_current": 33,
+        "energy_rating_potential": 60,
+        "total_floor_area": 240,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0005": {
+      "data": {
+        "address_line_1": "88 High Pavement",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 1BT",
+        "uprn": 999000000101,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2019-03-14",
+        "inspection_date": "2019-03-14",
+        "current_energy_efficiency_band": "D",
+        "potential_energy_efficiency_band": "B",
+        "energy_rating_current": 63,
+        "energy_rating_potential": 84,
+        "total_floor_area": 92,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0006": {
+      "data": {
+        "address_line_1": "90 High Pavement",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 1BT",
+        "uprn": 999000000102,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2021-07-02",
+        "inspection_date": "2021-07-02",
+        "current_energy_efficiency_band": "C",
+        "potential_energy_efficiency_band": "B",
+        "energy_rating_current": 70,
+        "energy_rating_potential": 83,
+        "total_floor_area": 88,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0007": {
+      "data": {
+        "address_line_1": "86a High Pavement",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 1BT",
+        "uprn": 999000000103,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2015-05-19",
+        "inspection_date": "2015-05-19",
+        "current_energy_efficiency_band": "E",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 48,
+        "energy_rating_potential": 71,
+        "total_floor_area": 54,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0008": {
+      "data": {
+        "address_line_1": "11 Church Mews",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 1AR",
+        "uprn": 999000001101,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2021-05-06",
+        "inspection_date": "2021-05-06",
+        "current_energy_efficiency_band": "B",
+        "potential_energy_efficiency_band": "A",
+        "energy_rating_current": 84,
+        "energy_rating_potential": 94,
+        "total_floor_area": 130,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0009": {
+      "data": {
+        "address_line_1": "9 Church Mews",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 1AR",
+        "uprn": 999000001102,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2021-05-06",
+        "inspection_date": "2021-05-06",
+        "current_energy_efficiency_band": "B",
+        "potential_energy_efficiency_band": "A",
+        "energy_rating_current": 85,
+        "energy_rating_potential": 94,
+        "total_floor_area": 128,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0010": {
+      "data": {
+        "address_line_1": "99 High Pavement",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 1BS",
+        "uprn": 999000000801,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2018-05-10",
+        "inspection_date": "2018-05-10",
+        "current_energy_efficiency_band": "D",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 58,
+        "energy_rating_potential": 75,
+        "total_floor_area": 118,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0011": {
+      "data": {
+        "address_line_1": "101 High Pavement",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 1BS",
+        "uprn": 999000000802,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2013-02-27",
+        "inspection_date": "2013-02-27",
+        "current_energy_efficiency_band": "E",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 47,
+        "energy_rating_potential": 70,
+        "total_floor_area": 120,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0012": {
+      "data": {
+        "address_line_1": "30 Prospect Pl",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 1AD",
+        "uprn": 999000001301,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2016-06-27",
+        "inspection_date": "2016-06-27",
+        "current_energy_efficiency_band": "E",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 51,
+        "energy_rating_potential": 72,
+        "total_floor_area": 64,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0013": {
+      "data": {
+        "address_line_1": "15 Windmill Close",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 5EQ",
+        "uprn": 999000001601,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2018-02-20",
+        "inspection_date": "2018-02-20",
+        "current_energy_efficiency_band": "C",
+        "potential_energy_efficiency_band": "B",
+        "energy_rating_current": 69,
+        "energy_rating_potential": 83,
+        "total_floor_area": 90,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0014": {
+      "data": {
+        "address_line_1": "24 Windmill Close",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 5EQ",
+        "uprn": 999000001602,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2020-06-03",
+        "inspection_date": "2020-06-03",
+        "current_energy_efficiency_band": "C",
+        "potential_energy_efficiency_band": "B",
+        "energy_rating_current": 71,
+        "energy_rating_potential": 84,
+        "total_floor_area": 88,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0015": {
+      "data": {
+        "address_line_1": "3 Windmill Close",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 5EQ",
+        "uprn": 999000001603,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2023-09-12",
+        "inspection_date": "2023-09-12",
+        "current_energy_efficiency_band": "B",
+        "potential_energy_efficiency_band": "A",
+        "energy_rating_current": 82,
+        "energy_rating_potential": 92,
+        "total_floor_area": 84,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0016": {
+      "data": {
+        "address_line_1": "5 Windmill Close",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 5EQ",
+        "uprn": 999000001604,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2019-04-26",
+        "inspection_date": "2019-04-26",
+        "current_energy_efficiency_band": "C",
+        "potential_energy_efficiency_band": "B",
+        "energy_rating_current": 70,
+        "energy_rating_potential": 83,
+        "total_floor_area": 85,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0017": {
+      "data": {
+        "address_line_1": "10, The Twitchell",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 5DA",
+        "uprn": 999000000201,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2016-09-08",
+        "inspection_date": "2016-09-08",
+        "current_energy_efficiency_band": "D",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 59,
+        "energy_rating_potential": 77,
+        "total_floor_area": 70,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0018": {
+      "data": {
+        "address_line_1": "12 The Twitchell",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 5DA",
+        "uprn": 999000000202,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2020-02-11",
+        "inspection_date": "2020-02-11",
+        "current_energy_efficiency_band": "D",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 61,
+        "energy_rating_potential": 78,
+        "total_floor_area": 71,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0019": {
+      "data": {
+        "address_line_1": "97 Silk Street",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 5AA",
+        "uprn": 999000001401,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2017-10-09",
+        "inspection_date": "2017-10-09",
+        "current_energy_efficiency_band": "D",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 61,
+        "energy_rating_potential": 78,
+        "total_floor_area": 0,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0020": {
+      "data": {
+        "address_line_1": "21 Priestsic Rd",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 2AE",
+        "uprn": 999000000401,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2022-06-17",
+        "inspection_date": "2022-06-17",
+        "current_energy_efficiency_band": "C",
+        "potential_energy_efficiency_band": "B",
+        "energy_rating_current": 72,
+        "energy_rating_potential": 85,
+        "total_floor_area": 145,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0021": {
+      "data": {
+        "address_line_1": "19 Priestsic Road",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 2AE",
+        "uprn": 999000000402,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2018-01-23",
+        "inspection_date": "2018-01-23",
+        "current_energy_efficiency_band": "D",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 62,
+        "energy_rating_potential": 76,
+        "total_floor_area": 132,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0022": {
+      "data": {
+        "address_line_1": "23 Priestsic Road",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 2AE",
+        "uprn": 999000000403,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2023-08-04",
+        "inspection_date": "2023-08-04",
+        "current_energy_efficiency_band": "C",
+        "potential_energy_efficiency_band": "B",
+        "energy_rating_current": 74,
+        "energy_rating_potential": 86,
+        "total_floor_area": 150,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0023": {
+      "data": {
+        "address_line_1": "2 Mill Croft",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 5AB",
+        "uprn": 999000000701,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2017-07-21",
+        "inspection_date": "2017-07-21",
+        "current_energy_efficiency_band": "C",
+        "potential_energy_efficiency_band": "B",
+        "energy_rating_current": 69,
+        "energy_rating_potential": 82,
+        "total_floor_area": 95,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0024": {
+      "data": {
+        "address_line_1": "4 Mill Croft",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 5AB",
+        "uprn": 999000000702,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2019-09-30",
+        "inspection_date": "2019-09-30",
+        "current_energy_efficiency_band": "C",
+        "potential_energy_efficiency_band": "B",
+        "energy_rating_current": 70,
+        "energy_rating_potential": 82,
+        "total_floor_area": 96,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0025": {
+      "data": {
+        "address_line_1": "Wayside",
+        "address_line_2": "Cowpasture Lane",
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 5AF",
+        "uprn": 999000000901,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2015-11-03",
+        "inspection_date": "2015-11-03",
+        "current_energy_efficiency_band": "E",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 44,
+        "energy_rating_potential": 71,
+        "total_floor_area": 210,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0026": {
+      "data": {
+        "address_line_1": "Wayside Cottage",
+        "address_line_2": "Cowpasture Lane",
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 5AF",
+        "uprn": 999000000902,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2021-03-19",
+        "inspection_date": "2021-03-19",
+        "current_energy_efficiency_band": "F",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 35,
+        "energy_rating_potential": 69,
+        "total_floor_area": 130,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0027": {
+      "data": {
+        "address_line_1": "43 Langford Street",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 2AB",
+        "uprn": 999000001201,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2019-12-02",
+        "inspection_date": "2019-12-02",
+        "current_energy_efficiency_band": "D",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 60,
+        "energy_rating_potential": 77,
+        "total_floor_area": 68,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0028": {
+      "data": {
+        "address_line_1": "45 Langford Street",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 2AB",
+        "uprn": 999000001202,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2016-01-18",
+        "inspection_date": "2016-01-18",
+        "current_energy_efficiency_band": "D",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 57,
+        "energy_rating_potential": 76,
+        "total_floor_area": 69,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0029": {
+      "data": {
+        "address_line_1": "4 Stevenson Cres",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 1GE",
+        "uprn": 999000001701,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2024-03-08",
+        "inspection_date": "2024-03-08",
+        "current_energy_efficiency_band": "C",
+        "potential_energy_efficiency_band": "B",
+        "energy_rating_current": 73,
+        "energy_rating_potential": 85,
+        "total_floor_area": 91,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0030": {
+      "data": {
+        "address_line_1": "35 Portland Street",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 4AW",
+        "uprn": 999000000501,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2014-06-02",
+        "inspection_date": "2014-06-02",
+        "current_energy_efficiency_band": "E",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 50,
+        "energy_rating_potential": 73,
+        "total_floor_area": 76,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0031": {
+      "data": {
+        "address_line_1": "35 Portland Street",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 4AW",
+        "uprn": 999000000501,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2022-11-20",
+        "inspection_date": "2022-11-20",
+        "current_energy_efficiency_band": "D",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 64,
+        "energy_rating_potential": 79,
+        "total_floor_area": 76,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0032": {
+      "data": {
+        "address_line_1": "33 Portland Street",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 4AW",
+        "uprn": 999000000502,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2017-03-15",
+        "inspection_date": "2017-03-15",
+        "current_energy_efficiency_band": "E",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 52,
+        "energy_rating_potential": 74,
+        "total_floor_area": 75,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0033": {
+      "data": {
+        "address_line_1": "37 Portland Street",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 4AW",
+        "uprn": 999000000503,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2012-12-05",
+        "inspection_date": "2012-12-05",
+        "current_energy_efficiency_band": "G",
+        "potential_energy_efficiency_band": "D",
+        "energy_rating_current": 18,
+        "energy_rating_potential": 58,
+        "total_floor_area": 77,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0034": {
+      "data": {
+        "address_line_1": "9 Carsic Lane",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 2AS",
+        "uprn": 999000001001,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2020-08-14",
+        "inspection_date": "2020-08-14",
+        "current_energy_efficiency_band": "D",
+        "potential_energy_efficiency_band": "B",
+        "energy_rating_current": 66,
+        "energy_rating_potential": 84,
+        "total_floor_area": 100,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0035": {
+      "data": {
+        "address_line_1": "Rosedene",
+        "address_line_2": "Coronation Street",
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 5AE",
+        "uprn": null,
+        "uprn_source": null,
+        "registration_date": "2014-08-22",
+        "inspection_date": "2014-08-22",
+        "current_energy_efficiency_band": "D",
+        "potential_energy_efficiency_band": "B",
+        "energy_rating_current": 57,
+        "energy_rating_potential": 81,
+        "total_floor_area": 82,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    },
+    "9901-0000-0000-0000-0036": {
+      "data": {
+        "address_line_1": "23 Coronation Street",
+        "address_line_2": null,
+        "post_town": "Sutton-in-Ashfield",
+        "postcode": "NG17 5AE",
+        "uprn": 999000001502,
+        "uprn_source": "Energy Assessor",
+        "registration_date": "2021-01-29",
+        "inspection_date": "2021-01-29",
+        "current_energy_efficiency_band": "D",
+        "potential_energy_efficiency_band": "C",
+        "energy_rating_current": 65,
+        "energy_rating_potential": 79,
+        "total_floor_area": 105,
+        "property_type": "0",
+        "built_form": "2"
+      }
+    }
+  }
+}

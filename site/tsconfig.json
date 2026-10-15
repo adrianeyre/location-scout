@@ -1,0 +1,14 @@
+{
+  // Type-checks the website: build.ts, which runs in Node, and script.mts,
+  // which runs in the browser. The site is not a workspace package, so
+  // Node's types come from one that has them.
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["es2024", "dom", "dom.iterable"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "typeRoots": ["../packages/shared/node_modules/@types"],
+    "types": ["node"]
+  },
+  "include": ["build.ts", "script.mts"]
+}

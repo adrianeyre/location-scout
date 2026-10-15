@@ -1,0 +1,121 @@
+{
+  "head": {
+    "vars": [
+      "transaction",
+      "postcode",
+      "amount",
+      "date",
+      "propertyType",
+      "estateType",
+      "newBuild",
+      "paon",
+      "saon",
+      "street",
+      "town"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/36A61A95-5867-DEF2-E063-4704A8C046AE/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5LX" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "90000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-05-23"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/flat-maisonette"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/leasehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "THE LODGE" },
+        "saon": { "type": "literal", "value": "APARTMENT 3" },
+        "street": { "type": "literal", "value": "LOWMOOR ROAD" },
+        "town": { "type": "literal", "value": "NOTTINGHAM" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/4C1B673F-77D1-D8EA-E063-4704A8C0BF7D/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5HL" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "270000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2025-03-27"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "3" },
+        "street": { "type": "literal", "value": "MAUN VIEW GARDENS" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      },
+      {
+        "transaction": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/data/ppi/transaction/2859C1AC-4E86-52B4-E063-4804A8C05948/current"
+        },
+        "postcode": { "type": "literal", "value": "NG17 5HL" },
+        "amount": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+          "value": "260000"
+        },
+        "date": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2024-11-01"
+        },
+        "propertyType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/detached"
+        },
+        "estateType": {
+          "type": "uri",
+          "value": "http://landregistry.data.gov.uk/def/common/freehold"
+        },
+        "newBuild": {
+          "type": "literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "value": "false"
+        },
+        "paon": { "type": "literal", "value": "28" },
+        "street": { "type": "literal", "value": "MAUN VIEW GARDENS" },
+        "town": { "type": "literal", "value": "SUTTON-IN-ASHFIELD" }
+      }
+    ]
+  }
+}

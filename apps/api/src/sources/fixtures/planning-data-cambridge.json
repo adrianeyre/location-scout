@@ -1,0 +1,5001 @@
+{
+  "entities": [
+    {
+      "end-date": "",
+      "entity": 19214090,
+      "name": "Clare College, land adjacent to Garret Hostel Lane",
+      "dataset": "tree-preservation-zone",
+      "reference": "07/2012/G1",
+      "geometry": "MULTIPOLYGON (((0.112408 52.20568, 0.112382 52.205683, 0.112379 52.205629, 0.113687 52.205619, 0.113693 52.205677, 0.113517 52.205671, 0.113024 52.205669, 0.112763 52.205674, 0.112502 52.205675, 0.112408 52.20568)))",
+      "point": "POINT (0.113046 52.205648)"
+    },
+    {
+      "end-date": "",
+      "entity": 19214135,
+      "name": "1-3 Hills Road",
+      "dataset": "tree-preservation-zone",
+      "reference": "24/2019/G1",
+      "geometry": "MULTIPOLYGON (((0.127839 52.198937, 0.127912 52.198938, 0.127779 52.199096, 0.127715 52.199079, 0.127829 52.198937, 0.127839 52.198937)))",
+      "point": "POINT (0.12781 52.199012)"
+    },
+    {
+      "end-date": "",
+      "entity": 19214138,
+      "name": "Fitzwilliam Museum, Trumpington Street",
+      "dataset": "tree-preservation-zone",
+      "reference": "30/2019/G1",
+      "geometry": "MULTIPOLYGON (((0.121123 52.198346, 0.12108 52.198463, 0.120923 52.198433, 0.120967 52.198322, 0.121123 52.198346)))",
+      "point": "POINT (0.121024 52.198391)"
+    },
+    {
+      "end-date": "",
+      "entity": 19214153,
+      "name": "Gresham Place",
+      "dataset": "tree-preservation-zone",
+      "reference": "TPO 0011 (2020)/G1",
+      "geometry": "MULTIPOLYGON (((0.129863 52.200095, 0.129885 52.200114, 0.129883 52.200125, 0.129868 52.200157, 0.12982 52.200181, 0.129734 52.200196, 0.129684 52.200167, 0.129684 52.200159, 0.129782 52.200102, 0.129845 52.20008, 0.129863 52.200095)))",
+      "point": "POINT (0.129793 52.200143)"
+    },
+    {
+      "end-date": "",
+      "entity": 19214154,
+      "name": "Clare College (Temporary Access), Queens Road",
+      "dataset": "tree-preservation-zone",
+      "reference": "TPO 0017 (2020)/G1",
+      "geometry": "MULTIPOLYGON (((0.112286 52.204773, 0.112215 52.205111, 0.111397 52.205122, 0.111427 52.204738, 0.112286 52.204773)))",
+      "point": "POINT (0.111823 52.204934)"
+    },
+    {
+      "end-date": "",
+      "entity": 19214158,
+      "name": "Corpus Christi College, Trumpington Street",
+      "dataset": "tree-preservation-zone",
+      "reference": "TPO 0001 (2021)/G1",
+      "geometry": "MULTIPOLYGON (((0.118985 52.202483, 0.118956 52.202537, 0.11865 52.202465, 0.118686 52.202415, 0.118985 52.202483)))",
+      "point": "POINT (0.11882 52.202475)"
+    },
+    {
+      "end-date": "",
+      "entity": 19214263,
+      "name": "Garden House Hotel, Mill lane",
+      "dataset": "tree-preservation-zone",
+      "reference": "03/1988/G1",
+      "geometry": "MULTIPOLYGON (((0.117547 52.198712, 0.117498 52.19876, 0.117447 52.198817, 0.117354 52.198926, 0.117327 52.198959, 0.117266 52.199044, 0.117221 52.199123, 0.117179 52.199185, 0.117118 52.199297, 0.117004 52.199471, 0.116984 52.199507, 0.11693 52.199614, 0.116837 52.199751, 0.11677 52.199868, 0.116731 52.199857, 0.116749 52.199822, 0.116771 52.199797, 0.1168 52.19975, 0.116886 52.199629, 0.116912 52.199569, 0.116983 52.199445, 0.116998 52.199426, 0.116999 52.199421, 0.117025 52.199381, 0.117077 52.19931, 0.117113 52.199242, 0.117116 52.199232, 0.117159 52.199156, 0.117207 52.199083, 0.11722 52.199059, 0.117253 52.199006, 0.117324 52.19892, 0.117388 52.198835, 0.117479 52.198733, 0.117512 52.1987, 0.117531 52.198705, 0.117547 52.198712)))",
+      "point": "POINT (0.117117 52.199277)"
+    },
+    {
+      "end-date": "",
+      "entity": 19214264,
+      "name": "Garden House Hotel, Mill lane",
+      "dataset": "tree-preservation-zone",
+      "reference": "03/1988/G2",
+      "geometry": "MULTIPOLYGON (((0.117406 52.198524, 0.117531 52.198424, 0.117743 52.198237, 0.117752 52.198234, 0.117765 52.198233, 0.117855 52.198278, 0.117884 52.198294, 0.117887 52.198323, 0.117655 52.198553, 0.117647 52.198563, 0.117572 52.198683, 0.117552 52.198707, 0.117537 52.198704, 0.117523 52.198699, 0.117524 52.198692, 0.117564 52.198638, 0.117615 52.198549, 0.117613 52.198542, 0.117573 52.198537, 0.117525 52.198535, 0.117498 52.198536, 0.117406 52.198524)))",
+      "point": "POINT (0.117667 52.198423)"
+    },
+    {
+      "end-date": "",
+      "entity": 31506808,
+      "name": "Nos. 1-12 Scroope Terrace, the 1959 rear extension to no. 1 Scroope Terrace and the railings to the front.",
+      "dataset": "listed-building",
+      "reference": "1049092",
+      "geometry": "",
+      "point": "POINT (0.12163 52.19809)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31506838,
+      "name": "TRUMPINGTON STREET (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1049122",
+      "geometry": "",
+      "point": "POINT (0.121035 52.198896)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31509377,
+      "name": "HOUSE ADJOINING NUMBER 74 ON THE NORTH",
+      "dataset": "listed-building",
+      "reference": "1051670",
+      "geometry": "",
+      "point": "POINT (0.118025 52.201776)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31509384,
+      "name": "CHURCH OF ST MARY THE LESS",
+      "dataset": "listed-building",
+      "reference": "1051677",
+      "geometry": "",
+      "point": "POINT (0.118216 52.201179)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31521345,
+      "name": "8, PARKER STREET",
+      "dataset": "listed-building",
+      "reference": "1063719",
+      "geometry": "",
+      "point": "POINT (0.126851 52.204419)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31523296,
+      "name": "14-16, PARKER STREET",
+      "dataset": "listed-building",
+      "reference": "1065688",
+      "geometry": "",
+      "point": "POINT (0.12662 52.204276)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31523302,
+      "name": "YORK HOUSE",
+      "dataset": "listed-building",
+      "reference": "1065694",
+      "geometry": "",
+      "point": "POINT (0.128731 52.203753)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31523320,
+      "name": "33, PARKSIDE",
+      "dataset": "listed-building",
+      "reference": "1065712",
+      "geometry": "",
+      "point": "POINT (0.128888 52.203692)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31523325,
+      "name": "38-40, PARKSIDE",
+      "dataset": "listed-building",
+      "reference": "1065717",
+      "geometry": "",
+      "point": "POINT (0.129588 52.203374)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31525392,
+      "name": "38, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1067801",
+      "geometry": "",
+      "point": "POINT (0.118036 52.206316)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31526129,
+      "name": "PARK LODGE",
+      "dataset": "listed-building",
+      "reference": "1068550",
+      "geometry": "",
+      "point": "POINT (0.127077 52.204086)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31526141,
+      "name": "7, PEAS HILL",
+      "dataset": "listed-building",
+      "reference": "1068562",
+      "geometry": "",
+      "point": "POINT (0.118804 52.204248)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31526151,
+      "name": "11, PEAS HILL",
+      "dataset": "listed-building",
+      "reference": "1068572",
+      "geometry": "",
+      "point": "POINT (0.119265 52.204231)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31526207,
+      "name": "NEWNHAM COTTAGE",
+      "dataset": "listed-building",
+      "reference": "1068629",
+      "geometry": "",
+      "point": "POINT (0.111901 52.20217)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31526243,
+      "name": "4-7, ST ANDREW'S STREET",
+      "dataset": "listed-building",
+      "reference": "1068665",
+      "geometry": "",
+      "point": "POINT (0.122183 52.204727)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31526252,
+      "name": "23, ST ANDREW'S STREET",
+      "dataset": "listed-building",
+      "reference": "1068674",
+      "geometry": "",
+      "point": "POINT (0.122945 52.20389)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31526254,
+      "name": "33 AND 34, ST ANDREW'S STREET",
+      "dataset": "listed-building",
+      "reference": "1068676",
+      "geometry": "",
+      "point": "POINT (0.123497 52.203296)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31526260,
+      "name": "Former Police Station",
+      "dataset": "listed-building",
+      "reference": "1068682",
+      "geometry": "",
+      "point": "POINT (0.124221 52.202519)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31526330,
+      "name": "63-65, BRIDGE STREET (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1068752",
+      "geometry": "",
+      "point": "POINT (0.118534 52.208273)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31526341,
+      "name": "FENCE AND GATES AT THE CHURCH OF ST MARY THE GREAT",
+      "dataset": "listed-building",
+      "reference": "1068763",
+      "geometry": "",
+      "point": "POINT (0.118209 52.20514)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31526360,
+      "name": "1-4, SHORT STREET",
+      "dataset": "listed-building",
+      "reference": "1068782",
+      "geometry": "",
+      "point": "POINT (0.127316 52.20753)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31526381,
+      "name": "2 and 3 Silver Street",
+      "dataset": "listed-building",
+      "reference": "1068803",
+      "geometry": "",
+      "point": "POINT (0.11741 52.202406)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31532698,
+      "name": "BLUE BOAR HOTEL",
+      "dataset": "listed-building",
+      "reference": "1075166",
+      "geometry": "",
+      "point": "POINT (0.118379 52.206844)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31534493,
+      "name": "51 Trumpington Street and 2 Pembroke Street with wall-mounted Richardson Candle",
+      "dataset": "listed-building",
+      "reference": "1076984",
+      "geometry": "",
+      "point": "POINT (0.118161 52.202042)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31534517,
+      "name": "31, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1077008",
+      "geometry": "",
+      "point": "POINT (0.120096 52.200399)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31538973,
+      "name": "THE MILL THE MILL BRIDGE AND PAVED SURROUND",
+      "dataset": "listed-building",
+      "reference": "1081507",
+      "geometry": "",
+      "point": "POINT (0.11589 52.201432)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31541772,
+      "name": "7-18, NORTHAMPTON STREET",
+      "dataset": "listed-building",
+      "reference": "1084322",
+      "geometry": "",
+      "point": "POINT (0.114295 52.210465)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31544463,
+      "name": "PETERHOUSE, OUTBUILDING TO NORTH EAST OF MASTER'S LODGE",
+      "dataset": "listed-building",
+      "reference": "1087035",
+      "geometry": "",
+      "point": "POINT (0.11937 52.201437)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31544469,
+      "name": "QUEENS' COLLEGE, THE BUILDINGS SURROUNDING FRONT COURT, CLOISTER COURT, PUMP COURT AND WALNUT TREE COURT",
+      "dataset": "listed-building",
+      "reference": "1087041",
+      "geometry": "",
+      "point": "POINT (0.11623 52.202554)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31544482,
+      "name": "PETERHOUSE, THE BUILDINGS SURROUNDING FIRST COURT, OLD COURT AND GISBORNE COURT",
+      "dataset": "listed-building",
+      "reference": "1087054",
+      "geometry": "",
+      "point": "POINT (0.117878 52.200704)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31544498,
+      "name": "PETERHOUSE, THE MASTER'S LODGE",
+      "dataset": "listed-building",
+      "reference": "1087070",
+      "geometry": "",
+      "point": "POINT (0.119359 52.201213)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31544512,
+      "name": "PEMBROKE COLLEGE, RED BUILDING",
+      "dataset": "listed-building",
+      "reference": "1087084",
+      "geometry": "",
+      "point": "POINT (0.118881 52.20132)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31544516,
+      "name": "PEMBROKE COLLEGE, STATUE OF WILLIAM PITT THE YOUNGER OUTSIDE THE LIBRARY",
+      "dataset": "listed-building",
+      "reference": "1087088",
+      "geometry": "",
+      "point": "POINT (0.119379 52.201635)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31544519,
+      "name": "Block between Ivy Court and Old Master's Lodge, Pembroke College",
+      "dataset": "listed-building",
+      "reference": "1087091",
+      "geometry": "",
+      "point": "POINT (0.119442 52.202344)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31544532,
+      "name": "PEMBROKE COLLEGE, THE BUILDINGS SURROUNDING OLD COURT (EXCEPT THE CHAPEL AND CLOISTER) AND IVY COURT",
+      "dataset": "listed-building",
+      "reference": "1087104",
+      "geometry": "",
+      "point": "POINT (0.118348 52.201837)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31556471,
+      "name": "UNIVERSITY PITT CLUB",
+      "dataset": "listed-building",
+      "reference": "1099104",
+      "geometry": "",
+      "point": "POINT (0.119835 52.208157)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31556476,
+      "name": "GARDEN WALLS, RAILINGS AND GATES OF NUMBER 16 (LITTLE TRINITY)",
+      "dataset": "listed-building",
+      "reference": "1099109",
+      "geometry": "",
+      "point": "POINT (0.120452 52.208495)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31556587,
+      "name": "3-7, GREEN STREET",
+      "dataset": "listed-building",
+      "reference": "1099221",
+      "geometry": "",
+      "point": "POINT (0.119566 52.206876)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31556596,
+      "name": "THE WHIM",
+      "dataset": "listed-building",
+      "reference": "1099230",
+      "geometry": "",
+      "point": "POINT (0.118504 52.206407)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31557273,
+      "name": "13, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1099908",
+      "geometry": "",
+      "point": "POINT (0.117917 52.204604)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31557279,
+      "name": "GATEWAY TO LANE BETWEEN NUMBERS 49 AND 50",
+      "dataset": "listed-building",
+      "reference": "1099914",
+      "geometry": "",
+      "point": "POINT (0.124456 52.208095)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31557298,
+      "name": "31, JESUS LANE",
+      "dataset": "listed-building",
+      "reference": "1099933",
+      "geometry": "",
+      "point": "POINT (0.122098 52.208686)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31557303,
+      "name": "35-37, JESUS LANE",
+      "dataset": "listed-building",
+      "reference": "1099938",
+      "geometry": "",
+      "point": "POINT (0.122244 52.208456)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31557315,
+      "name": "47 AND 48, JESUS LANE",
+      "dataset": "listed-building",
+      "reference": "1099950",
+      "geometry": "",
+      "point": "POINT (0.124015 52.208123)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31557642,
+      "name": "THE CHAMPION OF THE THAMES INN",
+      "dataset": "listed-building",
+      "reference": "1100277",
+      "geometry": "",
+      "point": "POINT (0.12444 52.207302)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31557706,
+      "name": "22, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1100341",
+      "geometry": "",
+      "point": "POINT (0.117983 52.205021)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31557711,
+      "name": "56 AND 58, KING STREET",
+      "dataset": "listed-building",
+      "reference": "1100346",
+      "geometry": "",
+      "point": "POINT (0.123792 52.207323)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31557984,
+      "name": "8, LENSFIELD ROAD",
+      "dataset": "listed-building",
+      "reference": "1100621",
+      "geometry": "",
+      "point": "POINT (0.127031 52.199169)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31557990,
+      "name": "LENSFIELD ROAD (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1100627",
+      "geometry": "",
+      "point": "POINT (0.12281 52.198195)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31558815,
+      "name": "26-28, MAGDALENE STREET",
+      "dataset": "listed-building",
+      "reference": "1101458",
+      "geometry": "",
+      "point": "POINT (0.115931 52.210093)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31558821,
+      "name": "THE PICKEREL INN",
+      "dataset": "listed-building",
+      "reference": "1101465",
+      "geometry": "",
+      "point": "POINT (0.116209 52.209909)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31558829,
+      "name": "4 AND 6, MAID'S CAUSEWAY",
+      "dataset": "listed-building",
+      "reference": "1101473",
+      "geometry": "",
+      "point": "POINT (0.127591 52.207556)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31558869,
+      "name": "20, MAGDALENE STREET",
+      "dataset": "listed-building",
+      "reference": "1101513",
+      "geometry": "",
+      "point": "POINT (0.115475 52.210348)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31559091,
+      "name": "FOUNTAIN IN THE CENTRE OF MARKET HILL",
+      "dataset": "listed-building",
+      "reference": "1101735",
+      "geometry": "",
+      "point": "POINT (0.119089 52.205368)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31559127,
+      "name": "32-50, MAID'S CAUSEWAY",
+      "dataset": "listed-building",
+      "reference": "1101771",
+      "geometry": "",
+      "point": "POINT (0.130161 52.207706)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31562176,
+      "name": "ST JOHN'S COLLEGE, MASTER'S LODGE",
+      "dataset": "listed-building",
+      "reference": "1104837",
+      "geometry": "",
+      "point": "POINT (0.116706 52.209137)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31563017,
+      "name": "ST JOHNS' COLLEGE, BRIDGE OVER BIN BROOK BETWEEN TRINITY AND ST JOHN'S BACKS",
+      "dataset": "listed-building",
+      "reference": "1105681",
+      "geometry": "",
+      "point": "POINT (0.114092 52.207485)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31563019,
+      "name": "ST JOHN'S COLLEGE, FOUR GATES ONTO THE WILDERNESS AND THE SCHOLARS' GARDEN, NORTH EAST GATE, NORTH WEST GATE, SOUTH EAST GATE AND SOUTH WEST GATE",
+      "dataset": "listed-building",
+      "reference": "1105683",
+      "geometry": "",
+      "point": "POINT (0.112711 52.208472)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31563027,
+      "name": "ST JOHN'S COLLEGE, WILDERNESS FENCE ALONG QUEENS' ROAD AND BIN BROOK",
+      "dataset": "listed-building",
+      "reference": "1105691",
+      "geometry": "",
+      "point": "POINT (0.110925 52.207962)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31563570,
+      "name": "SIDNEY SUSSEX COLLEGE, THE BUILDINGS SURROUNDING HALL COURT AND CHAPEL COURT",
+      "dataset": "listed-building",
+      "reference": "1106237",
+      "geometry": "",
+      "point": "POINT (0.120446 52.207284)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31563696,
+      "name": "SIDNEY SUSSEX COLLEGE, GATEWAY ENTRANCE FROM JESUS LANE TO THE COLLEGE GARDEN",
+      "dataset": "listed-building",
+      "reference": "1106363",
+      "geometry": "",
+      "point": "POINT (0.121655 52.208563)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31563704,
+      "name": "Trinity College, The Buildings surrounding Great Court, Nevile's Court and New Court, and including King's Hostel",
+      "dataset": "listed-building",
+      "reference": "1106371",
+      "geometry": "",
+      "point": "POINT (0.116162 52.206907)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31569119,
+      "name": "1-12, FITZWILLIAM STREET (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1111821",
+      "geometry": "",
+      "point": "POINT (0.120724 52.20035)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31569121,
+      "name": "15, FITZWILLIAM STREET",
+      "dataset": "listed-building",
+      "reference": "1111823",
+      "geometry": "",
+      "point": "POINT (0.121221 52.200723)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31572415,
+      "name": "GONVILLE AND CAIUS COLLEGE, WALL OF MASTER'S GARDEN FRONTING TRINITY HALL LANE",
+      "dataset": "listed-building",
+      "reference": "1115153",
+      "geometry": "",
+      "point": "POINT (0.116397 52.20587)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31572668,
+      "name": "GONVILLE AND CAIUS COLLEGE, THE NORTH AND EAST RANGES OF TREE COURT AND SOUTH WALL",
+      "dataset": "listed-building",
+      "reference": "1115408",
+      "geometry": "",
+      "point": "POINT (0.117957 52.206019)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31572676,
+      "name": "EMMANUEL COLLEGE, RAILINGS OF NORTH COURT FRONTING DRUMMER STREET",
+      "dataset": "listed-building",
+      "reference": "1115416",
+      "geometry": "",
+      "point": "POINT (0.124068 52.205138)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31572700,
+      "name": "EMMANUEL COLLEGE, WALL BOUNDING THE PADDOCK ON THE SOUTH EAST AND BACKING THE GARDENS OF PARK TERRACE",
+      "dataset": "listed-building",
+      "reference": "1115440",
+      "geometry": "",
+      "point": "POINT (0.126139 52.203873)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31572793,
+      "name": "Newnham Grange, Darwin College",
+      "dataset": "listed-building",
+      "reference": "1115533",
+      "geometry": "",
+      "point": "POINT (0.113983 52.200838)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31572898,
+      "name": "CLARE COLLEGE MEMORIAL COURT",
+      "dataset": "listed-building",
+      "reference": "1115639",
+      "geometry": "",
+      "point": "POINT (0.110297 52.205107)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31572905,
+      "name": "CLARE COLLEGE, WALL ON NORTH SIDE OF MASTER'S GARDEN",
+      "dataset": "listed-building",
+      "reference": "1115646",
+      "geometry": "",
+      "point": "POINT (0.114481 52.205299)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31572921,
+      "name": "CLARE COLLEGE, RAILINGS GATES AND BRICK PLINTH WALLS ON EITHER SIDE OF THE CAUSEWAY BETWEEN THE COLLEGE WEST GATE AND THE BRIDGE",
+      "dataset": "listed-building",
+      "reference": "1115662",
+      "geometry": "",
+      "point": "POINT (0.114508 52.205053)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31572950,
+      "name": "CHRIST'S COLLEGE, WALL BOUNDING THE FELLOWS' GARDEN ON NORTH AND WEST SIDES",
+      "dataset": "listed-building",
+      "reference": "1115691",
+      "geometry": "",
+      "point": "POINT (0.123251 52.207072)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31572979,
+      "name": "CHRIST'S COLLEGE, TUTOR'S HOUSE",
+      "dataset": "listed-building",
+      "reference": "1115720",
+      "geometry": "",
+      "point": "POINT (0.121783 52.206333)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31577000,
+      "name": "GARRET HOSTEL BRIDGE BETWEEN CLARE BRIDGE AND TRINITY BRIDGE ON THE CAM",
+      "dataset": "listed-building",
+      "reference": "1119764",
+      "geometry": "",
+      "point": "POINT (0.114018 52.205858)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31578027,
+      "name": "GEOLOGICAL MUSEUM, LAW SCHOOL AND UNIVERSITY MUSEUM OF ARCHAEOLOGY AND ETHNOLOGY",
+      "dataset": "listed-building",
+      "reference": "1120793",
+      "geometry": "",
+      "point": "POINT (0.12156 52.202882)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31578133,
+      "name": "TRINITY HALL, LATHAM BUILDING",
+      "dataset": "listed-building",
+      "reference": "1120899",
+      "geometry": "",
+      "point": "POINT (0.114996 52.206002)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31578351,
+      "name": "Arts School",
+      "dataset": "listed-building",
+      "reference": "1121119",
+      "geometry": "",
+      "point": "POINT (0.119198 52.203799)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31578748,
+      "name": "THE COCKERELL BUILDING (SQUIRE LAW LIBRARY)",
+      "dataset": "listed-building",
+      "reference": "1121518",
+      "geometry": "",
+      "point": "POINT (0.116591 52.205559)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31579263,
+      "name": "21-24, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1121967",
+      "geometry": "",
+      "point": "POINT (0.117462 52.209396)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31579287,
+      "name": "16, ROUND CHURCH STREET (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1121992",
+      "geometry": "",
+      "point": "POINT (0.118525 52.208678)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31579299,
+      "name": "14-16, BOTOLPH LANE",
+      "dataset": "listed-building",
+      "reference": "1122004",
+      "geometry": "",
+      "point": "POINT (0.11914 52.202426)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31579845,
+      "name": "Former National Westminster Bank",
+      "dataset": "listed-building",
+      "reference": "1122620",
+      "geometry": "",
+      "point": "POINT (0.117794 52.203705)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31579849,
+      "name": "CHURCHYARD RAILINGS AND GATES OF ST BENET'S",
+      "dataset": "listed-building",
+      "reference": "1122624",
+      "geometry": "",
+      "point": "POINT (0.118202 52.203888)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31579853,
+      "name": "2 AND 3, BOTOLPH LANE",
+      "dataset": "listed-building",
+      "reference": "1122628",
+      "geometry": "",
+      "point": "POINT (0.118283 52.202265)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31579858,
+      "name": "5, 6, 7 AND 7A, BOTOLPH LANE",
+      "dataset": "listed-building",
+      "reference": "1122633",
+      "geometry": "",
+      "point": "POINT (0.118534 52.202303)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31579900,
+      "name": "URN ON SENATE HOUSE LAWN",
+      "dataset": "listed-building",
+      "reference": "1122675",
+      "geometry": "",
+      "point": "POINT (0.117403 52.205321)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582690,
+      "name": "THE BUILDINGS SURROUNDING PRINCIPAL COURT, ST CATHARINE'S COLLEGE",
+      "dataset": "listed-building",
+      "reference": "1125480",
+      "geometry": "",
+      "point": "POINT (0.116402 52.202889)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582691,
+      "name": "TWO LAMP POSTS AT THE MAIN ENTRANCE TO THE COLLEGE, ST CATHARINE'S COLLEGE",
+      "dataset": "listed-building",
+      "reference": "1125481",
+      "geometry": "",
+      "point": "POINT (0.117514 52.203044)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582692,
+      "name": "SCREEN AND GATES OF MASTER'S LODGE FRONTING QUEEN'S LANE, ST CATHARINE'S COLLEGE",
+      "dataset": "listed-building",
+      "reference": "1125482",
+      "geometry": "",
+      "point": "POINT (0.116457 52.202371)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582693,
+      "name": "BOUNDARY WALL FRONTING QUEEN'S LANE, ST CATHARINE'S COLLEGE",
+      "dataset": "listed-building",
+      "reference": "1125483",
+      "geometry": "",
+      "point": "POINT (0.116403 52.202585)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582694,
+      "name": "ST CATHARINE'S COLLEGE",
+      "dataset": "listed-building",
+      "reference": "1125484",
+      "geometry": "",
+      "point": "POINT (0.11753 52.202704)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582695,
+      "name": "ST JOHN'S COLLEGE, SCREEN BETWEEN THE CHAPEL AND THE EAST RANGE OF FIRST COURT",
+      "dataset": "listed-building",
+      "reference": "1125485",
+      "geometry": "",
+      "point": "POINT (0.117963 52.208079)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582696,
+      "name": "ST JOHN'S COLLEGE, OLD BRIDGE",
+      "dataset": "listed-building",
+      "reference": "1125486",
+      "geometry": "",
+      "point": "POINT (0.115674 52.208059)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582697,
+      "name": "ST JOHN'S COLLEGE, STABLES OF MASTER'S LODGE",
+      "dataset": "listed-building",
+      "reference": "1125487",
+      "geometry": "",
+      "point": "POINT (0.116453 52.209349)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582698,
+      "name": "ST JOHN'S COLLEGE, GATEWAY TO KITCHEN YARD TO EAST OF OLD BRIDGE",
+      "dataset": "listed-building",
+      "reference": "1125488",
+      "geometry": "",
+      "point": "POINT (0.11611 52.207966)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582699,
+      "name": "ST JOHN'S COLLEGE, GATEWAY AND PIERS ADJOINING THE OLD BRIDGE",
+      "dataset": "listed-building",
+      "reference": "1125489",
+      "geometry": "",
+      "point": "POINT (0.115834 52.208026)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582701,
+      "name": "ST JOHN'S COLLEGE, GATE TO TRINITY PIECE SOUTH EAST OF THE WILDERNESS",
+      "dataset": "listed-building",
+      "reference": "1125491",
+      "geometry": "",
+      "point": "POINT (0.112134 52.20714)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31582705,
+      "name": "SIDNEY SUSSEX COLLEGE, WALLS FRONTING SIDNEY STREET, WALL OF HALL COURT, WALL OF CHAPEL COURT",
+      "dataset": "listed-building",
+      "reference": "1125495",
+      "geometry": "",
+      "point": "POINT (0.119911 52.207255)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582706,
+      "name": "SIDNEY SUSSEX COLLEGE, CLOISTER COURT",
+      "dataset": "listed-building",
+      "reference": "1125496",
+      "geometry": "",
+      "point": "POINT (0.120213 52.207789)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31582707,
+      "name": "SIDNEY SUSSEX COLLEGE, EAST BOUNDARY WALL FLANKING MALCOM STREET",
+      "dataset": "listed-building",
+      "reference": "1125497",
+      "geometry": "",
+      "point": "POINT (0.121728 52.208386)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582708,
+      "name": "TRINITY COLLEGE, BISHOP'S HOSTEL",
+      "dataset": "listed-building",
+      "reference": "1125498",
+      "geometry": "",
+      "point": "POINT (0.116159 52.206252)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582709,
+      "name": "TRINITY COLLEGE, TWO LAMP STANDARDS OUTSIDE THE GREAT GATE ON TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1125499",
+      "geometry": "",
+      "point": "POINT (0.117793 52.207068)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582710,
+      "name": "MAGDALENE COLLEGE, THE BUILDINGS SURROUNDING FIRST COURT",
+      "dataset": "listed-building",
+      "reference": "1125500",
+      "geometry": "",
+      "point": "POINT (0.116108 52.210175)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582711,
+      "name": "MAGDALENE COLLEGE, WALLS LINING THE SECOND COURT ON NORTH EAST AND SOUTH WEST SIDES",
+      "dataset": "listed-building",
+      "reference": "1125501",
+      "geometry": "",
+      "point": "POINT (0.116559 52.210703)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582712,
+      "name": "MAGDALENE COLLEGE, BRIGHT'S BUILDING",
+      "dataset": "listed-building",
+      "reference": "1125502",
+      "geometry": "",
+      "point": "POINT (0.11698 52.210407)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582713,
+      "name": "MAGDALENE COLLEGE, BOUNDARY WALL OF COLLEGE FRONTING MAGDALENE STREET AND CHESTERTON LANE",
+      "dataset": "listed-building",
+      "reference": "1125503",
+      "geometry": "",
+      "point": "POINT (0.115614 52.211072)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582714,
+      "name": "MAGDALENE COLLEGE, MALLORY COURT",
+      "dataset": "listed-building",
+      "reference": "1125504",
+      "geometry": "",
+      "point": "POINT (0.115211 52.210315)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582715,
+      "name": "MAGDALENE COLLEGE, BENSON COURT MAIN BLOCK",
+      "dataset": "listed-building",
+      "reference": "1125505",
+      "geometry": "",
+      "point": "POINT (0.1154 52.20973)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582719,
+      "name": "PEMBROKE COLLEGE, THE CHAPEL WITH HITCHAM'S CLOISTER",
+      "dataset": "listed-building",
+      "reference": "1125509",
+      "geometry": "",
+      "point": "POINT (0.118776 52.201583)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582720,
+      "name": "PEMBROKE COLLEGE, LIBRARY",
+      "dataset": "listed-building",
+      "reference": "1125510",
+      "geometry": "",
+      "point": "POINT (0.119434 52.201563)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31582721,
+      "name": "PEMBROKE COLLEGE, OLD MASTER'S LODGE",
+      "dataset": "listed-building",
+      "reference": "1125511",
+      "geometry": "",
+      "point": "POINT (0.119836 52.202319)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582722,
+      "name": "PEMBROKE COLLEGE, NEW COURT",
+      "dataset": "listed-building",
+      "reference": "1125512",
+      "geometry": "",
+      "point": "POINT (0.12049 52.202702)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31582723,
+      "name": "PETERHOUSE, WEST BOUNDARY WALL OF THE GROVE",
+      "dataset": "listed-building",
+      "reference": "1125513",
+      "geometry": "",
+      "point": "POINT (0.117836 52.200146)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582724,
+      "name": "PETERHOUSE, ENTRANCE SCREEN TO FIRST COURT",
+      "dataset": "listed-building",
+      "reference": "1125514",
+      "geometry": "",
+      "point": "POINT (0.118869 52.201044)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582725,
+      "name": "QUEENS' COLLEGE, MATHEMATICAL BRIDGE",
+      "dataset": "listed-building",
+      "reference": "1125515",
+      "geometry": "",
+      "point": "POINT (0.115071 52.202212)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582726,
+      "name": "QUEENS' COLLEGE, NORTH AND EAST WALLS OF THE PRESIDENT'S GARDEN",
+      "dataset": "listed-building",
+      "reference": "1125516",
+      "geometry": "",
+      "point": "POINT (0.115262 52.202802)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582727,
+      "name": "DOWNING COLLEGE, THE EAST AND WEST RANGES, INCLUDING THE HALL, THE MASTER'S LODGE AND THE EAST AND WEST LODGES",
+      "dataset": "listed-building",
+      "reference": "1125517",
+      "geometry": "",
+      "point": "POINT (0.123281 52.200288)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582728,
+      "name": "DOWNING COLLEGE, GATE LODGE AND GATES",
+      "dataset": "listed-building",
+      "reference": "1125518",
+      "geometry": "",
+      "point": "POINT (0.125247 52.201422)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582729,
+      "name": "DOWNING COLLEGE, WEST GATE ONTO TENNIS COURT ROAD, INCLUDING SHORT SCREEN WALLS ON EITHER SIDE",
+      "dataset": "listed-building",
+      "reference": "1125519",
+      "geometry": "",
+      "point": "POINT (0.122178 52.200327)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582730,
+      "name": "DOWNING COLLEGE, NORTH WEST GATE ONTO TENNIS COURT ROAD OPPOSITE FITZWILLIAM STREET",
+      "dataset": "listed-building",
+      "reference": "1125520",
+      "geometry": "",
+      "point": "POINT (0.12188 52.200706)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582731,
+      "name": "DOWNING COLLEGE, BOUNDARY WALL FRONTING TENNIS COURT ROAD",
+      "dataset": "listed-building",
+      "reference": "1125521",
+      "geometry": "",
+      "point": "POINT (0.122396 52.200025)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582732,
+      "name": "EMMANUEL COLLEGE, EMMANUEL HOUSE",
+      "dataset": "listed-building",
+      "reference": "1125522",
+      "geometry": "",
+      "point": "POINT (0.125725 52.204587)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582733,
+      "name": "EMMANUEL COLLEGE, HOSTEL (NEXT SOUTH OF EMMANUEL HOUSE)",
+      "dataset": "listed-building",
+      "reference": "1125523",
+      "geometry": "",
+      "point": "POINT (0.126099 52.204464)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582734,
+      "name": "EMMANUEL COLLEGE, THE BATH",
+      "dataset": "listed-building",
+      "reference": "1125524",
+      "geometry": "",
+      "point": "POINT (0.124418 52.204691)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582735,
+      "name": "EMMANUEL COLLEGE, WALL FACING ST ANDREW'S STREET TO THE SOUTH EAST OF FRONT COURT",
+      "dataset": "listed-building",
+      "reference": "1125525",
+      "geometry": "",
+      "point": "POINT (0.12395 52.203306)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582736,
+      "name": "GONVILLE AND CAIUS COLLEGE, THE GATE OF HONOUR AND FLANKING WALLS",
+      "dataset": "listed-building",
+      "reference": "1125526",
+      "geometry": "",
+      "point": "POINT (0.117024 52.205681)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582737,
+      "name": "GONVILLE AND CAIUS COLLEGE, THE GATE OF HUMILITY",
+      "dataset": "listed-building",
+      "reference": "1125527",
+      "geometry": "",
+      "point": "POINT (0.11675 52.205737)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582738,
+      "name": "GONVILLE AND CAIUS COLLEGE, NORTH AND EAST RANGES OF ST MICHAELS COURT, STAIRCASES A-F ST MICHAEL'S COURT, GONVILLE AND CAIUS COLLEGE",
+      "dataset": "listed-building",
+      "reference": "1125528",
+      "geometry": "",
+      "point": "POINT (0.118729 52.206125)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582739,
+      "name": "JESUS COLLEGE, THE BUILDINGS SURROUNDING CLOISTER AND OUTER COURTS, AND THE EAST RANGE OF PUMP COURT (EXCLUDING THE NORTH RANGE OF OUTER COURT)",
+      "dataset": "listed-building",
+      "reference": "1125529",
+      "geometry": "",
+      "point": "POINT (0.123673 52.20912)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582740,
+      "name": "JESUS COLLEGE, BOUNDARY WALL, PIERS AND GATES ON JESUS LANE AND THE WALLS FLANKING THE CHIMNEY",
+      "dataset": "listed-building",
+      "reference": "1125530",
+      "geometry": "",
+      "point": "POINT (0.12336 52.208703)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582741,
+      "name": "JESUS COLLEGE, EAST RANGE OF CHAPEL COURT",
+      "dataset": "listed-building",
+      "reference": "1125531",
+      "geometry": "",
+      "point": "POINT (0.125273 52.209405)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582742,
+      "name": "KING'S COLLEGE, SCREENS AND ENTRANCE GATEWAY ON KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1125532",
+      "geometry": "",
+      "point": "POINT (0.117266 52.204346)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582743,
+      "name": "KING'S COLLEGE, FELLOWS' BUILDING",
+      "dataset": "listed-building",
+      "reference": "1125533",
+      "geometry": "",
+      "point": "POINT (0.115978 52.204253)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582744,
+      "name": "KING'S COLLEGE, BODLEY'S BUILDINGS",
+      "dataset": "listed-building",
+      "reference": "1125534",
+      "geometry": "",
+      "point": "POINT (0.114944 52.203373)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582745,
+      "name": "KING'S COLLEGE, KING'S BRIDGE",
+      "dataset": "listed-building",
+      "reference": "1125535",
+      "geometry": "",
+      "point": "POINT (0.114132 52.203784)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582757,
+      "name": "CHRIST'S COLLEGE, NORTH EAST RANGE, THIRD COURT",
+      "dataset": "listed-building",
+      "reference": "1125547",
+      "geometry": "",
+      "point": "POINT (0.122452 52.206573)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582758,
+      "name": "CHRIST'S COLLEGE, BATHING POOL AND SUMMER HOUSE, INCLUDING THE BUSTS OF CUDWORTH, MILTON AND SAUNDERSON AND STONE VASE IN MEMORY OF JOSEPH MEDE",
+      "dataset": "listed-building",
+      "reference": "1125548",
+      "geometry": "",
+      "point": "POINT (0.123963 52.206904)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582759,
+      "name": "CLARE COLLEGE, CLARE BRIDGE",
+      "dataset": "listed-building",
+      "reference": "1125549",
+      "geometry": "",
+      "point": "POINT (0.114037 52.205)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582760,
+      "name": "CLARE COLLEGE, GATES AND RAILINGS TO TRINITY HALL LANE",
+      "dataset": "listed-building",
+      "reference": "1125550",
+      "geometry": "",
+      "point": "POINT (0.116 52.205126)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582761,
+      "name": "CLARE COLLEGE, GATEWAY ON WEST SIDE OF CLARE BRIDGE WITH FLANKING RAILINGS AND GATES TO COLLEGE GARDEN",
+      "dataset": "listed-building",
+      "reference": "1125551",
+      "geometry": "",
+      "point": "POINT (0.113828 52.204989)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582762,
+      "name": "CLARE COLLEGE, SCREEN AND GATES FRONTING QUEEN'S ROAD",
+      "dataset": "listed-building",
+      "reference": "1125552",
+      "geometry": "",
+      "point": "POINT (0.111213 52.205117)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31582763,
+      "name": "CORPUS CHRISTI COLLEGE, THE BUILDINGS SURROUNDING THE OLD AND NEW COURTS INCLUDING THE MASTER'S LODGE",
+      "dataset": "listed-building",
+      "reference": "1125553",
+      "geometry": "",
+      "point": "POINT (0.118268 52.203195)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31582764,
+      "name": "",
+      "dataset": "listed-building",
+      "reference": "1125554",
+      "geometry": "MULTIPOLYGON (((0.114006 52.200935, 0.114148 52.200826, 0.114354 52.200927, 0.114226 52.201031, 0.114098 52.200981, 0.114006 52.200935)))",
+      "point": "POINT (0.114181 52.20093)"
+    },
+    {
+      "end-date": "",
+      "entity": 31583213,
+      "name": "NORTH COURT, JESUS COLLEGE",
+      "dataset": "listed-building",
+      "reference": "1126004",
+      "geometry": "",
+      "point": "POINT (0.122735 52.210333)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583233,
+      "name": "CORN EXCHANGE",
+      "dataset": "listed-building",
+      "reference": "1126025",
+      "geometry": "",
+      "point": "POINT (0.119826 52.204262)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583234,
+      "name": "2-17, WILLOW WALK",
+      "dataset": "listed-building",
+      "reference": "1126026",
+      "geometry": "",
+      "point": "POINT (0.128273 52.207287)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583239,
+      "name": "Cambridge Judge Business School",
+      "dataset": "listed-building",
+      "reference": "1126031",
+      "geometry": "",
+      "point": "POINT (0.121826 52.199934)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31583242,
+      "name": "Four K6 Telephone Kiosks adjacent to Church of St Mary the Great",
+      "dataset": "listed-building",
+      "reference": "1126034",
+      "geometry": "",
+      "point": "POINT (0.118602 52.205489)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583243,
+      "name": "TELEPHONE KIOSKS OUTSIDE PITT BUILDING",
+      "dataset": "listed-building",
+      "reference": "1126035",
+      "geometry": "",
+      "point": "POINT (0.117582 52.202315)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583248,
+      "name": "1, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1126040",
+      "geometry": "",
+      "point": "POINT (0.122217 52.198211)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583249,
+      "name": "2, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1126041",
+      "geometry": "",
+      "point": "POINT (0.122155 52.198345)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583250,
+      "name": "11 AND 12, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1126042",
+      "geometry": "",
+      "point": "POINT (0.121932 52.198867)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583251,
+      "name": "15 AND 16, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1126043",
+      "geometry": "",
+      "point": "POINT (0.121816 52.199037)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583252,
+      "name": "18 AND 19, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1126044",
+      "geometry": "",
+      "point": "POINT (0.121578 52.199263)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583253,
+      "name": "21, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1126045",
+      "geometry": "",
+      "point": "POINT (0.121438 52.199386)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583254,
+      "name": "30, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1126046",
+      "geometry": "",
+      "point": "POINT (0.120267 52.200324)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583255,
+      "name": "35 AND 36, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1126047",
+      "geometry": "",
+      "point": "POINT (0.11985 52.200572)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583256,
+      "name": "39 AND 40, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1126048",
+      "geometry": "",
+      "point": "POINT (0.11949 52.200801)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583257,
+      "name": "53, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1126049",
+      "geometry": "",
+      "point": "POINT (0.118084 52.202142)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583258,
+      "name": "WALL AND FENCE OF THE CHURCHYARD OF THE CHURCH OF ST BOTOLPH",
+      "dataset": "listed-building",
+      "reference": "1126050",
+      "geometry": "",
+      "point": "POINT (0.117928 52.202374)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583259,
+      "name": "74, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1126051",
+      "geometry": "",
+      "point": "POINT (0.118055 52.20166)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583260,
+      "name": "CHURCH FENCE OF ST MARY THE LESS FRONTING TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1126052",
+      "geometry": "",
+      "point": "POINT (0.118547 52.201334)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583261,
+      "name": "Grove Lodge and outbuilding to south",
+      "dataset": "listed-building",
+      "reference": "1126053",
+      "geometry": "",
+      "point": "POINT (0.120165 52.199216)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583262,
+      "name": "RAILINGS AND GATES OF ST PETER'S TERRACE FRONTING TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1126054",
+      "geometry": "",
+      "point": "POINT (0.121476 52.198963)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583264,
+      "name": "29, THOMPSON'S LANE",
+      "dataset": "listed-building",
+      "reference": "1126057",
+      "geometry": "",
+      "point": "POINT (0.117999 52.210035)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583265,
+      "name": "30, THOMPSON'S LANE",
+      "dataset": "listed-building",
+      "reference": "1126058",
+      "geometry": "",
+      "point": "POINT (0.117918 52.209919)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583266,
+      "name": "31 Thompson's Lane",
+      "dataset": "listed-building",
+      "reference": "1126059",
+      "geometry": "",
+      "point": "POINT (0.117838 52.209756)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583267,
+      "name": "26, ST MARY'S STREET (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1126060",
+      "geometry": "",
+      "point": "POINT (0.118131 52.205645)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583268,
+      "name": "CHURCH OF ST MICHAEL",
+      "dataset": "listed-building",
+      "reference": "1126061",
+      "geometry": "",
+      "point": "POINT (0.118343 52.206015)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31583269,
+      "name": "10, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1126062",
+      "geometry": "",
+      "point": "POINT (0.118358 52.206405)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583270,
+      "name": "13, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1126063",
+      "geometry": "",
+      "point": "POINT (0.118414 52.206541)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31583271,
+      "name": "15, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1126064",
+      "geometry": "",
+      "point": "POINT (0.118429 52.206686)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583272,
+      "name": "19, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1126065",
+      "geometry": "",
+      "point": "POINT (0.118349 52.206916)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583273,
+      "name": "20 AND 21, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1126066",
+      "geometry": "",
+      "point": "POINT (0.118294 52.207033)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583274,
+      "name": "26 Trinity Street",
+      "dataset": "listed-building",
+      "reference": "1126067",
+      "geometry": "",
+      "point": "POINT (0.117965 52.206984)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583275,
+      "name": "30 AND 31, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1126068",
+      "geometry": "",
+      "point": "POINT (0.118132 52.206692)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31583276,
+      "name": "33 AND 34, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1126069",
+      "geometry": "",
+      "point": "POINT (0.118119 52.206526)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583283,
+      "name": "CHURCH OF ST EDWARD, KING AND MARTYR",
+      "dataset": "listed-building",
+      "reference": "1126076",
+      "geometry": "",
+      "point": "POINT (0.118587 52.204679)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31583284,
+      "name": "3 AND 4, ST EDWARD'S PASSAGE",
+      "dataset": "listed-building",
+      "reference": "1126077",
+      "geometry": "",
+      "point": "POINT (0.11847 52.204522)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583285,
+      "name": "8, ST EDWARD'S PASSAGE",
+      "dataset": "listed-building",
+      "reference": "1126078",
+      "geometry": "",
+      "point": "POINT (0.11817 52.204525)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583286,
+      "name": "9, ST EDWARD'S PASSAGE",
+      "dataset": "listed-building",
+      "reference": "1126079",
+      "geometry": "",
+      "point": "POINT (0.118127 52.204535)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583287,
+      "name": "10, ST EDWARD'S PASSAGE",
+      "dataset": "listed-building",
+      "reference": "1126080",
+      "geometry": "",
+      "point": "POINT (0.11802 52.20452)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583288,
+      "name": "12-15, ST EDWARD'S PASSAGE",
+      "dataset": "listed-building",
+      "reference": "1126081",
+      "geometry": "",
+      "point": "POINT (0.118215 52.204725)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583290,
+      "name": "12, ST JOHN'S STREET",
+      "dataset": "listed-building",
+      "reference": "1126083",
+      "geometry": "",
+      "point": "POINT (0.118323 52.208082)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583291,
+      "name": "CHURCH OF ST MARY THE GREAT",
+      "dataset": "listed-building",
+      "reference": "1126084",
+      "geometry": "",
+      "point": "POINT (0.118282 52.20535)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31583292,
+      "name": "1, ST MARY'S PASSAGE",
+      "dataset": "listed-building",
+      "reference": "1126085",
+      "geometry": "",
+      "point": "POINT (0.118129 52.204999)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583294,
+      "name": "35, 36 and 37, Sidney Street",
+      "dataset": "listed-building",
+      "reference": "1126087",
+      "geometry": "",
+      "point": "POINT (0.119588 52.207354)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583295,
+      "name": "46, SIDNEY STREET",
+      "dataset": "listed-building",
+      "reference": "1126088",
+      "geometry": "",
+      "point": "POINT (0.119945 52.207015)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583296,
+      "name": "4 Silver Street",
+      "dataset": "listed-building",
+      "reference": "1126089",
+      "geometry": "",
+      "point": "POINT (0.117239 52.202363)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583299,
+      "name": "1-6, TENNIS COURT TERRACE",
+      "dataset": "listed-building",
+      "reference": "1126092",
+      "geometry": "",
+      "point": "POINT (0.120828 52.201211)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583300,
+      "name": "5, PEMBROKE STREET",
+      "dataset": "listed-building",
+      "reference": "1126093",
+      "geometry": "",
+      "point": "POINT (0.118522 52.202159)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583301,
+      "name": "1-10, PETERSFIELD",
+      "dataset": "listed-building",
+      "reference": "1126094",
+      "geometry": "",
+      "point": "POINT (0.13288 52.203248)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583302,
+      "name": "32-33, PETTY CURY",
+      "dataset": "listed-building",
+      "reference": "1126095",
+      "geometry": "",
+      "point": "POINT (0.120113 52.205213)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583303,
+      "name": "3-9, PORTLAND PLACE",
+      "dataset": "listed-building",
+      "reference": "1126096",
+      "geometry": "",
+      "point": "POINT (0.129445 52.205695)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583304,
+      "name": "8, PORTUGAL PLACE",
+      "dataset": "listed-building",
+      "reference": "1126097",
+      "geometry": "",
+      "point": "POINT (0.118582 52.20925)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583305,
+      "name": "9-14, PORTUGAL PLACE",
+      "dataset": "listed-building",
+      "reference": "1126098",
+      "geometry": "",
+      "point": "POINT (0.118644 52.209398)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583306,
+      "name": "16-18, PORTUGAL PLACE",
+      "dataset": "listed-building",
+      "reference": "1126099",
+      "geometry": "",
+      "point": "POINT (0.118853 52.209609)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583307,
+      "name": "23-27, PORTUGAL PLACE",
+      "dataset": "listed-building",
+      "reference": "1126100",
+      "geometry": "",
+      "point": "POINT (0.118561 52.209511)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583308,
+      "name": "28 AND 29, PORTUGAL PLACE",
+      "dataset": "listed-building",
+      "reference": "1126101",
+      "geometry": "",
+      "point": "POINT (0.118443 52.20937)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583312,
+      "name": "112-116, REGENT STREET",
+      "dataset": "listed-building",
+      "reference": "1126105",
+      "geometry": "",
+      "point": "POINT (0.127047 52.199405)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583315,
+      "name": "22, St Andrew's Street",
+      "dataset": "listed-building",
+      "reference": "1126108",
+      "geometry": "",
+      "point": "POINT (0.122913 52.203936)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583316,
+      "name": "25, ST ANDREW'S STREET",
+      "dataset": "listed-building",
+      "reference": "1126109",
+      "geometry": "",
+      "point": "POINT (0.123009 52.2038)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583317,
+      "name": "35, ST ANDREW'S STREET",
+      "dataset": "listed-building",
+      "reference": "1126110",
+      "geometry": "",
+      "point": "POINT (0.123539 52.203251)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583319,
+      "name": "THE MERTON ARMS PUBLIC HOUSE",
+      "dataset": "listed-building",
+      "reference": "1126112",
+      "geometry": "",
+      "point": "POINT (0.11339 52.21031)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583321,
+      "name": "SCHOOL OF PYTHAGORAS",
+      "dataset": "listed-building",
+      "reference": "1126114",
+      "geometry": "",
+      "point": "POINT (0.1134 52.20979)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31583323,
+      "name": "16, ORCHARD STREET",
+      "dataset": "listed-building",
+      "reference": "1126116",
+      "geometry": "",
+      "point": "POINT (0.128708 52.205451)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583326,
+      "name": "1-6, PARKER STREET",
+      "dataset": "listed-building",
+      "reference": "1126119",
+      "geometry": "",
+      "point": "POINT (0.126205 52.204603)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583327,
+      "name": "7 AND 7A, PARKER STREET",
+      "dataset": "listed-building",
+      "reference": "1126120",
+      "geometry": "",
+      "point": "POINT (0.12663 52.204484)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583328,
+      "name": "9-13, PARKER STREET",
+      "dataset": "listed-building",
+      "reference": "1126121",
+      "geometry": "",
+      "point": "POINT (0.127126 52.20433)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583329,
+      "name": "20 AND 21, PARKSIDE",
+      "dataset": "listed-building",
+      "reference": "1126122",
+      "geometry": "",
+      "point": "POINT (0.127554 52.204196)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583330,
+      "name": "23-25, PARKSIDE",
+      "dataset": "listed-building",
+      "reference": "1126123",
+      "geometry": "",
+      "point": "POINT (0.127954 52.204061)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583331,
+      "name": "27, PARKSIDE",
+      "dataset": "listed-building",
+      "reference": "1126124",
+      "geometry": "",
+      "point": "POINT (0.128307 52.203905)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583332,
+      "name": "28, PARKSIDE",
+      "dataset": "listed-building",
+      "reference": "1126125",
+      "geometry": "",
+      "point": "POINT (0.128479 52.203834)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583333,
+      "name": "35, PARKSIDE",
+      "dataset": "listed-building",
+      "reference": "1126126",
+      "geometry": "",
+      "point": "POINT (0.129104 52.203645)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583334,
+      "name": "FURNESS LODGE",
+      "dataset": "listed-building",
+      "reference": "1126127",
+      "geometry": "",
+      "point": "POINT (0.125803 52.202859)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583335,
+      "name": "CAMDEN HOUSE",
+      "dataset": "listed-building",
+      "reference": "1126128",
+      "geometry": "",
+      "point": "POINT (0.126012 52.203016)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583336,
+      "name": "9-14, PARK TERRACE",
+      "dataset": "listed-building",
+      "reference": "1126129",
+      "geometry": "",
+      "point": "POINT (0.126799 52.203796)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583337,
+      "name": "4 AND 5, PEAS HILL",
+      "dataset": "listed-building",
+      "reference": "1126130",
+      "geometry": "",
+      "point": "POINT (0.118759 52.204374)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583338,
+      "name": "10, PEAS HILL",
+      "dataset": "listed-building",
+      "reference": "1126131",
+      "geometry": "",
+      "point": "POINT (0.11916 52.204198)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583339,
+      "name": "3, PEMBROKE STREET",
+      "dataset": "listed-building",
+      "reference": "1126132",
+      "geometry": "",
+      "point": "POINT (0.118332 52.202094)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583340,
+      "name": "4, MARKET HILL",
+      "dataset": "listed-building",
+      "reference": "1126133",
+      "geometry": "",
+      "point": "POINT (0.119632 52.205345)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583341,
+      "name": "12, MARKET HILL",
+      "dataset": "listed-building",
+      "reference": "1126134",
+      "geometry": "",
+      "point": "POINT (0.119459 52.205748)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583342,
+      "name": "1, MARKET STREET",
+      "dataset": "listed-building",
+      "reference": "1126135",
+      "geometry": "",
+      "point": "POINT (0.120508 52.206247)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583343,
+      "name": "HENRY MARTYN HALL",
+      "dataset": "listed-building",
+      "reference": "1126136",
+      "geometry": "",
+      "point": "POINT (0.12002 52.205886)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583344,
+      "name": "RAILINGS AND GATES AT THE CHURCH OF THE HOLY TRINITY",
+      "dataset": "listed-building",
+      "reference": "1126137",
+      "geometry": "",
+      "point": "POINT (0.12049 52.20605)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583347,
+      "name": "THE MILL PUBLIC HOUSE",
+      "dataset": "listed-building",
+      "reference": "1126140",
+      "geometry": "",
+      "point": "POINT (0.116201 52.201474)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583357,
+      "name": "Nos. 1-32 and 35-48 New Square",
+      "dataset": "listed-building",
+      "reference": "1126150",
+      "geometry": "",
+      "point": "POINT (0.129168 52.206169)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583358,
+      "name": "CORY HOUSE",
+      "dataset": "listed-building",
+      "reference": "1126151",
+      "geometry": "",
+      "point": "POINT (0.114828 52.210574)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31583359,
+      "name": "NUMBER 1 LITTLE ST MARYS LANE INCLUDING GAS LAMP ATTACHED TO THE SOUTH EAST CORNER",
+      "dataset": "listed-building",
+      "reference": "1126152",
+      "geometry": "",
+      "point": "POINT (0.117916 52.201337)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583360,
+      "name": "MUSEUM OF CLASSICAL ARCHAEOLOGY PETERHOUSE, ARCH IN NORTH BOUNDARY WALL OF THE COLLEGE",
+      "dataset": "listed-building",
+      "reference": "1126153",
+      "geometry": "",
+      "point": "POINT (0.116953 52.200869)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583365,
+      "name": "17 AND 18, MAGDALENE STREET",
+      "dataset": "listed-building",
+      "reference": "1126158",
+      "geometry": "",
+      "point": "POINT (0.115304 52.210429)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583366,
+      "name": "23, MAGDALENE STREET",
+      "dataset": "listed-building",
+      "reference": "1126159",
+      "geometry": "",
+      "point": "POINT (0.115676 52.210233)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583367,
+      "name": "29, MAGDALENE STREET",
+      "dataset": "listed-building",
+      "reference": "1126160",
+      "geometry": "",
+      "point": "POINT (0.116088 52.209994)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583368,
+      "name": "31, MAGDALENE STREET",
+      "dataset": "listed-building",
+      "reference": "1126161",
+      "geometry": "",
+      "point": "POINT (0.116329 52.209849)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583369,
+      "name": "FOOTWAY AND IRON RAILINGS STRETCHING FROM THE SHORT STREET CORNER OUTSIDE NUMBER 2 TO NUMBER 70",
+      "dataset": "listed-building",
+      "reference": "1126162",
+      "geometry": "",
+      "point": "POINT (0.127542 52.207702)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583370,
+      "name": "8-18, MAID'S CAUSEWAY (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1126163",
+      "geometry": "",
+      "point": "POINT (0.128427 52.2076)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583371,
+      "name": "THE BRICK WALL JOINING NUMBER 20 TO NUMBER 1 FAIR STREET",
+      "dataset": "listed-building",
+      "reference": "1126164",
+      "geometry": "",
+      "point": "POINT (0.128986 52.207684)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583372,
+      "name": "27-33, MAID'S CAUSEWAY",
+      "dataset": "listed-building",
+      "reference": "1126165",
+      "geometry": "",
+      "point": "POINT (0.129625 52.208002)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583373,
+      "name": "55-71, MAID'S CAUSEWAY",
+      "dataset": "listed-building",
+      "reference": "1126166",
+      "geometry": "",
+      "point": "POINT (0.131251 52.208138)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583374,
+      "name": "73, MAID'S CAUSEWAY",
+      "dataset": "listed-building",
+      "reference": "1126167",
+      "geometry": "",
+      "point": "POINT (0.131846 52.208326)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583377,
+      "name": "1-9, JESUS TERRACE",
+      "dataset": "listed-building",
+      "reference": "1126170",
+      "geometry": "",
+      "point": "POINT (0.128899 52.205771)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583378,
+      "name": "1, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1126171",
+      "geometry": "",
+      "point": "POINT (0.117765 52.203898)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583379,
+      "name": "3, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1126172",
+      "geometry": "",
+      "point": "POINT (0.117764 52.204044)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583380,
+      "name": "4, 4A AND 5, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1126173",
+      "geometry": "",
+      "point": "POINT (0.117777 52.204155)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583381,
+      "name": "7 AND 8, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1126174",
+      "geometry": "",
+      "point": "POINT (0.117817 52.204276)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583382,
+      "name": "10 AND 11, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1126175",
+      "geometry": "",
+      "point": "POINT (0.117831 52.204408)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583383,
+      "name": "12 AND 12A, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1126176",
+      "geometry": "",
+      "point": "POINT (0.117837 52.204494)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583384,
+      "name": "15, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1126177",
+      "geometry": "",
+      "point": "POINT (0.11793 52.2047)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583385,
+      "name": "18-21, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1126178",
+      "geometry": "",
+      "point": "POINT (0.117963 52.204914)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583386,
+      "name": "50 AND 52, KING STREET",
+      "dataset": "listed-building",
+      "reference": "1126179",
+      "geometry": "",
+      "point": "POINT (0.123534 52.207291)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583387,
+      "name": "54, KING STREET",
+      "dataset": "listed-building",
+      "reference": "1126180",
+      "geometry": "",
+      "point": "POINT (0.123645 52.207297)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583388,
+      "name": "66, KING STREET",
+      "dataset": "listed-building",
+      "reference": "1126181",
+      "geometry": "",
+      "point": "POINT (0.124293 52.207307)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583389,
+      "name": "JAKENETT'S ALMSHOUSES",
+      "dataset": "listed-building",
+      "reference": "1126182",
+      "geometry": "",
+      "point": "POINT (0.125484 52.207234)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583391,
+      "name": "2 AND 4, LENSFIELD ROAD",
+      "dataset": "listed-building",
+      "reference": "1126184",
+      "geometry": "",
+      "point": "POINT (0.127088 52.199308)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583392,
+      "name": "THE OAK PUBLIC HOUSE",
+      "dataset": "listed-building",
+      "reference": "1126185",
+      "geometry": "",
+      "point": "POINT (0.127059 52.199238)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583393,
+      "name": "10-14, LENSFIELD ROAD",
+      "dataset": "listed-building",
+      "reference": "1126186",
+      "geometry": "",
+      "point": "POINT (0.126956 52.199079)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583394,
+      "name": "1, BENE'T PLACE (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1126187",
+      "geometry": "",
+      "point": "POINT (0.122507 52.198189)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583395,
+      "name": "4 AND 5, BENET PLACE (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1126188",
+      "geometry": "",
+      "point": "POINT (0.123358 52.198227)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583396,
+      "name": "PAIR OF GATE PIERS IMMEDIATELY TO THE WEST OF THE CHURCH OF OUR LADY AND THE ENGLISH MARTYRS (ROMAN CATHOLIC)",
+      "dataset": "listed-building",
+      "reference": "1126189",
+      "geometry": "",
+      "point": "POINT (0.126997 52.198845)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583403,
+      "name": "WALL AND GATES OF THE CHURCH OF OUR LADY AND THE ENGLISH MARTYRS (ROMAN CATHOLIC)",
+      "dataset": "listed-building",
+      "reference": "1126197",
+      "geometry": "",
+      "point": "POINT (0.127223 52.198982)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583407,
+      "name": "8-10, JESUS LANE",
+      "dataset": "listed-building",
+      "reference": "1126201",
+      "geometry": "",
+      "point": "POINT (0.119995 52.208212)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583408,
+      "name": "20-22, JESUS LANE",
+      "dataset": "listed-building",
+      "reference": "1126202",
+      "geometry": "",
+      "point": "POINT (0.120751 52.208624)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583409,
+      "name": "33 AND 34, JESUS LANE",
+      "dataset": "listed-building",
+      "reference": "1126203",
+      "geometry": "",
+      "point": "POINT (0.121852 52.208498)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583410,
+      "name": "ALL SAINTS CHURCH",
+      "dataset": "listed-building",
+      "reference": "1126204",
+      "geometry": "",
+      "point": "POINT (0.123264 52.208237)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31583411,
+      "name": "49, JESUS LANE",
+      "dataset": "listed-building",
+      "reference": "1126205",
+      "geometry": "",
+      "point": "POINT (0.124302 52.208071)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583412,
+      "name": "RADEGUND BUILDINGS",
+      "dataset": "listed-building",
+      "reference": "1126206",
+      "geometry": "",
+      "point": "POINT (0.125138 52.207953)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583413,
+      "name": "62 AND 63, JESUS LANE",
+      "dataset": "listed-building",
+      "reference": "1126207",
+      "geometry": "",
+      "point": "POINT (0.125982 52.207815)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583417,
+      "name": "ZION CHAPEL SUNDAY SCHOOL (BAPTIST)",
+      "dataset": "listed-building",
+      "reference": "1126211",
+      "geometry": "",
+      "point": "POINT (0.13243 52.203405)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583418,
+      "name": "1-42, EDEN STREET",
+      "dataset": "listed-building",
+      "reference": "1126212",
+      "geometry": "",
+      "point": "POINT (0.130072 52.20586)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583419,
+      "name": "8-12, EMMANUEL ROAD (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1126213",
+      "geometry": "",
+      "point": "POINT (0.126298 52.20543)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583420,
+      "name": "CHURCH ARMY HOSTEL.",
+      "dataset": "listed-building",
+      "reference": "1126214",
+      "geometry": "",
+      "point": "POINT (0.129122 52.207571)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583421,
+      "name": "13, FITZWILLIAM STREET",
+      "dataset": "listed-building",
+      "reference": "1126215",
+      "geometry": "",
+      "point": "POINT (0.1216 52.200651)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583423,
+      "name": "3, FREE SCHOOL LANE",
+      "dataset": "listed-building",
+      "reference": "1126217",
+      "geometry": "",
+      "point": "POINT (0.118544 52.203862)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583427,
+      "name": "1 AND 2, GREEN STREET",
+      "dataset": "listed-building",
+      "reference": "1126221",
+      "geometry": "",
+      "point": "POINT (0.119764 52.206947)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583428,
+      "name": "23, GREEN STREET",
+      "dataset": "listed-building",
+      "reference": "1126222",
+      "geometry": "",
+      "point": "POINT (0.118593 52.206409)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583429,
+      "name": "26 AND 27, GREEN STREET",
+      "dataset": "listed-building",
+      "reference": "1126223",
+      "geometry": "",
+      "point": "POINT (0.118901 52.206478)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583430,
+      "name": "OWEN WEBB HOUSE",
+      "dataset": "listed-building",
+      "reference": "1126224",
+      "geometry": "",
+      "point": "POINT (0.129723 52.200354)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583431,
+      "name": "30, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1126225",
+      "geometry": "",
+      "point": "POINT (0.117162 52.209616)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583432,
+      "name": "66, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1126226",
+      "geometry": "",
+      "point": "POINT (0.118625 52.208231)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583433,
+      "name": "67, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1126227",
+      "geometry": "",
+      "point": "POINT (0.118679 52.208178)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583434,
+      "name": "68, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1126228",
+      "geometry": "",
+      "point": "POINT (0.118793 52.208075)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583435,
+      "name": "69, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1126229",
+      "geometry": "",
+      "point": "POINT (0.118861 52.208017)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583436,
+      "name": "ENTRANCE DOORWAY TO NO 70 AND NO 70 (THE FLYING STAG) TO REAR",
+      "dataset": "listed-building",
+      "reference": "1126230",
+      "geometry": "",
+      "point": "POINT (0.118996 52.207913)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583437,
+      "name": "73, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1126231",
+      "geometry": "",
+      "point": "POINT (0.1191 52.207855)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583439,
+      "name": "1-10, BRUNSWICK WALK",
+      "dataset": "listed-building",
+      "reference": "1126233",
+      "geometry": "",
+      "point": "POINT (0.129543 52.208515)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583444,
+      "name": "4-10, CHESTERTON ROAD",
+      "dataset": "listed-building",
+      "reference": "1126238",
+      "geometry": "",
+      "point": "POINT (0.117697 52.211979)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583449,
+      "name": "LICHFIELD HOUSE",
+      "dataset": "listed-building",
+      "reference": "1126243",
+      "geometry": "",
+      "point": "POINT (0.118467 52.20773)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583450,
+      "name": "4, ALL SAINTS PASSAGE",
+      "dataset": "listed-building",
+      "reference": "1126244",
+      "geometry": "",
+      "point": "POINT (0.11883 52.207736)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583453,
+      "name": "STANLEY HOUSE",
+      "dataset": "listed-building",
+      "reference": "1126247",
+      "geometry": "",
+      "point": "POINT (0.118637 52.20415)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583454,
+      "name": "ENTRANCE TO NUMBER 4A",
+      "dataset": "listed-building",
+      "reference": "1126248",
+      "geometry": "",
+      "point": "POINT (0.118346 52.204074)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583455,
+      "name": "5, BENE'T STREET",
+      "dataset": "listed-building",
+      "reference": "1126249",
+      "geometry": "",
+      "point": "POINT (0.118247 52.204038)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583456,
+      "name": "THE EAGLE INN",
+      "dataset": "listed-building",
+      "reference": "1126250",
+      "geometry": "",
+      "point": "POINT (0.117982 52.204139)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583457,
+      "name": "9, BENE'T STREET",
+      "dataset": "listed-building",
+      "reference": "1126251",
+      "geometry": "",
+      "point": "POINT (0.117866 52.203922)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583458,
+      "name": "CHURCH OF ST BENE'T",
+      "dataset": "listed-building",
+      "reference": "1126252",
+      "geometry": "",
+      "point": "POINT (0.118336 52.203713)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31583459,
+      "name": "FRIAR HOUSE",
+      "dataset": "listed-building",
+      "reference": "1126253",
+      "geometry": "",
+      "point": "POINT (0.118475 52.203924)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583460,
+      "name": "CULPEPER HOUSE",
+      "dataset": "listed-building",
+      "reference": "1126254",
+      "geometry": "",
+      "point": "POINT (0.11848 52.203971)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583461,
+      "name": "BARCLAY'S BANK",
+      "dataset": "listed-building",
+      "reference": "1126255",
+      "geometry": "",
+      "point": "POINT (0.118977 52.204028)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583462,
+      "name": "1, 1A AND 1B, BOTOLPH LANE",
+      "dataset": "listed-building",
+      "reference": "1126256",
+      "geometry": "",
+      "point": "POINT (0.118115 52.202232)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583463,
+      "name": "8-11, BOTOLPH LANE",
+      "dataset": "listed-building",
+      "reference": "1126257",
+      "geometry": "",
+      "point": "POINT (0.118759 52.202353)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583464,
+      "name": "BOTOLPH HOUSE",
+      "dataset": "listed-building",
+      "reference": "1126258",
+      "geometry": "",
+      "point": "POINT (0.119288 52.202459)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583465,
+      "name": "3, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1126259",
+      "geometry": "",
+      "point": "POINT (0.119259 52.207934)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583466,
+      "name": "CHURCH OF THE HOLY SEPULCHRE",
+      "dataset": "listed-building",
+      "reference": "1126260",
+      "geometry": "",
+      "point": "POINT (0.118968 52.208455)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31583467,
+      "name": "THE MITRE PUBLIC HOUSE",
+      "dataset": "listed-building",
+      "reference": "1126261",
+      "geometry": "",
+      "point": "POINT (0.118294 52.208869)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583468,
+      "name": "CHURCH OF ST CLEMENT",
+      "dataset": "listed-building",
+      "reference": "1126262",
+      "geometry": "",
+      "point": "POINT (0.118038 52.20914)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31583469,
+      "name": "29, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1126263",
+      "geometry": "",
+      "point": "POINT (0.117225 52.209587)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583470,
+      "name": "TRINITY COLLEGE, SUNDIAL IN GREAT COURT",
+      "dataset": "listed-building",
+      "reference": "1126264",
+      "geometry": "",
+      "point": "POINT (0.116883 52.207201)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583471,
+      "name": "TRINITY COLLEGE, L SHAPED WALL ON RIVER FRONT IN SOUTH WEST PORTION OF THE GARDEN, ABUTTING ON GARRETT HOSTEL LANE",
+      "dataset": "listed-building",
+      "reference": "1126265",
+      "geometry": "",
+      "point": "POINT (0.11427 52.205984)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583472,
+      "name": "TRINITY COLLEGE, FIELD GATES TO QUEEN'S ROAD",
+      "dataset": "listed-building",
+      "reference": "1126266",
+      "geometry": "",
+      "point": "POINT (0.112032 52.206784)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31583473,
+      "name": "TRINITY COLLEGE, WALL RUNNING WEST NORTH WEST FROM THE MASTER'S LODGE TO THE RIVER",
+      "dataset": "listed-building",
+      "reference": "1126267",
+      "geometry": "",
+      "point": "POINT (0.116298 52.207634)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583474,
+      "name": "TRINITY COLLEGE, ANGEL COURT",
+      "dataset": "listed-building",
+      "reference": "1126268",
+      "geometry": "",
+      "point": "POINT (0.117702 52.206692)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583475,
+      "name": "TRINITY COLLEGE, STATUE IN WHEWELL'S COURT",
+      "dataset": "listed-building",
+      "reference": "1126269",
+      "geometry": "",
+      "point": "POINT (0.119046 52.207492)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583476,
+      "name": "TRINITY HALL, WATERHOUSE BUILDING",
+      "dataset": "listed-building",
+      "reference": "1126270",
+      "geometry": "",
+      "point": "POINT (0.115925 52.205492)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583477,
+      "name": "TRINITY HALL, GATEHOUSE BUILDING",
+      "dataset": "listed-building",
+      "reference": "1126271",
+      "geometry": "",
+      "point": "POINT (0.114693 52.206023)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583478,
+      "name": "TRINITY HALL, BOUNDARY WALL ON GARRET HOSTEL LANE",
+      "dataset": "listed-building",
+      "reference": "1126272",
+      "geometry": "",
+      "point": "POINT (0.115814 52.206089)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583480,
+      "name": "THE DIVINITY SCHOOL",
+      "dataset": "listed-building",
+      "reference": "1126274",
+      "geometry": "",
+      "point": "POINT (0.118276 52.207838)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583481,
+      "name": "FENCE AND GATES TO DOWNING SITE FRONTING TENNIS COURT ROAD RAILINGS OF DOWNING SITE",
+      "dataset": "listed-building",
+      "reference": "1126275",
+      "geometry": "",
+      "point": "POINT (0.121377 52.201513)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583482,
+      "name": "Fitzwilliam Museum and boundary wall, plinths and gates to the north-east",
+      "dataset": "listed-building",
+      "reference": "1126276",
+      "geometry": "",
+      "point": "POINT (0.119712 52.199944)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31583483,
+      "name": "FENCE ALONG STREET FRONTAGE OF THE MAIN BLOCK OF THE FITZWILLIAM MUSEUM",
+      "dataset": "listed-building",
+      "reference": "1126277",
+      "geometry": "",
+      "point": "POINT (0.119772 52.200351)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31583484,
+      "name": "LABORATORY OF PHYSICAL CHEMISTRY",
+      "dataset": "listed-building",
+      "reference": "1126278",
+      "geometry": "",
+      "point": "POINT (0.119266 52.202952)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31583485,
+      "name": "THE LAW SCHOOL AND UNIVERSITY OFFICES",
+      "dataset": "listed-building",
+      "reference": "1126279",
+      "geometry": "",
+      "point": "POINT (0.116574 52.205129)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31583486,
+      "name": "RAILINGS AND GATES ROUND THE SENATE HOUSE",
+      "dataset": "listed-building",
+      "reference": "1126280",
+      "geometry": "",
+      "point": "POINT (0.117738 52.205423)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31583488,
+      "name": "CAMBRIDGE UNIVERSITY PRESS (PITT PRESS) UNIVERSITY PRESS",
+      "dataset": "listed-building",
+      "reference": "1126282",
+      "geometry": "",
+      "point": "POINT (0.117748 52.202105)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31596092,
+      "name": "KING'S COLLEGE, CHAPEL",
+      "dataset": "listed-building",
+      "reference": "1139003",
+      "geometry": "",
+      "point": "POINT (0.116527 52.204801)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31596119,
+      "name": "JESUS COLLEGE, GATEWAY AND SCREEN ON NORTH SIDE OF CHAPEL COURT",
+      "dataset": "listed-building",
+      "reference": "1139030",
+      "geometry": "",
+      "point": "POINT (0.124709 52.209704)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31596137,
+      "name": "JESUS COLLEGE, NORTH RANGE OF OUTER COURT",
+      "dataset": "listed-building",
+      "reference": "1139049",
+      "geometry": "",
+      "point": "POINT (0.123366 52.209514)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31596529,
+      "name": "KING'S COLLEGE, SOUTH RANGE OF FIRST COURT, INCLUDING THE LIBRARY AND THE FORMER PROVOST'S LODGE",
+      "dataset": "listed-building",
+      "reference": "1139452",
+      "geometry": "",
+      "point": "POINT (0.1167 52.203819)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31602837,
+      "name": "KING'S COLLEGE, SCOTT'S BUILDING",
+      "dataset": "listed-building",
+      "reference": "1145818",
+      "geometry": "",
+      "point": "POINT (0.117298 52.203731)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31657127,
+      "name": "MARKET HILL BUILDINGS (ST MICHAEL'S COURT), GONVILLE AND CAIUS COLLEGE",
+      "dataset": "listed-building",
+      "reference": "1200398",
+      "geometry": "",
+      "point": "POINT (0.118725 52.205729)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31684171,
+      "name": "TELEPHONE KIOSK OUTSIDE ADDENBROOKE'S HOSPITAL",
+      "dataset": "listed-building",
+      "reference": "1227597",
+      "geometry": "",
+      "point": "POINT (0.121205 52.199607)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31684292,
+      "name": "THE ZION BAPTIST CHURCH",
+      "dataset": "listed-building",
+      "reference": "1227719",
+      "geometry": "",
+      "point": "POINT (0.132593 52.20356)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31691645,
+      "name": "1, MILL LANE",
+      "dataset": "listed-building",
+      "reference": "1235124",
+      "geometry": "",
+      "point": "POINT (0.117954 52.201831)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31691646,
+      "name": "MILL HAVEN, EAST HOUSE",
+      "dataset": "listed-building",
+      "reference": "1235125",
+      "geometry": "",
+      "point": "POINT (0.116578 52.201523)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31691647,
+      "name": "MILL HAVEN, WEST HOUSE",
+      "dataset": "listed-building",
+      "reference": "1235126",
+      "geometry": "",
+      "point": "POINT (0.116403 52.201526)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31702044,
+      "name": "NUMBERS 1, 1A, 2 AND 3 AND ATTACHED RAILINGS",
+      "dataset": "listed-building",
+      "reference": "1245572",
+      "geometry": "",
+      "point": "POINT (0.129993 52.204962)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31721551,
+      "name": "COUNTY HALL",
+      "dataset": "listed-building",
+      "reference": "1265198",
+      "geometry": "",
+      "point": "POINT (0.12172 52.206922)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31721552,
+      "name": "1-4, JESUS LANE",
+      "dataset": "listed-building",
+      "reference": "1265199",
+      "geometry": "",
+      "point": "POINT (0.119587 52.20799)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31721579,
+      "name": "WILLIAM STONE BUILDING, PETERHOUSE COLLEGE",
+      "dataset": "listed-building",
+      "reference": "1265227",
+      "geometry": "",
+      "point": "POINT (0.119917 52.198793)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31721624,
+      "name": "THE RED COW PUBLIC HOUSE",
+      "dataset": "listed-building",
+      "reference": "1265272",
+      "geometry": "",
+      "point": "POINT (0.119912 52.204546)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31721636,
+      "name": "WESLEY CHURCH AND ATTACHED LIBRARY",
+      "dataset": "listed-building",
+      "reference": "1265284",
+      "geometry": "",
+      "point": "POINT (0.12685 52.207301)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31721640,
+      "name": "TELEPHONE KIOSK OUTSIDE ST CLEMENT'S CHURCH",
+      "dataset": "listed-building",
+      "reference": "1265288",
+      "geometry": "",
+      "point": "POINT (0.117784 52.20916)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31721643,
+      "name": "15, MARKET HILL",
+      "dataset": "listed-building",
+      "reference": "1265292",
+      "geometry": "",
+      "point": "POINT (0.119121 52.205833)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31724675,
+      "name": "GASLAMP",
+      "dataset": "listed-building",
+      "reference": "1268342",
+      "geometry": "",
+      "point": "POINT (0.132302 52.202877)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31724677,
+      "name": "FINELLA",
+      "dataset": "listed-building",
+      "reference": "1268344",
+      "geometry": "",
+      "point": "POINT (0.111893 52.201553)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31724681,
+      "name": "HARRINGTON HOUSE KENT HOUSE MONTAGU HOUSE SIDNEY HOUSE SUSSEX HOUSE",
+      "dataset": "listed-building",
+      "reference": "1268348",
+      "geometry": "",
+      "point": "POINT (0.121134 52.206699)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31724682,
+      "name": "4,5 AND 6, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1268349",
+      "geometry": "",
+      "point": "POINT (0.118183 52.20583)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31724683,
+      "name": "EMMANUEL UNITED REFORMED CHURCH",
+      "dataset": "listed-building",
+      "reference": "1268350",
+      "geometry": "",
+      "point": "POINT (0.118184 52.201431)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31724705,
+      "name": "GUILDHALL",
+      "dataset": "listed-building",
+      "reference": "1268372",
+      "geometry": "",
+      "point": "POINT (0.119243 52.20492)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31724706,
+      "name": "19,20 AND 21, MARKET STREET",
+      "dataset": "listed-building",
+      "reference": "1268373",
+      "geometry": "",
+      "point": "POINT (0.119542 52.205804)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31724707,
+      "name": "MOND LABORATORY",
+      "dataset": "listed-building",
+      "reference": "1268374",
+      "geometry": "",
+      "point": "POINT (0.119279 52.203349)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31724709,
+      "name": "Lamp Standard",
+      "dataset": "listed-building",
+      "reference": "1268376",
+      "geometry": "",
+      "point": "POINT (0.12821 52.202199)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31724710,
+      "name": "5-10, PARK STREET",
+      "dataset": "listed-building",
+      "reference": "1268377",
+      "geometry": "",
+      "point": "POINT (0.120159 52.209029)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31724711,
+      "name": "19-44 Lower Park Street",
+      "dataset": "listed-building",
+      "reference": "1268378",
+      "geometry": "",
+      "point": "POINT (0.120426 52.209847)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31774936,
+      "name": "KING'S COLLEGE, GATEWAY TO QUEEN'S ROAD",
+      "dataset": "listed-building",
+      "reference": "1318911",
+      "geometry": "",
+      "point": "POINT (0.112156 52.203431)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31774957,
+      "name": "KING'S COLLEGE, FOUNTAIN IN THE CENTRE OF FIRST COURT",
+      "dataset": "listed-building",
+      "reference": "1318932",
+      "geometry": "",
+      "point": "POINT (0.116623 52.204301)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31774958,
+      "name": "KING'S COLLEGE, RAILINGS BETWEEN THE NORTH EAST TURRET OF THE CHAPEL AND THE EAST RANGE OF THE SCHOOLS",
+      "dataset": "listed-building",
+      "reference": "1318933",
+      "geometry": "",
+      "point": "POINT (0.11723 52.205018)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31776297,
+      "name": "CLARE COLLEGE, THE BUILDINGS SURROUNDING THE FORE AND PRINCIPAL COURTS",
+      "dataset": "listed-building",
+      "reference": "1320280",
+      "geometry": "",
+      "point": "POINT (0.11562 52.205101)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31776303,
+      "name": "CHRIST'S COLLEGE, FELLOWS BUILDING",
+      "dataset": "listed-building",
+      "reference": "1320286",
+      "geometry": "",
+      "point": "POINT (0.123187 52.205902)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31776391,
+      "name": "CORPUS CHRISTI COLLEGE, FOUR LAMP STANDARDS IN NEW COURT",
+      "dataset": "listed-building",
+      "reference": "1320374",
+      "geometry": "",
+      "point": "POINT (0.117978 52.202946)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31776408,
+      "name": "The Hermitage, Darwin College",
+      "dataset": "listed-building",
+      "reference": "1320391",
+      "geometry": "",
+      "point": "POINT (0.113444 52.200598)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31776442,
+      "name": "GONVILLE AND CAIUS COLLEGE, THE BUILDINGS SURROUNDING GONVILLE COURT AND CAIUS COURT INCLUDING THE HALL, CHAPEL, MASTER'S LODGE AND GATE OF VIRTUE, BUT EXCLUDING THE GATE OF HONOUR",
+      "dataset": "listed-building",
+      "reference": "1320425",
+      "geometry": "",
+      "point": "POINT (0.117097 52.206036)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31778812,
+      "name": "THE SENATE HOUSE",
+      "dataset": "listed-building",
+      "reference": "1322818",
+      "geometry": "",
+      "point": "POINT (0.117417 52.205567)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31779009,
+      "name": "ZOOLOGICAL LABORATORY",
+      "dataset": "listed-building",
+      "reference": "1323018",
+      "geometry": "",
+      "point": "POINT (0.12102 52.203039)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31779155,
+      "name": "TRINITY HALL, NORTH BOUNDARY WALL OF FELLOWS' GARDEN",
+      "dataset": "listed-building",
+      "reference": "1323164",
+      "geometry": "",
+      "point": "POINT (0.114612 52.205653)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31781502,
+      "name": "TRINITY COLLEGE, NEVILE'S GATE TO TRINITY LANE",
+      "dataset": "listed-building",
+      "reference": "1325525",
+      "geometry": "",
+      "point": "POINT (0.116334 52.206392)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31782619,
+      "name": "QUEENS' COLLEGE, NORTH WALL OF THE FELLOWS' GARDEN",
+      "dataset": "listed-building",
+      "reference": "1326651",
+      "geometry": "",
+      "point": "POINT (0.115052 52.203286)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31782632,
+      "name": "ST JOHN'S COLLEGE, NEW BRIDGE",
+      "dataset": "listed-building",
+      "reference": "1326664",
+      "geometry": "",
+      "point": "POINT (0.115796 52.208421)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31785864,
+      "name": "JESUS COLLEGE, NORTH RANGE OF NEW COURT",
+      "dataset": "listed-building",
+      "reference": "1329916",
+      "geometry": "",
+      "point": "POINT (0.123758 52.209965)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787738,
+      "name": "TRINITY COLLEGE, FOUNTAIN IN GREAT COURT",
+      "dataset": "listed-building",
+      "reference": "1331803",
+      "geometry": "",
+      "point": "POINT (0.116901 52.20696)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31787739,
+      "name": "TRINITY COLLEGE, TRINITY BRIDGE",
+      "dataset": "listed-building",
+      "reference": "1331804",
+      "geometry": "",
+      "point": "POINT (0.113895 52.206661)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31787740,
+      "name": "TRINITY COLLEGE, ENTRANCE GATES TO THE FELLOWS' GARDEN",
+      "dataset": "listed-building",
+      "reference": "1331805",
+      "geometry": "",
+      "point": "POINT (0.110843 52.206862)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787741,
+      "name": "Whewell's Court, Trinity College",
+      "dataset": "listed-building",
+      "reference": "1331806",
+      "geometry": "",
+      "point": "POINT (0.118762 52.207434)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787742,
+      "name": "TRINITY HALL, THE BUILDINGS SURROUNDING FRONT COURT, WITH THE WEST RANGE OF SOUTH COURT, THE MASTERS LODGE AND THE LIBRARY",
+      "dataset": "listed-building",
+      "reference": "1331807",
+      "geometry": "",
+      "point": "POINT (0.115552 52.205742)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31787743,
+      "name": "CAVENDISH LABORATORY OF EXPERIMENTAL PHYSICS",
+      "dataset": "listed-building",
+      "reference": "1331808",
+      "geometry": "",
+      "point": "POINT (0.118784 52.203597)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787744,
+      "name": "2 LAMP POSTS IN SENATE HOUSE PASSAGE AT THE ENTRANCE TO THE OLD SCHOOLS",
+      "dataset": "listed-building",
+      "reference": "1331809",
+      "geometry": "",
+      "point": "POINT (0.117037 52.205624)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787745,
+      "name": "CAMBRIDGE UNION SOCIETY BUILDING UNION SOCIETY BUILDING",
+      "dataset": "listed-building",
+      "reference": "1331810",
+      "geometry": "",
+      "point": "POINT (0.119479 52.208647)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787758,
+      "name": "10, GREEN STREET",
+      "dataset": "listed-building",
+      "reference": "1331823",
+      "geometry": "",
+      "point": "POINT (0.119268 52.206778)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787759,
+      "name": "24, GREEN STREET",
+      "dataset": "listed-building",
+      "reference": "1331824",
+      "geometry": "",
+      "point": "POINT (0.118676 52.20642)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787760,
+      "name": "FISHER HOUSE",
+      "dataset": "listed-building",
+      "reference": "1331825",
+      "geometry": "",
+      "point": "POINT (0.120048 52.204672)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787761,
+      "name": "MAGDALENE BRIDGE THE GREAT BRIDGE",
+      "dataset": "listed-building",
+      "reference": "1331826",
+      "geometry": "",
+      "point": "POINT (0.116545 52.209841)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787762,
+      "name": "COUNTY FOLK MUSEUM",
+      "dataset": "listed-building",
+      "reference": "1331827",
+      "geometry": "",
+      "point": "POINT (0.114707 52.210786)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787765,
+      "name": "WENTWORTH HOUSE",
+      "dataset": "listed-building",
+      "reference": "1331830",
+      "geometry": "",
+      "point": "POINT (0.117322 52.211873)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787769,
+      "name": "2, ALL SAINTS PASSAGE",
+      "dataset": "listed-building",
+      "reference": "1331834",
+      "geometry": "",
+      "point": "POINT (0.118666 52.207642)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787770,
+      "name": "5-7, ALL SAINTS PAASAGE",
+      "dataset": "listed-building",
+      "reference": "1331835",
+      "geometry": "",
+      "point": "POINT (0.118977 52.207806)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787772,
+      "name": "BATH HOTEL",
+      "dataset": "listed-building",
+      "reference": "1331837",
+      "geometry": "",
+      "point": "POINT (0.118477 52.20411)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787773,
+      "name": "4, BOTOLPH LANE",
+      "dataset": "listed-building",
+      "reference": "1331838",
+      "geometry": "",
+      "point": "POINT (0.118395 52.202286)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787774,
+      "name": "12 AND 13, BOTOLPH LANE",
+      "dataset": "listed-building",
+      "reference": "1331839",
+      "geometry": "",
+      "point": "POINT (0.118962 52.202393)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787775,
+      "name": "4, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1331840",
+      "geometry": "",
+      "point": "POINT (0.119186 52.207997)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787776,
+      "name": "15 AND 16, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1331841",
+      "geometry": "",
+      "point": "POINT (0.118341 52.208801)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787777,
+      "name": "25 AND 26, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1331842",
+      "geometry": "",
+      "point": "POINT (0.117367 52.20948)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787778,
+      "name": "17, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1331843",
+      "geometry": "",
+      "point": "POINT (0.117937 52.204805)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787779,
+      "name": "LETTER BOX AT KING'S COLLEGE GATE",
+      "dataset": "listed-building",
+      "reference": "1331844",
+      "geometry": "",
+      "point": "POINT (0.117355 52.204376)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787780,
+      "name": "62 AND 64, KING STREET",
+      "dataset": "listed-building",
+      "reference": "1331845",
+      "geometry": "",
+      "point": "POINT (0.124125 52.207329)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787788,
+      "name": "LITTLE TRINITY",
+      "dataset": "listed-building",
+      "reference": "1331853",
+      "geometry": "",
+      "point": "POINT (0.120403 52.208702)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31787789,
+      "name": "32, JESUS LANE",
+      "dataset": "listed-building",
+      "reference": "1331854",
+      "geometry": "",
+      "point": "POINT (0.122276 52.208678)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787790,
+      "name": "WESTCOTT HOUSE",
+      "dataset": "listed-building",
+      "reference": "1331855",
+      "geometry": "",
+      "point": "POINT (0.122605 52.208409)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787791,
+      "name": "3, EMMANUEL ROAD",
+      "dataset": "listed-building",
+      "reference": "1331856",
+      "geometry": "",
+      "point": "POINT (0.125903 52.204919)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787793,
+      "name": "16-24, FITZWILLIAM STREET",
+      "dataset": "listed-building",
+      "reference": "1331858",
+      "geometry": "",
+      "point": "POINT (0.120726 52.200526)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787797,
+      "name": "5, MARKET HILL",
+      "dataset": "listed-building",
+      "reference": "1331862",
+      "geometry": "",
+      "point": "POINT (0.119614 52.205427)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31787798,
+      "name": "2, MARKET STREET",
+      "dataset": "listed-building",
+      "reference": "1331863",
+      "geometry": "",
+      "point": "POINT (0.120402 52.206221)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787799,
+      "name": "CHURCH OF THE HOLY TRINITY",
+      "dataset": "listed-building",
+      "reference": "1331864",
+      "geometry": "",
+      "point": "POINT (0.120329 52.205916)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31787800,
+      "name": "1-16, MELBOURNE PLACE",
+      "dataset": "listed-building",
+      "reference": "1331865",
+      "geometry": "",
+      "point": "POINT (0.129163 52.204302)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787804,
+      "name": "19, NORTHAMPTON STREET",
+      "dataset": "listed-building",
+      "reference": "1331869",
+      "geometry": "",
+      "point": "POINT (0.113786 52.210466)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787805,
+      "name": "8-11, LITTLE ST MARY'S LANE (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1331870",
+      "geometry": "",
+      "point": "POINT (0.117518 52.201213)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787808,
+      "name": "1, NORTHAMPTON STREET (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1331873",
+      "geometry": "",
+      "point": "POINT (0.115067 52.210576)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31787809,
+      "name": "21 AND 22, MAGDALENE STREET",
+      "dataset": "listed-building",
+      "reference": "1331874",
+      "geometry": "",
+      "point": "POINT (0.115542 52.210311)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787810,
+      "name": "POST OFFICE",
+      "dataset": "listed-building",
+      "reference": "1331875",
+      "geometry": "",
+      "point": "POINT (0.115848 52.210157)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787812,
+      "name": "10, JESUS TERRACE",
+      "dataset": "listed-building",
+      "reference": "1331877",
+      "geometry": "",
+      "point": "POINT (0.128544 52.205696)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787813,
+      "name": "2, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1331878",
+      "geometry": "",
+      "point": "POINT (0.117773 52.203975)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787814,
+      "name": "6 AND 6A, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1331879",
+      "geometry": "",
+      "point": "POINT (0.117794 52.204213)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787815,
+      "name": "9, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1331880",
+      "geometry": "",
+      "point": "POINT (0.117825 52.204342)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787816,
+      "name": "14, KING'S PARADE",
+      "dataset": "listed-building",
+      "reference": "1331881",
+      "geometry": "",
+      "point": "POINT (0.11793 52.204652)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787818,
+      "name": "4-12, TENNIS COURT ROAD",
+      "dataset": "listed-building",
+      "reference": "1331883",
+      "geometry": "",
+      "point": "POINT (0.121338 52.201181)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787819,
+      "name": "THE OLD VICARAGE",
+      "dataset": "listed-building",
+      "reference": "1331884",
+      "geometry": "",
+      "point": "POINT (0.117919 52.209427)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787820,
+      "name": "6-12, PEMBROKE STREET",
+      "dataset": "listed-building",
+      "reference": "1331885",
+      "geometry": "",
+      "point": "POINT (0.118933 52.202271)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787822,
+      "name": "GLENGARY HOTEL",
+      "dataset": "listed-building",
+      "reference": "1331887",
+      "geometry": "",
+      "point": "POINT (0.125757 52.201286)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787824,
+      "name": "CHURCH OF ST ANDREW THE GREAT",
+      "dataset": "listed-building",
+      "reference": "1331889",
+      "geometry": "",
+      "point": "POINT (0.121778 52.205)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787825,
+      "name": "24, ST ANDREW'S STREET",
+      "dataset": "listed-building",
+      "reference": "1331890",
+      "geometry": "",
+      "point": "POINT (0.122973 52.203846)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787826,
+      "name": "BELMONT",
+      "dataset": "listed-building",
+      "reference": "1331891",
+      "geometry": "",
+      "point": "POINT (0.124445 52.202841)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787827,
+      "name": "21-24, NORTHAMPTON STREET",
+      "dataset": "listed-building",
+      "reference": "1331892",
+      "geometry": "",
+      "point": "POINT (0.113615 52.210359)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787828,
+      "name": "MERTON HALL",
+      "dataset": "listed-building",
+      "reference": "1331893",
+      "geometry": "",
+      "point": "POINT (0.113163 52.209837)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31787830,
+      "name": "9A, ORCHARD STREET (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1331895",
+      "geometry": "",
+      "point": "POINT (0.127822 52.205809)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787831,
+      "name": "29, PARKSIDE (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1331896",
+      "geometry": "",
+      "point": "POINT (0.128527 52.203808)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787832,
+      "name": "36 AND 37, PARKSIDE",
+      "dataset": "listed-building",
+      "reference": "1331897",
+      "geometry": "",
+      "point": "POINT (0.129302 52.203517)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787833,
+      "name": "7 AND 8, PARK TERRACE",
+      "dataset": "listed-building",
+      "reference": "1331898",
+      "geometry": "",
+      "point": "POINT (0.126558 52.203526)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787834,
+      "name": "3, PARSONS COURT",
+      "dataset": "listed-building",
+      "reference": "1331899",
+      "geometry": "",
+      "point": "POINT (0.11954 52.204243)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787835,
+      "name": "ARTS THEATRE",
+      "dataset": "listed-building",
+      "reference": "1331900",
+      "geometry": "",
+      "point": "POINT (0.118791 52.204318)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787836,
+      "name": "4, PEMBROKE STREET",
+      "dataset": "listed-building",
+      "reference": "1331901",
+      "geometry": "",
+      "point": "POINT (0.118422 52.202129)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787837,
+      "name": "Gates, gate piers and railings of the Cambridge Judge Business School fronting Trumpington Street",
+      "dataset": "listed-building",
+      "reference": "1331902",
+      "geometry": "",
+      "point": "POINT (0.120981 52.199769)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787838,
+      "name": "BUILDINGS SURROUNDING TUNWELL'S COURT",
+      "dataset": "listed-building",
+      "reference": "1331903",
+      "geometry": "",
+      "point": "POINT (0.119916 52.200481)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787839,
+      "name": "52, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1331904",
+      "geometry": "",
+      "point": "POINT (0.118093 52.20209)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787840,
+      "name": "CHURCH OF ST BOTOLPH",
+      "dataset": "listed-building",
+      "reference": "1331905",
+      "geometry": "",
+      "point": "POINT (0.118103 52.202494)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31787841,
+      "name": "1, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1331906",
+      "geometry": "",
+      "point": "POINT (0.118146 52.205591)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787842,
+      "name": "3, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1331907",
+      "geometry": "",
+      "point": "POINT (0.118124 52.205714)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787843,
+      "name": "9, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1331908",
+      "geometry": "",
+      "point": "POINT (0.118321 52.206335)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787844,
+      "name": "14, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1331909",
+      "geometry": "",
+      "point": "POINT (0.118421 52.206625)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31787845,
+      "name": "16 AND 16A, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1331910",
+      "geometry": "",
+      "point": "POINT (0.118419 52.206756)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787846,
+      "name": "RAILINGS ROUND CHURCHYARD OF THE DESTROYED CHURCH OF ALL SAINTS",
+      "dataset": "listed-building",
+      "reference": "1331911",
+      "geometry": "",
+      "point": "POINT (0.118357 52.207397)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787847,
+      "name": "29, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1331912",
+      "geometry": "",
+      "point": "POINT (0.118118 52.206765)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787848,
+      "name": "35-37, TRINITY STREET",
+      "dataset": "listed-building",
+      "reference": "1331913",
+      "geometry": "",
+      "point": "POINT (0.118079 52.206407)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787851,
+      "name": "15A AND 16, ST EDWARD'S PASSAGE",
+      "dataset": "listed-building",
+      "reference": "1331916",
+      "geometry": "",
+      "point": "POINT (0.118304 52.204873)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787852,
+      "name": "11, ST JOHN'S STREET",
+      "dataset": "listed-building",
+      "reference": "1331917",
+      "geometry": "",
+      "point": "POINT (0.118271 52.208034)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787853,
+      "name": "14 AND 15, ST JOHN'S STREET",
+      "dataset": "listed-building",
+      "reference": "1331918",
+      "geometry": "",
+      "point": "POINT (0.118398 52.208178)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787855,
+      "name": "LLOYD'S BANK",
+      "dataset": "listed-building",
+      "reference": "1331920",
+      "geometry": "",
+      "point": "POINT (0.121523 52.205598)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31787856,
+      "name": "49, SIDNEY STREET",
+      "dataset": "listed-building",
+      "reference": "1331921",
+      "geometry": "",
+      "point": "POINT (0.120069 52.206817)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787866,
+      "name": "1 AND 2, WHEELER STREET (See details for further address information)",
+      "dataset": "listed-building",
+      "reference": "1331931",
+      "geometry": "",
+      "point": "POINT (0.11941 52.204284)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787867,
+      "name": "PUBLIC LIBRARY",
+      "dataset": "listed-building",
+      "reference": "1331932",
+      "geometry": "",
+      "point": "POINT (0.119301 52.204506)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787874,
+      "name": "10, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1331939",
+      "geometry": "",
+      "point": "POINT (0.122036 52.198781)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787875,
+      "name": "13 AND 14, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1331940",
+      "geometry": "",
+      "point": "POINT (0.121866 52.198949)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31787876,
+      "name": "17, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1331941",
+      "geometry": "",
+      "point": "POINT (0.121687 52.199144)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788093,
+      "name": "GONVILLE AND CAIUS COLLEGE, LECTURE ROOMS",
+      "dataset": "listed-building",
+      "reference": "1332158",
+      "geometry": "",
+      "point": "POINT (0.116606 52.205699)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31788094,
+      "name": "GONVILLE AND CAIUS COLLEGE, J STAIRCASE OF ST MICHAELS COURT",
+      "dataset": "listed-building",
+      "reference": "1332159",
+      "geometry": "",
+      "point": "POINT (0.1183 52.205719)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788095,
+      "name": "JESUS COLLEGE, WALL OF FELLOWS' GARDEN IN OUTER COURT",
+      "dataset": "listed-building",
+      "reference": "1332160",
+      "geometry": "",
+      "point": "POINT (0.122899 52.20915)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788096,
+      "name": "JESUS COLLEGE, GATEWAY TO VICTORIA AVENUE",
+      "dataset": "listed-building",
+      "reference": "1332161",
+      "geometry": "",
+      "point": "POINT (0.126976 52.209388)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788097,
+      "name": "KING'S COLLEGE, TWELVE LAMPOSTS IN FIRST COURT",
+      "dataset": "listed-building",
+      "reference": "1332162",
+      "geometry": "",
+      "point": "POINT (0.116755 52.204631)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788098,
+      "name": "KING'S COLLEGE, SOUTH RANGE OF WEBB'S COURT WITH GATEWAY TO QUEEN'S LANE",
+      "dataset": "listed-building",
+      "reference": "1332163",
+      "geometry": "",
+      "point": "POINT (0.11619 52.203493)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788101,
+      "name": "CHRIST'S COLLEGE, THE BUILDINGS SURROUNDING ENTRANCE COURT, WITH THE SOUTH EAST RANGE OF SECOND COURT",
+      "dataset": "listed-building",
+      "reference": "1332166",
+      "geometry": "",
+      "point": "POINT (0.121987 52.205297)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31788102,
+      "name": "CHRIST'S COLLEGE, 'X' STAIRCASE",
+      "dataset": "listed-building",
+      "reference": "1332167",
+      "geometry": "",
+      "point": "POINT (0.121686 52.206746)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788103,
+      "name": "CHRIST'S COLLEGE, WALL BOUNDING THE FELLOWS' GARDEN ON EAST SIDE AND FRONTING MILTONS WALK",
+      "dataset": "listed-building",
+      "reference": "1332168",
+      "geometry": "",
+      "point": "POINT (0.123895 52.206427)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788104,
+      "name": "CLARE COLLEGE, WALL ON SOUTH SIDE OF FELLOWS' GARDEN",
+      "dataset": "listed-building",
+      "reference": "1332169",
+      "geometry": "",
+      "point": "POINT (0.114533 52.204808)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788105,
+      "name": "CLARE COLLEGE, GATEWAY TO CLARE HALL PIECE",
+      "dataset": "listed-building",
+      "reference": "1332170",
+      "geometry": "",
+      "point": "POINT (0.112189 52.204889)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31788106,
+      "name": "CORPUS CHRISTI COLLEGE, NEW BUILDINGS",
+      "dataset": "listed-building",
+      "reference": "1332171",
+      "geometry": "",
+      "point": "POINT (0.117739 52.203447)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788107,
+      "name": "DARWIN COLLEGE, THE OLD GRANARY",
+      "dataset": "listed-building",
+      "reference": "1332172",
+      "geometry": "",
+      "point": "POINT (0.114686 52.201117)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788113,
+      "name": "ST JOHN'S COLLEGE, NEW COURT",
+      "dataset": "listed-building",
+      "reference": "1332178",
+      "geometry": "",
+      "point": "POINT (0.115054 52.208793)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31788114,
+      "name": "ST JOHN'S COLLEGE, GATEWAY TO ST JOHN'S STREET TO SOUTH OF THE COLLEGE BUILDINGS",
+      "dataset": "listed-building",
+      "reference": "1332179",
+      "geometry": "",
+      "point": "POINT (0.117729 52.207518)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31788115,
+      "name": "ST JOHN'S COLLEGE, HIGH WALK BRIDGE OVER BIN BROOK",
+      "dataset": "listed-building",
+      "reference": "1332180",
+      "geometry": "",
+      "point": "POINT (0.113031 52.208493)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788118,
+      "name": "MAGDALENE COLLEGE, PEPYS BUILDING",
+      "dataset": "listed-building",
+      "reference": "1332183",
+      "geometry": "",
+      "point": "POINT (0.116898 52.210725)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31788119,
+      "name": "MAGDALENE COLLEGE, RAILINGS, GATE PIERS AND GATES TO GARDEN ON MAGDALENE STREET",
+      "dataset": "listed-building",
+      "reference": "1332184",
+      "geometry": "",
+      "point": "POINT (0.116369 52.21001)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788120,
+      "name": "MAGDALENE COLLEGE, MALLORY COURT, NORTH WEST RANGE",
+      "dataset": "listed-building",
+      "reference": "1332185",
+      "geometry": "",
+      "point": "POINT (0.114604 52.210223)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31788121,
+      "name": "MAGDALENE COLLEGE, BENSON COURT",
+      "dataset": "listed-building",
+      "reference": "1332186",
+      "geometry": "",
+      "point": "POINT (0.115683 52.2101)",
+      "listed-building-grade": "II*"
+    },
+    {
+      "end-date": "",
+      "entity": 31788124,
+      "name": "PEMBROKE COLLEGE, SCREEN ENTRANCE FROM TRUMPINGTON STREET BETWEEN THE CHAPEL AND THE RED BUILDING",
+      "dataset": "listed-building",
+      "reference": "1332189",
+      "geometry": "",
+      "point": "POINT (0.118638 52.201458)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788125,
+      "name": "PEMBROKE COLLEGE, WALL, GATEWAY AND SCREEN BETWEEN IVY COURT AND NEW COURT",
+      "dataset": "listed-building",
+      "reference": "1332190",
+      "geometry": "",
+      "point": "POINT (0.119586 52.201835)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788126,
+      "name": "PEMBROKE COLLEGE, BOUNDARY WALL FRONTING TENNIS COURT TERRACE",
+      "dataset": "listed-building",
+      "reference": "1332191",
+      "geometry": "",
+      "point": "POINT (0.120664 52.201331)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788127,
+      "name": "PETERHOUSE, GATES AND PIERS OF THE MASTER'S LODGE",
+      "dataset": "listed-building",
+      "reference": "1332192",
+      "geometry": "",
+      "point": "POINT (0.119028 52.201103)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31788128,
+      "name": "EMMANUEL COLLEGE, BUILDINGS SURROUNDING FRONT AND NEW COURTS AND THE BRICK BUILDING",
+      "dataset": "listed-building",
+      "reference": "1332193",
+      "geometry": "",
+      "point": "POINT (0.1239 52.203882)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31788129,
+      "name": "EMMANUEL COLLEGE, THE LIBRARY",
+      "dataset": "listed-building",
+      "reference": "1332194",
+      "geometry": "",
+      "point": "POINT (0.125391 52.203424)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788130,
+      "name": "EMMANUEL COLLEGE, BOUNDARY WALL FACING EMMANUEL STREET AND DRUMMER",
+      "dataset": "listed-building",
+      "reference": "1332195",
+      "geometry": "",
+      "point": "POINT (0.124143 52.20468)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788131,
+      "name": "EMMANUEL COLLEGE, NORTH COURT",
+      "dataset": "listed-building",
+      "reference": "1332196",
+      "geometry": "",
+      "point": "POINT (0.123485 52.204955)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788147,
+      "name": "QUEENS' COLLEGE, NORTH BOUNDARY WALL OF THE FELLOWS' FRUIT GARDEN",
+      "dataset": "listed-building",
+      "reference": "1332212",
+      "geometry": "",
+      "point": "POINT (0.114027 52.202463)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788148,
+      "name": "THE RAILINGS, PIERS, GATEWAY AND SCREEN WALL ON THE EAST SIDE OF PRINCIPAL COURT, ST CATHARINES COLLEGE",
+      "dataset": "listed-building",
+      "reference": "1332213",
+      "geometry": "",
+      "point": "POINT (0.117293 52.203012)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31788149,
+      "name": "Master's Lodge, St Catharines College",
+      "dataset": "listed-building",
+      "reference": "1332214",
+      "geometry": "",
+      "point": "POINT (0.116854 52.202399)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788150,
+      "name": "BULL HOSTEL, ST CATHARINE'S COLLEGE",
+      "dataset": "listed-building",
+      "reference": "1332215",
+      "geometry": "",
+      "point": "POINT (0.117383 52.203373)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31788151,
+      "name": "ST JOHN'S COLLEGE, THE BUILDINGS SURROUNDING THE FIRST, SECOND AND THIRD COURTS",
+      "dataset": "listed-building",
+      "reference": "1332216",
+      "geometry": "",
+      "point": "POINT (0.117169 52.207997)",
+      "listed-building-grade": "I"
+    },
+    {
+      "end-date": "",
+      "entity": 31788884,
+      "name": "ST JOHN'S COLLEGE, GATES OF CHAPEL COURT YARD ONTO ST JOHN'S STREET",
+      "dataset": "listed-building",
+      "reference": "1332952",
+      "geometry": "",
+      "point": "POINT (0.118222 52.208341)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31791740,
+      "name": "PEMBROKE COLLEGE, SUNDIAL IN NEW COURT",
+      "dataset": "listed-building",
+      "reference": "1335828",
+      "geometry": "",
+      "point": "POINT (0.120231 52.202312)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31794099,
+      "name": "6 AND 8, BENE'T STREET",
+      "dataset": "listed-building",
+      "reference": "1338200",
+      "geometry": "",
+      "point": "POINT (0.118127 52.203996)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31794394,
+      "name": "8 AND 9, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1338498",
+      "geometry": "",
+      "point": "POINT (0.118928 52.208232)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31794430,
+      "name": "1 AND 2, BRIDGE STREET",
+      "dataset": "listed-building",
+      "reference": "1338534",
+      "geometry": "",
+      "point": "POINT (0.119368 52.207855)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31794448,
+      "name": "THE BARON OF BEEF PUBLIC HOUSE",
+      "dataset": "listed-building",
+      "reference": "1338552",
+      "geometry": "",
+      "point": "POINT (0.118184 52.20896)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31794742,
+      "name": "6 AND 8, NEWMARKET ROAD",
+      "dataset": "listed-building",
+      "reference": "1338846",
+      "geometry": "",
+      "point": "POINT (0.132435 52.207983)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31798594,
+      "name": "54, TRUMPINGTON STREET",
+      "dataset": "listed-building",
+      "reference": "1342715",
+      "geometry": "",
+      "point": "POINT (0.118047 52.202198)",
+      "listed-building-grade": "II"
+    },
+    {
+      "end-date": "",
+      "entity": 31798622,
+      "name": "THE LITTLE ROSE INN",
+      "dataset": "listed-building",
+      "reference": "1342743",
+      "geometry": "",
+      "point": "POINT (0.119658 52.200698)",
+      "listed-building-grade": "II"
+    }
+  ],
+  "links": {
+    "first": "http://www.planning.data.gov.uk/entity.json?dataset=conservation-area&dataset=listed-building&dataset=article-4-direction-area&dataset=tree-preservation-zone&dataset=flood-risk-zone&geometry=POLYGON%28%280.121800+52.212537%2C0.124104+52.212398%2C0.126320+52.211986%2C0.128361+52.211317%2C0.130151+52.210417%2C0.131619+52.209320%2C0.132710+52.208069%2C0.133382+52.206711%2C0.133608+52.205299%2C0.133381+52.203888%2C0.132709+52.202530%2C0.131617+52.201279%2C0.130149+52.200183%2C0.128359+52.199283%2C0.126318+52.198614%2C0.124103+52.198202%2C0.121800+52.198063%2C0.119497+52.198202%2C0.117282+52.198614%2C0.115241+52.199283%2C0.113451+52.200183%2C0.111983+52.201279%2C0.110891+52.202530%2C0.110219+52.203888%2C0.109992+52.205299%2C0.110218+52.206711%2C0.110890+52.208069%2C0.111981+52.209320%2C0.113449+52.210417%2C0.115239+52.211317%2C0.117280+52.211986%2C0.119496+52.212398%2C0.121800+52.212537%29%29&geometry_relation=intersects&limit=500&field=entity&field=dataset&field=name&field=reference&field=geometry&field=point&field=end-date&field=listed-building-grade&field=flood-risk-level",
+    "last": "http://www.planning.data.gov.uk/entity.json?dataset=conservation-area&dataset=listed-building&dataset=article-4-direction-area&dataset=tree-preservation-zone&dataset=flood-risk-zone&geometry=POLYGON%28%280.121800+52.212537%2C0.124104+52.212398%2C0.126320+52.211986%2C0.128361+52.211317%2C0.130151+52.210417%2C0.131619+52.209320%2C0.132710+52.208069%2C0.133382+52.206711%2C0.133608+52.205299%2C0.133381+52.203888%2C0.132709+52.202530%2C0.131617+52.201279%2C0.130149+52.200183%2C0.128359+52.199283%2C0.126318+52.198614%2C0.124103+52.198202%2C0.121800+52.198063%2C0.119497+52.198202%2C0.117282+52.198614%2C0.115241+52.199283%2C0.113451+52.200183%2C0.111983+52.201279%2C0.110891+52.202530%2C0.110219+52.203888%2C0.109992+52.205299%2C0.110218+52.206711%2C0.110890+52.208069%2C0.111981+52.209320%2C0.113449+52.210417%2C0.115239+52.211317%2C0.117280+52.211986%2C0.119496+52.212398%2C0.121800+52.212537%29%29&geometry_relation=intersects&limit=500&offset=500&field=entity&field=dataset&field=name&field=reference&field=geometry&field=point&field=end-date&field=listed-building-grade&field=flood-risk-level",
+    "next": "http://www.planning.data.gov.uk/entity.json?dataset=conservation-area&dataset=listed-building&dataset=article-4-direction-area&dataset=tree-preservation-zone&dataset=flood-risk-zone&geometry=POLYGON%28%280.121800+52.212537%2C0.124104+52.212398%2C0.126320+52.211986%2C0.128361+52.211317%2C0.130151+52.210417%2C0.131619+52.209320%2C0.132710+52.208069%2C0.133382+52.206711%2C0.133608+52.205299%2C0.133381+52.203888%2C0.132709+52.202530%2C0.131617+52.201279%2C0.130149+52.200183%2C0.128359+52.199283%2C0.126318+52.198614%2C0.124103+52.198202%2C0.121800+52.198063%2C0.119497+52.198202%2C0.117282+52.198614%2C0.115241+52.199283%2C0.113451+52.200183%2C0.111983+52.201279%2C0.110891+52.202530%2C0.110219+52.203888%2C0.109992+52.205299%2C0.110218+52.206711%2C0.110890+52.208069%2C0.111981+52.209320%2C0.113449+52.210417%2C0.115239+52.211317%2C0.117280+52.211986%2C0.119496+52.212398%2C0.121800+52.212537%29%29&geometry_relation=intersects&limit=500&offset=500&field=entity&field=dataset&field=name&field=reference&field=geometry&field=point&field=end-date&field=listed-building-grade&field=flood-risk-level"
+  },
+  "count": 635
+}

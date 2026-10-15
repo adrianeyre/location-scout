@@ -1,0 +1,4505 @@
+/*
+ * Location Scout's design system, shared with the project website: Inter
+ * for words and JetBrains Mono for figures, both self-hosted so the page
+ * asks nothing of anyone but our backend (ADR 0001); a 4 px spacing rhythm;
+ * three radii and three elevations; and colours from the theme chosen in
+ * Settings (`theme/themes.ts`). The map comes first: it fills the page, and
+ * the panel and the Layers float over it.
+ */
+:root {
+  --font-sans:
+    "Inter Variable", Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+  --font-mono:
+    "JetBrains Mono Variable", "JetBrains Mono", ui-monospace, "SF Mono", Menlo,
+    Consolas, monospace;
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --control-h: 2.5rem;
+  /* The floating panel's width, and the gap it keeps from the map's edges. */
+  --panel-w: clamp(22rem, 36vw, 31rem);
+  --float-gap: 0.75rem;
+  /* A lowered bottom sheet: its handle and tabs, over the map's foot. */
+  --sheet-peek: 9rem;
+  --ease-out: cubic-bezier(0.2, 0, 0, 1);
+  --duration: 160ms;
+  --shadow-sm: 0 1px 2px rgb(16 24 40 / 6%), 0 1px 3px rgb(16 24 40 / 8%);
+  --shadow-md:
+    0 4px 10px -2px rgb(16 24 40 / 10%), 0 2px 4px -2px rgb(16 24 40 / 6%);
+  --shadow-lg:
+    0 16px 32px -8px rgb(16 24 40 / 18%), 0 4px 8px -4px rgb(16 24 40 / 8%);
+}
+
+:root[data-mode="dark"] {
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
+  --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 50%);
+  --shadow-lg: 0 16px 40px -8px rgb(0 0 0 / 65%);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-feature-settings: "cv11", "ss03";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: var(--text);
+  background: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.011em;
+  text-wrap: balance;
+}
+
+/* Figures, in the mono face with even widths, so columns of them line up. */
+:where(
+  .score-value,
+  .score-out-of,
+  .layer-statistics td,
+  .score-breakdown td,
+  .score-weight output,
+  .stat-value,
+  .stat-delta,
+  .bar-value,
+  .parts-count,
+  .gauge-value,
+  .compare-table td,
+  .footer-version
+) {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+/* One focus ring everywhere, clear of what it surrounds. */
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/*
+ * Form controls, drawn alike everywhere: the theme's surface and edges, a
+ * clear hover, and the focus ring.
+ */
+:where(
+  input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"]),
+  select
+) {
+  box-sizing: border-box;
+  min-height: var(--control-h);
+  padding: 0 0.75rem;
+  border: 1px solid var(--control-border);
+  border-radius: var(--radius);
+  background-color: var(--surface);
+  color: var(--text);
+  font: inherit;
+  transition:
+    border-color var(--duration) var(--ease-out),
+    box-shadow var(--duration) var(--ease-out);
+}
+
+:where(
+  input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"]),
+  select
+):hover {
+  border-color: var(--text-muted);
+}
+
+:where(
+  input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"]),
+  select
+):focus-visible {
+  border-color: var(--focus);
+  outline: 2px solid var(--focus);
+  outline-offset: 0;
+}
+
+:where(input)::placeholder {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+:where(input[type="checkbox"], input[type="radio"]) {
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* No wait for a double tap to zoom before a tap counts. */
+button,
+summary,
+label,
+[role="tab"] {
+  touch-action: manipulation;
+}
+
+/* A file input's button, drawn as the app's secondary buttons are. */
+input[type="file"] {
+  max-width: 100%;
+  font: inherit;
+  color: var(--text-muted);
+}
+
+input[type="file"]::file-selector-button {
+  min-height: 2.25rem;
+  margin-right: 0.75rem;
+  padding: 0 0.875rem;
+  border: 1px solid var(--control-border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-weight: 550;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition:
+    background-color var(--duration) var(--ease-out),
+    border-color var(--duration) var(--ease-out);
+}
+
+input[type="file"]::file-selector-button:hover {
+  border-color: var(--text-muted);
+  background: var(--surface-subtle);
+}
+
+/* Secondary buttons: the app's own, but never a map marker or a tab. */
+:where(
+  button:not([class], [role="tab"]),
+  .score-weights-toggle,
+  .score-weights-reset,
+  .explain-button,
+  .street-view-button,
+  .feature-popup-street-view,
+  .dashboard-open
+) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  box-sizing: border-box;
+  min-height: 2.25rem;
+  padding: 0 0.875rem;
+  border: 1px solid var(--control-border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-weight: 550;
+  line-height: 1.2;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition:
+    background-color var(--duration) var(--ease-out),
+    border-color var(--duration) var(--ease-out),
+    transform var(--duration) var(--ease-out);
+}
+
+:where(
+    button:not([class], [role="tab"]),
+    .score-weights-toggle,
+    .score-weights-reset,
+    .explain-button,
+    .street-view-button,
+    .feature-popup-street-view,
+    .dashboard-open
+  ):hover:not(:disabled) {
+  border-color: var(--text-muted);
+  background: var(--surface-subtle);
+}
+
+:where(
+    button:not([class], [role="tab"]),
+    .score-weights-toggle,
+    .score-weights-reset,
+    .explain-button,
+    .street-view-button,
+    .feature-popup-street-view,
+    .dashboard-open
+  ):active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+/* The one action a view is for, such as saving: filled with the accent. */
+button[data-variant="primary"] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--bg);
+}
+
+button[data-variant="primary"]:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 85%, var(--text));
+}
+
+/* What can't be undone, such as deleting: edged and lettered in the danger colour. */
+button[data-variant="danger"] {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+button[data-variant="danger"]:hover:not(:disabled) {
+  border-color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 10%, var(--surface));
+}
+
+:where(button):disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/*
+ * Desktop-first (PRD FR-9.1): search, radius and Scout Mode across the top,
+ * in one row from 1280 px wide; map ~60%, panel ~40%.
+ */
+.app-header {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding: 0.625rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0.25rem 0 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.brand-mark {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex: none;
+}
+
+.app-header label {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+/*
+ * The search grows into whatever the header's row leaves, up to a width that
+ * shows the whole example, and gives it back first as the row narrows: at
+ * 1280 px it shrinks to 12rem, so the Settings cog keeps its place.
+ */
+.search-bar {
+  display: flex;
+  flex: 1 1 14rem;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  max-width: 36rem;
+}
+
+/* The field and its button as one control, a magnifier inside its start. */
+.search-field {
+  position: relative;
+  display: flex;
+  flex: 1 1 10rem;
+  min-width: 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  z-index: 2;
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: var(--text-muted);
+  stroke-width: 2.25;
+  stroke-linecap: round;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.search-bar input {
+  flex: 1 1 8rem;
+  min-width: 0;
+  padding-left: 2.25rem;
+  border-right: 0;
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+
+/* Above the button's edge, so its whole ring shows. */
+.search-bar input:focus-visible {
+  position: relative;
+  z-index: 1;
+}
+
+/* The primary action. As wide as "Searching…", so the header doesn't reflow while it searches. */
+.search-bar button {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: 7.5rem;
+  min-height: var(--control-h);
+  padding: 0 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--accent);
+  color: var(--bg);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color var(--duration) var(--ease-out),
+    transform var(--duration) var(--ease-out);
+}
+
+/* While it searches: still the accent, not greyed out as if it were off. */
+.search-bar button:disabled {
+  opacity: 1;
+  cursor: progress;
+}
+
+/* Turning while a search runs; still, with a reduced-motion preference. */
+.spinner {
+  flex: none;
+  width: 0.875rem;
+  height: 0.875rem;
+  box-sizing: border-box;
+  border: 2px solid currentcolor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 700ms linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.search-bar button:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--accent) 85%, var(--text));
+}
+
+.search-bar button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.radius-select,
+.scout-mode-select {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* The title, no taller than the search beside it. */
+.app-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header .app-title h1 {
+  line-height: 1;
+}
+
+/* A smaller brand mark, so the title stays no taller than the search. */
+.app-title .brand-mark {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+/*
+ * As wide as "Development", whatever the modes are called, so the header stays
+ * in one row at 1280 px: a longer name, such as "Business: Convenience store",
+ * is cut short with an ellipsis, and given whole as the select's title.
+ */
+.scout-mode-select select {
+  width: 10rem;
+  text-overflow: ellipsis;
+}
+
+/* The question the Scout Mode answers. Every theme keeps muted text over 4.5:1 (FR-9.5, `theme/themes.test.ts`). */
+.scores-mode {
+  margin: 0 0 0.5rem;
+  color: var(--text-muted);
+}
+
+.scores-mode strong {
+  color: var(--text);
+}
+
+/* Read out, but not shown. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-error {
+  margin: 0;
+  color: var(--danger);
+}
+
+/* The addresses a search matched, on their own row below the search bar. */
+.candidate-list {
+  flex-basis: 100%;
+}
+
+.candidate-list h2 {
+  margin: 0.25rem 0 0;
+  font-size: 0.9375rem;
+}
+
+.candidate-list p {
+  margin: 0.25rem 0 0.5rem;
+}
+
+.candidate-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.candidate-list button {
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+/* The map fills everything under the header; the rest floats over it. */
+.app-main {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+
+.map-pane {
+  position: absolute;
+  inset: 0;
+}
+
+/* More specific than MapLibre's own `.maplibregl-map { position: relative }`. */
+.map-pane .search-area-map {
+  position: absolute;
+  inset: 0;
+}
+
+/*
+ * The side panel (PRD FR-9.1), a card floating at the map's right: its
+ * tabs, the Dashboard button and the button that hides it along the top.
+ */
+.side-panel {
+  position: absolute;
+  box-sizing: border-box;
+  top: var(--float-gap);
+  right: var(--float-gap);
+  bottom: var(--float-gap);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: var(--panel-w);
+  max-width: calc(100% - 2 * var(--float-gap));
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+}
+
+.side-panel[hidden] {
+  display: none;
+}
+
+/* The tabs, the Dashboard button, and the button that hides the panel. */
+.side-panel-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* The tabs as one segmented control. */
+.side-panel-tabs {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 0.125rem;
+  min-width: 0;
+  padding: 0.1875rem;
+  border-radius: var(--radius);
+  background: var(--surface-subtle);
+}
+
+.side-panel-tabs [role="tab"] {
+  flex: 1 1 auto;
+  min-height: 2.25rem;
+  padding: 0 0.625rem;
+  border: none;
+  border-radius: calc(var(--radius) - 3px);
+  background: none;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 550;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    color var(--duration) var(--ease-out),
+    background-color var(--duration) var(--ease-out),
+    box-shadow var(--duration) var(--ease-out);
+}
+
+.side-panel-tabs [role="tab"]:hover {
+  color: var(--text);
+}
+
+/* The tab chosen: raised on the surface, and underlined in the accent, so it isn't told by colour alone. */
+.side-panel-tabs [role="tab"][aria-selected="true"] {
+  color: var(--text);
+  font-weight: 650;
+  background: var(--surface);
+  box-shadow:
+    var(--shadow-sm),
+    inset 0 -2px 0 var(--accent);
+}
+
+.side-panel-tabs [role="tab"]:focus-visible {
+  outline-offset: -2px;
+}
+
+.dashboard-open {
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.dashboard-open svg,
+.dashboard-bar button svg,
+.panel-hide svg,
+.panel-show svg,
+.layer-toggles-fold svg {
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* The Dashboard and Settings, at the app bar's end. */
+.app-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.dashboard-open[aria-pressed="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: inset 0 -2px 0 var(--accent);
+}
+
+/* Hides the panel, leaving the whole map. */
+.panel-hide,
+.layer-toggles-fold {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition:
+    color var(--duration) var(--ease-out),
+    background-color var(--duration) var(--ease-out);
+}
+
+.panel-hide:hover,
+.layer-toggles-fold:hover {
+  color: var(--text);
+  background: var(--surface-subtle);
+}
+
+/* Shows a hidden panel again, at the map's top right. */
+.panel-show {
+  position: absolute;
+  top: var(--float-gap);
+  right: var(--float-gap);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-height: 2.75rem;
+  padding: 0 1rem 0 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+}
+
+.panel-show:hover {
+  background: var(--surface-subtle);
+}
+
+/* The bottom sheet's handle: only on a phone. */
+.panel-handle {
+  display: none;
+}
+
+/* A narrow panel: the tabs tighten so all four fit in its width. */
+.side-panel {
+  container-type: inline-size;
+}
+
+@container (max-width: 26rem) {
+  .side-panel-tabs [role="tab"] {
+    padding: 0 0.375rem;
+    font-size: 0.875rem;
+  }
+
+  .dashboard-open {
+    padding: 0 0.625rem;
+  }
+}
+
+/* Room kept for its scrollbar, so nothing shifts as content grows; thin, in the theme. */
+.side-panel-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: var(--control-border) transparent;
+}
+
+.side-panel-body[hidden] {
+  display: none;
+}
+
+.location-overview,
+.land-panel,
+.saved-panel,
+.compare-panel {
+  padding: 1.25rem 1.5rem 1.5rem;
+  line-height: 1.55;
+}
+
+:where(.location-overview, .land-panel, .saved-panel, .compare-panel) p {
+  text-wrap: pretty;
+}
+
+/* Before a search: a pin over the prompt, in the theme's accent. */
+.empty-state {
+  margin: 1.5rem 0;
+  padding: 2rem 1.5rem;
+  border: 1px dashed var(--control-border);
+  border-radius: var(--radius-lg);
+  background: var(--surface-subtle);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.empty-state::before {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 auto 0.75rem;
+  background: var(--accent);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+.location-overview h2,
+.land-panel h2,
+.saved-panel h2,
+.compare-panel h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.location-overview dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.375rem 1.25rem;
+  margin: 0;
+}
+
+.location-overview dt {
+  color: var(--text-muted);
+  font-weight: 550;
+}
+
+.location-overview dd {
+  margin: 0;
+}
+
+.location-overview h3 {
+  margin: 1.75rem 0 0.625rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+.location-overview abbr {
+  text-decoration: none;
+}
+
+/*
+ * Layer toggles float over the map, always in view (PRD FR-9.1), and fold
+ * away to a small card when the map wants the room.
+ */
+.layer-toggles {
+  position: absolute;
+  top: var(--float-gap);
+  left: var(--float-gap);
+  z-index: 1;
+  min-width: 13rem;
+  max-height: calc(100% - 2 * var(--float-gap));
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.625rem 0.5rem 0.625rem 0.875rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.layer-toggles[data-folded] {
+  min-width: 0;
+}
+
+.layer-toggles-fold {
+  float: right;
+  width: 2rem;
+  height: 2rem;
+  margin: -0.25rem 0 0 0.5rem;
+}
+
+.layer-toggles-fold svg {
+  transition: transform var(--duration) var(--ease-out);
+}
+
+.layer-toggles[data-folded] .layer-toggles-fold svg {
+  transform: rotate(-90deg);
+}
+
+.layer-toggle-list {
+  display: flex;
+  clear: both;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-top: 0.25rem;
+  padding-right: 0.375rem;
+}
+
+.layer-toggle-list[hidden] {
+  display: none;
+}
+
+.layer-toggles legend {
+  float: left;
+  margin: 0.25rem 0 0;
+  padding: 0;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/*
+ * The Demographics Layer's measure and legend, over the map's lower left,
+ * clear of the tile attribution on its right (FR-10.4).
+ */
+.demographics-shading {
+  position: absolute;
+  bottom: 2rem;
+  left: 0.75rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-width: 15rem;
+  padding: 0.625rem 0.875rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  font-size: 0.8125rem;
+}
+
+.demographics-shading label,
+.demographics-legend-title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.demographics-legend {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.demographics-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.demographics-swatch {
+  width: 1rem;
+  height: 0.75rem;
+  border: 1px solid rgb(0 0 0 / 20%);
+  border-radius: 2px;
+}
+
+.layer-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.5rem;
+  margin: 0 -0.375rem;
+  padding: 0 0.375rem;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--duration) var(--ease-out);
+}
+
+.layer-toggle:hover {
+  background: var(--surface-subtle);
+}
+
+.layer-toggle label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  cursor: pointer;
+}
+
+.layer-toggle input:disabled + label {
+  cursor: not-allowed;
+}
+
+/*
+ * A Layer the Scout Mode highlights (FR-4.3a), marked with its name, never by
+ * colour alone (FR-9.5). Every theme keeps it over 4.5:1.
+ */
+.highlighted-by {
+  padding: 0.0625rem 0.5rem;
+  border: 1px solid var(--highlight);
+  border-radius: 999px;
+  color: var(--highlight);
+  font-size: 0.6875rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.layer-toggle[data-highlighted] label {
+  font-weight: 600;
+}
+
+.layer-highlighted {
+  margin: 0 0 0.5rem;
+}
+
+/* The Layer a Highlight focused, pointed out (FR-3.7). */
+.layer-toggle[data-focused] {
+  background: var(--warning-bg);
+  box-shadow: inset 3px 0 0 var(--warning-border);
+}
+
+.layer-status {
+  margin-left: auto;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+/*
+ * The Planning Layer's Planning Applications, on a line of their own,
+ * wrapping within the panel rather than widening it over the map.
+ */
+.layer-status-applications {
+  flex-basis: 100%;
+  contain: inline-size;
+  text-align: right;
+}
+
+.layer-status[data-status="unavailable"],
+.layer-status[data-status="not-prepared"] {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+/* A Layer's icon: white on its own colour (FR-9.3). */
+.layer-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: none;
+  border-radius: 50%;
+  background: var(--layer-colour);
+}
+
+.layer-icon svg {
+  width: 0.8rem;
+  height: 0.8rem;
+  fill: #fff;
+}
+
+/* Features on the map: each point and cluster is a button (FR-9.5). */
+.feature-marker,
+.feature-cluster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: var(--layer-colour);
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 40%);
+}
+
+.feature-marker:focus-visible,
+.feature-cluster:focus-visible {
+  outline: 3px solid #1f2328;
+  outline-offset: 1px;
+}
+
+.feature-marker {
+  width: 1.625rem;
+  height: 1.625rem;
+}
+
+.feature-marker .feature-icon {
+  width: 1rem;
+  height: 1rem;
+  fill: #fff;
+}
+
+/* How many Features share one point. */
+.feature-marker-count {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.625rem;
+  min-width: 1rem;
+  padding: 0 0.2rem;
+  border: 1px solid var(--layer-colour);
+  border-radius: 0.5rem;
+  background: #fff;
+  color: var(--layer-colour);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+/*
+ * A Feature the Scout Mode highlights, such as a competitor (FR-4.3): ringed
+ * in the purple that marks the Layers it highlights, and starred, so it never
+ * relies on colour alone (FR-9.5).
+ */
+.feature-marker[data-highlighted],
+.feature-cluster[data-highlighted] {
+  box-shadow:
+    0 0 0 3px #6639ba,
+    0 1px 3px rgb(0 0 0 / 40%);
+}
+
+.feature-marker-highlight {
+  position: absolute;
+  top: -0.5rem;
+  left: -0.625rem;
+  width: 1rem;
+  border-radius: 50%;
+  background: #6639ba;
+  color: #fff;
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.feature-popup-highlight {
+  margin: 0 0 0.25rem;
+  color: var(--highlight);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+/* What the Features at a point are labelled with on the map, such as a price. */
+.feature-marker-label {
+  position: absolute;
+  top: calc(100% + 0.125rem);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 0.25rem;
+  border: 1px solid var(--layer-colour);
+  border-radius: 0.25rem;
+  background: #fff;
+  color: var(--layer-colour);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1rem;
+  white-space: nowrap;
+}
+
+.feature-cluster {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  outline: 4px solid color-mix(in srgb, var(--layer-colour) 35%, transparent);
+}
+
+.feature-cluster[data-size="small"] {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.feature-cluster[data-size="medium"] {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.feature-cluster[data-size="large"] {
+  width: 2.625rem;
+  height: 2.625rem;
+}
+
+.feature-popup {
+  font-size: 0.875rem;
+}
+
+.feature-popup h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin: 0 1rem 0.375rem 0;
+  font-size: 0.9375rem;
+}
+
+.feature-popup .feature-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: var(--layer-colour);
+  fill: #fff;
+}
+
+.feature-popup p {
+  margin: 0.375rem 0 0;
+}
+
+/* Tall enough for a sale and its history at its address (PRD FR-2.12). */
+.feature-popup-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  max-height: 20rem;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.feature-popup-list li {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-popup-sublist-name {
+  margin-top: 0.25rem;
+  font-weight: 600;
+}
+
+.feature-popup-item-note {
+  margin-top: 0.25rem;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+/* Inside a popup's list, so it takes the outer list's look off again. */
+.feature-popup-list .feature-popup-sublist {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.feature-popup-list .feature-popup-sublist li {
+  display: list-item;
+}
+
+.feature-popup-distance {
+  font-weight: 600;
+}
+
+/* Opens Street View at the point a popup is about (PRD FR-2.13). */
+.feature-popup-street-view {
+  margin-top: 0.5rem;
+  min-height: 2rem;
+}
+
+.feature-popup-note,
+.layer-note,
+.layer-attribution {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+/* The Data Sources of a popup's Features, credited at its foot (PRD §6.15). */
+.feature-popup-credit {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+/* Focused by a Highlight, not by Tab: outlined until focus moves on. */
+.layer-overview:focus {
+  outline: 3px solid var(--text);
+  outline-offset: 0.25rem;
+}
+
+.layer-overview h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.layer-statistics {
+  border-collapse: collapse;
+}
+
+/* Tables one after another, as Property's are, are kept apart. */
+.layer-statistics + .layer-statistics {
+  margin-top: 1rem;
+}
+
+.layer-statistics caption {
+  margin-bottom: 0.375rem;
+  font-weight: 650;
+  text-align: left;
+}
+
+.layer-statistics th,
+.layer-statistics td {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.layer-statistics tbody th {
+  font-weight: normal;
+}
+
+.layer-statistics td {
+  text-align: right;
+}
+
+/* A cell of words, such as a phase's Ofsted judgements, reads from the left. */
+.layer-statistics td.layer-statistics-text {
+  text-align: left;
+}
+
+.layer-overview h4 {
+  margin: 1rem 0 0.25rem;
+  font-size: 0.9375rem;
+}
+
+.layer-statistics thead th {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  vertical-align: bottom;
+}
+
+.layer-statistics tfoot th,
+.layer-statistics tfoot td {
+  border-top: 1px solid var(--border);
+  font-weight: 600;
+}
+
+/* Text on the warning background is over 4.5:1 in every theme (FR-9.5). */
+.trend-incomplete,
+.property-cut-short,
+.land-out-of-date,
+.scores-left-out,
+.highlights-left-out {
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid var(--warning-border);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--warning-bg);
+}
+
+/* Every theme keeps the accent over 4.5:1, WCAG AA (FR-9.5). */
+.beta {
+  margin-left: 0.375rem;
+  padding: 0.0625rem 0.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.6875rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.category-scores {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.score summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.375rem;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  list-style: none;
+  cursor: pointer;
+  transition: background-color var(--duration) var(--ease-out);
+}
+
+.score summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Points right when shut, down when open. */
+.score summary::before {
+  content: "";
+  flex: none;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin: 0 0.375rem 0 0.125rem;
+  border-right: 2px solid var(--text-muted);
+  border-bottom: 2px solid var(--text-muted);
+  transform: rotate(-45deg);
+  transition: transform var(--duration) var(--ease-out);
+}
+
+.score[open] > summary::before {
+  transform: rotate(45deg);
+}
+
+.score summary:focus-visible {
+  outline-offset: 0;
+}
+
+.score .score-name {
+  flex: none;
+}
+
+.score .score-value {
+  min-width: 3.75rem;
+}
+
+/* The score as a bar, after the figure that says it in words. */
+.score-meter {
+  flex: 1 1 4rem;
+  max-width: 9rem;
+  height: 0.375rem;
+  margin-left: auto;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--surface-subtle);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+.score-meter > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+}
+
+.location-score > summary {
+  padding-block: 0.75rem;
+}
+
+.location-score .score-name {
+  font-size: 1.0625rem;
+}
+
+.location-score .score-value {
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.location-score .score-out-of {
+  font-size: 0.9375rem;
+}
+
+.location-score .score-meter {
+  height: 0.5rem;
+}
+
+.score summary:hover {
+  background: var(--surface-subtle);
+}
+
+.score + .score {
+  border-top: 1px solid var(--border);
+}
+
+.score-name {
+  display: inline-block;
+  min-width: 10.5rem;
+  font-weight: 600;
+}
+
+.score-value {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.score-out-of {
+  color: var(--text-muted);
+  font-weight: normal;
+}
+
+.score-left-out {
+  margin: 0;
+  padding: 0.25rem 0 0.25rem 1rem;
+}
+
+.score-breakdown {
+  margin: 0.25rem 0 0.75rem 1rem;
+}
+
+.score-breakdown tbody th {
+  padding-bottom: 0.375rem;
+}
+
+.score-rule {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.score-breakdown td {
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+/*
+ * The weight sliders (PRD FR-4.4): one row each, its category's name lined up
+ * with the scores' names, and its per cent after it.
+ */
+.score-weights {
+  margin: 0.25rem 0 0.5rem;
+}
+
+.score-weights button {
+  min-height: 2rem;
+  padding: 0 0.75rem;
+}
+
+.score-weights-sliders {
+  /* A fieldset is as wide as its content unless told otherwise. */
+  min-width: 0;
+  margin: 0.5rem 0 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-subtle);
+}
+
+.score-weights-sliders legend {
+  padding: 0 0.25rem;
+  font-weight: 600;
+}
+
+.score-weight {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.score-weight label {
+  flex: 0 0 10rem;
+}
+
+/* As tall as a target must be (WCAG 2.5.8), though its track is drawn thinner. */
+.score-weight input {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 1.5rem;
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.score-weight output {
+  flex: 0 0 3rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/*
+ * Highlights: Good, Watch and Concern, each named as well as coloured (PRD
+ * FR-3.7, FR-9.5). Each is a button that focuses its Layer.
+ */
+.highlights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  line-height: 1.45;
+  text-align: left;
+  cursor: pointer;
+  box-shadow:
+    inset 3px 0 0 var(--level-colour),
+    var(--shadow-sm);
+  transition:
+    background-color var(--duration) var(--ease-out),
+    border-color var(--duration) var(--ease-out),
+    transform var(--duration) var(--ease-out);
+}
+
+.highlight:hover {
+  border-color: var(--control-border);
+  background: var(--surface-subtle);
+}
+
+/* Each leads to its Layer: an arrow at its end, nudged on when hovered. */
+.highlight::after {
+  content: "";
+  flex: none;
+  align-self: center;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin: 0 0.25rem 0 auto;
+  border-top: 2px solid var(--text-muted);
+  border-right: 2px solid var(--text-muted);
+  transform: rotate(45deg);
+  transition: transform var(--duration) var(--ease-out);
+}
+
+.highlight:hover::after {
+  transform: translateX(2px) rotate(45deg);
+}
+
+.highlight:active {
+  transform: translateY(1px);
+}
+
+.highlight:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 1px;
+}
+
+.highlight[data-level="good"] {
+  --level-colour: var(--good);
+}
+
+.highlight[data-level="watch"] {
+  --level-colour: var(--watch);
+}
+
+.highlight[data-level="concern"] {
+  --level-colour: var(--concern);
+}
+
+/* The level's own shape, in its colour (3:1 or more in every theme). */
+.highlight-icon {
+  flex: none;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: 0.0625rem;
+  fill: var(--level-colour);
+}
+
+.highlight-level {
+  font-weight: 600;
+}
+
+.highlight-layer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 0.25rem;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.highlight-layer .layer-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.highlight-layer .layer-icon svg {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+
+/*
+ * The Land panel (PRD FR-5.1). FR-5.7's wording stands out: a Land
+ * Opportunity only ever warrants investigation.
+ */
+.land-wording {
+  padding: 0.625rem 0.875rem;
+  border-left: 3px solid var(--land-border);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--land-bg);
+}
+
+.land-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.land-filters fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+/* A fieldset inside the filters, such as the Ownership Categories, on the panel's quieter shade. */
+.land-filters fieldset fieldset {
+  background: var(--surface-subtle);
+}
+
+.land-filters legend {
+  font-weight: 600;
+}
+
+.land-filter-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.5rem 1rem;
+}
+
+.land-filter-list .land-exclude {
+  grid-column: 1 / -1;
+}
+
+.land-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.land-field input,
+.land-field select {
+  width: 100%;
+  min-width: 0;
+}
+
+.land-filters button {
+  align-self: flex-start;
+}
+
+/* Each a row of its own, tall enough to keep its box 24 px from the next (WCAG 2.5.8). */
+.land-scope label,
+.land-check {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-height: 1.5rem;
+}
+
+.land-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  margin: 0.75rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.land-list button {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.125rem;
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  font: inherit;
+  text-align: left;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--land-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition:
+    background-color var(--duration) var(--ease-out),
+    border-color var(--duration) var(--ease-out);
+}
+
+.land-list button:hover {
+  border-top-color: var(--control-border);
+  border-right-color: var(--control-border);
+  border-bottom-color: var(--control-border);
+}
+
+/* Possibly Unregistered land in its own colour, as on the map (FR-9.3). */
+.land-list button[data-possibly-unregistered] {
+  border-left-color: var(--land-unregistered);
+}
+
+.land-list button:hover {
+  background: var(--surface-subtle);
+}
+
+.land-list button[aria-pressed="true"] {
+  background: var(--surface-subtle);
+  outline: 2px solid var(--focus);
+  outline-offset: -1px;
+}
+
+.land-list button strong {
+  font-weight: 650;
+}
+
+.land-list button span {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+/* Each Ownership Category, with a swatch of its colour on the map (FR-5.4a). */
+.land-ownership {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.land-ownership li,
+.land-filters .land-ownership-check {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+/* The land sales near Land Opportunities, each with its price and date (FR-5.4b). */
+.land-sales,
+.planning-majors {
+  margin: 0.25rem 0;
+  padding-left: 1.25rem;
+}
+
+.planning-majors li + li {
+  margin-top: 0.125rem;
+}
+
+/* The colour a Planning Application of this status is marked in on the map. */
+.planning-status-swatch {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.375rem;
+  border-radius: 50%;
+  vertical-align: -0.0625rem;
+}
+
+.land-sales li + li {
+  margin-top: 0.125rem;
+}
+
+.land-swatch {
+  display: inline-block;
+  width: 0.875rem;
+  height: 0.875rem;
+  border: 3px solid;
+  border-radius: 0.125rem;
+}
+
+.land-chosen {
+  margin: 0.75rem 0;
+  padding: 1rem 1.125rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.land-chosen h3 {
+  margin-top: 0;
+}
+
+.feature-popup-link {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+/*
+ * The optional Street View panel (PRD FR-2.13), over the lower part of the
+ * map, and the button that opens it at the Location, over its top right,
+ * clear of the Layers panel.
+ */
+.street-view-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 1;
+  box-shadow: var(--shadow-md);
+}
+
+.street-view-panel {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 2rem;
+  left: 0.75rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  height: 50%;
+  padding: 0.75rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.street-view-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.75rem;
+}
+
+.street-view-header h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.street-view-header button {
+  margin-left: auto;
+}
+
+.street-view-target,
+.street-view-message,
+.street-view-attribution {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.street-view-target {
+  color: var(--text-muted);
+}
+
+.street-view-message[role="alert"] {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+/* Google's panorama, with its own logo and terms, set apart by its edge. */
+.street-view-panorama {
+  flex: 1;
+  min-height: 0;
+  background: var(--surface-subtle);
+  border: 1px solid var(--border);
+}
+
+.street-view-attribution {
+  color: var(--text-muted);
+}
+
+/*
+ * AI Explanations (PRD §6.9): an Explain button under the figures it
+ * explains, the questions it offers, and the answer, labelled as written by
+ * AI from the figures above.
+ */
+.explain {
+  margin: 0.75rem 0;
+}
+
+.explain-panel {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--explain-border);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--explain-bg);
+}
+
+.explain-questions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin: 0.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.explain-questions button,
+.explain-own button {
+  font: inherit;
+}
+
+.explain-own {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.375rem;
+}
+
+.explain-own label {
+  display: flex;
+  flex: 1 1 14rem;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.explain-own input {
+  font: inherit;
+}
+
+.explain-answer {
+  margin-top: 0.75rem;
+}
+
+/* Every theme keeps it over 4.5:1 on the explanation's background, WCAG AA (FR-9.5). */
+.explain-label {
+  margin: 0;
+  color: var(--highlight);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.explain-question {
+  margin: 0.25rem 0;
+  font-style: italic;
+}
+
+/* The model writes paragraphs separated by blank lines, which are kept. */
+.explain-text {
+  margin: 0.25rem 0;
+  white-space: pre-wrap;
+}
+
+.explain-status {
+  color: var(--text-muted);
+}
+
+.explain-unverified {
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid var(--warning-border);
+  background: var(--warning-bg);
+}
+
+/* Every theme keeps errors over 4.5:1 (FR-9.5). */
+.explain-error {
+  color: var(--danger);
+}
+
+/*
+ * Theme, focus and links (WCAG 2.2 AA). The colours come from the theme
+ * chosen in Settings (`theme/themes.ts`); until it is applied, the browser's
+ * own light or dark colours stand in.
+ */
+:root {
+  color-scheme: light dark;
+}
+
+/* Settings' radio buttons in the theme's accent; the map's checkboxes keep the browser's. */
+.dialog {
+  accent-color: var(--accent);
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 2px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Focus moved by a skip link or a new view: shown, but not as loud as Tab's. */
+.app-main:focus {
+  outline: none;
+}
+
+/* The first thing Tab reaches, shown once it is focused (WCAG 2.4.1). */
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 10;
+  padding: 0.5rem 0.875rem;
+  border: 2px solid var(--focus);
+  border-radius: 0.375rem;
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+/* Over the map's top left while it has the focus, and out of sight otherwise. */
+.map-skip-link {
+  transform: none;
+}
+
+.map-skip-link:not(:focus) {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* A button showing only an icon, at least 44 by 44 pixels (WCAG 2.5.8). */
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  transition:
+    background-color var(--duration) var(--ease-out),
+    border-color var(--duration) var(--ease-out);
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background: var(--surface-subtle);
+  border-color: var(--border);
+}
+
+/* The Settings cog, at the top right of the header. */
+.settings-button {
+  margin-left: auto;
+}
+
+.settings-button svg {
+  transition: transform 300ms ease-out;
+}
+
+.settings-button:hover svg {
+  transform: rotate(45deg);
+}
+
+.primary-button {
+  min-height: 2.75rem;
+  padding: 0 1.25rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--bg);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition:
+    background-color var(--duration) var(--ease-out),
+    transform var(--duration) var(--ease-out);
+}
+
+.primary-button:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--accent) 85%, var(--text));
+}
+
+.primary-button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.5rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+/*
+ * The footer: full width along the bottom, always in view. The page above it
+ * scrolls in its own panes, so it never covers what has focus (WCAG 2.4.11).
+ */
+.app-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 3;
+  flex: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.25rem 1rem;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+/* PRD FR-10.1's credit, above the footer's links. */
+.footer-credit {
+  margin: 0 0 0.125rem;
+  text-align: center;
+}
+
+.footer-credit a {
+  color: inherit;
+}
+
+.app-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem 1rem;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 1.5rem;
+  color: var(--text-muted);
+  font-weight: 550;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.app-footer .link-button:hover {
+  color: var(--text);
+}
+
+.app-footer .link-button {
+  color: var(--text-muted);
+}
+
+.footer-version {
+  font-variant-numeric: tabular-nums;
+}
+
+/*
+ * Dialogs: a title and close cross, a body that scrolls both ways on its
+ * own when its content is too tall or too wide, and an optional footer that
+ * stays put.
+ */
+.dialog {
+  width: min(45rem, calc(100vw - 2rem));
+  max-height: min(86dvh, 56rem);
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 12px 40px rgb(0 0 0 / 30%);
+}
+
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  animation: dialog-in 200ms ease-out;
+}
+
+.dialog::backdrop {
+  background: var(--scrim);
+}
+
+@keyframes dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem) scale(0.98);
+  }
+}
+
+.dialog-head {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0.75rem 0.75rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.dialog-head h2 {
+  margin: 0 auto 0 0;
+  font-size: 1.25rem;
+}
+
+.dialog-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 1rem 1.25rem 1.25rem;
+  line-height: 1.6;
+}
+
+.dialog-body h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1rem;
+}
+
+.dialog-body p {
+  margin: 0;
+}
+
+.dialog-body p + p {
+  margin-top: 0.5rem;
+}
+
+.dialog-body ul {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+}
+
+.dialog-body li + li {
+  margin-top: 0.5rem;
+}
+
+.dialog-foot {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.policy-updated {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.status-box {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--good);
+  border-left-width: 4px;
+  border-radius: 0.375rem;
+  background: var(--surface-subtle);
+}
+
+/* Kept wide enough to read, so a narrow dialog's body scrolls sideways instead. */
+.policy-table {
+  min-width: 40rem;
+  margin-top: 0.5rem;
+  border-collapse: collapse;
+}
+
+.policy-table th,
+.policy-table td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.policy-table thead th {
+  background: var(--surface-subtle);
+}
+
+.policy-table code {
+  white-space: nowrap;
+}
+
+/* Every Data Source's credit, in its dialog from the footer. */
+.source-credits dt {
+  margin-top: 1rem;
+  font-weight: 650;
+}
+
+.source-credits dd {
+  margin: 0;
+}
+
+.source-credits p {
+  margin: 0.25rem 0 0;
+}
+
+.source-credit-use {
+  color: var(--text-muted);
+}
+
+/* Settings: mode and theme. */
+.appearance-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.appearance-settings fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.appearance-settings legend {
+  margin-bottom: 0.5rem;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.settings-hint {
+  margin: 0.5rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+/* Settings: the Dashboard's Widgets, each shown or hidden. */
+.widget-settings {
+  margin: 1.25rem 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.widget-settings legend {
+  margin-bottom: 0.5rem;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.widget-settings .settings-hint {
+  margin: 0 0 0.75rem;
+}
+
+.dialog-body .widget-settings ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dialog-body .widget-settings li {
+  position: relative;
+  display: flex;
+  margin: 0;
+}
+
+.widget-settings .choice {
+  flex: 1;
+  padding-right: 4.5rem;
+}
+
+.widget-status {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  translate: 0 -50%;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.widget-settings li[data-hidden] .choice {
+  border-style: dashed;
+}
+
+.theme-choice .settings-hint {
+  margin: 0 0 0.75rem;
+}
+
+.mode-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0 1rem;
+  border: 1px solid var(--control-border);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.choice:has(:checked),
+.dialog-body .theme-options li:has(:checked) {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+  background: var(--surface-subtle);
+}
+
+.choice input,
+.theme-option input {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin: 0;
+}
+
+.dialog-body .theme-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dialog-body .theme-options li {
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid var(--control-border);
+  border-radius: 0.5rem;
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2rem;
+  cursor: pointer;
+}
+
+.theme-option-name {
+  font-weight: 600;
+}
+
+.theme-swatches {
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.theme-swatch {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid var(--control-border);
+  border-radius: 50%;
+}
+
+.theme-swatch + .theme-swatch {
+  margin-left: -0.375rem;
+}
+
+.theme-option-details p {
+  margin: 0.25rem 0 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.theme-contrasts {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.125rem 0.75rem;
+  margin: 0;
+  font-size: 0.8125rem;
+}
+
+.theme-contrasts div {
+  display: contents;
+}
+
+.theme-contrasts dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* MapLibre's popups and controls in the theme's colours. */
+.maplibregl-popup-content {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-lg);
+}
+
+.maplibregl-popup-close-button {
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  color: var(--text);
+}
+
+.maplibregl-popup-anchor-top .maplibregl-popup-tip,
+.maplibregl-popup-anchor-top-left .maplibregl-popup-tip,
+.maplibregl-popup-anchor-top-right .maplibregl-popup-tip {
+  border-bottom-color: var(--surface);
+}
+
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip,
+.maplibregl-popup-anchor-bottom-left .maplibregl-popup-tip,
+.maplibregl-popup-anchor-bottom-right .maplibregl-popup-tip {
+  border-top-color: var(--surface);
+}
+
+.maplibregl-popup-anchor-left .maplibregl-popup-tip {
+  border-right-color: var(--surface);
+}
+
+.maplibregl-popup-anchor-right .maplibregl-popup-tip {
+  border-left-color: var(--surface);
+}
+
+/* The panel floating at the map's right: what sits over the map keeps clear of it. */
+@media (min-width: 48.0625rem) and (min-height: 30.0625rem) {
+  /* The map's own controls and its tile credit stay clear of the panel (FR-10.4). */
+  .app-main:has(> .side-panel:not([hidden]))
+    :is(.maplibregl-ctrl-top-right, .maplibregl-ctrl-bottom-right) {
+    right: calc(var(--panel-w) + 2 * var(--float-gap));
+  }
+
+  /* Street View opens in the part of the map the floating panel leaves. */
+  .app-main:has(> .side-panel:not([hidden])) .street-view-panel {
+    right: calc(var(--panel-w) + 2 * var(--float-gap));
+  }
+
+  /* Clear of the floating panel, or of the button that shows it again. */
+  .app-main:has(> .side-panel:not([hidden])) .street-view-button {
+    right: calc(var(--panel-w) + 2 * var(--float-gap));
+  }
+
+  .app-main:has(> .panel-show) .street-view-button {
+    top: calc(2 * var(--float-gap) + 2.75rem);
+  }
+}
+
+/* Narrow screens: the header's controls stack, each labelled above. */
+@media (max-width: 48rem) {
+  /* The Dashboard and Settings stay at the top right, beside the title. */
+  .app-actions {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+  }
+
+  .app-header {
+    gap: 0.5rem 0.75rem;
+    padding: 0.5rem 0.75rem 0.625rem;
+  }
+
+  .brand {
+    flex-basis: 100%;
+    min-height: 2.75rem;
+  }
+
+  /* The search across the full width, its label above it. */
+  .search-bar {
+    flex-basis: 100%;
+    gap: 0.25rem;
+    max-width: none;
+  }
+
+  .search-bar > label {
+    flex-basis: 100%;
+  }
+
+  .search-bar input {
+    min-width: 0;
+  }
+
+  .search-bar button {
+    min-width: 6.5rem;
+  }
+
+  /* The Search Radius and Scout Mode side by side, each labelled above. */
+  .radius-select,
+  .scout-mode-select {
+    flex: 1 1 8rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+    min-width: 0;
+  }
+
+  .radius-select select,
+  .scout-mode-select select {
+    width: 100%;
+  }
+
+  .location-overview dl {
+    grid-template-columns: minmax(0, max-content) minmax(0, 1fr);
+  }
+
+  .location-overview dd,
+  .layer-statistics th {
+    overflow-wrap: anywhere;
+  }
+
+  .layer-statistics th,
+  .layer-statistics td {
+    padding-right: 0.5rem;
+  }
+
+  /* There is no room beside a sheet to hide it into. */
+  .panel-hide,
+  .panel-show {
+    display: none;
+  }
+}
+
+/*
+ * A phone: the panel is a bottom sheet over the map, lowered to its tabs,
+ * half raised or fully raised, and the map's controls ride above it.
+ */
+@media (max-width: 48rem) and (min-height: 34rem) {
+  /* The map and its sheet fill the screen under the header; the footer follows below. */
+  .app {
+    height: auto;
+    min-height: 100%;
+  }
+
+  .app-main {
+    flex: none;
+    height: calc(100dvh - var(--header-h, 11rem));
+    min-height: 24rem;
+  }
+
+  .app-footer {
+    position: static;
+  }
+
+  /* Unfolded, the Layers cover the map's top; the legend waits until they fold. */
+  .map-pane:has(> .layer-toggles:not([data-folded])) .demographics-shading {
+    display: none;
+  }
+
+  /* The shading's legend, small, at the top right, clear of the folded Layers. */
+  .demographics-shading {
+    top: var(--float-gap);
+    right: var(--float-gap);
+    bottom: auto;
+    left: auto;
+    max-width: 10.5rem;
+    padding: 0.5rem 0.625rem;
+    font-size: 0.8125rem;
+  }
+
+  .demographics-shading select {
+    min-height: 2.25rem;
+    font-size: 0.8125rem;
+  }
+
+  .side-panel,
+  .side-panel[hidden] {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: auto;
+    max-width: none;
+    height: 50%;
+    border-width: 1px 0 0;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    transition: height 240ms var(--ease-out);
+  }
+
+  .side-panel[data-size="peek"] {
+    height: var(--sheet-peek);
+  }
+
+  /* Street View above the sheet, under the Layers' folded card. */
+  .street-view-panel {
+    top: calc(var(--float-gap) + 3.25rem);
+    bottom: calc(var(--sheet-h, 50%) + var(--float-gap));
+    height: auto;
+  }
+
+  .side-panel[data-size="full"] {
+    height: 100%;
+    border-radius: 0;
+  }
+
+  /* Following the finger, not easing after it. */
+  .side-panel[data-dragging] {
+    transition: none;
+  }
+
+  .panel-handle {
+    display: grid;
+    place-items: center;
+    flex: none;
+    width: 100%;
+    height: 1.75rem;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: grab;
+    touch-action: none;
+  }
+
+  .panel-handle span {
+    width: 2.75rem;
+    height: 0.3125rem;
+    border-radius: 999px;
+    background: var(--control-border);
+  }
+
+  .panel-handle:focus-visible {
+    outline-offset: -3px;
+  }
+
+  .side-panel-head {
+    padding-top: 0;
+  }
+
+  /* The map's credit, the shading's legend and Street View ride above the sheet. */
+  .app-main:has(> .side-panel[data-size="peek"]) {
+    --sheet-h: var(--sheet-peek);
+  }
+
+  .app-main:has(> .side-panel[data-size="half"]) {
+    --sheet-h: 50%;
+  }
+
+  .app-main .maplibregl-ctrl-bottom-right,
+  .app-main .maplibregl-ctrl-bottom-left {
+    right: 0;
+    bottom: var(--sheet-h, 50%);
+  }
+
+  .layer-toggles {
+    max-height: calc(100% - var(--sheet-h, 50%) - 2 * var(--float-gap));
+  }
+}
+
+/*
+ * Narrow and short screens, and 400% zoom (WCAG 1.4.10 Reflow): no room
+ * for anything to float, so the panel stacks under the map and the page
+ * scrolls as one, with nothing scrolling sideways.
+ */
+@media (max-width: 48rem) and (max-height: 33.99rem), (max-height: 30rem) {
+  .app {
+    height: auto;
+    min-height: 100%;
+  }
+
+  .app-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* The map first, then its Layers and shading in the flow, never over it. */
+  .map-pane {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .map-pane .search-area-map {
+    position: relative;
+    inset: auto;
+    order: -1;
+    height: min(60vh, 28rem);
+    min-height: 18rem;
+  }
+
+  .layer-toggles,
+  .demographics-shading {
+    position: static;
+    max-width: none;
+    max-height: none;
+    margin: 0 0.75rem;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .side-panel,
+  .side-panel[hidden] {
+    position: static;
+    display: flex;
+    width: auto;
+    max-width: none;
+    overflow: visible;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .panel-hide,
+  .panel-show {
+    display: none;
+  }
+
+  /* Grows with its content; a table too wide to reflow scrolls inside it, not the page. */
+  .side-panel-body {
+    overflow-x: auto;
+    overflow-y: visible;
+  }
+}
+
+/* Too short to give the footer a permanent strip: it ends the page instead. */
+@media (max-height: 30rem), (max-width: 30rem) {
+  .app-footer {
+    position: static;
+  }
+}
+
+/* Four tabs don't fit in one row at 320 px (400% zoom), so they tighten and wrap. */
+@media (max-width: 30rem) {
+  .dashboard-open {
+    margin-left: 0.5rem;
+  }
+
+  .side-panel-tabs {
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 0 0.5rem;
+  }
+
+  .side-panel-tabs [role="tab"] {
+    padding: 0 0.625rem;
+  }
+
+  /* Each weight's name above its slider, so the slider keeps its width. */
+  .score-weight {
+    flex-wrap: wrap;
+    gap: 0 0.5rem;
+  }
+
+  .score-weight label {
+    flex-basis: 100%;
+  }
+}
+
+/* A finger, not a pointer: every control at least 44 px each way (WCAG 2.5.5). */
+@media (pointer: coarse) {
+  .layer-toggle {
+    min-height: 2.75rem;
+  }
+
+  .side-panel-tabs [role="tab"],
+  .dashboard-open,
+  .search-bar button {
+    min-height: 2.75rem;
+  }
+
+  .panel-hide,
+  .layer-toggles-fold,
+  .settings-button {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .panel-handle {
+    height: 2.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --border: var(--control-border);
+    --text-muted: var(--text);
+  }
+}
+
+/* Windows Contrast Themes: the system's colours, with edges kept visible. */
+@media (forced-colors: active) {
+  .dialog,
+  .choice,
+  .theme-options li,
+  .skip-link {
+    border-color: CanvasText;
+  }
+
+  .choice:has(:checked),
+  .theme-options li:has(:checked) {
+    outline: 2px solid Highlight;
+  }
+
+  :focus-visible {
+    outline-color: Highlight;
+  }
+}
+
+/* The first section under the Overview's title needs no rule above it. */
+.location-overview h2 + section > h3:first-child {
+  margin-top: 0.5rem;
+  padding-top: 0;
+  border-top: none;
+}
+
+/*
+ * The Saved tab (PRD FR-7.1, FR-7.2): the form to save the Search Area shown,
+ * the Saved Locations, each with its buttons, and export and import.
+ */
+.saved-note,
+.saved-what,
+.saved-date {
+  color: var(--text-muted);
+}
+
+.saved-form,
+.saved-rename,
+.saved-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.saved-form input,
+.saved-rename input {
+  flex: 1;
+  min-width: 10rem;
+  padding: 0.375rem 0.5rem;
+  font: inherit;
+}
+
+.saved-panel button {
+  padding: 0.375rem 0.75rem;
+  font: inherit;
+}
+
+.saved-what {
+  flex-basis: 100%;
+  margin: 0;
+}
+
+.saved-refused {
+  color: var(--danger);
+}
+
+.saved-message:empty {
+  display: none;
+}
+
+.saved-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid var(--good);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--surface-subtle);
+  font-weight: 550;
+}
+
+.saved-message::before {
+  content: "";
+  flex: none;
+  width: 0.35rem;
+  height: 0.65rem;
+  margin: 0 0.25rem 0.2rem 0.125rem;
+  border-right: 2px solid var(--good);
+  border-bottom: 2px solid var(--good);
+  transform: rotate(45deg);
+}
+
+.saved-confirm {
+  margin-top: 0.5rem;
+  padding: 0.625rem 0.75rem;
+  border-left: 4px solid var(--warning-border);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--warning-bg);
+}
+
+.saved-confirm > span {
+  flex-basis: 100%;
+}
+
+.saved-off {
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid var(--danger);
+  background: var(--surface-subtle);
+}
+
+.saved-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.saved-item {
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.saved-item .saved-actions {
+  margin-top: 0.5rem;
+}
+
+.saved-date {
+  font-size: 0.8125rem;
+}
+
+.saved-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.saved-item p {
+  margin: 0.25rem 0;
+}
+
+.saved-files {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.saved-files h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.saved-import {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.75rem;
+}
+
+/*
+ * The Compare tab (PRD FR-7.3): the Saved Locations to choose from, and the
+ * table of them side by side. Its columns share the panel's width, so it
+ * never scrolls sideways (FR-9.2), and long words wrap.
+ */
+.compare-choice {
+  min-width: 0;
+  margin: 0 0 0.75rem;
+  padding: 0.5rem 1rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.compare-choice ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  margin: 0.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.compare-choice li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 0.5rem;
+  margin: 0 -0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  overflow-wrap: anywhere;
+  transition: background-color var(--duration) var(--ease-out);
+}
+
+.compare-choice li:hover {
+  background: var(--surface-subtle);
+}
+
+.compare-choice label {
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.compare-choice legend {
+  padding: 0 0.25rem;
+  font-weight: 600;
+}
+
+.compare-where {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: normal;
+}
+
+.compare-choice .compare-where {
+  flex-basis: 100%;
+  padding-left: 1.5rem;
+}
+
+.compare-status:empty {
+  display: none;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 0.8125rem;
+}
+
+/* The row headings' column, whose width the fixed layout takes from here. */
+.compare-table thead td {
+  width: 24%;
+}
+
+.compare-table caption {
+  margin-bottom: 0.375rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 0.375rem 0.375rem;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: break-word;
+  border-bottom: 1px solid var(--border);
+}
+
+.compare-table thead th {
+  vertical-align: bottom;
+  font-size: 0.875rem;
+}
+
+.compare-table tbody tr:not(.compare-section):hover > * {
+  background: var(--surface-subtle);
+}
+
+.compare-table tbody th[scope="row"] {
+  font-weight: normal;
+}
+
+.compare-section th {
+  padding-top: 0.75rem;
+  font-size: 0.9375rem;
+  border-bottom: 1px solid var(--control-border);
+}
+
+/*
+ * The best in a row: shaded, edged in the theme's Good, and said in words,
+ * "★ Best", in the theme's text colour, so it holds AA in every theme (FR-9.5).
+ */
+.compare-best {
+  background: var(--surface-subtle);
+  box-shadow: inset 3px 0 0 var(--good);
+  font-weight: 600;
+}
+
+.compare-best-mark {
+  white-space: nowrap;
+}
+
+.compare-highlights ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.compare-highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.375rem;
+}
+
+.compare-highlights li + li {
+  margin-top: 0.375rem;
+}
+
+.compare-highlights li[data-level="good"] {
+  --level-colour: var(--good);
+}
+
+.compare-highlights li[data-level="watch"] {
+  --level-colour: var(--watch);
+}
+
+.compare-highlights li[data-level="concern"] {
+  --level-colour: var(--concern);
+}
+
+.compare-highlights .highlight-icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-top: 0.125rem;
+}
+
+.compare-left-out {
+  margin: 0.25rem 0 0;
+  color: var(--text-muted);
+}
+
+/* The Location Overview's button for a report of it (PRD FR-7.4). */
+.overview-report {
+  margin: 0.75rem 0;
+}
+
+/*
+ * A report (PRD FR-7.4): one column as wide as an A4 page's text, its
+ * buttons along the top, which are never printed.
+ */
+.report {
+  max-width: 186mm;
+  margin: 0 auto;
+  padding: 0 1.25rem 3rem;
+}
+
+.report-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #d0d7de;
+  background: #fff;
+}
+
+.report-toolbar button {
+  padding: 0.375rem 0.75rem;
+  font: inherit;
+}
+
+.report-status {
+  margin: 0;
+  color: #57606a;
+  font-size: 0.875rem;
+}
+
+.report-page h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.report-page h2 {
+  margin: 1.75rem 0 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #d0d7de;
+  font-size: 1.25rem;
+}
+
+.report-page h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1rem;
+}
+
+.report-page dl {
+  display: grid;
+  grid-template-columns: minmax(0, max-content) minmax(0, 1fr);
+  gap: 0.375rem 1rem;
+  margin: 0;
+}
+
+.report-page dt {
+  font-weight: 600;
+}
+
+.report-page dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.report-page abbr {
+  text-decoration: none;
+}
+
+/* The map image, at A4's text width; drawn on a map of a fixed size first. */
+.report-map {
+  margin: 1rem 0 0;
+}
+
+.report-map-image {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d0d7de;
+}
+
+.report-map-drawing {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid #d0d7de;
+}
+
+.report-map-drawing p {
+  margin: 0.5rem 0.75rem;
+}
+
+.report-map-canvas {
+  width: 680px;
+  height: 440px;
+}
+
+.report-map-missing {
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid #9a6700;
+  background: #fff8c5;
+}
+
+.report-map-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+}
+
+.report-map-key li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.report-map-swatch {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.report-map-swatch-search-area {
+  border: 2px solid;
+  background: transparent;
+}
+
+/* Highlights in a report are text, not buttons. */
+.report .highlight {
+  box-sizing: border-box;
+  cursor: auto;
+}
+
+.report .highlight:hover {
+  background: #fff;
+}
+
+.report-score h3 {
+  margin-bottom: 0;
+}
+
+.report-land-list {
+  padding-left: 1.25rem;
+}
+
+.report-land-list h3 {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 0.9375rem;
+}
+
+.report-land-list ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.report-attributions dl {
+  grid-template-columns: 8rem 1fr;
+}
+
+/* Each Layer's term and credits are cells of the list's grid. */
+.report-attributions dl > div {
+  display: contents;
+}
+
+.report-attributions dd p {
+  margin: 0 0 0.25rem;
+}
+
+/*
+ * Printed, or saved as a PDF, on A4 (PRD FR-7.4): the page's own margins,
+ * no buttons, colours kept, and nothing that reads as one block split
+ * across pages where it can be helped.
+ */
+@page {
+  size: A4;
+  margin: 14mm 12mm;
+}
+
+@media print {
+  html,
+  body,
+  #root {
+    height: auto;
+  }
+
+  body {
+    font-size: 10pt;
+  }
+
+  .report {
+    max-width: none;
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .report-toolbar {
+    display: none;
+  }
+
+  .report-page h1 {
+    margin-top: 0;
+  }
+
+  .report-page h2,
+  .report-page h3,
+  .report-page h4 {
+    break-after: avoid;
+  }
+
+  .report-map,
+  .report-score,
+  .report-page table,
+  .report-page .highlight,
+  .report-land-list > li,
+  .report-attributions dd {
+    break-inside: avoid;
+  }
+
+  .report-page a {
+    color: inherit;
+  }
+
+  /* On paper a link can't be followed, so its address is given after it. */
+  .report-attributions a[href^="http"]::after,
+  .report-land a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    overflow-wrap: anywhere;
+  }
+}
+
+/*
+ * The Dashboard: every figure the Search Area has, drawn, in place of the map
+ * and panel. Cards on a grid, one column on a phone. Bar charts are tables,
+ * their bars drawn in their cells; bars and lines are in the theme's accent,
+ * and their text in the theme's text colours, never a data colour.
+ */
+.dashboard {
+  /* The containing block of what is positioned in it, such as its live region, so nothing escapes its scrolling. */
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 1.25rem clamp(1rem, 3vw, 2rem) 2rem;
+  background: var(--bg);
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: var(--control-border) transparent;
+}
+
+.dashboard:focus {
+  outline: none;
+}
+
+.dashboard-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  max-width: 100rem;
+  margin: 0 auto 1.25rem;
+}
+
+.dashboard-title h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.dashboard-title h2:focus {
+  outline: none;
+}
+
+.dashboard-title p {
+  margin: 0.25rem 0 0;
+  color: var(--text-muted);
+}
+
+.dashboard-title strong {
+  color: var(--text);
+}
+
+.dashboard-grid,
+.dashboard-note,
+.dashboard > .empty-state {
+  max-width: 100rem;
+  margin-inline: auto;
+}
+
+.dashboard-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/*
+ * The Widgets on their Grid: each card covers whole cells, as tall as its
+ * content, and is moved by its header. Its columns and rows are set inline.
+ */
+.dashboard-grid {
+  position: relative;
+  display: grid;
+}
+
+.dashboard-grid[data-dragging] {
+  user-select: none;
+}
+
+.widget {
+  position: relative;
+  min-height: 0;
+}
+
+.widget .card-head {
+  cursor: grab;
+  touch-action: none;
+}
+
+.widget .card-head :is(button, a) {
+  cursor: pointer;
+}
+
+.widget-grip {
+  display: inline-grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.75rem;
+  min-height: 0;
+  margin: -0.25rem 0 -0.25rem -0.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-sm, 0.375rem);
+  background: none;
+  color: var(--text-muted);
+  cursor: grab;
+}
+
+.widget .card-head .widget-grip {
+  cursor: grab;
+}
+
+.widget-grip:hover {
+  background: var(--surface-subtle);
+  color: var(--text);
+}
+
+.widget-grip svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+}
+
+.widget-hide {
+  display: inline-grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  min-height: 0;
+  margin: -0.25rem -0.5rem -0.25rem auto;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: none;
+  color: var(--text-muted);
+}
+
+.card-map-link + .widget-hide {
+  margin-left: 0;
+}
+
+.widget-hide:hover {
+  background: var(--surface-subtle);
+  color: var(--text);
+}
+
+.widget-hide svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+/* Made a height of its own: what doesn't fit scrolls inside it, under its corner. */
+.widget[data-sized] {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget[data-sized] .widget-content {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* The corner a Widget is resized by, snapping to whole cells. */
+.widget-resize {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  border-bottom-right-radius: var(--radius-lg);
+  background: linear-gradient(
+    135deg,
+    transparent 50%,
+    var(--control-border) 50% 60%,
+    transparent 60% 70%,
+    var(--control-border) 70% 80%,
+    transparent 80%
+  );
+  cursor: nwse-resize;
+  touch-action: none;
+}
+
+.dashboard-grid[data-resizing],
+.dashboard-grid[data-resizing] * {
+  cursor: nwse-resize !important;
+}
+
+.widget[data-resizing] {
+  z-index: 2;
+  box-shadow: var(--shadow-md);
+}
+
+/* Lifted: it follows the pointer, leaning to the right, above the rest. */
+.widget[data-dragging] {
+  z-index: 2;
+  rotate: 3deg;
+  scale: 1.02;
+  box-shadow: var(--shadow-lg);
+  cursor: grabbing;
+  opacity: 0.96;
+  transition:
+    rotate var(--duration) var(--ease-out),
+    scale var(--duration) var(--ease-out),
+    box-shadow var(--duration) var(--ease-out);
+}
+
+.widget[data-dragging] :is(.card-head, .widget-grip) {
+  cursor: grabbing;
+}
+
+/* Where it will land, with the others drawn where they will go. */
+.widget-placeholder {
+  border: 2px dashed var(--accent);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+
+/*
+ * Nudged by a Widget dropped beside it: a hop away from it and back. Two
+ * names, so a second drop starts the jump again.
+ */
+.widget[data-nudged="even"] {
+  animation: widget-nudge-even 460ms var(--ease-out) 120ms;
+}
+
+.widget[data-nudged="odd"] {
+  animation: widget-nudge-odd 460ms var(--ease-out) 120ms;
+}
+
+@keyframes widget-nudge-even {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  30% {
+    transform: translate(
+      calc(var(--nudge-x, 0) * 8px),
+      calc(var(--nudge-y, 0) * 8px - 6px)
+    );
+  }
+
+  60% {
+    transform: translate(
+      calc(var(--nudge-x, 0) * -2px),
+      calc(var(--nudge-y, 0) * -2px)
+    );
+  }
+}
+
+@keyframes widget-nudge-odd {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  30% {
+    transform: translate(
+      calc(var(--nudge-x, 0) * 8px),
+      calc(var(--nudge-y, 0) * 8px - 6px)
+    );
+  }
+
+  60% {
+    transform: translate(
+      calc(var(--nudge-x, 0) * -2px),
+      calc(var(--nudge-y, 0) * -2px)
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .widget[data-dragging] {
+    rotate: none;
+    scale: none;
+  }
+
+  .widget[data-nudged] {
+    animation: none;
+  }
+}
+
+/* Too narrow for the Grid: the Widgets stack in reading order, and stay put. */
+@media (max-width: 60rem) {
+  .dashboard-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .widget-grip,
+  .widget-resize {
+    display: none;
+  }
+
+  .widget .card-head {
+    cursor: auto;
+    touch-action: auto;
+  }
+}
+
+.dashboard-card {
+  min-width: 0;
+  padding: 1rem 1.25rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  line-height: 1.5;
+}
+
+.dashboard-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+
+.dashboard-card h4 {
+  margin: 1.25rem 0 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.dashboard-card .layer-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.dashboard-card .layer-icon svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-map-link {
+  margin-left: auto;
+  font-size: 0.8125rem;
+  font-weight: 550;
+}
+
+.card-note {
+  margin: 0.75rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.card-figure {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 650;
+}
+
+.card-figure span {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: normal;
+}
+
+.chart-none {
+  color: var(--text-muted);
+}
+
+/* While a Layer loads: three bars where its figures will be, so nothing jumps. */
+.card-loading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 0.25rem 0;
+}
+
+.card-loading span {
+  height: 0.75rem;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    var(--surface-subtle) 0%,
+    var(--border) 50%,
+    var(--surface-subtle) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+.card-loading span:nth-child(1) {
+  width: 60%;
+  height: 2rem;
+}
+
+.card-loading span:nth-child(3) {
+  width: 80%;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 100% 0;
+  }
+
+  to {
+    background-position: -100% 0;
+  }
+}
+
+/* Headline figures: what each is, the figure, and how it has changed. */
+.card-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.stat-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  min-width: 0;
+  padding: 0.625rem 0.75rem;
+  border-radius: var(--radius);
+  background: var(--surface-subtle);
+}
+
+.stat-tile dt {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 550;
+}
+
+.stat-tile dd {
+  margin: 0;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.stat-delta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.stat-delta svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.stat-detail {
+  overflow-wrap: anywhere;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+/* The Location Score: the one hero figure, inside its arc. */
+.dashboard-score {
+  display: flex;
+  flex-direction: column;
+}
+
+.gauge {
+  position: relative;
+  width: min(100%, 13rem);
+  margin: 0.75rem auto 0;
+}
+
+.gauge svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gauge circle {
+  fill: none;
+  stroke-width: 12;
+  stroke-linecap: round;
+}
+
+.gauge-track {
+  stroke: var(--surface-subtle);
+}
+
+.gauge-fill {
+  stroke: var(--accent);
+}
+
+.gauge-figure {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin: 0;
+  padding-top: 38%;
+}
+
+.gauge-value {
+  font-size: 3.5rem;
+  font-weight: 750;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.gauge-out-of {
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+.dashboard-score .card-note {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  text-align: center;
+}
+
+/* The strongest and weakest Category Scores, under the gauge. */
+.score-extremes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+}
+
+.score-extremes > div {
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  background: var(--surface-subtle);
+}
+
+.score-extremes dt {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.score-extremes dd {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+/* A bar chart as a table: the label, the bar, and the value at its tip. */
+.bar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.bar-table th {
+  width: 38%;
+  padding: 0.25rem 0.75rem 0.25rem 0;
+  font-weight: 500;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.bar-table td {
+  padding: 0.25rem 0;
+  vertical-align: top;
+}
+
+/* As tall as the label's first line, so the bar sits level with it. */
+.bar-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 1.3125rem;
+}
+
+.bar-track {
+  flex: 1 1 4rem;
+  height: 0.75rem;
+}
+
+.bar {
+  display: block;
+  min-width: 2px;
+  height: 100%;
+  border-radius: 0 4px 4px 0;
+  background: var(--accent);
+}
+
+.bar-value {
+  flex: none;
+  min-width: 4.25rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+}
+
+.bar-note {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+
+/* A row with nothing in it reads quieter, but still reads. */
+.bar-table tr[data-empty] th,
+.bar-table tr[data-empty] .bar-value {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.bar-table tr[data-empty] .bar {
+  background: var(--control-border);
+}
+
+/* Parts of a whole: one bar, a 2 px surface gap between parts, and a key. */
+.parts {
+  margin: 0.5rem 0 0.75rem;
+}
+
+.parts-bar {
+  display: flex;
+  gap: 2px;
+  height: 0.875rem;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.parts-bar span {
+  min-width: 3px;
+}
+
+.parts-key {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  gap: 0.25rem 1rem;
+  margin: 0.625rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8125rem;
+}
+
+.parts-key li {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.parts-key li[data-empty] {
+  color: var(--text-muted);
+}
+
+.parts-swatch {
+  flex: none;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 15%);
+}
+
+.parts-name {
+  min-width: 0;
+}
+
+.parts-count {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+}
+
+.parts-share {
+  color: var(--text-muted);
+  font-weight: normal;
+}
+
+/* Before and after for each category: a hollow dot, a line, a filled dot. */
+.dumbbell-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  list-style: none;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.dumbbell-key li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.dumbbell {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.dumbbell th {
+  width: 36%;
+  padding: 0.25rem 0.75rem 0.25rem 0;
+  font-weight: 500;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.dumbbell td {
+  padding: 0.25rem 0;
+}
+
+.dumbbell-plot {
+  width: 40%;
+}
+
+.dumbbell-track {
+  position: relative;
+  display: block;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.dumbbell-line {
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  background: var(--control-border);
+  transform: translateY(-50%);
+}
+
+.dumbbell-dot {
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  box-sizing: border-box;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 2px var(--surface);
+}
+
+.dumbbell-dot[data-before] {
+  background: var(--surface);
+}
+
+.dumbbell-track .dumbbell-dot {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dumbbell-after,
+.dumbbell-change {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.dumbbell-after {
+  font-weight: 650;
+}
+
+.dumbbell-change {
+  padding-left: 0.75rem !important;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+/* One series over time, with a crosshair and tooltip for the nearest point. */
+.line-chart {
+  margin: 0;
+}
+
+.line-chart-plot {
+  position: relative;
+}
+
+.line-chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  border-radius: var(--radius-sm);
+}
+
+.line-chart svg:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 4px;
+}
+
+.line-chart-grid line {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+.line-chart text {
+  fill: var(--text-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.line-chart-area {
+  fill: var(--accent);
+  fill-opacity: 0.1;
+}
+
+.line-chart-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.line-chart-crosshair {
+  stroke: var(--text-muted);
+  stroke-width: 1;
+}
+
+.line-chart-dot {
+  fill: var(--accent);
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+
+.chart-tooltip {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  padding: 0.375rem 0.625rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-md);
+  font-size: 0.8125rem;
+  white-space: nowrap;
+  pointer-events: none;
+  transform: translate(-50%, calc(-100% - 0.75rem));
+}
+
+.chart-tooltip-note {
+  color: var(--text-muted);
+}
+
+.chart-table {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.chart-table summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.5rem;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+/* Income against England's median: a bar for the area, a tick for England. */
+.bullet-track {
+  position: relative;
+  height: 1rem;
+  border-radius: 4px;
+  background: var(--surface-subtle);
+}
+
+.bullet-bar {
+  position: absolute;
+  inset-block: 0.1875rem;
+  left: 0;
+  border-radius: 0 4px 4px 0;
+  background: var(--accent);
+}
+
+.bullet-mark {
+  position: absolute;
+  inset-block: -0.125rem;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--text);
+  transform: translateX(-50%);
+}
+
+.bullet-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.bullet-key li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.bullet-key-bar,
+.bullet-key-mark {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.5rem;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+.bullet-key-mark {
+  width: 3px;
+  height: 0.875rem;
+  background: var(--text);
+}
+
+/* The ten deprivation deciles: the Search Area's range shaded, the Location's ringed. */
+.deciles {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 2px;
+}
+
+.decile {
+  display: grid;
+  place-items: center;
+  height: 1.75rem;
+  border-radius: 4px;
+  background: var(--surface-subtle);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.decile[data-in-range] {
+  background: color-mix(in srgb, var(--accent) 22%, var(--surface));
+  color: var(--text);
+}
+
+.decile[data-at] {
+  outline: 2px solid var(--text);
+  outline-offset: -2px;
+  font-weight: 750;
+}
+
+/* The Highlights' counts by level, each with its shape and name. */
+.highlight-counts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin: 0 0 0.75rem;
+}
+
+.highlight-counts > div {
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  background: var(--surface-subtle);
+  box-shadow: inset 3px 0 0 var(--level-colour);
+}
+
+.highlight-counts [data-level="good"],
+.dashboard-highlights [data-level="good"] {
+  --level-colour: var(--good);
+}
+
+.highlight-counts [data-level="watch"],
+.dashboard-highlights [data-level="watch"] {
+  --level-colour: var(--watch);
+}
+
+.highlight-counts [data-level="concern"],
+.dashboard-highlights [data-level="concern"] {
+  --level-colour: var(--concern);
+}
+
+.highlight-counts dt {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.highlight-counts .highlight-icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin: 0;
+}
+
+.highlight-counts dd {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.dashboard-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  max-height: 22rem;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+  scrollbar-width: thin;
+}
+
+.dashboard-highlights .highlight {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 48rem) {
+  .dashboard {
+    overflow: visible;
+  }
+
+  .dashboard-actions {
+    width: 100%;
+  }
+
+  .dashboard-actions button {
+    flex: 1;
+  }
+
+  .dashboard-highlights {
+    max-height: none;
+  }
+}

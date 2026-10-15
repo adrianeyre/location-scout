@@ -1,0 +1,26 @@
+{
+  "name": "@location-scout/data-prepare",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Downloads and prepares bulk data into data/ for the API to query with DuckDB (ADR 0004).",
+  "type": "module",
+  "scripts": {
+    "data:prepare": "tsx --env-file-if-exists=../../.env src/main.ts",
+    "postinstall": "tsx src/install-spatial.ts",
+    "fixture:prepare": "tsx src/prepare-fixture.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "fixture:record-land": "tsx src/record-land-fixtures.ts",
+    "spike:title-matching": "tsx src/spike-title-matching.ts",
+    "spike:epc-matching": "tsx --env-file-if-exists=../../.env src/spike-epc-matching.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "vitest": "^5.0.3"
+  },
+  "dependencies": {
+    "@duckdb/node-api": "1.5.6-r.1",
+    "@location-scout/shared": "workspace:*"
+  }
+}

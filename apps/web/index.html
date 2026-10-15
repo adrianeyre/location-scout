@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en-GB" data-theme="scout">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location Scout — understand any location in England</title>
+    <meta
+      name="description"
+      content="Pick any location in England and see crime, schools, transport, amenities, property prices, planning and land around it, scored for your needs."
+    />
+    <meta name="application-name" content="Location Scout" />
+    <meta name="author" content="Location Scout" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <link rel="canonical" href="__SITE_URL__/" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0d1117"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Icons: SVG where supported, ICO for the rest, PNGs for home screens. -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Link previews: Slack, Teams, LinkedIn, Facebook, iMessage (Open Graph) and X. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Location Scout" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:url" content="__SITE_URL__/" />
+    <meta
+      property="og:title"
+      content="Location Scout — understand any location in England"
+    />
+    <meta
+      property="og:description"
+      content="Crime, schools, transport, amenities, property prices, planning and land opportunities around any location in England, scored for what matters to you."
+    />
+    <meta property="og:image" content="__SITE_URL__/og-image.png" />
+    <meta property="og:image:secure_url" content="__SITE_URL__/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Location Scout: a map pin inside a dashed Search Area circle with coloured Layer markers, beside the words 'Understand everything around any location in England'."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Location Scout — understand any location in England"
+    />
+    <meta
+      name="twitter:description"
+      content="Crime, schools, transport, amenities, property prices, planning and land opportunities around any location in England, scored for what matters to you."
+    />
+    <meta name="twitter:image" content="__SITE_URL__/og-image.png" />
+    <meta
+      name="twitter:image:alt"
+      content="Location Scout: a map pin inside a dashed Search Area circle with coloured Layer markers."
+    />
+
+    <!-- Structured data for search engines (schema.org). -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Location Scout",
+        "url": "__SITE_URL__/",
+        "image": "__SITE_URL__/og-image.png",
+        "description": "Pick any location in England and see crime, schools, transport, amenities, property prices, planning and land around it, scored for your needs.",
+        "applicationCategory": "ReferenceApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "inLanguage": "en-GB",
+        "isAccessibleForFree": true,
+        "areaServed": { "@type": "Country", "name": "England" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" },
+        "accessibilityFeature": [
+          "highContrastDisplay",
+          "displayTransformability",
+          "readingOrder",
+          "structuralNavigation"
+        ],
+        "accessibilityControl": ["fullKeyboardControl", "fullMouseControl"],
+        "accessibilityHazard": "none"
+      }
+    </script>
+
+    <!--
+      The appearance chosen in Settings, put on the page before it is drawn, so
+      it never flashes the wrong colours. It reads what
+      src/theme/appearance.ts keeps under the same key.
+    -->
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var mode = "system";
+        try {
+          var kept = JSON.parse(
+            localStorage.getItem("location-scout:appearance") || "null",
+          );
+          if (kept && typeof kept.theme === "string")
+            root.dataset.theme = kept.theme;
+          if (kept && typeof kept.mode === "string") mode = kept.mode;
+        } catch (error) {}
+        if (mode !== "light" && mode !== "dark") {
+          mode = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        root.dataset.mode = mode;
+        root.style.colorScheme = mode;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <main style="max-width: 40rem; margin: 2rem auto; padding: 0 1rem">
+        <h1>Location Scout</h1>
+        <p>
+          Pick any location in England and understand everything around it:
+          crime, schools, transport, amenities, green space, property prices,
+          demographics, planning and land opportunities, scored for what matters
+          to you, whether you are buying a home, letting, investing, developing
+          or opening a business.
+        </p>
+        <p>
+          Location Scout needs JavaScript to draw its map. Please turn it on.
+        </p>
+      </main>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

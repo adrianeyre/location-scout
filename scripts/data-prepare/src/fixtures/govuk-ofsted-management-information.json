@@ -1,0 +1,33 @@
+{
+  "base_path": "/government/statistical-data-sets/monthly-management-information-ofsteds-school-inspections-outcomes",
+  "title": "State-funded school inspections and outcomes: management information",
+  "public_updated_at": "2026-09-10T09:30:07+01:00",
+  "details": {
+    "attachments": [
+      {
+        "title": "Management information - state-funded schools - latest inspections as at 31 July 2026",
+        "url": "https://assets.publishing.service.gov.uk/media/6a75d6aa5a472b60f4ea6d63/Management_information_-_state-funded_schools_-_latest_inspections_as_at_31_July_2026.csv",
+        "content_type": "text/csv",
+        "file_size": 17119902
+      },
+      {
+        "title": "Management information - state-funded schools - all inspections - year to date published by 31 August 2026",
+        "url": "https://assets.publishing.service.gov.uk/media/6aa0175292e72b8ac437ef36/Management_information_-_state-funded_schools_-_all_inspections_-_year_to_date_published_by_31_August_2026.csv",
+        "content_type": "text/csv",
+        "file_size": 1578996
+      },
+      {
+        "title": "Management information - state-funded schools - as at 31 Aug 2026",
+        "url": "https://assets.publishing.service.gov.uk/media/6aa017529f95f408139c6437/Management_information_-_state-funded_schools_-_as_at_31_Aug_2026.ods",
+        "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+        "file_size": 10956438
+      },
+      {
+        "title": "Management information - state-funded schools - latest inspections as at 31 August 2026",
+        "url": "https://assets.publishing.service.gov.uk/media/6aa0175392e72b8ac437ef37/Management_information_-_state-funded_schools_-_latest_inspections_as_at_31_August_2026.csv",
+        "content_type": "text/csv",
+        "file_size": 17121385
+      }
+    ]
+  }
+}
