@@ -14,7 +14,7 @@ Pick any location in England (a postcode, an address or a click on the map) and 
 
 > **Status:** Phase 1 is being built and runs locally.
 
-**Website:** [location-scout.adrianeyre.co.uk](https://location-scout.adrianeyre.co.uk), built from `site/` by `pnpm site:build` and published to GitHub Pages.
+**Website:** [location-scout.adrianeyre.co.uk](https://location-scout.adrianeyre.co.uk) · **Source:** [github.com/adrianeyre/location-scout](https://github.com/adrianeyre/location-scout)
 
 <p align="center">
   <img src="docs/screenshots/overview-light.png" alt="Location Scout showing NG17 1AA: the map with its Search Area circle, Layers and clusters, beside the Location Overview's Good, Watch and Concern Highlights." width="900">
@@ -41,7 +41,10 @@ The screenshots come from the fixture-backed app, so the map's tiles are blank; 
 
 ## Quick start
 
+You need Node 26 or later and pnpm 12 or later.
+
 ```bash
+git clone https://github.com/adrianeyre/location-scout.git && cd location-scout
 pnpm install
 cp .env.example .env   # then set NOMINATIM_USER_AGENT
 pnpm dev                                 # http://localhost:5173
@@ -52,6 +55,20 @@ pnpm dev                                 # http://localhost:5173
 To check that every live Data Source still answers as the app expects, run `pnpm smoke`. It is opt-in and never runs in CI: it calls each one once, with your settings from `.env`, and reports pass, fail, or skipped where a key isn't set ([Smoke script](docs/guides/testing.md#smoke-script)).
 
 To measure the PRD's performance targets (NFR-2.1 to NFR-2.5) on your machine, run `pnpm bench`. It loads NG17 1AA's Search Area through the API as the frontend does, uncached and then cached, searches for Land Opportunities across Ashfield, and with `--prepare` times `pnpm data:prepare`, reporting pass, fail or skipped for each ([Benchmark](docs/guides/testing.md#benchmark)). It is opt-in too, and never runs in CI.
+
+## The website
+
+The project website lives in `site/` and is published to GitHub Pages by `.github/workflows/pages.yml` whenever it, the screenshots or the app's icons change on `main`. It is one static page that reads whole without JavaScript; its product illustrations, an animated search in the hero and a picture in each tile of the Features grid, are drawn in React with the [Stageshow](https://github.com/benjitaylor/skills/tree/main/stageshow) kit, in the app's own colours, icons and words.
+
+```bash
+pnpm site:build                          # assembles site/dist/; open site/dist/index.html
+pnpm --filter @location-scout/site dev   # serves the page with live illustrations
+```
+
+- `site/index.html`, `styles.css` and `script.mts`: the page, its styles and its small progressive enhancements.
+- `site/demos/`: the illustrations, one `Stage` each, mounted into the page's `[data-demo]` slots by `main.tsx` and bundled by Vite into `demos.js` and `demos.css`.
+- `site/kit/`: the Stageshow kit, vendored unchanged ([`site/kit/README.md`](site/kit/README.md)).
+- `site/build.ts`: the build, which names the repository and the site's domain once, for every link on the page.
 
 ## Guides
 
@@ -105,14 +122,14 @@ Each Data Source's own credit, from Historic England's for conservation areas to
 - **Scores are "beta":** fixed, published thresholds with a visible breakdown.
 - **Not in Phase 1:** trends, "what's changed?" and alerts need stored history, so they come in Phase 3.
 
+## Tech stack
 
-## Planned tech stack
-
-- **TypeScript** monorepo using pnpm workspaces
+- **TypeScript** 7 monorepo using pnpm workspaces (typescript-eslint uses TypeScript 6's API, as TypeScript 7 has none yet)
 - **Frontend:** React, Vite, MapLibre GL
 - **Backend:** [Hono](https://hono.dev) on Node. The same code can run on Cloudflare Workers later.
 - **Land data:** DuckDB (spatial extension) over GeoParquet files
 - **Tests:** Vitest (unit tests with recorded fixtures) and Playwright (end-to-end)
+- **Website:** a static page, with illustrations in React drawn with the Stageshow kit and bundled by Vite
 
 ```text
 .
@@ -123,6 +140,9 @@ Each Data Source's own credit, from Historic England's for conservation areas to
 │   └── shared/           # Response types shared by web and api
 ├── scripts/
 │   └── data-prepare/     # Downloads and prepares land data into data/
+├── site/                 # The project website (GitHub Pages)
+│   ├── demos/            # Its product illustrations, drawn with Stageshow
+│   └── kit/              # The Stageshow kit, vendored
 ├── data/                 # Prepared land files (git-ignored)
 ├── .sandcastle/          # Sandcastle agent harness (Dockerfile, main.ts, prompt template)
 ├── docs/
@@ -133,4 +153,3 @@ Each Data Source's own credit, from Historic England's for conservation areas to
 │   └── screenshots/      # The README's screenshots
 └── GLOSSARY.md
 ```
-

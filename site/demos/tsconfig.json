@@ -1,0 +1,16 @@
+{
+  // Type-checks the website's product illustrations (this folder) and the
+  // Stageshow kit they are drawn with (../kit/), which run in the browser.
+  // The kit is vendored unchanged and written for plain `strict`, so the
+  // base's three extra checks are off here.
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2024", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "types": ["vite/client"],
+    "noUncheckedIndexedAccess": false,
+    "exactOptionalPropertyTypes": false,
+    "noUnusedLocals": false
+  },
+  "include": [".", "../kit"]
+}

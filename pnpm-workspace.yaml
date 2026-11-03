@@ -2,6 +2,7 @@ packages:
   - apps/*
   - packages/*
   - scripts/*
+  - site
 
 # tsx depends on esbuild, whose postinstall fetches its platform binary.
 allowBuilds:

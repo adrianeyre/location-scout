@@ -1,0 +1,104 @@
+/* Location Scout's look on the Stageshow kit's tokens: the app's default
+   Scout theme (apps/web/src/theme/themes.ts), its Inter type and its
+   Highlight colours, light and dark. Every illustration's Stage carries
+   `ls-look`, so the pictures read as the app the page is about. */
+
+.ls-look .ss-stage {
+  --ss-font:
+    "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+  --ss-mono:
+    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --ss-accent: #0550ae;
+  --ss-accent-2: #1f6feb;
+  --ss-accent-soft: #ddf4ff;
+  --ss-accent-text: #0a3069;
+  --ss-canvas: #f6f8fa;
+  --ss-surface: #ffffff;
+  --ss-well: #eef2f6;
+  --ss-text-strong: #1f2328;
+  --ss-text: #1f2328;
+  --ss-text-faint: #59636e;
+  --ss-line: #d0d7de;
+  --ss-line-faint: #e6eaef;
+  --ss-success: #1a7f37;
+  --ss-success-soft: #dafbe1;
+  --ss-success-text: #116329;
+  --ss-warning: #bc4c00;
+  --ss-warning-soft: #fff1e5;
+  --ss-warning-text: #953800;
+  --ss-danger: #cf222e;
+  --ss-danger-soft: #ffebe9;
+  --ss-danger-text: #a40e26;
+  --ss-radius-sm: 6px;
+  --ss-radius-md: 8px;
+  --ss-radius-lg: 12px;
+
+  --ls-concern: #cf222e;
+  --ls-watch: #bc4c00;
+  --ls-good: #1a7f37;
+  --ls-map: #eef1ea;
+  --ls-map-road: #ffffff;
+  --ls-map-block: #e3e7de;
+  --ls-map-park: #d8e8c8;
+}
+
+.ls-look .ss-stage[data-theme="dark"] {
+  --ss-accent: #79c0ff;
+  --ss-accent-2: #4493f8;
+  --ss-accent-soft: #12253f;
+  --ss-accent-text: #cae8ff;
+  --ss-canvas: #0d1117;
+  --ss-surface: #161b22;
+  --ss-raised: #1c2128;
+  --ss-well: #10151c;
+  --ss-text-strong: #f0f6fc;
+  --ss-text: #e6edf3;
+  --ss-text-faint: #9ea7b3;
+  --ss-line: #30363d;
+  --ss-line-faint: #21262d;
+  --ss-success: #3fb950;
+  --ss-success-soft: #0f2a18;
+  --ss-success-text: #56d364;
+  --ss-warning: #f0883e;
+  --ss-warning-soft: #2d1d0c;
+  --ss-warning-text: #ffa657;
+  --ss-danger: #ff7b72;
+  --ss-danger-soft: #2d1215;
+  --ss-danger-text: #ffa198;
+
+  --ls-concern: #ff7b72;
+  --ls-watch: #f0883e;
+  --ls-good: #3fb950;
+  --ls-map: #1a2027;
+  --ls-map-road: #2a323c;
+  --ls-map-block: #20272f;
+  --ls-map-park: #1d2b1f;
+}
+
+/* A Layer's mark: its icon, white, on a disc of its colour. */
+.ls-look .ls-mark {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1.5px var(--ss-surface);
+}
+
+.ls-look .ls-level {
+  flex: none;
+  width: 15px;
+  height: 15px;
+}
+
+.ls-look .ls-level[data-level="concern"] {
+  color: var(--ls-concern);
+}
+
+.ls-look .ls-level[data-level="watch"] {
+  color: var(--ls-watch);
+}
+
+.ls-look .ls-level[data-level="good"] {
+  color: var(--ls-good);
+}

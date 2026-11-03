@@ -6,6 +6,9 @@
 # docs/processes/running-sandcastle.md).
 .sandcastle/
 
+# The Stageshow kit is vendored unchanged (site/kit/README.md).
+site/kit/
+
 pnpm-lock.yaml
 /data/
 dist/

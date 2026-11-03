@@ -6,7 +6,8 @@
   build time, and the fonts from site/fonts/. Everything works without
   JavaScript: script.mts (built into script.js) only adds the menu button,
   the system tabs, copy buttons, the screenshot viewer, the setup guide's
-  progress and the policies' dialogs.
+  progress and the policies' dialogs, and demos/ (built into demos.js) draws
+  the product illustrations into each [data-demo] slot.
 -->
 <html lang="en-GB" class="no-js">
   <head>
@@ -68,7 +69,9 @@
       crossorigin
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="demos.css" />
     <script type="module" src="script.js"></script>
+    <script type="module" src="demos.js"></script>
   </head>
   <body>
     <!-- Icons: Lucide (ISC licence, lucide.dev), and the GitHub mark. -->
@@ -139,14 +142,6 @@
         />
         <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
         <rect x="6" y="14" width="12" height="8" rx="1" />
-      </symbol>
-      <symbol id="i-sparkles" viewBox="0 0 24 24">
-        <path
-          d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"
-        />
-        <path d="M20 2v4" />
-        <path d="M22 4h-4" />
-        <circle cx="4" cy="20" r="2" />
       </symbol>
       <symbol id="i-camera" viewBox="0 0 24 24">
         <path
@@ -352,24 +347,24 @@
             </div>
           </div>
           <figure class="hero-shot">
-            <div class="window">
-              <div class="window-bar" aria-hidden="true">
-                <span></span><span></span><span></span>
-                <p class="window-address">localhost:5173</p>
-              </div>
-              <a href="images/overview-light.png" data-lightbox>
-                <img
-                  src="images/overview-light.png"
-                  width="1440"
-                  height="900"
-                  fetchpriority="high"
-                  alt="Location Scout showing NG17 1AA: the map with clustered markers for each Layer, the Layers panel with each Layer's count, and the Location Overview's Highlights: one Concern, two Watch and four Good."
-                />
-              </a>
+            <!-- Filled by demos.js with an animated search in the app,
+                 drawn with Stageshow; this screenshot is what shows
+                 without JavaScript. -->
+            <div class="demo-slot hero-demo" data-demo="hero">
+              <noscript>
+                <div class="window">
+                  <img
+                    src="images/overview-light.png"
+                    width="1440"
+                    height="900"
+                    alt="Location Scout showing NG17 1AA: the map with clustered markers for each Layer, the Layers panel with each Layer's count, and the Location Overview's Highlights."
+                  />
+                </div>
+              </noscript>
             </div>
             <figcaption>
-              <strong>The Location Overview.</strong> The map and its Layers
-              beside what you need to know.
+              <strong>Search a postcode.</strong> The Search Area fills with
+              each Layer, and the Highlights and Location Score follow.
             </figcaption>
           </figure>
         </div>
@@ -558,143 +553,121 @@
               scores you can take apart.
             </p>
           </div>
+          <!-- One picture per tile, each drawn by demos.js into its
+               [data-demo] slot with Stageshow; the copy is the page's own.
+               Without JavaScript the tiles are their copy alone. -->
           <ul class="bento">
-            <li class="card card-feature card-wide">
-              <span class="card-icon">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-layers" />
-                </svg>
-              </span>
-              <h3>Nine Layers on the map</h3>
-              <p>
-                Crime with its year-on-year trend; planning constraints and
-                applications with the new homes they would bring; amenities;
-                schools with their Ofsted judgements; transport; green space;
-                property sales with price change and EPC ratings; land; and
-                demographics from Census 2021. Dense markers cluster, and every
-                figure is also given as text.
+            <li class="tile tile-hero">
+              <p class="tile-copy">
+                <strong>Scores you can check.</strong> Category Scores from 0 to
+                100 by fixed, published rules. Open one to see each input, its
+                figure and the points it earned.
               </p>
-              <ul class="tag-list" aria-label="The Layers">
-                <li>Crime</li>
-                <li>Planning</li>
-                <li>Amenities</li>
-                <li>Schools</li>
-                <li>Transport</li>
-                <li>Green space</li>
-                <li>Property</li>
-                <li>Land</li>
-                <li>Demographics</li>
-              </ul>
+              <div class="tile-picture demo-slot" data-demo="scores"></div>
             </li>
-            <li class="card card-feature card-wide">
-              <span class="card-icon">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-gauge" />
-                </svg>
-              </span>
-              <h3>Scores you can check, and Scout Modes</h3>
-              <p>
-                Category Scores such as Safety, Schools and Planning freedom,
-                each from 0 to 100 by a fixed, published rule, and a Location
-                Score that weighs them. Open any score to see each input, the
-                figure measured, the thresholds and the points given. A Scout
-                Mode reweighs them for one question, “Should I buy a home here
-                to let?” or “Could I open a café here?”, or set weights of your
-                own.
+            <li class="tile tile-stat">
+              <p class="tile-copy"><strong>All from open data.</strong></p>
+              <p class="stat">
+                <span class="stat-number">11</span>
+                <span class="stat-label"
+                  >public Data Sources, each credited beside what it
+                  supplies</span
+                >
               </p>
             </li>
-            <li class="card card-feature">
-              <span class="card-icon">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-list-checks" />
-                </svg>
-              </span>
-              <h3>Highlights</h3>
-              <p>
-                What you need to know, first: short Concern, Watch and Good
-                statements, each from a fixed rule over one Layer's figures and
-                never from AI. Choose one to see its Layer on the map.
+            <li class="tile">
+              <p class="tile-copy">
+                <strong>Highlights.</strong> What you need to know first, each
+                from a fixed rule over one Layer, never from AI.
               </p>
+              <div class="tile-picture demo-slot" data-demo="highlights"></div>
             </li>
-            <li class="card card-feature">
-              <span class="card-icon">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-layout-dashboard" />
-                </svg>
-              </span>
-              <h3>A Dashboard of Widgets</h3>
-              <p>
-                Every figure at full width: the Location Score in an arc,
-                Category Scores as bars, and a card of charts for each Layer.
-                Drag, resize and hide the Widgets on a 12-column Grid.
+            <li class="tile">
+              <p class="tile-copy">
+                <strong>Nine Layers.</strong> Crime, planning, amenities,
+                schools, transport, green space, property, land and
+                demographics.
               </p>
+              <div class="tile-picture demo-slot" data-demo="layers"></div>
             </li>
-            <li class="card card-feature">
-              <span class="card-icon">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-land-plot" />
-                </svg>
-              </span>
-              <h3>Land Opportunity Finder</h3>
-              <p>
-                Open land worth investigating, with its area, road distance,
-                flood zone and indicative ownership: company, council, other
-                registered or possibly unregistered, and land sales nearby.
+            <li class="tile">
+              <p class="tile-copy">
+                <strong>Scout Modes.</strong> Reweigh the scores for one
+                question: “Should I buy a home here to live in?”
               </p>
+              <div class="tile-picture demo-slot" data-demo="modes"></div>
             </li>
-            <li class="card card-feature">
-              <span class="card-icon">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-bookmark" />
-                </svg>
-              </span>
-              <h3>Save, compare and print</h3>
-              <p>
-                Keep Search Areas in your browser, export and import them as
-                JSON, compare 2 to 4 side by side, and print a report or save it
-                as a PDF.
+            <li class="tile">
+              <p class="tile-copy">
+                <strong>Six themes.</strong> Light, dark or your system's, each
+                with its contrast ratios listed.
               </p>
+              <div class="tile-picture demo-slot" data-demo="themes"></div>
             </li>
-            <li class="card card-feature">
-              <span class="card-icon">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-sparkles" />
-                </svg>
-              </span>
-              <h3>AI Explanations, if you want them</h3>
-              <p>
-                With your own Anthropic API key, an Explain button answers
-                questions about the figures on screen, and only those: any
-                number not among them is flagged. Off without a key.
+            <li class="tile">
+              <p class="tile-copy">
+                <strong>AI Explanations, if you want them.</strong> With your
+                own Anthropic key; any number not on screen is flagged.
               </p>
+              <div class="tile-picture demo-slot" data-demo="explain"></div>
             </li>
-            <li class="card card-feature">
-              <span class="card-icon">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-camera" />
-                </svg>
-              </span>
-              <h3>Street View, if you want it</h3>
-              <p>
-                With your own Google Maps key, look around the Location, or any
-                Feature from its popup. Without one, nothing loads from Google.
+            <li class="tile">
+              <p class="tile-copy">
+                <strong>Land Opportunity Finder.</strong> Open land worth a
+                look, with its area and indicative ownership.
               </p>
+              <div class="tile-picture demo-slot" data-demo="land"></div>
             </li>
-            <li class="card card-feature card-full">
-              <span class="card-icon">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-accessibility" />
-                </svg>
-              </span>
-              <h3>Accessible, in six themes</h3>
-              <p>
-                Built to meet WCAG 2.2 AA: a skip link, every map marker a
-                button and “Skip past the map”, labelled landmarks, Highlights
-                shaped as well as coloured, reflow at 400% zoom, and reduced
-                motion respected. Light, dark or your system's mode, in Scout,
-                Ocean, Forest, Heather, Sunset or High contrast, each with its
-                contrast ratios listed in Settings.
-              </p>
+          </ul>
+
+          <ul class="feature-list" aria-label="And also">
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-layout-dashboard" />
+              </svg>
+              <div>
+                <h3>A Dashboard of Widgets</h3>
+                <p>
+                  Every figure at full width, in Widgets you drag, resize and
+                  hide on a 12-column Grid.
+                </p>
+              </div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-bookmark" />
+              </svg>
+              <div>
+                <h3>Save, compare and print</h3>
+                <p>
+                  Keep Search Areas in your browser, compare 2 to 4 side by
+                  side, and print a report or save it as a PDF.
+                </p>
+              </div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-camera" />
+              </svg>
+              <div>
+                <h3>Street View, if you want it</h3>
+                <p>
+                  With your own Google Maps key, look around the Location or any
+                  Feature. Without one, nothing loads from Google.
+                </p>
+              </div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-accessibility" />
+              </svg>
+              <div>
+                <h3>Accessible</h3>
+                <p>
+                  Built to WCAG 2.2 AA: every marker a button, Highlights shaped
+                  as well as coloured, reflow at 400% zoom.
+                </p>
+              </div>
             </li>
           </ul>
         </div>

@@ -613,9 +613,27 @@ pre:focus-visible {
 
 @media (min-width: 64rem) {
   .hero-inner {
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
-    gap: 3.5rem;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 2.5rem;
   }
+}
+
+/* The hero's illustration holds its design's shape before demos.js draws
+   it, so nothing below moves when it arrives. */
+.hero-demo {
+  aspect-ratio: 720 / 420;
+}
+
+@media (max-width: 34.99rem) {
+  .hero-demo {
+    aspect-ratio: 358 / 400;
+  }
+}
+
+.hero-demo .window img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero-text {
@@ -689,17 +707,6 @@ pre:focus-visible {
   position: relative;
   margin: 0;
   min-width: 0;
-}
-
-.hero-shot::before {
-  content: "";
-  position: absolute;
-  inset: 8% -4% -6%;
-  z-index: -1;
-  background: var(--gradient);
-  filter: blur(60px);
-  opacity: 0.35;
-  border-radius: 50%;
 }
 
 .window {
@@ -1059,19 +1066,6 @@ pre:focus-visible {
   border: 1px solid color-mix(in srgb, var(--primary) 30%, transparent);
 }
 
-.tag-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin: 1rem 0 0;
-  padding: 0;
-}
-
-.tag-list li {
-  font-size: 0.8rem;
-}
-
 /* ---------- Cards and features ---------- */
 
 .card {
@@ -1100,66 +1094,156 @@ pre:focus-visible {
   height: 1.35rem;
 }
 
+/* The Features grid (Stageshow's bento rules): one frame for every tile,
+   the copy at the top as page type, and each tile's picture, drawn by
+   demos.js, pinned beneath it and cropped by the tile's bottom edge. One
+   hero tile spans two columns; the stat tile is type alone. */
 .bento {
+  /* The pictures' own gutter (24px, in demos/features.css), so the copy and
+     the picture under it share one left edge. */
+  --tile-pad: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 1.25rem;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr);
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 40rem) {
   .bento {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .bento > li {
-    grid-column: span 2;
-  }
-
-  .bento > .card-wide {
-    grid-column: span 3;
-  }
-
-  .bento > .card-full {
+  .tile-hero {
     grid-column: 1 / -1;
   }
 }
 
-.card-feature {
-  transition:
-    border-color 200ms var(--ease),
-    box-shadow 200ms var(--ease),
-    transform 200ms var(--ease);
+@media (min-width: 64rem) {
+  .bento {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .tile-hero {
+    grid-column: span 2;
+  }
 }
 
-.card-feature:hover {
-  border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
-  box-shadow: var(--shadow);
-  transform: translateY(-2px);
+.tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 22rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
 }
 
-.card-feature h3 {
-  margin: 1.1rem 0 0.5rem;
-  font-size: 1.125rem;
-  letter-spacing: -0.015em;
-}
-
-.card-feature p {
+.tile-copy {
   margin: 0;
+  padding: var(--tile-pad) var(--tile-pad) 1.25rem;
   color: var(--muted);
-  font-size: 0.975rem;
+  font-size: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  text-wrap: pretty;
 }
 
-.card-wide {
+.tile-copy strong {
+  color: var(--text);
+  font-weight: 650;
+}
+
+/* The picture fills the rest of the tile, and the tile crops it. */
+.tile-picture {
+  flex: 1;
+  min-height: 13rem;
+}
+
+.tile-hero .tile-copy {
+  max-width: 40rem;
+}
+
+/* The one stat: a real number at display size, close under its copy. */
+.tile-stat {
   background:
     radial-gradient(
-      28rem 14rem at 100% 0%,
-      color-mix(in srgb, var(--primary) 8%, transparent),
+      30rem 18rem at 100% 100%,
+      color-mix(in srgb, var(--primary) 12%, transparent),
       transparent 70%
     ),
     var(--surface);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0 var(--tile-pad) var(--tile-pad);
+}
+
+.stat-number {
+  color: var(--primary);
+  font-size: clamp(4.5rem, 3rem + 5vw, 6.5rem);
+  font-weight: 760;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  white-space: nowrap;
+}
+
+.stat-label {
+  max-width: 16rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+/* The features the grid doesn't picture, as a quiet list under it. */
+.feature-list {
+  list-style: none;
+  display: grid;
+  gap: 1.5rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  margin: 2.5rem 0 0;
+  padding: 2rem 0 0;
+  border-top: 1px solid var(--border);
+}
+
+.feature-list li {
+  display: flex;
+  gap: 0.85rem;
+}
+
+.feature-list .icon {
+  flex: none;
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-top: 0.15rem;
+  color: var(--primary);
+}
+
+.feature-list h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.feature-list p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.925rem;
+  line-height: 1.5;
+}
+
+/* A slot demos.js draws into. Its pictures are decoration: the copy beside
+   each says what it shows. */
+.demo-slot {
+  min-width: 0;
 }
 
 /* ---------- Gallery ---------- */

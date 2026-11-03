@@ -20,6 +20,7 @@ import {
   MADE_UP_NUMBER,
   MADE_UP_NUMBER_QUESTION,
   TEST_ANTHROPIC_API_KEY,
+  anthropicKeyOf,
   stubAnthropic,
 } from "../testing/anthropic-stub";
 import { PREPARED_DATA_FIXTURE, testApp } from "../testing/app";
@@ -47,7 +48,7 @@ const recorded = () => {
     sent.push(
       JSON.parse(typeof init?.body === "string" ? init.body : "{}") as Sent,
     );
-    keys.push(new Headers(init?.headers).get("x-api-key"));
+    keys.push(anthropicKeyOf(init));
     const answer = stubAnthropic(url, init, { partMs: 0 });
     return answer ? Promise.resolve(answer) : Promise.reject(new Error(url));
   });

@@ -1292,8 +1292,8 @@ describe("CCOD and OCOD, for Ownership Categories", () => {
 
   const ownershipOf = (folder = "ashfield") =>
     query(
-      `SELECT parcel_id, ownership_category, list_transform(inspire_polygons, p -> p.ownership_category) AS polygons,
-         list_transform(matched_titles, t -> t.title_number) AS titles
+      `SELECT parcel_id, ownership_category, list_transform(inspire_polygons, lambda p: p.ownership_category) AS polygons,
+         list_transform(matched_titles, lambda t: t.title_number) AS titles
        FROM read_parquet(${sqlString(join(dataDir, folder, "land-parcels.parquet"))})
        ORDER BY parcel_id`,
     );
