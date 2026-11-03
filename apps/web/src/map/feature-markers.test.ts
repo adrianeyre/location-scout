@@ -1292,12 +1292,15 @@ describe("a sale's marker and popup", () => {
       (marker) => marker.querySelector(".feature-marker-label")?.textContent,
     );
 
-  it("labels a sale's marker with its price, and several sales' with the lowest to the highest", () => {
+  it("labels a sale's marker with its price, and several sales' with the lowest to the highest, each named starting with what it shows", () => {
     drawSales();
 
     expect(labels()).toEqual(["£173k", "£105k–£290k"]);
+    expect(buttons(".feature-marker")[1]?.getAttribute("aria-label")).toMatch(
+      /^£105k–£290k: /,
+    );
     expect(buttons(".feature-marker")[0]?.getAttribute("aria-label")).toBe(
-      "£173,000, Sold on 29 May 2026, 140 m from the Location",
+      "£173k: £173,000, Sold on 29 May 2026, 140 m from the Location",
     );
   });
 

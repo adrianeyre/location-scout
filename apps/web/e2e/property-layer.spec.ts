@@ -201,7 +201,7 @@ test("a sale is labelled with its price on the map, and its popup gives price, d
   // cluster splits apart; feature-markers.test.ts covers their label.)
   const brookStreet = await markerLabelled(
     map,
-    "£141,000, Sold on 16 February 2026, 40 m from the Location",
+    "£141k: £141,000, Sold on 16 February 2026, 40 m from the Location",
   );
   await expect(brookStreet.locator(".feature-marker-label")).toHaveText(
     "£141k",
@@ -238,7 +238,7 @@ test("a sale's popup lists every sale at its address since 1995, with the change
   // £173,000 in 2026 (land-registry-ng17-1aa-history.json).
   const highPavement = await markerLabelled(
     map,
-    "£173,000, Sold on 29 May 2026, 140 m from the Location",
+    "£173k: £173,000, Sold on 29 May 2026, 140 m from the Location",
   );
   const popup = await openPopup(page, highPavement);
 

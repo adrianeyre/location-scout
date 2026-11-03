@@ -318,7 +318,17 @@ export class FeatureMarkers {
       star.setAttribute("aria-hidden", "true");
       button.append(star);
     }
-    const label = markerLabel(this.#layer, item, this.#highlight, this.#noun);
+    // A marker that shows text, such as a sale's price, is named starting
+    // with it, so its name includes what is seen (WCAG 2.5.3, Label in Name)
+    // and speech input can reach it by what it says.
+    const shown = item.kind === "site" ? style.label?.(item.features) : null;
+    const described = markerLabel(
+      this.#layer,
+      item,
+      this.#highlight,
+      this.#noun,
+    );
+    const label = shown ? `${shown}: ${described}` : described;
     button.setAttribute("aria-label", label);
     button.title = label;
 
@@ -336,8 +346,7 @@ export class FeatureMarkers {
           element("span", "feature-marker-count", String(item.features.length)),
         );
       }
-      const label = style.label?.(item.features);
-      if (label) button.append(element("span", "feature-marker-label", label));
+      if (shown) button.append(element("span", "feature-marker-label", shown));
     }
 
     button.addEventListener("click", (event) => {
