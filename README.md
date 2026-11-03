@@ -58,7 +58,7 @@ To measure the PRD's performance targets (NFR-2.1 to NFR-2.5) on your machine, r
 
 ## The website
 
-The project website lives in `site/` and is published to GitHub Pages by `.github/workflows/pages.yml` whenever it, the screenshots or the app's icons change on `main`. It is one static page that reads whole without JavaScript; its product illustrations, an animated search in the hero and a picture in each tile of the Features grid, are drawn in React with the [Stageshow](https://github.com/benjitaylor/skills/tree/main/stageshow) kit, in the app's own colours, icons and words.
+The project website lives in `site/` and is published to GitHub Pages by `.github/workflows/pages.yml` whenever it, the screenshots or the app's icons change on `main`. It is one static page that reads whole without JavaScript; its product illustrations, an animated search in the hero, a picture in each tile of the Features grid, the backend asking each Data Source in "How a search works" and a terminal getting Location Scout running, are drawn in React with the [Stageshow](https://github.com/benjitaylor/skills/tree/main/stageshow) kit, in the app's own colours, icons and words.
 
 ```bash
 pnpm site:build                          # assembles site/dist/; open site/dist/index.html
