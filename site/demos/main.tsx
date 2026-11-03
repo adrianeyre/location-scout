@@ -11,6 +11,7 @@ import {
   ThemesPicture,
 } from "./Features";
 import { HeroDemo } from "./HeroDemo";
+import { PipelinePicture, TerminalPicture } from "./Story";
 
 /*
  * Draws the website's product illustrations into the page's
@@ -20,7 +21,7 @@ import { HeroDemo } from "./HeroDemo";
  * assistive technology; the copy beside each says what it shows.
  */
 
-const DEMOS: Partial<Record<string, ComponentType>> = {
+const DEMOS: Partial<Record<string, ComponentType<{ repo?: string }>>> = {
   hero: HeroDemo,
   scores: ScoresPicture,
   highlights: HighlightsPicture,
@@ -29,6 +30,8 @@ const DEMOS: Partial<Record<string, ComponentType>> = {
   themes: ThemesPicture,
   explain: ExplainPicture,
   land: LandPicture,
+  pipeline: PipelinePicture,
+  terminal: TerminalPicture,
 };
 
 for (const slot of document.querySelectorAll<HTMLElement>("[data-demo]")) {
@@ -39,7 +42,7 @@ for (const slot of document.querySelectorAll<HTMLElement>("[data-demo]")) {
   slot.dataset.demoReady = "";
   createRoot(slot).render(
     <StrictMode>
-      <Demo />
+      <Demo {...(slot.dataset.repo ? { repo: slot.dataset.repo } : {})} />
     </StrictMode>,
   );
 }

@@ -108,9 +108,11 @@
 
 /* ---------- Base ---------- */
 
-*,
-*::before,
-*::after {
+/* Everything but the illustrations' insides, which the Stageshow kit
+   styles itself. */
+:where(*:not(.ss-stage *)),
+:where(*:not(.ss-stage *))::before,
+:where(*:not(.ss-stage *))::after {
   box-sizing: border-box;
 }
 
@@ -2088,6 +2090,57 @@ thead :is(th, td) {
     #000 30%,
     transparent 75%
   );
+}
+
+/* Wide, the copy sits left and the terminal right, running off the
+   banner's foot; narrow, the terminal follows the copy. */
+.cta-inner {
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media (min-width: 64rem) {
+  .cta-inner {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    padding-bottom: 0;
+    text-align: left;
+  }
+
+  .cta-inner .cta-actions {
+    justify-content: flex-start;
+  }
+
+  .cta-inner p {
+    margin-left: 0;
+  }
+
+  .cta-text {
+    padding-bottom: clamp(2.5rem, 6vw, 4.5rem);
+  }
+}
+
+.cta-terminal {
+  align-self: end;
+  min-height: 260px;
+  margin-bottom: calc(-1 * clamp(2.5rem, 6vw, 4.5rem));
+}
+
+@media (min-width: 64rem) {
+  .cta-terminal {
+    margin-bottom: 0;
+  }
+}
+
+.pipeline-demo {
+  min-height: 300px;
+  margin: 0 0 1.5rem;
+}
+
+@media (max-width: 44.99rem) {
+  .pipeline-demo {
+    min-height: 440px;
+  }
 }
 
 .cta-inner h2 {

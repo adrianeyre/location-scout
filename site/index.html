@@ -480,6 +480,10 @@
           </div>
 
           <h3 class="pipeline-title">How a search works</h3>
+          <!-- Drawn by demos.js: the backend asking each Data Source, one
+               of which takes too long and says so while the rest show. The
+               steps below say the same in words. -->
+          <div class="demo-slot pipeline-demo" data-demo="pipeline"></div>
           <ol class="pipeline">
             <li>
               <span class="pipeline-number" aria-hidden="true">1</span>
@@ -1139,7 +1143,7 @@ pnpm --version   <span class="comment"># 12 or later</span></code></pre>
                     >engines</code
                   >
                   and <code>devEngines</code>), and pnpm refuses to run on
-                  anything older. CI uses Node 26.12.0 and pnpm 12.11.2. More in
+                  anything older. CI uses Node 26.13.0 and pnpm 12.16.1. More in
                   <a
                     href="{{REPO_URL}}/blob/main/docs/guides/getting-started.md#prerequisites"
                     >Getting started</a
@@ -1650,21 +1654,36 @@ pnpm bench      <span class="comment"># opt-in: times a Search Area against the 
       <section class="cta" aria-labelledby="cta-title">
         <div class="container">
           <div class="cta-inner">
-            <h2 id="cta-title">Get Location Scout</h2>
-            <p>The code, the issues and every guide are on GitHub.</p>
-            <div class="cta-actions">
-              <a class="button button-inverse button-large" href="{{REPO_URL}}">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-github-mark" />
-                </svg>
-                View on GitHub
-              </a>
-              <a
-                class="button button-ghost-inverse button-large"
-                href="#quick-start"
-                >Quick start</a
-              >
+            <div class="cta-text">
+              <h2 id="cta-title">Get Location Scout</h2>
+              <p>
+                The code, the issues and every guide are on GitHub. Clone it,
+                install, and it runs on your machine.
+              </p>
+              <div class="cta-actions">
+                <a
+                  class="button button-inverse button-large"
+                  href="{{REPO_URL}}"
+                >
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-github-mark" />
+                  </svg>
+                  View on GitHub
+                </a>
+                <a
+                  class="button button-ghost-inverse button-large"
+                  href="#quick-start"
+                  >Quick start</a
+                >
+              </div>
             </div>
+            <!-- Drawn by demos.js: the project cloned, installed and
+                 started, in a terminal. -->
+            <div
+              class="demo-slot cta-terminal"
+              data-demo="terminal"
+              data-repo="{{REPO_URL}}"
+            ></div>
           </div>
         </div>
       </section>
