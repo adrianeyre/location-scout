@@ -1,9 +1,9 @@
 # Builds the project website (site/) and publishes it to GitHub Pages, at the
 # custom domain in site/build.ts. `pnpm site:build` assembles it in
-# site/dist/, copying in the screenshots from docs/screenshots/ and the icons
-# from apps/web/public, so they are never kept twice in Git. Runs when
-# anything it uses changes on main, or by hand. Node comes from the minimum
-# in the root package.json's devEngines.
+# site/dist/, bundling its Stageshow illustrations (site/demos/) with Vite and
+# copying in the screenshots from docs/screenshots/ and the icons from
+# apps/web/public, so they are never kept twice in Git. Runs when anything it
+# uses changes on main, or by hand. Node and pnpm are CI's fixed versions.
 name: Pages
 
 on:
@@ -11,6 +11,7 @@ on:
     branches: [main]
     paths:
       - "site/**"
+      - "pnpm-lock.yaml"
       - "docs/screenshots/**"
       - "apps/web/public/**"
       - ".github/workflows/pages.yml"
@@ -42,20 +43,28 @@ jobs:
         with:
           persist-credentials: false
 
-      # Reads `devEngines.runtime` from package.json (Node 26 or later). The
-      # build script is TypeScript, which Node runs directly, and it has no
-      # dependencies, so neither pnpm nor an install is needed: this is
-      # `pnpm site:build`.
+      # The same fixed versions as CI (ci.yml).
+      - name: Set up pnpm
+        uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
+        with:
+          version: 12.16.1
+
       - name: Set up Node
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version-file: package.json
+          node-version: 26.13.0
+          cache: pnpm
+
+      # Only the website's own dependencies: React, Vite and the icons its
+      # illustrations use.
+      - name: Install
+        run: pnpm install --frozen-lockfile --filter @location-scout/site
 
       - name: Configure Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 
       - name: Build
-        run: node site/build.ts
+        run: pnpm site:build
 
       - name: Upload
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0

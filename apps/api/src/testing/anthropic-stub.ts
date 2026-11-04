@@ -84,6 +84,18 @@ const isMessagesRequest = (value: unknown): value is MessagesRequest =>
   Array.isArray(value.messages);
 
 /**
+ * The key a request to Anthropic was sent with. Anthropic's SDK sends it as
+ * a bearer token from version 1; `x-api-key` is how it sent it before.
+ */
+export const anthropicKeyOf = (
+  init: RequestInit | undefined,
+): string | null => {
+  const headers = new Headers(init?.headers);
+  const bearer = /^Bearer (.+)$/.exec(headers.get("authorization") ?? "");
+  return bearer?.[1] ?? headers.get("x-api-key");
+};
+
+/**
  * Anthropic's answer to a request to the Messages API, or `undefined` for
  * any other URL. It answers only `apiKey`, with `401` as Anthropic does for
  * any other, and takes `partMs` over each part.
@@ -94,11 +106,11 @@ export const stubAnthropic = (
   { apiKey = TEST_ANTHROPIC_API_KEY, partMs = STUB_PART_MS } = {},
 ): Response | undefined => {
   if (!url.startsWith(ANTHROPIC_MESSAGES_URL)) return undefined;
-  if (new Headers(init?.headers).get("x-api-key") !== apiKey) {
+  if (anthropicKeyOf(init) !== apiKey) {
     return Response.json(
       {
         type: "error",
-        error: { type: "authentication_error", message: "invalid x-api-key" },
+        error: { type: "authentication_error", message: "invalid API key" },
       },
       { status: 401 },
     );

@@ -1,0 +1,187 @@
+/* The two system stories. "How a search works" is a diagram on the page's
+   own ground: the Location, the backend, and the Data Sources it asks, each
+   answering on its own. The call to action's terminal sits on the banner's
+   colour and runs off its foot. */
+
+.ls-story {
+  & .ss-stage {
+    --gutter: 24px;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  .ls-mono {
+    font-family: var(--ss-mono);
+  }
+}
+
+/* ---- How a search works ---- */
+
+.ls-pipeline {
+  .ls-node {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2px 8px;
+    padding: 12px 14px;
+    border: 1px solid var(--ss-line);
+    border-radius: 12px;
+    background: var(--ss-surface);
+    box-shadow: var(--ss-shadow-ground);
+    color: var(--ss-text);
+
+    & svg {
+      grid-row: span 2;
+      color: var(--ss-accent);
+    }
+  }
+
+  .ls-node-title {
+    color: var(--ss-text-strong);
+    font-size: 13.5px;
+    font-weight: 650;
+  }
+
+  .ls-node-meta {
+    color: var(--ss-text-faint);
+    font-size: 11.5px;
+  }
+
+  .ls-node--location[data-layout="wide"] {
+    top: 122px;
+    left: var(--gutter);
+    width: 150px;
+  }
+
+  .ls-node--api[data-layout="wide"] {
+    top: 118px;
+    left: 34%;
+    width: 180px;
+    transition:
+      border-color 0.4s ease,
+      box-shadow 0.4s ease;
+
+    &[data-on] {
+      border-color: color-mix(in srgb, var(--ss-accent) 55%, var(--ss-line));
+      box-shadow:
+        var(--ss-shadow-ground),
+        0 0 0 4px color-mix(in srgb, var(--ss-accent) 10%, transparent);
+    }
+  }
+
+  .ls-node--location[data-layout="compact"] {
+    top: 8px;
+    left: var(--gutter);
+    right: var(--gutter);
+  }
+
+  .ls-node--api[data-layout="compact"] {
+    top: 76px;
+    left: var(--gutter);
+    right: var(--gutter);
+  }
+
+  .ls-sources {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &[data-layout="wide"] {
+      top: 22px;
+      right: var(--gutter);
+      width: 250px;
+    }
+
+    &[data-layout="compact"] {
+      top: 152px;
+      left: var(--gutter);
+      right: var(--gutter);
+    }
+  }
+
+  .ls-source {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    height: 36px;
+    padding: 0 9px;
+    border: 1px solid var(--ss-line);
+    border-radius: 10px;
+    background: var(--ss-surface);
+    color: var(--ss-text);
+    font-size: 12.5px;
+    opacity: 0.55;
+    transition: opacity 0.4s ease;
+
+    &[data-shown] {
+      opacity: 1;
+    }
+  }
+
+  .ls-source-name {
+    white-space: nowrap;
+  }
+
+  /* As the app's Layers list says it: in words, in the danger colour. */
+  .ls-source-down {
+    color: var(--ss-danger-text);
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .ls-fan {
+    --ss-accent: color-mix(in srgb, var(--ss-text-faint) 70%, transparent);
+  }
+}
+
+/* ---- Get Location Scout ---- */
+
+.ls-terminal {
+  /* The window fills the stage across and runs a little off its foot; its
+     lines sit at the bottom of the part that shows, as a terminal in use. */
+  .ls-terminal-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 284px;
+    box-shadow: 0 24px 60px -20px rgb(0 0 0 / 55%);
+  }
+
+  .ls-terminal-body {
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    font-size: 12px;
+    /* Lines leaving the top fade as they go, never cut by the edge. */
+    mask-image: linear-gradient(transparent 0, #000 36px);
+  }
+
+  /* Too narrow for a whole command, lines wrap as a narrow terminal's do,
+     rather than run off the edge. */
+  .ls-terminal-body--wrap,
+  .ls-terminal-body--wrap * {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  .ls-untyped {
+    visibility: hidden;
+  }
+
+  .ls-caret-slot {
+    transition: opacity 0.2s ease;
+
+    &[data-off] {
+      opacity: 0;
+    }
+  }
+
+  .ls-term-link {
+    color: var(--ss-term-path, #79c0ff);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}

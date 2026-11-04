@@ -170,7 +170,7 @@ describe(`GET ${DOCS_PATH}`, () => {
     const page = await response.text();
     expect(page).toContain("<title>Location Scout API</title>");
     expect(page).toContain("SwaggerUIBundle");
-    expect(page).toContain(`url: '${OPENAPI_PATH}'`);
+    expect(page).toContain(`url: ${JSON.stringify(OPENAPI_PATH)}`);
   });
 });
 

@@ -485,7 +485,7 @@ const grades = (areas: readonly { column: string; area: string }[]) =>
       ({ column, area }) =>
         `{'area': ${sqlString(area)}, 'grade': ${value(column)}}`,
     )
-    .join(", ")}], g -> g.grade IS NOT NULL)`;
+    .join(", ")}], lambda g: g.grade IS NOT NULL)`;
 
 /**
  * Downloads Ofsted's latest inspections of state-funded schools into the

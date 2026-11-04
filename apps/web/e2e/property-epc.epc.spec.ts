@@ -121,7 +121,7 @@ test("a sale's popup gives its EPC rating, the rating it could reach, its floor 
   // certificate of 14 March 2019 gives band D, potential B and 92 m².
   const highPavement = await markerLabelled(
     map,
-    "£173,000, Sold on 29 May 2026, 140 m from the Location",
+    "£173k: £173,000, Sold on 29 May 2026, 140 m from the Location",
   );
   await highPavement.click();
   const popup = page.locator(".maplibregl-popup .feature-popup");
@@ -157,7 +157,7 @@ test("a sale of other property says nothing about EPCs, which the register of ho
 
   const brookStreet = await markerLabelled(
     map,
-    "£141,000, Sold on 16 February 2026, 40 m from the Location",
+    "£141k: £141,000, Sold on 16 February 2026, 40 m from the Location",
   );
   await brookStreet.click();
   const popup = page.locator(".maplibregl-popup .feature-popup");

@@ -10,7 +10,7 @@ export const ONLY_PROPERTY = `${NG17}&hidden=crime,planning,amenities,schools,tr
 
 /** 88 High Pavement's marker, alone in NG17 1BT, as Price Paid's recording gives it. */
 export const HIGH_PAVEMENT =
-  "£173,000, Sold on 29 May 2026, 140 m from the Location";
+  "£173k: £173,000, Sold on 29 May 2026, 140 m from the Location";
 
 /** Space `SearchAreaMap` keeps between the Search Area circle and the map's edges. */
 const FIT_PADDING = 40;

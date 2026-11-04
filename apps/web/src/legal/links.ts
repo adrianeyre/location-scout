@@ -1,5 +1,5 @@
 /** This app's source, which the footer's "Website design" credit links to. */
-export const REPOSITORY_URL = "https://github.com/adrianeyre/temp2";
+export const REPOSITORY_URL = "https://github.com/adrianeyre/location-scout";
 
 /** Where to report a problem, including an accessibility barrier. */
 export const ISSUES_URL = `${REPOSITORY_URL}/issues`;

@@ -8,7 +8,7 @@
 # Node and pnpm are pinned to fixed versions within the ranges the root
 # package.json allows (`engines` / `devEngines`: Node >= 26, pnpm >= 12), the
 # same versions CI uses. If those ranges move, keep these inside them.
-FROM node:26.12.0-bookworm
+FROM node:26.13.0-bookworm
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
   git \
@@ -28,7 +28,7 @@ RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg \
 # pnpm, at the version CI uses. Node no longer ships corepack from
 # version 25, so pnpm is installed directly. `devEngines.packageManager` in
 # package.json remains the source of truth.
-RUN npm install -g pnpm@12.11.2
+RUN npm install -g pnpm@12.16.1
 
 # UID/GID alignment. `sandcastle docker build-image` defaults these to the host
 # user's, so files the image writes and files the bind mount writes have the same

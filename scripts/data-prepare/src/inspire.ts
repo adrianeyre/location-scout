@@ -221,7 +221,7 @@ export const loadInspire = async (
     `CREATE OR REPLACE TABLE inspire_index_polygons AS
        WITH read AS (
          SELECT CAST(INSPIREID AS BIGINT) AS inspire_id,
-           CAST(substr(VALIDFROM, 1, 10) AS DATE) AS valid_from,
+           CAST(substr(CAST(VALIDFROM AS VARCHAR), 1, 10) AS DATE) AS valid_from,
            ST_Transform(GEOMETRY, ${sqlString(INSPIRE.crs)}, 'EPSG:4326', always_xy := true)::GEOMETRY AS geometry
          FROM ST_Read($1, open_options := ['DOWNLOAD_SCHEMA=NO'])
        )

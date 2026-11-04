@@ -1,8 +1,10 @@
 // Assembles the project website (GitHub Pages) in `site/dist/`: the page, its
-// stylesheet, script (its types stripped) and fonts from `site/`, the
-// screenshots from `docs/screenshots/` and the icons from the web app, copied
-// rather than kept twice in Git. `.github/workflows/pages.yml` runs it and
-// publishes `site/dist/`; run it yourself with `pnpm site:build`, then open
+// stylesheet, script (its types stripped) and fonts from `site/`; its product
+// illustrations (`demos/`, drawn with the Stageshow kit in `kit/`), bundled
+// by Vite into `demos.js` and `demos.css`; and the screenshots from
+// `docs/screenshots/` and the icons from the web app, copied rather than kept
+// twice in Git. `.github/workflows/pages.yml` runs it and publishes
+// `site/dist/`; run it yourself with `pnpm site:build`, then open
 // `site/dist/index.html`.
 import {
   cpSync,
@@ -14,8 +16,10 @@ import {
 import { stripTypeScriptTypes } from "node:module";
 import { join } from "node:path";
 
+import { build } from "vite";
+
 /** The repository, named once: every link to it on the page comes from here. */
-export const repositoryUrl = "https://github.com/adrianeyre/temp2";
+export const repositoryUrl = "https://github.com/adrianeyre/location-scout";
 
 /** The website's own address, which `CNAME` gives GitHub Pages. */
 export const siteDomain = "location-scout.adrianeyre.co.uk";
@@ -45,6 +49,12 @@ const page = readFileSync(join(source, "index.html"), "utf8").replaceAll(
   },
 );
 writeFileSync(join(output, "index.html"), page);
+
+// The illustrations, as one script and one stylesheet beside the page's.
+await build({
+  configFile: join(source, "vite.config.ts"),
+  logLevel: "warn",
+});
 cpSync(join(source, "styles.css"), join(output, "styles.css"));
 // The page's script, as the browser runs it: its types stripped, as Node
 // strips them, so the build still needs no install.

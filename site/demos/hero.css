@@ -1,0 +1,428 @@
+/* The hero's illustration. Pinned, bottom bleed: the window sits a gutter
+   in from the stage's top and right and runs off its foot; the Location
+   Score straddles its left edge over the map's quiet corner, so the column
+   left of the window is the gutter plus half the card. */
+
+.ls-hero {
+  & .ss-stage {
+    --gutter: 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    background: var(--ss-well);
+  }
+
+  .ls-hero-window {
+    position: absolute;
+    top: var(--gutter);
+    left: 104px;
+    width: 584px;
+    height: 452px;
+    box-shadow: var(--ss-shadow-hero);
+  }
+
+  .ss-stage[data-layout="compact"] .ls-hero-window {
+    top: 16px;
+    left: 16px;
+    width: 326px;
+    height: 440px;
+  }
+
+  .ls-app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--ss-surface);
+  }
+
+  .ls-app-header {
+    display: flex;
+    flex: none;
+    align-items: center;
+    gap: 8px;
+    height: 48px;
+    padding: 0 12px;
+    border-bottom: 1px solid var(--ss-line);
+  }
+
+  .ls-brand {
+    display: flex;
+    flex: none;
+    align-items: center;
+    gap: 5px;
+    margin-right: 4px;
+    color: var(--ss-text-strong);
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+
+    & svg {
+      color: var(--ss-accent);
+    }
+  }
+
+  .ls-search {
+    flex: 1;
+    min-width: 0;
+    --ss-control: 28px;
+    font-size: 12px;
+  }
+
+  .ls-search-button {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    height: 28px;
+    padding: 0 12px;
+    border-radius: var(--ss-radius-sm);
+    background: var(--ss-accent);
+    color: var(--ss-surface);
+    font-size: 12px;
+    font-weight: 600;
+    transition: background 0.15s ease;
+
+    &[data-pressed] {
+      background: color-mix(in srgb, var(--ss-accent) 82%, black);
+    }
+  }
+
+  .ls-app-body {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .ss-stage[data-layout="compact"] .ls-app-body {
+    flex-direction: column;
+  }
+
+  /* ---- The map ---- */
+
+  .ls-map {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    background: var(--ls-map);
+  }
+
+  .ss-stage[data-layout="compact"] .ls-map {
+    flex: none;
+    height: 178px;
+  }
+
+  .ls-map-ground {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ls-map-park {
+    fill: var(--ls-map-park);
+  }
+
+  .ls-map-road {
+    fill: none;
+    stroke: var(--ls-map-road);
+    stroke-width: 7;
+    stroke-linecap: round;
+  }
+
+  .ls-map-road--minor {
+    stroke-width: 3.5;
+  }
+
+  /* The Search Area: its circle draws out from the Location. */
+  .ls-area {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    translate: -50% -50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 2px solid var(--ss-accent);
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--ss-accent) 8%, transparent);
+      opacity: 0;
+      scale: 0.2;
+      transition:
+        scale 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
+        opacity 0.35s ease;
+    }
+  }
+
+  .ss-stage[data-layout="compact"] .ls-area {
+    top: 50%;
+  }
+
+  .ls-map[data-searched] .ls-area::before {
+    opacity: 1;
+    scale: 1;
+  }
+
+  .ls-location {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    translate: -50% -88%;
+    color: var(--ss-accent);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+
+    & svg {
+      fill: var(--ss-surface);
+    }
+  }
+
+  .ls-map[data-searched] .ls-location {
+    opacity: 1;
+  }
+
+  .ls-marker {
+    position: absolute;
+    display: grid;
+    translate: -50% -50%;
+    opacity: 0;
+    scale: 0.4;
+    will-change: transform, scale, opacity;
+    transition:
+      opacity 0.3s ease,
+      scale 0.45s cubic-bezier(0.3, 1.4, 0.5, 1);
+
+    &[data-show] {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  .ls-cluster {
+    display: grid;
+    place-items: center;
+    min-width: 22px;
+    height: 22px;
+    padding: 0 5px;
+    border-radius: 11px;
+    box-shadow: 0 0 0 2px var(--ss-surface);
+    color: #fff;
+    font-size: 10.5px;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+  }
+
+  /* ---- The Location Overview ---- */
+
+  .ls-overview {
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    width: 224px;
+    padding: 0 12px;
+    border-left: 1px solid var(--ss-line);
+    background: var(--ss-surface);
+  }
+
+  .ss-stage[data-layout="compact"] .ls-overview {
+    width: auto;
+    border-top: 1px solid var(--ss-line);
+    border-left: 0;
+  }
+
+  .ls-overview-tabs {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    height: 36px;
+    border-bottom: 1px solid var(--ss-line-faint);
+
+    & [data-active] {
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid var(--ss-accent);
+      color: var(--ss-text-strong);
+      font-size: 11.5px;
+      font-weight: 600;
+    }
+  }
+
+  .ls-overview-title {
+    margin: 12px 0 10px;
+    color: var(--ss-text-strong);
+    font-size: 13.5px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .ls-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ls-highlight {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 34px;
+    padding: 7px 10px 7px 9px;
+    border: 1px solid var(--ss-line);
+    border-left: 3px solid var(--ss-line);
+    border-radius: var(--ss-radius-md);
+    background: var(--ss-surface);
+    color: var(--ss-text);
+    font-size: 11.5px;
+    line-height: 1.3;
+    transition: border-left-color 0.35s ease;
+
+    &[data-show][data-level="concern"] {
+      border-left-color: var(--ls-concern);
+    }
+
+    &[data-show][data-level="watch"] {
+      border-left-color: var(--ls-watch);
+    }
+
+    &[data-show][data-level="good"] {
+      border-left-color: var(--ls-good);
+    }
+
+    & b {
+      font-weight: 650;
+    }
+  }
+
+  /* The two faces share one cell, so the row never changes size. */
+  .ls-highlight-face {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    transition: opacity 0.35s ease;
+    will-change: opacity;
+  }
+
+  .ls-highlight-face--real {
+    position: absolute;
+    inset: 0 30px 0 9px;
+    opacity: 0;
+  }
+
+  .ls-highlight[data-show] .ls-highlight-face--real {
+    opacity: 1;
+  }
+
+  .ls-highlight[data-show] .ls-highlight-face--skeleton {
+    opacity: 0;
+  }
+
+  .ls-highlight-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ls-highlight-more {
+    flex: none;
+    color: var(--ss-icon-faint);
+  }
+
+  /* ---- The Location Score, a satellite on the window's left edge ---- */
+
+  .ls-score {
+    position: absolute;
+    top: 208px;
+    left: var(--gutter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 144px;
+    padding: 12px 14px 14px;
+    border-radius: 12px;
+    background: var(--ss-surface);
+    box-shadow: var(--ss-shadow-satellite);
+    opacity: 0;
+    translate: 0 10px;
+    will-change: transform, translate, opacity;
+    transition:
+      opacity 0.4s ease,
+      translate 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+    &[data-show] {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  .ss-stage[data-theme="dark"] .ls-score {
+    background: var(--ss-raised);
+  }
+
+  .ls-score-label {
+    align-self: flex-start;
+    color: var(--ss-text-faint);
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .ls-score-dial {
+    position: relative;
+    width: 108px;
+    height: 108px;
+    margin-top: 2px;
+
+    & svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .ls-score-track,
+  .ls-score-fill {
+    fill: none;
+    stroke-width: 7;
+    stroke-linecap: round;
+  }
+
+  .ls-score-track {
+    stroke: var(--ss-line-faint);
+  }
+
+  .ls-score-fill {
+    stroke: var(--ss-accent);
+    transition: stroke-dashoffset 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .ls-score-value {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-top: 38px;
+    color: var(--ss-text-strong);
+    font-size: 30px;
+    font-weight: 750;
+    letter-spacing: -0.03em;
+  }
+
+  .ls-score-out {
+    margin-left: 1px;
+    color: var(--ss-text-faint);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+/* The score keeps a two-digit slot, so "0" counting up to "62" never
+   shifts the dial's centre. */
+.ls-hero .ls-score-value .ss-count {
+  display: inline-block;
+  min-width: 2ch;
+  text-align: right;
+}

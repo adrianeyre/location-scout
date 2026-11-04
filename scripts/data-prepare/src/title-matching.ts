@@ -243,7 +243,7 @@ export const registerNormalisers = async (connection: DuckDBConnection) => {
        CASE WHEN t IS NULL OR normalise_words(t) = '' THEN NULL ELSE
          array_to_string(list_transform(
            string_split(normalise_words(t), ' '),
-           (w, i) -> CASE
+           lambda w, i: CASE
              WHEN i = len(string_split(normalise_words(t), ' ')) AND w = 'ST' THEN 'STREET'
              ${streetTypes.map(([short, long]) => `WHEN w = '${short}' THEN '${long}'`).join(" ")}
              ELSE w END
@@ -263,7 +263,7 @@ export const registerNormalisers = async (connection: DuckDBConnection) => {
     `CREATE OR REPLACE MACRO name_key(t) AS
        array_to_string(list_transform(
          string_split(regexp_replace(t, '^THE ', ''), ' '),
-         w -> CASE WHEN length(w) > 3 AND w LIKE '%S' AND w NOT LIKE '%SS' THEN w[1:-2] ELSE w END
+         lambda w: CASE WHEN length(w) > 3 AND w LIKE '%S' AND w NOT LIKE '%SS' THEN w[1:-2] ELSE w END
        ), ' ')`,
   );
 };

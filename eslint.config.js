@@ -9,6 +9,8 @@ import tseslint from "typescript-eslint";
 export default defineConfig([
   globalIgnores([
     ".sandcastle/",
+    // Vendored unchanged from Stageshow (site/kit/README.md).
+    "site/kit/",
     "data/",
     "**/dist/",
     "**/test-results/",
@@ -28,6 +30,13 @@ export default defineConfig([
     files: ["**/*.js"],
     extends: [tseslint.configs.disableTypeChecked],
     languageOptions: { globals: globals.node },
+  },
+  {
+    // The website's illustrations mount into a static page, with no Fast
+    // Refresh to keep happy; the rules of hooks still hold.
+    files: ["site/demos/**/*.{ts,tsx}"],
+    extends: [reactHooks.configs.flat["recommended-latest"]],
+    languageOptions: { globals: globals.browser },
   },
   {
     files: ["apps/web/src/**/*.{ts,tsx}"],
