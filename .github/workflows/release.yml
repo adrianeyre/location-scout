@@ -56,7 +56,33 @@ jobs:
       - name: Install
         run: pnpm install --frozen-lockfile --filter location-scout
 
+      # Earlier releases first, so they are completed in order, before this
+      # run adds one after them.
+      - name: Complete earlier unfinished releases
+        run: bash .github/scripts/repair-releases.sh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Allowed to fail here only so the repair below can run; the last step
+      # fails the job if semantic-release failed and left nothing to repair.
       - name: Release
+        id: release
+        continue-on-error: true
         run: pnpm exec semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Completes this run's release if it was tagged but GitHub briefly
+      # refused its note push, so it never got its GitHub release (as v1.1.0
+      # did not): .github/scripts/repair-releases.sh says how.
+      - name: Complete this run's release
+        id: repair
+        run: bash .github/scripts/repair-releases.sh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fail if semantic-release failed before tagging
+        if: steps.release.outcome == 'failure' && steps.repair.outputs.repaired == '0'
+        run: |
+          echo "::error::semantic-release failed, and there was no tagged release to complete. See the Release step."
+          exit 1
