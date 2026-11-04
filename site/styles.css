@@ -63,9 +63,11 @@
     0 12px 32px -8px rgb(5 80 174 / 10%);
   --shadow-lg:
     0 2px 4px rgb(31 35 40 / 5%), 0 24px 64px -16px rgb(5 80 174 / 28%);
+  /* One shape family with the illustrations: cards at 16, the Features
+     tiles and large panels at 18, a step past the kit's 12px windows. */
   --radius-sm: 8px;
-  --radius: 14px;
-  --radius-lg: 22px;
+  --radius: 16px;
+  --radius-lg: 18px;
   --header-height: 4rem;
   --font-sans:
     "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
@@ -705,6 +707,9 @@ pre:focus-visible {
   margin: 0;
   padding: 0.85rem 1rem;
   font-size: 0.8125rem;
+  /* A command too long for the column wraps, so none is cut off. */
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
 .hero-shot {
