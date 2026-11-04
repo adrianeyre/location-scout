@@ -66,7 +66,7 @@ pnpm --filter @location-scout/site dev   # serves the page with live illustratio
 ```
 
 - `site/index.html`, `styles.css` and `script.mts`: the page, its styles and its small progressive enhancements.
-- `site/demos/`: the illustrations, one `Stage` each, mounted into the page's `[data-demo]` slots by `main.tsx` and bundled by Vite into `demos.js` and `demos.css`.
+- `site/demos/`: the illustrations, one `Stage` each, mounted into the page's `[data-demo]` slots by `main.tsx` and bundled by Vite into `demos.js` and `demos.css`. It also frames the Screenshots section's real screenshots (`[data-frame]`) in the kit's window and phone, and the page's code blocks share the kit terminal's colours.
 - `site/kit/`: the Stageshow kit, vendored unchanged ([`site/kit/README.md`](site/kit/README.md)).
 - `site/build.ts`: the build, which names the repository and the site's domain once, for every link on the page.
 
