@@ -1,0 +1,49 @@
+/* The screenshots' frames. The window or phone sits whole, with room for
+   its shadow, and the screenshot fills its screen edge to edge. */
+
+.ls-frame {
+  & .ss-stage {
+    overflow: visible;
+    background: transparent;
+  }
+
+  .ls-frame-window {
+    position: absolute;
+    inset: 12px;
+    box-shadow: var(--ss-shadow-ground);
+  }
+
+  .ls-frame-content,
+  .ls-frame-content a,
+  .ls-frame-content img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ls-frame-content img {
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .ls-frame-content a {
+    border-radius: 0;
+    outline-offset: -3px;
+  }
+
+  .ls-frame-phone {
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+}
+
+/* The phone is cropped by the figure's foot, so it reads as held. */
+.ls-phone-picture {
+  display: flex;
+  justify-content: center;
+  height: 380px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(#000 75%, transparent);
+  mask-image: linear-gradient(#000 75%, transparent);
+}

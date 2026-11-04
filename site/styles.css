@@ -37,12 +37,16 @@
   --accent: #ddf4ff;
   --accent-foreground: #0a3069;
   --code-bg: #eff2f5;
-  --term-bg: #0d1117;
-  --term-bar: #161b22;
-  --term-border: #30363d;
-  --term-text: #e6edf3;
-  --term-muted: #9ea7b3;
-  --term-accent: #79c0ff;
+  /* Terminals: the Stageshow kit's terminal (site/kit/window.css), so the
+     page's real code blocks and its illustrated terminals are one look.
+     Each text colour is at least 4.5:1 on the ground and the bar. */
+  --term-bg: #17171a;
+  --term-bar: #1e1e22;
+  --term-border: #2c2c33;
+  --term-text: #ececf1;
+  --term-muted: #9d9da6;
+  --term-accent: #8fb0ff;
+  --term-prompt: #6ee7a8;
   --focus: #0969da;
   --focus-halo: #ffffff;
   --success: #1a7f37;
@@ -59,9 +63,11 @@
     0 12px 32px -8px rgb(5 80 174 / 10%);
   --shadow-lg:
     0 2px 4px rgb(31 35 40 / 5%), 0 24px 64px -16px rgb(5 80 174 / 28%);
+  /* One shape family with the illustrations: cards at 16, the Features
+     tiles and large panels at 18, a step past the kit's 12px windows. */
   --radius-sm: 8px;
-  --radius: 14px;
-  --radius-lg: 22px;
+  --radius: 16px;
+  --radius-lg: 18px;
   --header-height: 4rem;
   --font-sans:
     "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
@@ -89,9 +95,7 @@
     --accent: #12253f;
     --accent-foreground: #cae8ff;
     --code-bg: #262c36;
-    --term-bg: #010409;
-    --term-bar: #0d1117;
-    --term-border: #30363d;
+    --term-border: #34343c;
     --focus: #4493f8;
     --focus-halo: #0d1117;
     --success: #3fb950;
@@ -239,7 +243,7 @@ pre .comment {
 }
 
 pre .prompt {
-  color: var(--term-accent);
+  color: var(--term-prompt);
   user-select: none;
 }
 
@@ -703,6 +707,9 @@ pre:focus-visible {
   margin: 0;
   padding: 0.85rem 1rem;
   font-size: 0.8125rem;
+  /* A command too long for the column wraps, so none is cut off. */
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
 .hero-shot {
@@ -1302,6 +1309,33 @@ pre:focus-visible {
   object-position: center top;
 }
 
+/* Framed by demos.js in the kit's window or phone, a screenshot fills the
+   frame's screen: the frame gives it its edge and shadow, so the link's
+   own card look goes. Hovered, the window lifts a little instead. */
+.frame-slot[data-frame-ready] a {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  transform: none;
+}
+
+.frame-slot[data-frame-ready] img {
+  aspect-ratio: auto;
+  transform: none;
+}
+
+.frame-slot[data-frame-ready] .ls-frame-window {
+  transition:
+    box-shadow 200ms var(--ease),
+    translate 200ms var(--ease);
+}
+
+.frame-slot[data-frame-ready]:hover .ls-frame-window {
+  translate: 0 -2px;
+  box-shadow: var(--shadow);
+}
+
 .gallery figcaption {
   margin-top: 0.85rem;
   font-size: 0.95rem;
@@ -1416,13 +1450,12 @@ pre:focus-visible {
   height: 0.7rem;
   margin-right: 0.5rem;
   background:
-    radial-gradient(circle, #f87171 0.33rem, transparent 0.36rem) 0 50% / 0.7rem
+    radial-gradient(circle, #ff5f57 0.33rem, transparent 0.36rem) 0 50% / 0.7rem
       0.7rem no-repeat,
-    radial-gradient(circle, #fbbf24 0.33rem, transparent 0.36rem) 1.1rem 50% /
+    radial-gradient(circle, #febc2e 0.33rem, transparent 0.36rem) 1.1rem 50% /
       0.7rem 0.7rem no-repeat,
-    radial-gradient(circle, #4ade80 0.33rem, transparent 0.36rem) 2.2rem 50% /
+    radial-gradient(circle, #28c840 0.33rem, transparent 0.36rem) 2.2rem 50% /
       0.7rem 0.7rem no-repeat;
-  opacity: 0.85;
 }
 
 /* On a phone the tabs need the room the window's dots take. */
@@ -2038,6 +2071,11 @@ thead :is(th, td) {
   display: flex;
   gap: 1.25rem;
   align-items: flex-start;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
 }
 
 .licence h2 {
